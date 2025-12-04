@@ -1,0 +1,1150 @@
+<!doctype html>
+<html lang="es" class="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Examen PL_300</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/vue@3.4.21/dist/vue.global.js"></script>
+</head>
+
+<body class="bg-gray-900 text-gray-100 antialiased">
+    <div id="app">
+        <!-- Barra superior -->
+        <header class="border-b border-gray-800">
+            <div class="mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center gap-4">
+                        <div class="text-lg font-semibold text-white">🌙 Examen PL-300</div>
+                    </div>
+                    <div class="items-center gap-3"></div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center">
+                        <!-- Contenedor Izquierdo -->
+                        <div name="contenedor izquierdo">
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                    <h3 class="font-semibold text-gray-900 text-left">Pregunta # 1</h3>
+                                    <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                </div>
+                                <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                    <div v-html="contenido.contenedor1.pregunta"></div>
+                                    <div>
+                                        <button @click="boton(1)"
+                                            class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                            {{ interruptor1 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div name="contenedor derecho">
+                            <div v-if="interruptor1" class="mx-auto">
+                                <!-- Aquí se carga el contenido desde el archivo externo -->
+                                <div v-html="contenido.contenedor1.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 2</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                    <div v-html="contenido.contenedor2.pregunta"></div>
+
+                                    <div>
+                                        <button @click="boton(2)"
+                                            class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                            {{ interruptor2 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--contenedor derecho-->
+                        <div>
+                            <div v-if="interruptor2" class="mx-auto">
+                                <div v-html="contenido.contenedor2.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 3</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor3.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(3)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor3 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor3" class="mx-auto">
+                                <div v-html="contenido.contenedor3.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 4</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor4.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(4)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor4 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor4" class="mx-auto">
+                                <div v-html="contenido.contenedor4.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 5</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor5.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(5)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor5 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor5" class="mx-auto">
+                                <div v-html="contenido.contenedor5.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 6</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor6.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(6)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor6 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor6" class="mx-auto">
+                                <div v-html="contenido.contenedor6.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 7</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor7.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(7)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor7 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor7" class="mx-auto">
+                                <div v-html="contenido.contenedor7.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 8</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor8.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(8)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor8 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor8" class="mx-auto">
+                                <div v-html="contenido.contenedor8.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 9</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor9.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(9)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor9 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor9" class="mx-auto">
+                                <div v-html="contenido.contenedor9.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 10</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor10.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(10)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor10 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor10" class="mx-auto">
+                                <div v-html="contenido.contenedor10.solucion"></div>
+                            </div>
+                        </div>
+                        <!--CONTENEDOR---------------------------------------------------------------------------------------------------->
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 11</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor11.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(11)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor11 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor11" class="mx-auto">
+                                <div v-html="contenido.contenedor11.solucion"></div>
+                            </div>
+                        </div>
+                        <!--CONTENEDOR---------------------------------------------------------------------------------------------------->
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 12</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor12.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(12)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor12 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor12" class="mx-auto">
+                                <div v-html="contenido.contenedor12.solucion"></div>
+                            </div>
+                        </div>
+                        <!--CONTENEDOR---------------------------------------------------------------------------------------------------->
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 13</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor13.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(13)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor13 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor13" class="mx-auto">
+                                <div v-html="contenido.contenedor13.solucion"></div>
+                            </div>
+                        </div>
+                        <!--CONTENEDOR---------------------------------------------------------------------------------------------------->
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 14</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor14.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(14)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor14 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor14" class="mx-auto">
+                                <div v-html="contenido.contenedor14.solucion"></div>
+                            </div>
+                        </div>
+                        <!--CONTENEDOR---------------------------------------------------------------------------------------------------->
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 15</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor15.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(15)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor15 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor15" class="mx-auto">
+                                <div v-html="contenido.contenedor15.solucion"></div>
+                            </div>
+                        </div>
+                        <!--CONTENEDOR---------------------------------------------------------------------------------------------------->
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 16</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor16.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(16)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor16 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor16" class="mx-auto">
+                                <div v-html="contenido.contenedor16.solucion"></div>
+                            </div>
+                        </div>
+                        <!--CONTENEDOR---------------------------------------------------------------------------------------------------->
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 17</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor17.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(17)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor17 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor17" class="mx-auto">
+                                <div v-html="contenido.contenedor17.solucion"></div>
+                            </div>
+                        </div>
+                        <!--CONTENEDOR---------------------------------------------------------------------------------------------------->
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 18</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor18.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(18)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor18 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor18" class="mx-auto">
+                                <div v-html="contenido.contenedor18.solucion"></div>
+                            </div>
+                        </div>
+                        <!--CONTENEDOR---------------------------------------------------------------------------------------------------->
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 19</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor19.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(19)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor19 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor19" class="mx-auto">
+                                <div v-html="contenido.contenedor19.solucion"></div>
+                            </div>
+                        </div>
+                        <!--CONTENEDOR---------------------------------------------------------------------------------------------------->
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 20</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor20.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(20)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor20 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor20" class="mx-auto">
+                                <div v-html="contenido.contenedor20.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 21</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor21.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(21)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor21 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor21" class="mx-auto">
+                                <div v-html="contenido.contenedor21.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 22</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor22.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(22)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor22 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor22" class="mx-auto">
+                                <div v-html="contenido.contenedor22.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 23</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor23.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(23)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor23 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor23" class="mx-auto">
+                                <div v-html="contenido.contenedor23.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 24</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor24.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(24)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor24 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor24" class="mx-auto">
+                                <div v-html="contenido.contenedor24.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 25</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor25.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(25)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor25 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor25" class="mx-auto">
+                                <div v-html="contenido.contenedor25.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-yellow-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 26</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 1</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor26.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(26)"
+                                                class="bg-yellow-200/50 hover:bg-yellow-300/50 active:bg-yellow-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor26 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor26" class="mx-auto">
+                                <div v-html="contenido.contenedor26.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-green-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 1</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 2</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor27.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(27)"
+                                                class="bg-green-200/50 hover:bg-green-300/50 active:bg-green-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor27 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor27" class="mx-auto">
+                                <div v-html="contenido.contenedor27.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-green-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 2</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 2</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor28.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(28)"
+                                                class="bg-green-200/50 hover:bg-green-300/50 active:bg-green-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor28 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor28" class="mx-auto">
+                                <div v-html="contenido.contenedor28.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-green-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 3</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 2</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor29.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(29)"
+                                                class="bg-green-200/50 hover:bg-green-300/50 active:bg-green-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor29 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor29" class="mx-auto">
+                                <div v-html="contenido.contenedor29.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-green-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 4</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 2</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor30.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(30)"
+                                                class="bg-green-200/50 hover:bg-green-300/50 active:bg-green-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor30 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor30" class="mx-auto">
+                                <div v-html="contenido.contenedor30.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-green-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 5</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 2</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor31.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(31)"
+                                                class="bg-green-200/50 hover:bg-green-300/50 active:bg-green-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor31 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor31" class="mx-auto">
+                                <div v-html="contenido.contenedor31.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-green-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 6</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 2</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor32.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(32)"
+                                                class="bg-green-200/50 hover:bg-green-300/50 active:bg-green-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor32 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor32" class="mx-auto">
+                                <div v-html="contenido.contenedor32.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-green-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 7</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 2</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor33.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(33)"
+                                                class="bg-green-200/50 hover:bg-green-300/50 active:bg-green-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor33 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor33" class="mx-auto">
+                                <div v-html="contenido.contenedor33.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-green-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 8</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 2</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor34.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(34)"
+                                                class="bg-green-200/50 hover:bg-green-300/50 active:bg-green-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor34 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor34" class="mx-auto">
+                                <div v-html="contenido.contenedor34.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-green-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 9</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 2</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor35.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(35)"
+                                                class="bg-green-200/50 hover:bg-green-300/50 active:bg-green-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor35 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor35" class="mx-auto">
+                                <div v-html="contenido.contenedor35.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-green-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 10</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 2</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor36.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(36)"
+                                                class="bg-green-200/50 hover:bg-green-300/50 active:bg-green-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor36 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor36" class="mx-auto">
+                                <div v-html="contenido.contenedor36.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-green-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 11</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 2</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor37.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(37)"
+                                                class="bg-green-200/50 hover:bg-green-300/50 active:bg-green-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor37 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor37" class="mx-auto">
+                                <div v-html="contenido.contenedor37.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-green-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 12</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 2</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor38.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(38)"
+                                                class="bg-green-200/50 hover:bg-green-300/50 active:bg-green-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor38 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor38" class="mx-auto">
+                                <div v-html="contenido.contenedor38.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-green-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 13</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 2</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor39.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(39)"
+                                                class="bg-green-200/50 hover:bg-green-300/50 active:bg-green-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor39 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor39" class="mx-auto">
+                                <div v-html="contenido.contenedor39.solucion"></div>
+                            </div>
+                        </div>
+                        <!--contenedor izquierdo-->
+
+                        <div>
+                            <div class="mx-auto rounded-lg border border-gray-700 overflow-hidden shadow-md">
+                                <!-- Panel -->
+                                <div>
+                                    <div class="bg-green-200/50 px-4 py-2 flex justify-between items-center">
+                                        <h3 class="font-semibold text-gray-900 text-left">Pregunta # 14</h3>
+                                        <h3 class="font-semibold text-gray-900 text-right ml-2">Tema 2</h3>
+                                    </div>
+                                    <div class="bg-gray-800 text-gray-100 px-4 py-6">
+                                        <div v-html="contenido.contenedor40.pregunta"></div>
+                                        <div>
+                                            <button @click="boton(40)"
+                                                class="bg-green-200/50 hover:bg-green-300/50 active:bg-green-500 focus:outline-2 focus:outline-offset-2 rounded-sm p-2">
+                                                {{ interruptor40 ? '🚫 Ocultar Solución' : '👁 Revelar Solución'}}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor Derecho -->
+                        <div>
+                            <div v-if="interruptor40" class="mx-auto">
+                                <div v-html="contenido.contenedor40.solucion"></div>
+                            </div>
+                        </div>
+                        <!-- Paginación-->
+                        <!--en progreso-->
+                        <!-- Fin Paginación -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ejemplo de formulario en modo oscuro -->
+        </main>
+        <footer class="border-t border-gray-800">
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-gray-400">
+                    � <span id="year"></span> Mi Sitio. Todos los derechos reservados.
+                </p>
+                <div class="text-sm text-gray-400">
+                    Hecho con Tailwind y Vue � <a href="#" class="text-gray-200 underline">Privacidad</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <link rel="stylesheet" href="css/glow.css" />
+    <script src="src/contenido.js"></script>
+    <script src="src/app.js"></script>
+    <!-- <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>-->
+</body>
+
+</html>
