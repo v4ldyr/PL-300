@@ -1139,7 +1139,7 @@ const contenido = {
                 <li>Seleccionar Transponer (Transpose).</li>
             </ul>
             <div class="mx-auto mb-4 flex justify-center items-center">
-                <img src="img/1/1/p19.2.jpg" class="object-cover shadow-lg" />
+                <img src="img/1/p19.2.jpg" class="object-cover shadow-lg" />
             </div>
         </div>`,
         solucion: `<div
@@ -1521,7 +1521,21 @@ const contenido = {
         </div>`
     },
     contenedor31: {
-        pregunta: ``,
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Construye un informe para analizar las transacciones de clientes de una
+                base de datos que contiene las tablas que se muestran en la siguiente tabla.</p>
+            <div class="mx-auto mb-4">
+                <img src="img/2/p5.jpg" class="object-cover shadow-lg" />
+            </div>
+        </div>
+        <p class="text-sm text-gray-400 mb-4">Importa las tablas.</p>
+        <p class="text-sm text-gray-400 mb-4">¿Qué relación debe usar para vincular las tablas?</p>
+        <ul class="list-inside text-sm text-gray-400 mb-4">
+            <li>A. Uno a muchos desde Transacción a Cliente.</li>
+            <li>B. Uno a uno entre Cliente y Transacción.</li>
+            <li>C. Muchos a muchos entre Cliente y Transacción.</li>
+            <li>D. Uno a muchos desde Cliente a Transacción.</li>
+        </ul>`,
         solucion: ``
     },
     contenedor32: {
