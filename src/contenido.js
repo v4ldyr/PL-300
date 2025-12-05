@@ -1511,7 +1511,7 @@ const contenido = {
                     </div>
                 </div>
                 <div class="flex items-center">
-                    <div class="w-10 text-right font-medium text-[12px]">AD</div>
+                    <div class="w-10 text-right font-medium text-[12px]">ADD</div>
                     <div class="ml-2 text-gray-600 text-[12px]">(32%)</div>
                     <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
                         <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 32%"></div>
