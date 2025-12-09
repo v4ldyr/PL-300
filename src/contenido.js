@@ -1536,15 +1536,74 @@ const contenido = {
             <li>C. Muchos a muchos entre Cliente y Transacción.</li>
             <li>D. Uno a muchos desde Cliente a Transacción.</li>
         </ul>`,
-        solucion: ``
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+        <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: D</p>
+        <p class="text-sm text-gray-400 mb-4">Uno en el lado de la Clave Primaria (tabla Cliente) «primary Key (Customer
+            table)»,
+            muchos en el lado de la Clave Externa (tabla Transacción) «foreign Key (Trasaction table)» de la relación.
+        </p>
+    </div>`
     },
     contenedor32: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un conector personalizado que devuelve ID, De, Para, Asunto, Cuerpo
+                y Tiene Archivos Adjuntos por cada correo electrónico enviado durante el año pasado. Se devuelven más de 10
+                millones de registros.</p>
+            <p class="text-sm text-gray-400 mb-4">Construye un informe analizando las redes internas de los empleados
+                basándose en a quién envían correos electrónicos.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita evitar que los destinatarios del informe lean los correos
+                electrónicos analizados. La solución debe minimizar el tamaño del modelo.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debe hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Desde la vista Modelo, establecer las columnas Asunto y Cuerpo como Ocultas.</li>
+                <li>B. Eliminar las columnas Asunto y Cuerpo durante la importación.</li>
+                <li>C. Implementar seguridad a nivel de fila (RLS) para que los destinatarios del informe solo puedan ver
+                    resultados basados en los correos electrónicos que enviaron.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">El Asunto y el Cuerpo no son necesarios en el informe. Eliminarlos
+                resuelve el problema de seguridad y minimiza el modelo.</p>
+        </div>`
     },
     contenedor33: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+        <p class="text-sm text-gray-400 mb-4">HOTSPOT -</p>
+        <div class="mt-4 mb-4">
+            <img src="img/2/p7.1.jpg" class="object-cover mx-auto shadow-lg md:mx-0" />
+        </div>
+        <p class="text-sm text-gray-400 mb-4">Necesita hacer que la tabla esté disponible como un tipo de datos
+            organizacional en Microsoft Excel.</p>
+        <p class="text-sm text-gray-400 mb-4">¿Cómo debe configurar las propiedades de la tabla? Para responder,
+            seleccione las opciones apropiadas en el área de respuesta.</p>
+        <p class="text-sm text-gray-400 mb-4">
+            <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+        </p>
+        <div class="mt-4 mb-4">
+            <img src="img/2/p7.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+        </div>
+    </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s7.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Droplist 1: "Centro de Costo" (Cost Center) -</p>
+            <p class="text-sm text-gray-400 mb-4">Los valores de la etiqueta de fila se usan en Excel para que los usuarios
+                puedan identificar fácilmente la fila. Aparece como el valor de celda para una celda vinculada, en el panel
+                Selector de Datos y en la tarjeta de información.b</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/s7.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Droplist 2: "ID" -</p>
+            <p class="text-sm text-gray-400 mb-4">El valor del campo de columna Clave proporciona el ID único para la fila.
+                Este
+                valor permite a Excel vincular una celda a una fila específica en la tabla.</p>
+            <p class="text-sm text-gray-400 mb-4">Droplist 3: Sí (Yes)</p>
+            <p class="text-sm text-gray-400 mb-4">En la Galería de Tipos de Datos en Excel, sus usuarios pueden encontrar
+                datos
+                de tablas destacadas en sus conjuntos de datos de Power BI.</p>
+        </div>`
     },
     contenedor34: {
         pregunta: ``,
