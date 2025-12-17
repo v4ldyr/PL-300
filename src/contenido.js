@@ -1599,39 +1599,397 @@ const contenido = {
             <p class="text-sm text-gray-400 mb-4">El valor del campo de columna Clave proporciona el ID único para la fila.
                 Este
                 valor permite a Excel vincular una celda a una fila específica en la tabla.</p>
-            <p class="text-sm text-gray-400 mb-4">Droplist 3: Sí (Yes)</p>
+            <p class="text-sm text-gray-400 mb-4">Droplist 3: Sí (Yes) -</p>
             <p class="text-sm text-gray-400 mb-4">En la Galería de Tipos de Datos en Excel, sus usuarios pueden encontrar
                 datos
                 de tablas destacadas en sus conjuntos de datos de Power BI.</p>
+                <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                    href="https://learn.microsoft.com/es-es/power-bi/collaborate-share/service-create-excel-featured-tables"
+                    target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                            clip-rule="evenodd" />
+                    </svg>
+        Referencia
+    </a>
         </div>`
     },
     contenedor34: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene el modelo de Power BI que se muestra en la siguiente imagen.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p8.png" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Un gerente solo puede representar un único país.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita usar seguridad a nivel de fila (RLS) para cumplir con los
+                siguientes requisitos:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Los gerentes solo deben ver los datos de su respectivo país.</li>
+                <li>El número de roles RLS debe minimizarse.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">¿Qué dos acciones debe realizar? Cada respuesta correcta presenta una
+                solución completa.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Crear un único rol que filtre País[Correo_del_Gerente] Country[Manager_Email] usando la función «DAX USERNAME».</li>
+                <li>B. Crear un único rol que filtre País[Correo_del_Gerente] Country[Manager_Email] usando la función «DAX USEROBJECTID».</li>
+                <li>C. Para la relación entre Detalle de Compra (Purchase Detail) y Compra (Purchase), seleccionar Aplicar filtro de seguridad en ambas
+                    direcciones.</li>
+                <li>D. Crear un rol para cada país.</li>
+                <li>E. Para la relación entre Compra y Detalle de Compra (Purchase and Purchase Detail), cambiar la dirección del filtro cruzado a Simple.
+                </li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: AC</p>
+            <p class="text-sm text-gray-400 mb-4">A: Puede aprovechar las funciones DAX username() o userprincipalname()
+                dentro de su conjunto de datos. Puede usarlas dentro de expresiones en Power BI Desktop. Cuando publique su
+                modelo, se usará dentro del servicio Power BI.</p>
+            <p class="text-sm text-gray-400 mb-4">Nota: Para definir roles de seguridad, siga estos pasos.</p>
+            <p class="text-sm text-gray-400 mb-4">Importe datos a su informe de Power BI Desktop, o configure una conexión
+                DirectQuery.</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>1. Desde la pestaña Modelado, seleccione Administrar roles.</li>
+                <li>2. Desde la ventana Administrar roles, seleccione Crear.</li>
+                <li>3. En Roles, proporcione un nombre para el rol.</li>
+                <li>4. En Tablas, seleccione la tabla a la que desea aplicar una regla DAX.</li>
+                <li>5. En el cuadro de expresión DAX del filtro de tabla, ingrese las expresiones DAX. Esta expresión
+                    devuelve
+                    un valor verdadero o falso. Por ejemplo: [ID_Entidad] = [Value]</li>
+                <li>6. Después de crear la expresión DAX, seleccione la marca de verificación encima del cuadro de expresión
+                    para validar la expresión.</li>
+                <li>Nota: Puede usar username() dentro de esta expresión.</li>
+                <li>7. Seleccione Guardar.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">C: Por defecto, el filtrado de seguridad a nivel de fila usa filtros
+                unidireccionales, ya sea que las relaciones estén configuradas en dirección simple o bidireccional. Puede
+                habilitar manualmente el filtrado cruzado bidireccional con seguridad a nivel de fila seleccionando la
+                relación y marcando la casilla Aplicar filtro de seguridad en ambas direcciones. Seleccione esta opción
+                cuando también haya implementado seguridad a nivel de fila dinámica a nivel de servidor, donde la seguridad
+                a nivel de fila se basa en nombre de usuario o ID de inicio de sesión.</p>
+        </div>`
     },
     contenedor35: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">HOTSPOT -</p>
+            <p class="text-sm text-gray-400 mb-4">Tiene un conjunto de datos importado de Power BI que contiene el modelo de
+                datos que se muestra en la siguiente imagen.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p9.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Utilice los menús desplegables para seleccionar la opción de respuesta que
+                complete cada enunciado basándose en la información presentada en la gráfica.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p9.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s9.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Droplist 1: Asumir Integridad Referencial (Assume Referential Integrity)
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Al conectarse a una fuente de datos usando DirectQuery, puede usar la
+                opción Asumir Integridad Referencial (Assume Referential Integrity) para habilitar la ejecución de consultas
+                más eficientes contra su
+                fuente de datos. Esta función tiene algunos requisitos de los datos subyacentes y solo está disponible
+                cuando se usa DirectQuery.</p>
+            <p class="text-sm text-gray-400 mb-4">Nota: Los siguientes requisitos son necesarios para que Asumir integridad
+                referencial (Assume Referential Integrity) funcione correctamente:</p>
+            <p class="text-sm text-gray-400 mb-4">Los datos en la columna "Desde" en la relación nunca son Nulos o en
+                blanco.</p>
+            <p class="text-sm text-gray-400 mb-4">Para cada valor en la columna "Desde", hay un valor correspondiente en la
+                columna "Hacia".</p>
+            <p class="text-sm text-gray-400 mb-4">Droplist 2: Esquema de estrella -</p>
+            <p class="text-sm text-gray-400 mb-4">El esquema de estrella es un enfoque de modelado maduro ampliamente
+                adoptado por almacenes de datos relacionales (data warehouses). Requiere que los modeladores clasifiquen sus
+                tablas del modelo
+                como dimensión o datos.</p>
+            <p class="text-sm text-gray-400 mb-4">Generalmente, las tablas de dimensión contienen un número relativamente
+                pequeño de filas. Las tablas de hechos, por otro lado, pueden contener un número muy grande de filas y
+                continúan creciendo con el tiempo.</p>
+            <p class="text-sm text-gray-400 mb-4">Ejemplo:</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/s9.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/connect-data/desktop-assume-referential-integrity"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor36: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">HOTSPOT -</p>
+            <p class="text-sm text-gray-400 mb-4">Tiene un modelo de Power BI que contiene una tabla llamada Ventas (Sales)
+                y una
+                tabla de fechas relacionada. Ventas contiene una medida llamada Ventas Totales (Total Sales).</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una medida que calcule las ventas totales del mes
+                equivalente del año anterior.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debe completar el cálculo? Para responder, seleccione las opciones
+                apropiadas en el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p10.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Droplist 1: CALCULATE (CALCULAR) -</p>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 2: PARALLELPERIOD (PERÍODO PARALELO)-</p>
+            <p class="text-sm text-gray-400 mb-4"> PARALLELPERIOD devuelve una tabla que contiene una
+                columna de fechas que
+                representa un período paralelo a las fechas en la columna de fechas especificada, en el contexto actual, con
+                las fechas desplazadas un número de intervalos hacia adelante o hacia atrás en el tiempo.</p>
+            <p class="text-sm text-gray-400 mb-4">Sintaxis: PARALLELPERIOD(«dates», «number_of_intervals», «interval»).
+            </p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>dates: Una columna que contiene fechas.</li>
+                <li>intervalo: El intervalo por el cual desplazar las fechas.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">El valor para el intervalo puede ser uno de los siguientes: año,
+                trimestre, mes.</p>
+            <p class="text-sm text-gray-400 mb-4">incorrecto:</p>
+            <p class="text-sm text-gray-400 mb-4">SAMEPERIODLASTYEAR (MISMO_PERIODO_AÑO_ANTERIOR) devuelve
+                una tabla que
+                contiene una columna de
+                fechas desplazadas un año hacia atrás en el tiempo desde las fechas en la columna de fechas
+                especificada, en
+                el contexto actual.</p>
+            <p class="text-sm text-gray-400 mb-4">Sintaxis: SAMEPERIODLASTYEAR(«dates»)</p>
+            <p class="text-sm text-gray-400 mb-4">DATESMTD (FECHAS_DEL_MES_AL_DIA) devuelve una tabla que
+                contiene una
+                columna de las
+                fechas para el mes hasta la fecha, en el contexto actual.</p>
+            <p class="text-sm text-gray-400 mb-4">Sintaxis: DATESMTD(«dates»)</p>
+            <p class="text-sm text-gray-400 mb-4">Droplist 3: 'DATE'[Month] ('FECHA'[Mes])</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/dax/parallelperiod-function-dax" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor37: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">ARRASTRAR & SOLTAR -</p>
+            <p class="text-sm text-gray-400 mb-4">Planea crear un informe que mostrará datos de ventas del último año para
+                múltiples regiones.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita restringir el acceso a filas individuales de los datos en una
+                base por región usando roles.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué cuatro acciones debe realizar en secuencia? Para responder, mueva las
+                acciones apropiadas de la lista de
+                acciones al área de respuesta y ordénelas en el orden correcto.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p11.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s11.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Puede definir roles y reglas dentro de Power BI Desktop. Cuando publica en
+                Power BI, también publica las definiciones de roles.</p>
+            <p class="text-sm text-gray-400 mb-4">Para definir roles de seguridad, siga estos pasos.</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>1. Importe datos a su informe de Power BI Desktop (Paso 1).</li>
+                <li>2. Desde la pestaña Modelado, seleccione Administrar roles.</li>
+                <li>3. Desde la ventana Administrar roles, seleccione Crear. (Paso 2)</li>
+                <li>4. En Roles, proporcione un nombre para el rol.</li>
+                <li>5. En Tablas, seleccione la tabla a la que desea aplicar una regla DAX.</li>
+                <li>6. En el cuadro de expresión DAX del filtro de tabla, ingrese las expresiones DAX. Esta expresión
+                    devuelve
+                    un valor verdadero o falso. Por ejemplo: [Entity] = [Value] (Paso 3)</li>
+                <li>7. Después de crear la expresión DAX, seleccione la marca de verificación encima del cuadro de expresión
+                    para validar la expresión.</li>
+                <li>8. Seleccione Guardar.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Paso 3: Asignar usuarios al rol.</p>
+            <p class="text-sm text-gray-400 mb-4">No puede asignar usuarios a un rol dentro de Power BI Desktop. Los asigna
+                en el servicio de Power BI.</p>
+            <p class="text-sm text-gray-400 mb-4">Paso 4: Publicar el informe.</p>
+            <p class="text-sm text-gray-400 mb-4">Ahora que ha terminado de validar los roles en Power BI Desktop, proceda y
+                publique su informe en el servicio de Power BI.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/fabric/security/service-admin-row-level-security" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor38: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">ARRASTRAR & SOLTAR</p>
+            <p class="text-sm text-gray-400 mb-4">Crea un modelo de datos en Power BI.</p>
+            <p class="text-sm text-gray-400 mb-4">Los desarrolladores y usuarios de informes proporcionan comentarios de que
+                el modelo de datos es demasiado complejo.</p>
+            <p class="text-sm text-gray-400 mb-4">El modelo contiene las siguientes tablas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p12.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">El modelo tiene las siguientes relaciones:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Hay una relación uno a uno entre Región_de_Ventas (Sales_Region) y Gerente_de_Región (Region_Manager).
+                </li>
+                <li>Hay más registros en Gerente (Manager) que en Gerente_de_Región (Region_Manager), pero cada registro en
+                    Gerente_de_Región tiene
+                    un registro correspondiente en Gerente.</li>
+                <li>Hay más registros en Gerente_de_Ventas (Sales_Manager) que en Región_de_Ventas (Sales_Region), pero cada
+                    registro en Región_de_Ventas
+                    tiene un registro correspondiente en Gerente_de_Ventas.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Necesita desnormalizar el modelo en una sola tabla. Solo los gerentes que
+                están asociados a una región de ventas deben incluirse en los informes. ¿Qué tres acciones debe realizar en
+                secuencia? Para responder, mueva las acciones apropiadas de la lista de acciones al área de respuesta y
+                ordénelas en el orden correcto.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Hay más de un orden correcto de las opciones de respuesta.
+                Recibirá crédito por cualquiera de los órdenes correctos que seleccione.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p12.2.jpeg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s12.jpeg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Paso 1: Fusionar [Región_de_Ventas] y [Gerente_de_Ventas]
+                (Merge [Sales_region] and [Sale_Manager]) usando una
+                combinación interna (inner join).</p>
+            <p class="text-sm text-gray-400 mb-4">Combinación interna (inner join): Devuelve las filas presentes tanto en la
+                tabla
+                izquierda como en la derecha solo si hay una coincidencia. De lo contrario, devuelve cero registros.</p>
+            <p class="text-sm text-gray-400 mb-4">Nota: Región_de_Ventas y Gerente_de_Ventas. (Sales_Region and
+                Sales_Manager)</p>
+            <p class="text-sm text-gray-400 mb-4">Hay una relación uno a uno entre Región_de_Ventas y Gerente_de_Región.
+                (Sales_Region and Sales_Manager)</p>
+            <p class="text-sm text-gray-400 mb-4">Hay más registros en Gerente_de_Ventas (Sales_Manager) que en
+                Región_de_Ventas (Sales_Region), pero cada
+                registro en Región_de_Ventas tiene un registro correspondiente en Gerente_de_Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Paso 2: Fusionar [Gerente_de_Región] y [Gerente] usando una combinación
+                interna (Merge [Region_Manager] and [Manager] ).</p>
+            <p class="text-sm text-gray-400 mb-4">Solo los gerentes (manager) que están asociados a una región de ventas
+                (sales_region) deben incluirse en los informes.</p>
+            <p class="text-sm text-gray-400 mb-4">Nota: Gerente_de_Región y Gerente (Region_Manager and Manager).</p>
+            <p class="text-sm text-gray-400 mb-4">Hay más registros en Gerente (Manager) que en Gerente_de_Región
+                (Region_Manager), pero cada registro
+                en Gerente_de_Región tiene un registro correspondiente en Gerente.</p>
+            <p class="text-sm text-gray-400 mb-4">Paso 3: Fusionar [Región_de_Ventas] y [Gerente_de_Región] (merge
+                [Sales_Region] and [Region_Manager]) usando una
+                combinación derecha (right join) como nueva consulta llamada [Región_de_Ventas_y_Gerente_de_Región]
+                ([Sales_Region_and_Region_Manager])</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://www.tutorialgateway.org/joins-in-power-bi/" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor39: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe de Microsoft Power BI. El tamaño del archivo PBIX es de
+                550 MB. Se accede al informe usando un espacio de trabajo de aplicación en la capacidad compartida de
+                powerbi.com.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe utiliza un conjunto de datos importado que contiene una tabla
+                de hechos. La tabla de hechos contiene 12 millones de filas. El conjunto de datos está programado para
+                actualizarse dos veces al día a las 08:00 y 17:00.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe es una sola página que contiene 15 elementos visuales de
+                AppSource y 10 elementos visuales predeterminados.</p>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios dicen que el informe es lento para cargar los elementos
+                visuales cuando acceden e interactúan con el informe.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita recomendar una solución para mejorar el rendimiento del informe.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería recomendar?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Cambiar cualquier medida DAX para usar funciones iteradoras.</li>
+                <li>B. Habilitar interacciones visuales.</li>
+                <li>C. Reemplazar los elementos visuales predeterminados con elementos visuales de AppSource.</li>
+                <li>D. Dividir los elementos visuales en múltiples páginas.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: D</p>
+            <p class="text-sm text-gray-400 mb-4">Una página con muchos elementos visuales también puede hacer que la carga
+                de su informe sea lenta. Por favor, reduzca apropiadamente el número de visualizaciones en una página.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://community.fabric.microsoft.com/t5/Desktop/Visuals-are-loading-extremely-slow/td-p/1565668"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor40: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">HOTSPOT -</p>
+            <p class="text-sm text-gray-400 mb-4">Está creando un modelo de datos importado de Microsoft Power BI para
+                realizar análisis de canasta. El objetivo del análisis es identificar qué productos suelen comprarse juntos
+                en la misma transacción a través de y dentro de los territorios de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Importa una tabla de hechos llamada Ventas como se muestra en la imagen.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p14.1.jpeg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Las tablas de dimensión relacionadas se importan al modelo.</p>
+            <p class="text-sm text-gray-400 mb-4">Ventas (Sales) contiene los datos que se muestran en la siguiente tabla.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p14.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Está evaluando cómo optimizar el modelo.</p>
+            <p class="text-sm text-gray-400 mb-4">Para cada una de las siguientes afirmaciones, seleccione "Sí" si la
+                afirmación es verdadera. De lo contrario, seleccione "No".</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p14.3.jpeg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+        <div class="mt-4 mb-4">
+            <img src="img/2/s14.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+        </div>
+        <p class="text-sm text-gray-400 mb-4">Cuadro 1: Sí -</p>
+        <p class="text-sm text-gray-400 mb-4">Esas dos columnas no son necesarias en el análisis.</p>
+        <p class="text-sm text-gray-400 mb-4">Cuadro 2: No -</p>
+        <p class="text-sm text-gray-400 mb-4">Se puede eliminar la clave sustituta ClaveFechaOrden (OrderDateKey) del
+            análisis.</p>
+        <p class="text-sm text-gray-400 mb-4">Cuadro 3: No -</p>
+        <p class="text-sm text-gray-400 mb-4">El impuesto (Tax) cargado no es relevante para el análisis.</p>
+    </div>`
     }
 };
 
