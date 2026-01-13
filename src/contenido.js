@@ -1990,6 +1990,666 @@ const contenido = {
         <p class="text-sm text-gray-400 mb-4">Cuadro 3: No -</p>
         <p class="text-sm text-gray-400 mb-4">El impuesto (Tax) cargado no es relevante para el análisis.</p>
     </div>`
+    },
+    contenedor41: {
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un modelo de datos de Microsoft Power BI que contiene tres tablas
+                llamadas Órdenes, Fecha y Ciudad. Hay una relación uno a muchos entre Fecha y Órdenes y entre Ciudad y
+                Órdenes.</p>
+            <p class="text-sm text-gray-400 mb-4">El modelo contiene dos roles de seguridad a nivel de fila (RLS) llamados
+                Rol1 y Rol2. Rol1 contiene el siguiente filtro:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Ciudad[Provincia Estado] = "Kentucky"</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Rol2 contiene el siguiente filtro:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Fecha[Año Calendario] = 2020</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Si un usuario es miembro de ambos Rol1 y Rol2, ¿qué datos verá en un
+                informe que usa el modelo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. El usuario verá datos para los cuales el valor de Provincia Estado es Kentucky o donde el Año
+                    Calendario es 2020.</li>
+                <li>B. El usuario recibirá un error y no podrá ver los datos en el informe.</li>
+                <li>C. El usuario solo verá datos para los cuales el valor de Provincia Estado es Kentucky.</li>
+                <li>D. El usuario solo verá datos para los cuales el valor de Provincia Estado es Kentucky y el Año
+                    Calendario es 2020.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: D</p>
+            <p class="text-sm text-gray-400 mb-4">La seguridad a nivel de fila (RLS) con Power BI puede usarse para
+                restringir el acceso a datos para usuarios determinados. Los filtros restringen el acceso a datos a nivel de
+                fila, y puede definir filtros dentro de roles.</p>
+            <p class="text-sm text-gray-400 mb-4">Se aplican ambos roles, y se deben cumplir ambos filtros de rol.</p>
+            <p class="text-sm text-gray-400 mb-4">Incorrecto:</p>
+            <p class="text-sm text-gray-400 mb-4">No es B: Una relación de modelo es limitada cuando no hay garantía del
+                lado "uno". Recibirá un mensaje de error si pertenece a múltiples roles RLS y al menos uno de los roles
+                depende de una relación limitada. Pero aquí ambas relaciones tienen un lado "uno" garantizado.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/fabric/security/service-admin-row-level-security" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">D</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(86%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 86%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">B</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(14%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 14%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
+    },
+    contenedor42: {
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Esta pregunta es parte de una serie de preguntas que presentan el
+                mismo escenario. Cada pregunta de la serie contiene una solución única que podría cumplir los objetivos
+                planteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta, mientras que otros
+                pueden no tener una solución correcta. Después de responder una pregunta en esta sección, NO podrá volver a
+                ella. Como resultado, estas preguntas no aparecerán en la pantalla de revisión.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Está modelando datos usando Microsoft Power BI. Parte del modelo de datos
+                es una gran tabla de Microsoft SQL Server llamada Orden que tiene más de 100 millones de registros.</p>
+            <p class="text-sm text-gray-400 mb-4">Durante el proceso de desarrollo, necesita importar una muestra de los
+                datos de la tabla Orden.</p>
+            <p class="text-sm text-gray-400 mb-4">Solución: Desde el Editor de Power Query, importa la tabla y luego agrega un paso de filtro a la consulta. <p
+                class="text-sm text-gray-400 mb-4">¿Cumple esto con el objetivo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Sí</li>
+                <li>B. No</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">Esto cargaría la tabla completa en el primer paso.</p>
+            <p class="text-sm text-gray-400 mb-4">En su lugar: Agrega una cláusula WHERE a la declaración SQL.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-query/native-database-query" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">B</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(54%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 54%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">A</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(46%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 46%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
+    },
+    contenedor43: {
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Esta pregunta es parte de una serie de preguntas que presentan el
+                mismo escenario. Cada pregunta de la serie contiene una solución única que podría cumplir los objetivos
+                planteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta, mientras que otros
+                pueden no tener una solución correcta.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Después de responder una pregunta en esta sección, NO podrá volver a ella.
+                Como resultado, estas preguntas no aparecerán en la pantalla de revisión. Está modelando datos usando
+                Microsoft Power BI. Parte del modelo de datos es una gran tabla de Microsoft SQL Server llamada Orden que
+                tiene más de 100 millones de registros.</p>
+            <p class="text-sm text-gray-400 mb-4">Durante el proceso de desarrollo, necesita importar una muestra de los
+                datos de la tabla Orden.</p>
+            <p class="text-sm text-gray-400 mb-4">Solución: Escribe una expresión DAX que use la función FILTRO.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cumple esto con el objetivo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Sí</li>
+                <li>B. No</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">En su lugar: Agrega una cláusula WHERE a la declaración SQL.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>DAX no es un lenguaje diseñado para recuperar datos como SQL,
+                sino que se usa para fines de análisis de datos. Siempre es un enfoque mejor y recomendado transformar los
+                datos lo más cerca posible de la propia fuente de datos. Por ejemplo, si su fuente de datos es una base de
+                datos relacional, es mejor usar TSQL.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">SQL es un lenguaje de consulta estructurado, mientras que DAX es un
+                lenguaje de fórmulas utilizado para fines de análisis de datos. Cuando nuestros datos se almacenan en
+                algunos sistemas de bases de datos estructurados como SQL Server Management Studio, MySQL u otros, debemos
+                usar SQL para recuperar los datos almacenados.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://www.learndax.com/dax-vs-sql-when-to-use-dax-over-sql/" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
+    },
+    contenedor44: {
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Esta pregunta es parte de una serie de preguntas que presentan el
+                mismo escenario. Cada pregunta de la serie contiene una solución única que podría cumplir los objetivos
+                planteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta, mientras que otros
+                pueden no tener una solución correcta.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Después de responder una pregunta en esta sección, NO podrá volver a ella.
+                Como resultado, estas preguntas no aparecerán en la pantalla de revisión. Está modelando datos usando
+                Microsoft Power BI. Parte del modelo de datos es una gran tabla de Microsoft SQL Server llamada Orden que
+                tiene más de 100 millones de registros.</p>
+            <p class="text-sm text-gray-400 mb-4">Durante el proceso de desarrollo, necesita importar una muestra de los
+                datos de la tabla Orden.</p>
+            <p class="text-sm text-gray-400 mb-4">Solución: Agrega una cláusula WHERE a la declaración SQL.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cumple esto con el objetivo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Sí</li>
+                <li>B. No</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">Power Query le permite especificar su consulta de base de datos nativa en
+                un cuadro de texto bajo Opciones avanzadas al conectarse a una base de datos. En el ejemplo siguiente,
+                importará datos de una base de datos SQL Server usando una consulta de base de datos nativa ingresada en el
+                cuadro de texto de declaración SQL.</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>1. Conéctese a una base de datos SQL Server usando Power Query. Seleccione la opción de base de datos
+                    SQL Server en la selección de conectores.</li>
+                <li>2. En la ventana emergente de base de datos SQL Server.</li>
+                <li>3. Especifique el Servidor y la Base de datos desde donde desea importar datos usando una consulta de
+                    base de datos nativa.</li>
+                <li>4. En Opciones avanzadas, seleccione el campo Declaración SQL y pegue o ingrese su consulta de base de
+                    datos nativa, luego seleccione Aceptar.</li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/2/s18.jpeg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-query/native-database-query" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
+    },
+    contenedor45: {
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Está preparando un informe financiero en Power BI.</p>
+            <p class="text-sm text-gray-400 mb-4">Se conecta a los datos almacenados en una hoja de cálculo de Microsoft
+                Excel usando el Editor de Power Query como se muestra en la siguiente imagen.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p19.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Necesita preparar los datos para soportar lo siguiente:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Visualizaciones que incluyan todas las medidas en los datos a lo largo del tiempo</li>
+                <li>Cálculos interanuales para todas las medidas</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">¿Qué cuatro acciones debe realizar en secuencia? Para responder, mueva las
+                acciones apropiadas de la lista de acciones al área de respuesta y ordénelas en el orden correcto.</p>
+            <p class="text-sm text-gray-400 mb-4">Seleccionar y Colocar:</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p19.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s19.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-query/unpivot-column" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
+    },
+    contenedor46: {
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Está creando un informe de análisis que consumirá datos de las tablas que
+                se muestran en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p20.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Existe una relación entre las tablas.</p>
+            <p class="text-sm text-gray-400 mb-4">No hay requisitos de informes sobre employee_id y employee_photo.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita optimizar el modelo de datos.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debe configurar para employee_id y employee_photo? Para responder,
+                seleccione las opciones apropiadas en el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s20.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 1: Ocultar</p>
+            <p class="text-sm text-gray-400 mb-4">Es necesaria en la relación, por lo que no se puede eliminar.</p>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 2: Eliminar</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://community.fabric.microsoft.com/t5/Desktop/How-to-Hide-a-Column-in-power-Bi/m-p/414470"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
+    },
+    contenedor47: {
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Planea crear un conjunto de datos de Power BI para analizar la asistencia
+                en una escuela. Los datos provendrán de dos vistas separadas llamadas Vista1 y Vista2 en una base de datos
+                de Azure SQL.</p>
+            <p class="text-sm text-gray-400 mb-4">Vista1 contiene las columnas que se muestran en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p21.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Vista2 contiene las columnas que se muestran en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p21.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Las vistas se pueden relacionar según la columna ID de Clase.</p>
+            <p class="text-sm text-gray-400 mb-4">El ID de Clase es el identificador único para la clase, período, maestro y
+                año escolar especificados. Por ejemplo, la misma clase puede ser impartida por el mismo maestro durante dos
+                períodos diferentes, pero la clase tendrá un ID de clase diferente.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita diseñar un modelo de datos de esquema de estrella utilizando los
+                datos de ambas vistas. La solución debe facilitar los siguientes análisis:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>El conteo de clases que ocurren por período.</li>
+                <li>El conteo de estudiantes presentes por período por día.</li>
+                <li>El número promedio de estudiantes asistiendo a una clase cada mes.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">¿En qué tabla debe incluir los campos Nombre del Maestro y Número de
+                Período? Para responder, seleccione las opciones apropiadas en el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p21.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s21.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 1: Hechos de Maestro -</p>
+            <p class="text-sm text-gray-400 mb-4">Las tablas de hechos almacenan observaciones o eventos, y pueden ser
+                órdenes de venta, balances de existencias, tasas de cambio, temperaturas, etc. Una tabla de hechos contiene
+                columnas clave de dimensión que se relacionan con las tablas de dimensión, y columnas de medidas numéricas.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>El esquema de estrella es un enfoque de modelado maduro ampliamente
+                adoptado por almacenes de datos relacionales. Requiere que los modeladores clasifiquen sus tablas del modelo
+                como dimensión o hechos.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 2: Hechos de Asistencia -</p>
+            <p class="text-sm text-gray-400 mb-4">Incorrecto:</p>
+            <p class="text-sm text-gray-400 mb-4">Las tablas de dimensión describen entidades de negocio, las cosas que
+                modela. Las entidades pueden incluir productos, personas, lugares y conceptos, incluido el tiempo mismo. La
+                tabla más consistente que encontrará en un esquema de estrella es una tabla de dimensión de fecha. Una tabla
+                de dimensión contiene una columna clave (o columnas) que actúa como un identificador único, y columnas
+                descriptivas.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/guidance/star-schema" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
+    },
+    contenedor48: {
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene el modelo de Power BI que se muestra en la siguiente exhibición.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p22.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Hay cuatro departamentos en la tabla Departamentos (Departaments).</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita asegurarse de que los usuarios solo puedan ver los datos de su
+                respectivo departamento.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debe hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Crear un segmentador de datos que filtre Departamentos según DepartmentID.</li>
+                <li>B. Crear un rol de seguridad a nivel de fila (RLS) para cada departamento y luego definir la membresía
+                    del rol.</li>
+                <li>C. Crear un parámetro DepartmentID para filtrar la tabla Departamentos (Departaments).</li>
+                <li>D. A la tabla DatosConfidenciales (ConfidentialData), agregar una medida calculada que use la función
+                    DAX CURRENTGROUP.
+                </li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">La seguridad a nivel de fila (RLS) con Power BI se puede usar para
+                restringir el acceso a datos para usuarios determinados. Los filtros restringen el acceso a datos a nivel de
+                fila, y puede definir filtros dentro de roles.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/fabric/security/service-admin-row-level-security" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
+    },
+    contenedor49: {
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">En Power BI Desktop, está construyendo un informe de ventas que contiene
+                dos tablas. Ambas tablas tienen configurada la seguridad a nivel de fila (RLS).</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una relación entre las tablas. La solución debe garantizar
+                que el filtrado cruzado bidireccional respete la configuración de RLS. ¿Qué debe hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Crear una relación inactiva entre las tablas y seleccionar Aplicar filtro de seguridad en ambas
+                    direcciones.</li>
+                <li>B. Crear una relación activa entre las tablas y seleccionar Aplicar filtro de seguridad en ambas
+                    direcciones.</li>
+                <li>C. Crear una relación inactiva entre las tablas y seleccionar Asumir integridad referencial.</li>
+                <li>D. Crear una relación activa entre las tablas y seleccionar Asumir integridad referencial.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">Por defecto, el filtrado de seguridad a nivel de fila usa filtros
+                unidireccionales, ya sea que las relaciones estén configuradas en dirección simple o bidireccional. Puede
+                habilitar manualmente el filtrado cruzado bidireccional con seguridad a nivel de fila seleccionando la
+                relación y marcando la casilla Aplicar filtro de seguridad en ambas direcciones. Seleccione esta opción
+                cuando también haya implementado seguridad a nivel de fila dinámica a nivel de servidor, donde la seguridad
+                a nivel de fila se basa en nombre de usuario o ID de inicio de sesión.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/s23.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`
+    },
+    contenedor50: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor51: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor52: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor53: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor54: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor55: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor56: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor57: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor58: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor59: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor60: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor61: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor62: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor63: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor64: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor65: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor66: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor67: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor68: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor69: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor70: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor71: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor72: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor73: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor74: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor75: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor76: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor77: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor78: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor79: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor80: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor81: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor82: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor83: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor84: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor85: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor86: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor87: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor88: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor89: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor90: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor91: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor92: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor93: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor94: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor95: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor96: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor97: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor98: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor99: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor100: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor101: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor102: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor103: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor104: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor105: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor106: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor107: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor108: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor109: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor110: {
+        pregunta: ``,
+        solucion: ``
     }
 };
 
