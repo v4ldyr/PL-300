@@ -208,6 +208,23 @@ const contenido = {
                 creado al publicar el informe) en lugar de comenzar desde cero con los archivos de la carpeta de
                 SharePoint.
             </p>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+        <div class="space-y-4">
+            <div class="flex items-center">
+                <div class="w-10 text-right text-[12px]">A</div>
+                <div class="ml-2 text-gray-600 text-[12px]">(80%)</div>
+                <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                    <div class="bg-green-500/50 h-full rounded-full" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <div class="w-10 text-right font-medium text-[12px]">B</div>
+                <div class="ml-2 text-gray-600 text-[12px]">(20%)</div>
+                <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                    <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 20%"></div>
+                </div>
+            </div>
+        </div>
         </div>
         `
     },
@@ -291,7 +308,7 @@ const contenido = {
                 Tiene dos bases de datos Azure SQL que contienen las mismas tablas y columnas.
             </p>
             <p class="text-sm text-gray-400 mb-4">
-                Para cada base de datos, se crea una consulta que recupera datos de una tabla denominada Customer.
+                Para cada base de datos, se crea una consulta que recupera datos de una tabla denominada Customer (Cliente).
             </p>
             <p class="text-sm text-gray-400 mb-4">
                 Debe combinar las tablas Customer en una sola tabla. La solución debe minimizar el tamaño del modelo de
@@ -405,50 +422,49 @@ const contenido = {
         </div>
         `,
         solucion: `
-        <div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
-            <div class="mx-auto mb-4 flex justify-center items-center">
-                <img src="img/1/s6.jpg" class="object-cover shadow-lg" />
-            </div>
-            <p class="text-sm text-gray-400 mb-4">Cuadro 1: Inner -</p>
-            <p class="text-sm text-gray-400 mb-4">Cada Product tiene un ProductSubCategory.</p>
-            <p class="text-sm text-gray-400 mb-4">Se necesita una unión (join) estándar.</p>
-            <p class="text-sm text-gray-400 mb-4">
-                Uno de los tipos de combinación (merge) disponibles en el cuadro de diálogo Combinar de Power Query es una
-                combinación interna (inner join), filas coincidentes de las tablas izquierda y derecha.
-            </p>
-            <p class="text-sm text-gray-400 mb-4">Cuadro 2: Left outer -</p>
-            <p class="text-sm text-gray-400 mb-4">
-                No todos los ProductSubCategory tienen un ProductCategory primario.
-            </p>
-            <p class="text-sm text-gray-400 mb-4">
-                Uno de los tipos de combinación disponibles (join kinds) en el cuadro de diálogo Combinar (merge) de
-                Power Query es una combinación externa izquierda (left outer join), que mantiene todas las filas de la
-                tabla izquierda e introduce las filas coincidentes de la tabla derecha.
-            </p>
-            <a
-                class="inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
-                href="https://docs.microsoft.com/es/power-query/merge-queries-inner" target="_blank" rel="noopener noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                    <path
-                        fill-rule="evenodd"
-                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
-                        clip-rule="evenodd" />
-                </svg>
-                Referencia
-            </a>
-            <a
-                class="inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
-                href="https://learn.microsoft.com/es-es/power-query/merge-queries-left-outer" target="_blank" rel="noopener noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                    <path
-                        fill-rule="evenodd"
-                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
-                        clip-rule="evenodd" />
-                </svg>
-                Referencia
-            </a>
-        </div>
-        `
+            <div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+                <div class="mx-auto mb-4 flex justify-center items-center">
+                    <img src="img/1/s6.jpg" class="object-cover shadow-lg" />
+                </div>
+                <p class="text-sm text-gray-400 mb-4">Cuadro 1: Inner -</p>
+                <p class="text-sm text-gray-400 mb-4">Cada Product tiene un ProductSubCategory.</p>
+                <p class="text-sm text-gray-400 mb-4">Se necesita una unión (join) estándar.</p>
+                <p class="text-sm text-gray-400 mb-4">
+                    Uno de los tipos de combinación (merge) disponibles en el cuadro de diálogo Combinar de Power Query es una
+                    combinación interna (inner join), filas coincidentes de las tablas izquierda y derecha.
+                </p>
+                <p class="text-sm text-gray-400 mb-4">Cuadro 2: Left outer -</p>
+                <p class="text-sm text-gray-400 mb-4">
+                    No todos los ProductSubCategory tienen un ProductCategory primario.
+                </p>
+                <p class="text-sm text-gray-400 mb-4">
+                    Uno de los tipos de combinación disponibles (join kinds) en el cuadro de diálogo Combinar (merge) de
+                    Power Query es una combinación externa izquierda (left outer join), que mantiene todas las filas de la
+                    tabla izquierda e introduce las filas coincidentes de la tabla derecha.
+                </p>
+                <a
+                    class="inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                    href="https://docs.microsoft.com/es/power-query/merge-queries-inner" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                            fill-rule="evenodd"
+                            d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    Referencia
+                </a>
+                <a
+                    class="inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                    href="https://learn.microsoft.com/es-es/power-query/merge-queries-left-outer" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                            fill-rule="evenodd"
+                            d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    Referencia
+                </a>
+            </div>`
     },
     contenedor7: {
         pregunta: `<div>
@@ -501,6 +517,23 @@ const contenido = {
                 </svg>
                 Referencia
             </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">D</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(71%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 71%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">A</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(29%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 29%"></div>
+                    </div>
+                </div>
+            </div>
         </div>`
     },
     contenedor8: {
@@ -888,7 +921,7 @@ const contenido = {
             <ul class="list-inside text-sm text-gray-400 mb-4">
                 <li>A. Agregue una instrucción SQL.</li>
                 <li>B. Establezca el valor de Tiempo de espera del comando en minutos.</li>
-                <li>C. C. Set Data Connectivity mode to Import.</li>
+                <li>C. Set Data Connectivity mode to Import.</li>
                 <li>D. Establezca el modo de conectividad de datos en DirectQuery.</li>
             </ul>
         </div>`,
@@ -1328,6 +1361,23 @@ const contenido = {
         solucion: `<div
             class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
             <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: AD</p>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">AD</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(80%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">CD</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(20%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 20%"></div>
+                    </div>
+                </div>
+            </div>
         </div>`
     },
     contenedor26: {
@@ -1670,6 +1720,23 @@ const contenido = {
                 relación y marcando la casilla Aplicar filtro de seguridad en ambas direcciones. Seleccione esta opción
                 cuando también haya implementado seguridad a nivel de fila dinámica a nivel de servidor, donde la seguridad
                 a nivel de fila se basa en nombre de usuario o ID de inicio de sesión.</p>
+                <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <div class="w-10 text-right text-[12px]">AC</div>
+                        <div class="ml-2 text-gray-600 text-[12px]">(77%)</div>
+                        <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                            <div class="bg-green-500/50 h-full rounded-full" style="width: 77%"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-10 text-right font-medium text-[12px]">AD</div>
+                        <div class="ml-2 text-gray-600 text-[12px]">(17%)</div>
+                        <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                            <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 17%"></div>
+                        </div>
+                    </div>
+                </div>
         </div>`
     },
     contenedor35: {
@@ -2408,96 +2475,1087 @@ const contenido = {
         </div>`
     },
     contenedor50: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene una columna llamada UnidadesEnStock (UnitsInStock) como se muestra
+                en la siguiente
+                imagen.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p24.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">UnidadesEnStock tiene 75 valores no nulos, de los cuales 51 son únicos.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Utilice los menús desplegables para seleccionar la opción de respuesta que
+                complete cada enunciado basándose en la información presentada en la gráfica.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p24.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Cuadro 1: 75 filas -</p>
+            <p class="text-sm text-gray-400 mb-4">"Es anulable" permite valores NULL en la columna.</p>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 2: reducir</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://blog.crossjoin.co.uk/2019/01/20/is-nullable-column-property-power-bi/" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor51: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe de Power BI con las siguientes tablas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p25.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Tiene la siguiente medida DAX.</p>
+            <p class="text-sm text-gray-400 mb-4">Accounts := CALCULATE (DISTINCTCOUNT (Balances[AccountID]),LASTDATE
+                ('Date'[Date]))</p>
+            <p class="text-sm text-gray-400 mb-4">Para cada una de las siguientes afirmaciones, seleccione Sí si la
+                afirmación es verdadera. De lo contrario, seleccione No.</p>
+                <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Una visualización de tabla que muestra la jerarquía de fecha a nivel de año y la medida [Accounts] mostrará
+                el número total de cuentas que estuvieron activas a lo largo del año.</li>
+                <li>Una visualización de tabla que muestra la jerarquía de fecha a nivel de mes y la medida [Accounts] mostrará
+                el número total de cuentas que estuvieron activas a lo largo del mes.</li>
+                <li>Una visualización de tabla que muestra la jerarquía de fecha a nivel de día y la medida [Accounts] mostrará
+                el número total de cuentas que estuvieron activas ese día.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p25.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s25.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 1: No -</p>
+            <p class="text-sm text-gray-400 mb-4">Mostrará el número total de cuentas que estuvieron activas solo en el
+                último día del año.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota:</span>
+            </p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>CONTAR.DISTINTO (DISTINCTCOUNT) cuenta el número de valores distintos en una columna.</li>
+                <li>ÚLTIMAFECHA (LASTDATE) devuelve la última fecha en el contexto actual para la columna de fechas (Date)
+                    especificada.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 2: No -</p>
+            <p class="text-sm text-gray-400 mb-4">Mostrará el número total de cuentas que estuvieron activas solo en el
+                último día del mes.</p>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 3: Si -</p>
+        </div>`
     },
     contenedor52: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene las tablas que se muestran en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p26.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Impresiones (Impressions)contiene aproximadamente 30 millones de registros por
+                mes.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear un sistema de análisis para cumplir con los siguientes
+                requisitos:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Presentar conteos de impresiones de anuncios por día, campaña y nombre del sitio. Se requieren los
+                    análisis del último año.</li>
+                <li>Minimizar el tamaño del modelo de datos.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">¿Qué dos acciones debe realizar? Cada respuesta correcta presenta parte de
+                la solución.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Crear relaciones uno a muchos entre las tablas.</li>
+                <li>B. Agrupar la consulta de Impresiones en Power Query por ID_Anuncio (Ad_id), Nombre_Sitio (Site_name) y Fecha_Impresión (Impression_date).
+                    Agregar usando la función CONTARFILAS.</li>
+                <li>C. Crear una tabla calculada que contenga ID_Anuncio (Ad_id), Nombre_Sitio (Site_name) y Fecha_Impresión (Impression_date).</li>
+                <li>D. Crear una medida calculada que agregue usando la función CONTARFILAS.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: AB</p>
+            <p class="text-sm text-gray-400 mb-4">incorrecto:</p>
+            <p class="text-sm text-gray-400 mb-4">No C: Una tabla calculada aumentaría el tamaño del modelo de datos.</p>
+            <p class="text-sm text-gray-400 mb-4">No D: Se necesitan Fecha_Impresión, etc.</p>
+        </div>`
     },
     contenedor53: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Está creando un modelo de datos de Microsoft Power BI que tiene las tablas
+                que se muestran en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p27.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Productos está relacionada con la tabla CategoríaProducto
+                (Productcategory) a
+                través de la columna IDCategoríaProducto (ProductCategoryID). Cada producto tiene una categoría de producto.
+                Necesita asegurarse
+                de que pueda analizar las ventas por categoría de producto.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debe configurar la relación desde CategoríaProducto
+                (ProductCategory) a Productos (Products)?
+                Para responder, seleccione las opciones apropiadas en el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p27.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Cuadro 1: Uno a muchos (One-to-many) -</p>
+            <p class="text-sm text-gray-400 mb-4">Las opciones de cardinalidad uno a muchos y muchos a uno son esencialmente
+                las mismas, y también son los tipos de cardinalidad más comunes.</p>
+            <p class="text-sm text-gray-400 mb-4">Incorrecto: Una relación muchos a muchos significa que ambas columnas
+                pueden contener valores duplicados. Este tipo de cardinalidad se usa con poca frecuencia. Normalmente es
+                útil al diseñar requisitos de modelo complejos. Puede usarlo para relacionar hechos muchos a muchos o para
+                relacionar hechos de mayor granularidad. Por ejemplo, cuando los hechos de objetivos de ventas se almacenan
+                a nivel de categoría de producto y la tabla de dimensión de producto se almacena a nivel de producto.</p>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 2: Simple (Single) -</p>
+            <p class="text-sm text-gray-400 mb-4">Incorrecto: Tenga en cuenta que las relaciones bidireccionales pueden
+                afectar
+                negativamente al rendimiento. Además, intentar configurar una relación bidireccional podría resultar en
+                rutas de propagación de filtros ambiguas. En este caso, Power BI Desktop podría fallar al confirmar el
+                cambio de relación y le alertará con un mensaje de error.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/transform-model/desktop-relationships-understand"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor54: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Importa un conjunto de datos de Power BI que contiene las siguientes
+                tablas:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Fecha (Date)</li>
+                <li>Producto (Product)</li>
+                <li>Inventario de Producto (Product Inventory)</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">La tabla Inventario de Producto (Product Inventory) contiene 25 millones
+                de filas. Una muestra
+                de los datos se muestra en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p28.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Inventario de Producto (Product Inventory) se relaciona con la
+                tabla Fecha (Date) usando la
+                columna ClaveFecha (DateKey). La tabla Inventario de Producto se relaciona con la tabla Producto (Product)
+                usando la columna
+                ClaveProducto (ProductKey).</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita reducir el tamaño del modelo de datos sin perder información.
+                ¿Qué debe hacer?</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>A. Cambiar la Agregación para ClaveFecha (DateKey) a No Resumir (Don't Summarize).</li>
+                <li>B. Eliminar la relación entre Fecha (Date) e Inventario de Producto (Product Inventory).</li>
+                <li>C. Cambiar el tipo de datos de CostoUnitario (UnitCost) a Entero.</li>
+                <li>D. Eliminar FechaMovimiento (MovementDate).</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">Las columnas ClaveFecha (DateKey) y FechaMovimiento (MovementDate) tienen la misma información.
+                FechaMovimiento se puede eliminar.</p>
+            <p class="text-sm text-gray-400 mb-4">Incorrecto:</p>
+            <p class="text-sm text-gray-400 mb-4">No C: El tipo de datos Entero perdería datos.</p>
+        </div>`
     },
     contenedor55: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Está mejorando un modelo de Power BI que tiene cálculos DAX.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una medida que devuelva las ventas totales acumuladas del
+                año hasta la fecha, desde la misma fecha del año calendario anterior.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué funciones DAX debe usar? Para responder, seleccione las opciones
+                apropiadas en el área de respuesta.b</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p29.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s29.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 1: CALCULAR (CALCULATE) -</p>
+            <p class="text-sm text-gray-400 mb-4">Ejemplo:</p>
+            <p class="text-sm text-gray-400 mb-4">Ventas totales en la última fecha seleccionada =</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/s29.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 2: SUMAR (SUM) -</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/s29.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 3: MISMO_PERÍODO_AÑO_ANTERIOR (SAMEPERIODLASTYEAR) -</p>
+            <p class="text-sm text-gray-400 mb-4">MISMO_PERÍODO_AÑO_ANTERIOR devuelve un conjunto de fechas en la selección
+                actual del año anterior.</p>
+            <p class="text-sm text-gray-400 mb-4">Ejemplo:</p>
+            <p class="text-sm text-gray-400 mb-4">MISMO_PERÍODO_AÑO_ANTERIOR devuelve el período seleccionado desplazado un
+                año hacia atrás =</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/s29.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/dax/calculate-function-dax" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://dax.guide/sameperiodlastyear/" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor56: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Esta pregunta es parte de una serie de preguntas que presentan el
+                mismo escenario. Cada pregunta de la serie contiene una solución única que podría cumplir los objetivos
+                planteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta, mientras que otros
+                pueden no tener una solución correcta. Después de responder una pregunta en esta sección, NO podrá volver a ella.
+                Como resultado, estas preguntas no aparecerán en la pantalla de revisión.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Está modelando datos usando Microsoft Power BI. Parte del modelo de datos
+                es una gran tabla de Microsoft SQL Server llamada Orden que tiene más de 100 millones de registros.</p>
+            <p class="text-sm text-gray-400 mb-4">Durante el proceso de desarrollo, necesita importar una muestra de los
+                datos de la tabla Orden.</p>
+            <p class="text-sm text-gray-400 mb-4">Solución: Agrega un filtro a nivel de informe que filtra según la fecha
+                del pedido.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cumple esto con el objetivo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Sí</li>
+                <li>B. No</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita los datos sin procesar, no un informe con los datos.</p>
+            <p class="text-sm text-gray-400 mb-4">En su lugar, agregue una cláusula WHERE a la declaración SQL.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-query/native-database-query" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor57: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Esta pregunta es parte de una serie de preguntas que presentan el
+                mismo escenario. Cada pregunta de la serie contiene una solución única que podría cumplir los objetivos
+                planteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta, mientras que otros
+                pueden no tener una solución correcta. Después de responder una pregunta en esta sección, NO podrá volver a
+                ella.
+                Como resultado, estas preguntas no aparecerán en la pantalla de revisión.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe de Power BI que importa una tabla de fechas y una tabla
+                de ventas de una fuente de datos de base de datos de Azure SQL. La tabla de ventas tiene las siguientes
+                claves externas de fecha:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Fecha de vencimiento</li>
+                <li>Fecha de pedido</li>
+                <li>Fecha de entrega</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Necesita apoyar el análisis de ventas a lo largo del tiempo basado en
+                todas las claves externas (foreign keys) de fecha.</p>
+            <p class="text-sm text-gray-400 mb-4">Solución: Para cada clave externa de fecha, agrega relaciones inactivas
+                entre la tabla de ventas y la tabla de fechas.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cumple esto con el objetivo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Si</li>
+                <li>B. No</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">En su lugar: Solución: Desde el panel de Campos, renombra la tabla de
+                fechas como Fecha de vencimiento. Usas una expresión DAX para crear Fecha de pedido y Fecha de entrega como
+                tablas calculadas.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/guidance/relationships-active-inactive" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">B</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(85%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">A</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(15%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 15%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor58: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Esta pregunta es parte de una serie de preguntas que presentan el
+                mismo escenario. Cada pregunta de la serie contiene una solución única que podría cumplir los objetivos
+                planteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta, mientras que otros
+                pueden no tener una solución correcta. Después de responder una pregunta en esta sección, NO podrá volver a
+                ella.
+                Como resultado, estas preguntas no aparecerán en la pantalla de revisión.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe de Power BI que importa una tabla de fechas y una tabla
+                de ventas de una fuente de datos de base de datos de Azure SQL. La tabla de ventas tiene las siguientes
+                claves externas de fecha:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Fecha de vencimiento</li>
+                <li>Fecha de pedido</li>
+                <li>Fecha de entrega</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Necesita apoyar el análisis de ventas a lo largo del tiempo basado en
+                todas las claves externas (foreign keys) de fecha.</p>
+            <p class="text-sm text-gray-400 mb-4">Solución: Desde el Editor de Power Query, renombra la consulta de fecha
+                como Fecha de vencimiento. Referencia la consulta Fecha de vencimiento dos veces para crear las consultas
+                para Fecha de pedido y Fecha de entrega.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cumple esto con el objetivo?</p>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">En su lugar: Solución: Desde el panel de Campos, renombra la tabla de
+                fechas como Fecha de vencimiento. Usas una expresión DAX para crear Fecha de pedido y Fecha de entrega como
+                tablas calculadas.</p>
+                <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                    href="https://learn.microsoft.com/es-es/power-bi/guidance/relationships-active-inactive" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    Referencia
+                </a>
+        </div>`
     },
     contenedor59: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Esta pregunta es parte de una serie de preguntas que presentan el
+                mismo escenario. Cada pregunta de la serie contiene una solución única que podría cumplir los objetivos
+                planteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta, mientras que otros
+                pueden no tener una solución correcta. Después de responder una pregunta en esta sección, NO podrá volver a
+                ella.
+                Como resultado, estas preguntas no aparecerán en la pantalla de revisión.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe de Power BI que importa una tabla de fechas y una tabla
+                de ventas de una fuente de datos de base de datos de Azure SQL. La tabla de ventas tiene las siguientes
+                claves externas (foreign key) de fecha:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Fecha de vencimiento</li>
+                <li>Fecha de pedido</li>
+                <li>Fecha de entrega</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Necesita apoyar el análisis de ventas a lo largo del tiempo basado en
+                todas las claves externas (foreign keys) de fecha.</p>
+            <p class="text-sm text-gray-400 mb-4">Solución: Desde el panel de Campos, renombra la tabla de fechas como Fecha
+                de vencimiento. Usas una expresión DAX para crear Fecha de pedido y Fecha de entrega como tablas calculadas.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">¿Cumple esto con el objetivo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Sí</li>
+                <li>B. No</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">Metodología de refactorización -</p>
+            <p class="text-sm text-gray-400 mb-4">Aquí hay una metodología para refactorizar un modelo de una única tabla de
+                tipo dimensión con roles múltiples, a un diseño con una tabla por rol.</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>1. Elimine cualquier relación inactiva.</li>
+                <li>2. Considere renombrar la tabla de tipo dimensión con roles múltiples para describir mejor su rol. En el
+                    ejemplo (no presente aquí), la tabla Aeropuerto está relacionada con la columna AeropuertoDeLlegada de
+                    la tabla Vuelo, por lo que se renombra como Aeropuerto de Llegada.</li>
+                <li>3. Cree una copia de la tabla con roles múltiples, dándole un nombre que refleje su rol. Si es una tabla
+                    de Importación, recomendamos definir una tabla calculada. Si es una tabla de DirectQuery, puede duplicar
+                    la consulta de Power Query. En el ejemplo, la tabla Aeropuerto de Salida se creó usando la siguiente
+                    definición de tabla calculada.
+                    Aeropuerto de Salida = 'Aeropuerto de Llegada'
+                    Cree una relación activa para relacionar la nueva tabla.</li>
+                <li>4. Considere renombrar las columnas en las tablas para que reflejen con precisión su rol. En el ejemplo,
+                    todas las columnas tienen prefijos con las palabras Salida o Llegada. Estos nombres aseguran que los
+                    elementos visuales del informe, por defecto, tengan etiquetas autodescriptivas y no ambiguas. También
+                    mejora la experiencia de Preguntas y Respuestas, permitiendo a los usuarios escribir fácilmente sus
+                    preguntas.</li>
+                <li>5. Considere agregar descripciones a las tablas con roles múltiples. (En el panel de Campos, una
+                    descripción aparece en una información sobre herramientas cuando un autor de informes pasa el cursor
+                    sobre la tabla). De esta manera, puede comunicar cualquier detalle adicional de propagación de filtros a
+                    sus autores de informes.</li>
+            </ul>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/guidance/relationships-active-inactive" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor60: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Recibe datos de ingresos que deben incluirse en informes de Microsoft
+                Power BI.</p>
+            <p class="text-sm text-gray-400 mb-4">Previsualiza los datos de una fuente de Microsoft Excel en Power Query
+                como se muestra en la siguiente imagen.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p34.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Planea crear varios elementos visuales a partir de los datos, incluido un
+                elemento visual que muestre los ingresos desglosados por año y producto.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita transformar los datos para asegurarse de que pueda construir los
+                elementos visuales. La solución debe garantizar que las columnas se nombren apropiadamente para los datos
+                que contienen.b</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué tres acciones debe realizar en secuencia? Para responder, mueva las
+                acciones apropiadas de la lista de acciones al área de respuesta y ordénelas en el orden correcto.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p34.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s34.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Paso 1: Seleccionar Departamento y Producto y Anular dinamización
+                (Unpivot) de otras
+                columnas</p>
+            <p class="text-sm text-gray-400 mb-4">El comando Anular dinamización (Unpivot) de otras columnas anula la
+                dinamización de
+                las columnas no seleccionadas. Use este comando en una consulta cuando no se conocen todas las columnas. Las
+                nuevas columnas agregadas durante una operación de actualización también se anulan de dinamización.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Anular dinamización (Unpivot) de columnas: En Power Query, puede
+                transformar
+                columnas en pares atributo-valor, donde las columnas se convierten en filas.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/s34.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" /> </div>
+            <p class="text-sm text-gray-400 mb-4">Paso 2: Renombrar la columna Atributo como Año y la columna Valor como
+                Ingresos</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita hacer esto después de anular la dinamización (Unpivot).</p>
+            <p class="text-sm text-gray-400 mb-4">Power Query siempre creará el par atributo-valor usando dos columnas:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Atributo: El nombre de los encabezados de columna que se anularon de dinamización (Unpivot).</li>
+                <li>Valor: Los valores que estaban debajo de cada uno de los encabezados de columna anulados de
+                    dinamización (Unpivot).</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Paso 3: Seleccionar Usar la primera fila como encabezados</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-query/unpivot-column" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor61: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe de Power BI llamado Pedidos que soporta los siguientes
+                análisis:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Ventas totales a lo largo del tiempo</li>
+                <li>El conteo de órdenes a lo largo del tiempo</li>
+                <li>Conteos de clientes nuevos y recurrentes</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">El tamaño del modelo de datos está acercándose al límite para un conjunto
+                de datos en capacidad compartida.</p>
+            <p class="text-sm text-gray-400 mb-4">La vista de modelo para el conjunto de datos (dataset) se muestra en la
+                siguiente
+                imagen.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p35.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La vista de datos para la tabla Órdenes (Orders) se muestra en la
+                siguiente imagen.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p35.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" /> </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Órdenes (Orders) se relaciona con la tabla Clientes (Customer)
+                usando la columna IDCliente (CustomerID).</p>
+            <p class="text-sm text-gray-400 mb-4">La tabla Órdenes (Orders) se relaciona con la tabla Fecha (Date) usando la
+                columna FechaOrden (OrderDate).</p>
+            <p class="text-sm text-gray-400 mb-4">Para cada una de las siguientes afirmaciones, seleccione Sí si la
+                afirmación es verdadera. De lo contrario, seleccione No.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                 <li>Resumir los pedidos por las columnas ClienteID (CustomerID), Pedido (OrderID) y FechaPedidoOrderDate reducirá el tamaño del modelo, mientras
+                    que aún se admitirá el análisis actual.</li>
+                 <li>Eliminar la columna ClienteID (CustomerID) de Pedidos reducirá el tamaño del modelo, mientras que aún se admitirá el
+                    análisis actual.</li>
+                 <li>Eliminar las columnas PrecioUnitario (UnitPrice) y Descuento (Discount) de Pedidos reducirá el tamaño del modelo, mientras que aún
+                    se admitirá el análisis actual.</li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p35.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" /> </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s35.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 1: No -</p>
+            <p class="text-sm text-gray-400 mb-4">No soportaría las ventas totales a lo largo del tiempo.</p>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 2: No -</p>
+            <p class="text-sm text-gray-400 mb-4">No soportaría los conteos de clientes nuevos y recurrentes.</p>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 3: Sí</p>
+        </div>`
     },
     contenedor62: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Está construyendo un informe financiero usando Power BI.</p>
+            <p class="text-sm text-gray-400 mb-4">Tiene una tabla llamada datos_financieros que contiene una columna llamada
+                Fecha y una columna llamada Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una medida que calcule el cambio relativo en ventas en
+                comparación con el trimestre anterior.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debe completar la medida? Para responder, seleccione las opciones
+                apropiadas en el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p36.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s36.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 1: CALCULAR (CALCULATE)-</p>
+            <p class="text-sm text-gray-400 mb-4">Calcular la suma.</p>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 2: AGREGARFECHA (DATEADD) -</p>
+            <p class="text-sm text-gray-400 mb-4">AGREGARFECHA -1 TRIMESTRE (DATEADD -1 QUARTER) dará el trimestre anterior.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 3: DIVIDIR (DIVIDE) -</p>
+            <p class="text-sm text-gray-400 mb-4">Usar DIVIDIR para obtener el cambio relativo.</p>
+        </div>`
     },
     contenedor63: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Está creando un modelo y un informe de Power BI.</p>
+            <p class="text-sm text-gray-400 mb-4">Tiene una sola tabla en un modelo de datos llamada Producto. Producto
+                contiene los siguientes campos:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>ID</li>
+                <li>Nombre (Name)</li>
+                <li>Color</li>
+                <li>Categoría (Category)</li>
+                <li>Ventas Totales (Total Sales)</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una tabla calculada que muestre solo los ocho productos
+                principales basados en el valor más alto en Ventas Totales.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debe completar la expresión DAX? Para responder, arrastre los
+                valores apropiados a los objetivos correctos. Cada valor puede usarse una vez, más de una vez, o no usarse.
+                Es posible que deba arrastrar la barra divisoria entre los paneles o desplazarse para ver el contenido.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p37.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s37.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 1: PRINCIPALES N -</p>
+            <p class="text-sm text-gray-400 mb-4">PRINCIPALES N devuelve las primeras N filas de la tabla especificada.</p>
+            <p class="text-sm text-gray-400 mb-4">Sintaxis:</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/s37.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 2: DESC -</p>
+            <p class="text-sm text-gray-400 mb-4">Orden descendente para obtener los valores más altos primero.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/dax/topn-function-dax" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor64: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Está creando un informe de ventas en Power BI para el territorio de ventas
+                de la región Noroeste de su empresa. Los datos provendrán de una vista en una base de datos de Microsoft SQL
+                Server. Una muestra de los datos se muestra en la siguiente tabla:</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p38.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">El informe facilitará los siguientes análisis:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>El conteo de órdenes y la suma de ventas totales por Fecha de Orden</li>
+                <li>El conteo de clientes que realizaron un pedido</li>
+                <li>La cantidad promedio por orden</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Necesita reducir los tiempos de actualización de datos y los tiempos de
+                consulta del informe.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué dos acciones debe realizar? Cada respuesta correcta presenta parte de
+                la solución.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Establecer el tipo de datos para NúmeroOrdenVentas (SalesOrderNumber) como Número Decimal.</li>
+                <li>B. Eliminar las columnas ClaveCliente (CustomerKey) y ClaveProducto (ProductKey).</li>
+                <li>C. Eliminar las columnas MontoImpuesto (TaxAmt) y Flete (Freight).</li>
+                <li>D. Filtrar los datos solo al territorio de ventas de la región Noroeste (NorthWest).</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: CD</p>
+            <p class="text-sm text-gray-400 mb-4">C: Eliminar columnas que no se usan en el informe.</p>
+            <p class="text-sm text-gray-400 mb-4">D: Reducir el número de filas.</p>
+            <p class="text-sm text-gray-400 mb-4">Incorrecto:</p>
+            <p class="text-sm text-gray-400 mb-4">No A: No es posible.</p>
+            <p class="text-sm text-gray-400 mb-4">No B: Se necesita ClaveCliente para el conteo de clientes que realizaron
+                un pedido.</p>
+        </div>`
     },
     contenedor65: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Está creando un modelo de Power BI que contiene una tabla llamada Tienda.
+                Tienda contiene los siguientes campos.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p39.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Planea crear un mapa visual que mostrará las ubicaciones de las tiendas y
+                proporcionará la capacidad de profundizar desde País (Country) a Estado/Provincia (State/Province) a Ciudad (City).</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debe hacer para asegurar que las ubicaciones se mapeen correctamente?
+            </p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Cambiar el tipo de datos de Ciudad (City), Estado/Provincia (State/Province) y País (Country).</li>
+                <li>B. Establecer la Agregación para Ciudad (City), Estado/Provincia (State/Province) y País (Country) en No resumir.</li>
+                <li>C. Establecer la categoría de datos de Ciudad (City), Estado/Provincia (State/Province) y País (Country).</li>
+                <li>D. Crear una columna calculada que concatene los valores en Ciudad (City), Estado/Provincia (State/Province) y País (Country).</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: C</p>
+            <p class="text-sm text-gray-400 mb-4">Una jerarquía es un conjunto de campos categorizados de manera jerárquica
+                donde un nivel es el padre de otro nivel. Los valores del nivel padre se pueden profundizar (drill down) al
+                nivel inferior.</p>
+            <p class="text-sm text-gray-400 mb-4">Crear Jerarquía -</p>
+            <p class="text-sm text-gray-400 mb-4">Haga clic derecho en el campo que desea establecer como nivel 1 de la
+                jerarquía en la lista de campos y luego seleccione Crear Jerarquía.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/s39.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Después de eso, verá una nueva jerarquía creada con el nombre de su campo
+                más la palabra Jerarquía. Esto tendría un icono de jerarquía al lado y también una opción para expandir a
+                los campos de la jerarquía. Si expande, verá también una copia del campo Categoría allí.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/s39.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Etc.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://radacad.com/what-a-power-bi-hierarchy-is-and-how-to-use-it/" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor66: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Está construyendo un modelo de datos para un informe de Power BI. </p>
+            <p class="text-sm text-gray-400 mb-4">Tiene datos con formato como se muestra en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p40.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear un gráfico de barras agrupadas como se muestra en la
+                siguiente imagen.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p40.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debe hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Desde el Editor de Power Query, dividir la columna Máquina-Usuario (User-Machine) usando un
+                    delimitador.</li>
+                <li>B. Desde el Editor de Power Query, crear una columna que contenga los últimos tres dígitos de la columna
+                    Máquina-Usuario (User-Machine).</li>
+                <li>C. En una función DAX, crear dos columnas calculadas llamadas Máquina y Usuario usando la función
+                    SUSTITUIR (SUSTITUTE).</li>
+                <li>D. En una función DAX, crear dos medidas llamadas Máquina y Usuario usando la función SUSTITUIR
+                    (SUSTITUTE).</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">Dividir (Split) una columna de texto (Power Query)</p>
+            <p class="text-sm text-gray-400 mb-4">Puede dividir una columna con un tipo de datos de texto en dos o más
+                columnas utilizando un carácter delimitador común. Por ejemplo, una columna Nombre que contiene valores
+                escritos como <Apellido>, <Nombre> se puede dividir en dos columnas usando el carácter coma (,).</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Power Query es una herramienta de Extracción, Transformación y Carga (ETL). Nos permite:
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Descargar y obtener datos de diferentes fuentes. A esto lo llamamos
+                ingestión de datos.</p>
+            <p class="text-sm text-gray-400 mb-4">Combinar, limpiar y modelar estos datos. A esto lo llamamos manipulación
+                de datos.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://support.microsoft.com/es-es/office/dividir-una-columna-de-texto-power-query-5282d425-6dd0-46ca-95bf-8e0da9539662"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor67: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una tabla de fechas en Power BI que debe contener 10 años
+                calendario completos, incluido el año actual.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debe completar la expresión DAX? Para responder, seleccione las
+                opciones apropiadas en el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p41.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s41.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 1: AÑO (YEAR) -</p>
+            <p class="text-sm text-gray-400 mb-4">Obtener el año actual.</p>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 2: HOY (TODAY) -</p>
+            <p class="text-sm text-gray-400 mb-4">HOY devuelve la fecha actual.</p>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 3: CALENDARIO (CALENDAR) -</p>
+            <p class="text-sm text-gray-400 mb-4">CALENDARIO devuelve una tabla con una sola columna llamada Fecha (Date)
+                que
+                contiene un conjunto contiguo de fechas. El rango de fechas va desde la fecha de inicio especificada hasta
+                la fecha de finalización especificada, inclusive de esas dos fechas.</p>
+            <p class="text-sm text-gray-400 mb-4">La siguiente fórmula devuelve una tabla con fechas entre el 1 de enero de
+                2005 y el 31 de diciembre de 2015.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/s41.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://dax.guide/calendar/" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor68: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Esta pregunta es parte de una serie de preguntas que presentan el
+                mismo escenario. Cada pregunta de la serie contiene una solución única que podría cumplir los objetivos
+                planteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta, mientras que otros
+                pueden no tener una solución correcta. Después de responder una pregunta en esta sección, NO podrá volver a
+                ella. Como resultado, estas preguntas no aparecerán en la pantalla de revisión.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe de Power BI que importa una tabla de fechas y una tabla
+                de ventas de una fuente de datos de base de datos de Azure SQL. La tabla de ventas tiene las siguientes
+                claves externas de fecha:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Fecha de vencimiento</li>
+                <li>Fecha de pedido</li>
+                <li>Fecha de entrega</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Necesita apoyar el análisis de ventas a lo largo del tiempo basado en
+                todas las claves externas de fecha.</p>
+            <p class="text-sm text-gray-400 mb-4">Solución: Crea medidas que usan la función DAX USARRELACIÓN
+                (USERELATIONSHIP) para filtrar
+                ventas en la relación activa entre la tabla de ventas y la tabla de fechas.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cumple esto con el objetivo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Sí</li>
+                <li>B. No</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">En su lugar: Solución: Desde el panel de Campos, renombra la tabla de
+                fechas como Fecha de vencimiento. Usas una expresión DAX para crear Fecha de pedido y Fecha de entrega como
+                tablas calculadas.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/guidance/relationships-active-inactive" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor69: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe de Power BI que contiene una medida llamada Ventas
+                Totales (Total Sales).</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una nueva medida que devolverá la suma de Ventas Totales (Total Sales)
+                para un año hasta una fecha seleccionada.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debe completar la expresión DAX? Para responder, seleccione las
+                opciones apropiadas en el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p43.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s43.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 1: TOTALACUMULADO_AÑO (TOTALYTD) -</p>
+            <p class="text-sm text-gray-400 mb-4">TOTALACUMULADO_AÑO (TOTALYTD) evalúa la expresión especificada en el
+                intervalo que
+                comienza el primer día del año y termina con la última fecha en la columna de fechas especificada después de
+                aplicar los filtros especificados.</p>
+            <p class="text-sm text-gray-400 mb-4">Sintaxis:</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/s43.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Expresión - La expresión a ser evaluada.</p>
+            <p class="text-sm text-gray-400 mb-4">Fechas - El nombre de una columna que contiene fechas o una tabla de una
+                columna que contiene fechas.</p>
+            <p class="text-sm text-gray-400 mb-4">Ejemplo:</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/s43.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>`
     },
     contenedor70: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Está modificando un modelo de Power BI usando Power BI Desktop.</p>
+            <p class="text-sm text-gray-400 mb-4">Tiene una tabla llamada Ventas (Sales) que contiene los siguientes campos.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p44.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Tiene una tabla llamada Tamaño de Transacción (Transaction Size) que
+                contiene los siguientes datos.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p44.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una columna calculada para clasificar cada transacción como
+                pequeña, mediana o grande basándose en el valor en Monto de Venta (Sales Amount).</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debe completar el código? Para responder, arrastre los valores
+                apropiados a los objetivos correctos. Cada valor puede usarse una vez, más de una vez, o no usarse.</p>
+            <p class="text-sm text-gray-400 mb-4">Es posible que deba arrastrar la barra divisoria entre los paneles o
+                desplazarse para ver el contenido.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p44.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s44.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 1: CALCULAR (CALCULATE) -</p>
+            <p class="text-sm text-gray-400 mb-4">CALCULAR evalúa una expresión en un contexto de filtro modificado.</p>
+            <p class="text-sm text-gray-400 mb-4">Sintaxis:</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/s44.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La expresión utilizada como primer parámetro es esencialmente la misma que
+                una medida.</p>
+            <p class="text-sm text-gray-400 mb-4">Los filtros pueden ser:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Expresiones de filtro booleano -</li>
+                <li>Expresiones de filtro de tabla -</li>
+                <li>Funciones de modificación de filtro -</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Expresión de filtro de tabla -</p>
+            <p class="text-sm text-gray-400 mb-4">Un filtro de expresión de tabla aplica un objeto de tabla como filtro.
+                Podría ser una referencia a una tabla del modelo, pero más probablemente es una función que devuelve un
+                objeto de tabla. Puede usar la función FILTRO para aplicar condiciones de filtro complejas, incluidas
+                aquellas que no pueden definirse mediante una expresión de filtro booleano.</p>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 2: Y -</p>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 3: FILTRO (FILTER) -</p>
+            <p class="text-sm text-gray-400 mb-4">FILTRO devuelve una tabla que representa un subconjunto de otra tabla o
+                expresión.</p>
+            <p class="text-sm text-gray-400 mb-4">Sintaxis:</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/s44.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>DISTINTO (DISTINCT) devuelve una tabla de una columna que contiene los
+                valores
+                distintos de la columna especificada. En otras palabras, se eliminan los valores duplicados y solo se
+                devuelven los valores únicos.
+            </p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/dax/calculate-function-dax" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/dax/filter-function-dax" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor71: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe de Power BI para el departamento de compras. El informe
+                contiene datos de las siguientes tablas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p45.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Hay una relación uno a muchos desde Proveedores a LíneasElementos
+                (LineItems) que
+                utiliza las columnas ID e ID Proveedor (Supplier ID).</p>
+            <p class="text-sm text-gray-400 mb-4">El informe contiene los elementos visuales que se muestran en la siguiente
+                tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p45.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" /> </div>
+            <p class="text-sm text-gray-400 mb-4">Necesita minimizar el tamaño del conjunto de datos sin afectar los
+                elementos visuales.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debe hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Fusionar Proveedores y LíneasElementos (LineItems).</li>
+                <li>B. Eliminar la columna LíneasElementos[Descripción] (LineItems[Description]).</li>
+                <li>C. Eliminar las filas de LíneasElementos donde LíneasElementos[Fecha Factura] (LineItems[Invoice Date])
+                    sea anterior al inicio del
+                    mes pasado.</li>
+                <li>D. Agrupar LíneasElementos (LineItems) por LíneasElementos[ID Factura] (LineItems[Invoice ID]) y
+                    LíneasElementos[FechaFactura] (LineItems[Invoice Date]) con una suma
+                    de LíneasElementos[Precio] (LineItems[Price]).</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">Eliminar una columna que no se usa en los elementos visuales reduce el
+                tamaño del conjunto de datos.</p>
+            <p class="text-sm text-gray-400 mb-4">Incorrecto:</p>
+            <p class="text-sm text-gray-400 mb-4">No A: Fusionar las tablas aumentaría el conjunto de datos.</p>
+            <p class="text-sm text-gray-400 mb-4">No C: Dos de los elementos visuales necesitan datos históricos.</p>
+            <p class="text-sm text-gray-400 mb-4">No D: Agrupar no afectaría el tamaño.</p>
+        </div>`
     },
     contenedor72: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe de Power BI para el departamento de marketing. El informe
+                informa sobre el tráfico web a un blog y contiene datos de las siguientes tablas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p46.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Hay una relación uno a muchos desde Publicaciones (Posts) a Tráfico
+                (Traffic) que utiliza
+                las columnas URL y URL Visitada (URL Visited).</p>
+            <p class="text-sm text-gray-400 mb-4">El informe contiene los elementos visuales que se muestran en la siguiente
+                tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p46.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">El conjunto de datos tarda mucho tiempo en actualizarse.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita modificar las consultas de Publicaciones (Posts) y Tráfico
+                (Traffic) para reducir
+                los tiempos de carga.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué dos acciones reducirán los tiempos de carga? Cada respuesta correcta
+                presenta parte de la solución.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Eliminar las filas en Publicaciones (Posts) donde Publicaciones[Fecha Publicación] (Posts[Publish
+                    Date]) esté en los últimos siete días.</li>
+                <li>B. Eliminar las filas en Tráfico donde Tráfico[URL Visitada] (Traffic[URL Visited]) no contenga "blog".
+                </li>
+                <li>C. Eliminar Tráfico[Dirección IP] (Traffic[IP Address]), Tráfico[Agente Navegador] (traffic[Browser
+                    Agent]) y Tráfico[URLReferente] (Traffic[Referring URL]).</li>
+                <li>D. Eliminar Publicaciones[TextoCompleto] (Posts[Full Text]) y Publicaciones[Resumen] (Posts[Sumary]).</li>
+                <li>E. Eliminar las filas en Tráfico donde Tráfico[URLReferente] no comience con "/".</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: BD</p>
+            <p class="text-sm text-gray-400 mb-4">B: Solo las filas de entradas del blog son útiles para los elementos
+                visuales.</p>
+            <p class="text-sm text-gray-400 mb-4">D: Estas dos columnas no se usan en los elementos visuales y se pueden
+                eliminar.</p>
+            <p class="text-sm text-gray-400 mb-4">Incorrecto:</p>
+            <p class="text-sm text-gray-400 mb-4">No A: Tres elementos visuales necesitan datos históricos.</p>
+            <p class="text-sm text-gray-400 mb-4">No C: Tráfico[URLReferente] (traffic[Referring URL]) se usa en uno de los elementos visuales y por
+                lo tanto no se puede eliminar.</p>
+            <p class="text-sm text-gray-400 mb-4">No E: Estas filas se usan en 3 elementos visuales.</p>
+        </div>`
     },
     contenedor73: {
         pregunta: ``,
