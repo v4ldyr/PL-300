@@ -115,7 +115,78 @@ const app = createApp({
             interruptor107: false,
             interruptor108: false,
             interruptor109: false,
-            interruptor110: false
+            interruptor110: false,
+            interruptor111: false,
+            interruptor112: false,
+            interruptor113: false,
+            interruptor114: false,
+            interruptor115: false,
+            interruptor116: false,
+            interruptor117: false,
+            interruptor118: false,
+            interruptor119: false,
+            interruptor120: false,
+            interruptor121: false,
+            interruptor122: false,
+            interruptor123: false,
+            interruptor124: false,
+            interruptor125: false,
+            interruptor126: false,
+            interruptor127: false,
+            interruptor128: false,
+            interruptor129: false,
+            interruptor130: false,
+            interruptor131: false,
+            interruptor132: false,
+            interruptor133: false,
+            interruptor134: false,
+            interruptor135: false,
+            interruptor136: false,
+            interruptor137: false,
+            interruptor138: false,
+            interruptor139: false,
+            interruptor140: false,
+            interruptor141: false,
+            interruptor142: false,
+            interruptor143: false,
+            interruptor144: false,
+            interruptor145: false,
+            interruptor146: false,
+            interruptor147: false,
+            interruptor148: false,
+            interruptor149: false,
+            interruptor150: false,
+            interruptor151: false,
+            interruptor152: false,
+            interruptor153: false,
+            interruptor154: false,
+            interruptor155: false,
+            interruptor156: false,
+            interruptor157: false,
+            interruptor158: false,
+            interruptor159: false,
+            interruptor160: false,
+            interruptor161: false,
+            interruptor162: false,
+            interruptor163: false,
+            interruptor164: false,
+            interruptor165: false,
+            interruptor166: false,
+            interruptor167: false,
+            interruptor168: false,
+            interruptor169: false,
+            interruptor170: false,
+            interruptor171: false,
+            interruptor172: false,
+            interruptor173: false,
+            interruptor174: false,
+            interruptor175: false,
+            interruptor176: false,
+            interruptor177: false,
+            interruptor178: false,
+            interruptor179: false,
+            interruptor180: false,
+            interruptor181: false
 
         };
     },
@@ -341,6 +412,146 @@ const app = createApp({
                 this.interruptor109 = !this.interruptor109;
             } else if (numero === 110) {
                 this.interruptor110 = !this.interruptor110;
+            } else if (numero === 111) {
+                this.interruptor111 = !this.interruptor111;
+            } else if (numero === 112) {
+                this.interruptor112 = !this.interruptor112;
+            }  else if (numero === 113) {
+                this.interruptor113 = !this.interruptor113;
+            } else if (numero === 114) {
+                this.interruptor114 = !this.interruptor114;
+            } else if (numero === 115) {
+                this.interruptor115 = !this.interruptor115;
+            } else if (numero === 116) {
+                this.interruptor116 = !this.interruptor116;
+            } else if (numero === 117) {
+                this.interruptor117 = !this.interruptor117;
+            } else if (numero === 118) {
+                this.interruptor118 = !this.interruptor118;
+            } else if (numero === 119) {
+                this.interruptor119 = !this.interruptor119;
+            } else if (numero === 120) {
+                this.interruptor120 = !this.interruptor120;
+            } else if (numero === 121) {
+                this.interruptor121 = !this.interruptor121;
+            } else if (numero === 122) {
+                this.interruptor122 = !this.interruptor122;
+            } else if (numero === 123) {
+                this.interruptor123 = !this.interruptor123;
+            } else if (numero === 124) {
+                this.interruptor124 = !this.interruptor124;
+            } else if (numero === 125) {
+                this.interruptor125 = !this.interruptor125;
+            } else if (numero === 126) {
+                this.interruptor126 = !this.interruptor126;
+            } else if (numero === 127) {
+                this.interruptor127 = !this.interruptor127;
+            } else if (numero === 128) {
+                this.interruptor128 = !this.interruptor128;
+            } else if (numero === 129) {
+                this.interruptor129 = !this.interruptor129;
+            } else if (numero === 130) {
+                this.interruptor130 = !this.interruptor130;
+            } else if (numero === 131) {
+                this.interruptor131 = !this.interruptor131;
+            } else if (numero === 132) {
+                this.interruptor132 = !this.interruptor132;
+            } else if (numero === 133) {
+                this.interruptor133 = !this.interruptor133;
+            } else if (numero === 134) {
+                this.interruptor134 = !this.interruptor134;
+            } else if (numero === 135) {
+                this.interruptor135 = !this.interruptor135;
+            } else if (numero === 136) {
+                this.interruptor136 = !this.interruptor136;
+            } else if (numero === 137) {
+                this.interruptor137 = !this.interruptor137;
+            } else if (numero === 138) {
+                this.interruptor138 = !this.interruptor138;
+            } else if (numero === 139) {
+                this.interruptor139 = !this.interruptor139;
+            } else if (numero === 140) {
+                this.interruptor140 = !this.interruptor140;
+            } else if (numero === 141) {
+                this.interruptor141 = !this.interruptor141;
+            } else if (numero === 142) {
+                this.interruptor142 = !this.interruptor142;
+            } else if (numero === 143) {
+                this.interruptor143 = !this.interruptor143;
+            } else if (numero === 144) {
+                this.interruptor144 = !this.interruptor144;
+            } else if (numero === 145) {
+                this.interruptor145 = !this.interruptor145;
+            } else if (numero === 146) {
+                this.interruptor146 = !this.interruptor146;
+            } else if (numero === 147) {
+                this.interruptor147 = !this.interruptor147;
+            } else if (numero === 148) {
+                this.interruptor148 = !this.interruptor148;
+            } else if (numero === 149) {
+                this.interruptor149 = !this.interruptor149;
+            } else if (numero === 150) {
+                this.interruptor150 = !this.interruptor150;
+            } else if (numero === 151) {
+                this.interruptor151 = !this.interruptor151;
+            } else if (numero === 152) {
+                this.interruptor152 = !this.interruptor152;
+            } else if (numero === 153) {
+                this.interruptor153 = !this.interruptor153;
+            } else if (numero === 154) {
+                this.interruptor154 = !this.interruptor154;
+            } else if (numero === 155) {
+                this.interruptor155 = !this.interruptor155;
+            } else if (numero === 156) {
+                this.interruptor156 = !this.interruptor156;
+            } else if (numero === 157) {
+                this.interruptor157 = !this.interruptor157;
+            } else if (numero === 158) {
+                this.interruptor158 = !this.interruptor158;
+            } else if (numero === 159) {
+                this.interruptor159 = !this.interruptor159;
+            } else if (numero === 160) {
+                this.interruptor160 = !this.interruptor160;
+            } else if (numero === 161) {
+                this.interruptor161 = !this.interruptor161;
+            } else if (numero === 162) {
+                this.interruptor162 = !this.interruptor162;
+            } else if (numero === 163) {
+                this.interruptor163 = !this.interruptor163;
+            } else if (numero === 164) {
+                this.interruptor164 = !this.interruptor164;
+            } else if (numero === 165) {
+                this.interruptor165 = !this.interruptor165;
+            } else if (numero === 166) {
+                this.interruptor166 = !this.interruptor166;
+            } else if (numero === 167) {
+                this.interruptor167 = !this.interruptor167;
+            } else if (numero === 168) {
+                this.interruptor168 = !this.interruptor168;
+            } else if (numero === 169) {
+                this.interruptor169 = !this.interruptor169;
+            } else if (numero === 170) {
+                this.interruptor170 = !this.interruptor170;
+            } else if (numero === 171) {
+                this.interruptor171 = !this.interruptor171;
+            } else if (numero === 172) {
+                this.interruptor172 = !this.interruptor172;
+            } else if (numero === 173) {
+                this.interruptor173 = !this.interruptor173;
+            } else if (numero === 174) {
+                this.interruptor174 = !this.interruptor174;
+            } else if (numero === 175) {
+                this.interruptor175 = !this.interruptor175;
+            } else if (numero === 176) {
+                this.interruptor176 = !this.interruptor176;
+            } else if (numero === 178) {
+                this.interruptor178 = !this.interruptor178;
+            } else if (numero === 179) {
+                this.interruptor179 = !this.interruptor179;
+            } else if (numero === 180) {
+                this.interruptor180 = !this.interruptor180;
+            } else if (numero === 181) {
+                this.interruptor181 = !this.interruptor181;
             }
         }
     }
@@ -354,4 +565,5 @@ app.mount("#app");
                 : 'bg-green-500 hover:bg-green-600 text-white';
         },*/
 
+/*contenidoExterno: contenidoExterno !== 'undefined' ? contenidoExterno : '<p>Contenido no disponible</p>'*/
 /*contenidoExterno: contenidoExterno !== 'undefined' ? contenidoExterno : '<p>Contenido no disponible</p>'*/

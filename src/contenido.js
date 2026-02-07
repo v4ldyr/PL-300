@@ -2411,7 +2411,7 @@ const contenido = {
     },
     contenedor48: {
         pregunta: `<div>
-            <p class="text-sm text-gray-400 mb-4">Tiene el modelo de Power BI que se muestra en la siguiente exhibición.</p>
+            <p class="text-sm text-gray-400 mb-4">Tiene el modelo de Power BI que se muestra en la siguiente imagen.</p>
             <div class="mt-4 mb-4">
                 <img src="img/2/p22.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
             </div>
@@ -3558,146 +3558,1299 @@ const contenido = {
         </div>`
     },
     contenedor73: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Esta creando una medida rapida como se muestra en la siguiente imagen</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p47.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una medida de promedio móvil mensual para Ventas a lo largo
+                del tiempo.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debe configurar el cálculo de la medida rápida? Para responder,
+                seleccione las opciones apropiadas en el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p47.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s47.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`
     },
     contenedor74: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene el modelo de datos de Power BI que se muestra en la siguiente
+                imagen.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p48.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Ventas contiene registros de ventas por día de los últimos cinco
+                años hasta la fecha actual.</p>
+            <p class="text-sm text-gray-400 mb-4">Planea crear una medida para devolver las ventas totales de marzo de 2021
+                cuando se selecciona marzo de 2022.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué expresión DAX debe usar?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. CALCULAR (SUMA(Ventas[Ventas]), AÑOANTERIOR(dimFecha[Fecha])) (Calculate (Sum(Sales[Sales]), PREVIOUSYEAR( dimDate[Date])))</li>
+                <li>B. TOTALACUMULADO_AÑO (SUMA(Ventas[Ventas]), dimFecha[Fecha]) (TOTALYTD (SUM(Sales[Sales]), dimDate[Date] ))</li>
+                <li>C. CALCULAR (SUMA(Ventas[Ventas]), MISMO_PERÍODO_AÑO_ANTERIOR(dimFecha[Fecha])) (Calculate (SUM(Sales[Sales]), SAMEPERIODLASTYEAR(dimDate[Date] )))</li>
+                <li>D. SUMA(Ventas[Ventas]) (SUM(Sales[Sales]))</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: C</p>
+        </div>`
     },
     contenedor75: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Usa Power BI Desktop para cargar datos desde una base de datos de
+                Microsoft SQL Server.</p>
+            <p class="text-sm text-gray-400 mb-4">Mientras espera que se carguen los datos, recibe el siguiente error.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p49.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Necesita resolver el error.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cuáles son dos formas de lograr el objetivo? Cada respuesta correcta
+                presenta una solución completa.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Reducir el número de filas y columnas devueltas por cada consulta.</li>
+                <li>B. Dividir consultas de larga ejecución en subconjuntos de columnas y usar Power Query para fusionar las consultas.</li>
+                <li>C. Usar Power Query para combinar consultas de larga ejecución en una sola consulta.</li>
+                <li>D. Deshabilitar el plegado de consultas en consultas de larga ejecución.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: AB</p>
+        </div>`
     },
     contenedor76: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Esta pregunta es parte de una serie de preguntas que presentan el
+                mismo escenario. Cada pregunta de la serie contiene una solución única que podría cumplir los objetivos
+                planteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta, mientras que otros
+                pueden no tener una solución correcta. Después de responder una pregunta en esta sección, NO podrá volver a
+                ella.
+                Como resultado, estas preguntas no aparecerán en la pantalla de revisión.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Desde el Editor de Power Query, perfilas los datos mostrados en la siguiente imagen.</p>
+            <p class="text-sm text-gray-400 mb-4">Las columnas (IoT GUID) e (IoT ID) son únicas para cada fila en la consulta.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p50.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Necesitas analizar eventos de IoT por la hora y el día del año. La solución debe mejorar el rendimiento del conjunto de datos.</p>
+            <p class="text-sm text-gray-400 mb-4">Solución: Divides la columna FechaHora de IoT (IoT DateTime) en una columna llamada Fecha (Date) y una columna llamada Hora (Time).</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cumple esto con el objetivo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Sí</li>
+                <li>B. No</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">A</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(85%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">B</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(15%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 15%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor77: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Esta pregunta es parte de una serie de preguntas que presentan el
+                mismo escenario. Cada pregunta de la serie contiene una solución única que podría cumplir los objetivos
+                planteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta, mientras que otros
+                pueden no tener una solución correcta. Después de responder una pregunta en esta sección, NO podrá volver a
+                ella.
+                Como resultado, estas preguntas no aparecerán en la pantalla de revisión.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Desde el Editor de Power Query, perfilas los datos mostrados en la
+                siguiente imagen.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p51.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Las columnas GUID de IoT e ID de IoT son únicas para cada fila en la
+                consulta.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesitas analizar eventos de IoT por la hora y el día del año. La
+                solución debe mejorar el rendimiento del conjunto de datos.</p>
+            <p class="text-sm text-gray-400 mb-4">Solución: Eliminas la columna (IoT GUID) y conservas la columna (IoT ID).</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cumple esto con el objetivo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Sí</li>
+                <li>B. No</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">A</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(71%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 71%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">B</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(29%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 29%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor78: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Esta pregunta es parte de una serie de preguntas que presentan el
+                mismo escenario. Cada pregunta de la serie contiene una solución única que podría cumplir los objetivos
+                planteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta, mientras que otros
+                pueden no tener una solución correcta. Después de responder una pregunta en esta sección, NO podrá volver a
+                ella.
+                Como resultado, estas preguntas no aparecerán en la pantalla de revisión.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Desde el Editor de Power Query, perfilas los datos mostrados en la siguiente imagen.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p52.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Las columnas (IoT GUID) e (IoT ID) son únicas para cada fila en la consulta.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesitas analizar eventos de IoT por la hora y el día del año. La solución debe mejorar el rendimiento del conjunto de datos.</p>
+            <p class="text-sm text-gray-400 mb-4">Solución: Cambias la columna FechaHora de IoT (IoT dateTime) al tipo de datos Fecha (Date).</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cumple esto con el objetivo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Sí</li>
+                <li>B. No</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+        </div>`
     },
     contenedor79: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe de Microsoft Power BI. El tamaño del archivo PBIX es de
+                550 MB. Se accede al informe usando un espacio de trabajo de aplicación en la capacidad compartida de
+                powerbi.com.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe utiliza un conjunto de datos importado que contiene una tabla
+                de hechos. La tabla de hechos contiene 12 millones de filas. El conjunto de datos está programado para
+                actualizarse dos veces al día a las 08:00 y 17:00.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe es una sola página que contiene 15 elementos visuales de
+                AppSource y 10 elementos visuales predeterminados.</p>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios dicen que el informe es lento para cargar los elementos
+                visuales cuando acceden e interactúan con el informe.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita recomendar una solución para mejorar el rendimiento del informe.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería recomendar?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Cambiar cualquier medida DAX para usar funciones iteradoras.</li>
+                <li>B. Eliminar columnas no utilizadas de las tablas en el modelo de datos.</li>
+                <li>C. Reemplazar los elementos visuales predeterminados con elementos visuales de AppSource.</li>
+                <li>D. Aumentar el número de veces que se actualiza el conjunto de datos.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+        </div>`
     },
     contenedor80: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un modelo de datos de Power BI que contiene dos tablas llamadas
+                Productos (Products) y Ventas (Sales).</p>
+            <p class="text-sm text-gray-400 mb-4">Existe una relación uno a muchos entre las tablas.</p>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe que contiene un filtro a nivel de informe para Productos.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una medida que devolverá el porcentaje de ventas totales
+                para cada producto. La medida debe respetar el filtro a nivel de informe al calcular el total.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debe completar la medida DAX? Para responder, arrastre las funciones
+                DAX apropiadas a los objetivos correctos. Cada función puede usarse una vez, más de una vez, o no usarse. Es
+                posible que deba arrastrar la barra divisoria entre los paneles o desplazarse para ver el contenido.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p54.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s54.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`
     },
     contenedor81: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un modelo de datos de Power BI que analiza las ventas de productos a
+                lo largo del tiempo. El modelo de datos contiene las siguientes tablas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p55.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Existe una relación uno a muchos entre las tablas.</p>
+            <p class="text-sm text-gray-400 mb-4">La opción de fecha/hora automática para el modelo de datos está habilitada.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita reducir el tamaño del modelo de datos manteniendo la capacidad de analizar las ventas de productos por mes y trimestre.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué dos acciones debe realizar? Cada respuesta correcta presenta parte de la solución.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Crear una relación entre la tabla Fecha (Date) y la tabla Ventas (Sales).</li>
+                <li>B. Deshabilitar la opción de fecha/hora automática.</li>
+                <li>C. Crear una tabla Fecha (Date) y seleccionar Marcar como tabla de fecha.</li>
+                <li>D. Deshabilitar la carga en la tabla Fecha (Date).</li>
+                <li>E. Eliminar la relación entre la tabla Producto (Product) y la tabla Ventas (Sales).</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: AC</p>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">AC</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(84%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 84%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                
+                
+                <div class="w-10 text-right font-medium text-[12px]">otros</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(16%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 16%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor82: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe de Microsoft Power BI. El tamaño del archivo PBIX es de
+                550 MB. Se accede al informe usando un espacio de trabajo de aplicación en la capacidad compartida de
+                powerbi.com.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe utiliza un conjunto de datos importado que contiene una tabla
+                de hechos. La tabla de hechos contiene 12 millones de filas. El conjunto de datos está programado para
+                actualizarse dos veces al día a las 08:00 y 17:00.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe es una sola página que contiene 15 elementos visuales de
+                AppSource y 10 elementos visuales predeterminados.</p>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios dicen que el informe es lento para cargar los elementos
+                visuales cuando acceden e interactúan con el informe.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita recomendar una solución para mejorar el rendimiento del informe.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería recomendar?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Implementar seguridad a nivel de fila (RLS).</li>
+                <li>B. Eliminar columnas no utilizadas de las tablas en el modelo de datos.</li>
+                <li>C. Reemplazar los elementos visuales predeterminados con elementos visuales de AppSource.</li>
+                <li>D. Habilitar interacciones visuales.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+        </div>`
     },
     contenedor83: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un modelo de datos de Power BI que contiene una tabla llamada
+                Tiendas (Stores). La tabla tiene las siguientes columnas:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Nombre de Tienda (Store Name)</li>
+                <li>Fecha de Apertura (Open Date)</li>
+                <li>Estatus (Status)</li>
+                <li>Estado (State)</li>
+                <li>Ciudad (City)</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una columna calculada llamada Nombre de Tienda Activa
+                (Active Store Name) que
+                cumpla con los siguientes requisitos:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Cuando el valor de la columna Estado (Status) es "A", se debe devolver el valor en la columna Nombre de
+                    Tienda (Store Name).
+                </li>
+                <li>Cuando el valor de la columna Estado (Status) NO es "A", se debe devolver el valor en la columna Nombre
+                    de Tienda (Store Name) precedido por "Inactiva -".</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debe completar la expresión DAX? Para responder, seleccione las
+                opciones apropiadas en el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p57.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s57.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`
     },
     contenedor84: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un archivo CSV que contiene quejas de usuarios. El archivo contiene
+                una columna llamada Registrado. Registrado contiene la fecha y hora en que ocurrió cada queja. Los datos en
+                Registrado están en el siguiente formato: 2018-12-31 a las 08:59.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita poder analizar las quejas por la fecha de registro y usar una
+                jerarquía de fecha incorporada.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debe hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Aplicar una transformación para extraer los primeros 11 caracteres de la columna Registrado.</li>
+                <li>B. Agregar una columna condicional que genere 2018 si la columna Registrado comienza con 2018 y
+                    establecer el tipo de datos de la nueva columna como Número Entero.</li>
+                <li>C. Crear una columna por ejemplo que comience con 2018-12-31 y establecer el tipo de datos de la nueva
+                    columna como Fecha.</li>
+                <li>D. Aplicar una transformación para extraer los últimos 11 caracteres de la columna Registrado y
+                    establecer el tipo de datos de la nueva columna como Fecha.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+        </div>`
     },
     contenedor85: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Esta pregunta es parte de una serie de preguntas que presentan el
+                mismo escenario. Cada pregunta de la serie contiene una solución única que podría cumplir los objetivos
+                planteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta, mientras que otros
+                pueden no tener una solución correcta. Después de responder una pregunta en esta sección, NO podrá volver a
+                ella.
+                Como resultado, estas preguntas no aparecerán en la pantalla de revisión.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Desde el Editor de Power Query, perfilas los datos mostrados en la
+                siguiente imagen.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p59.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Las columnas (IoT GUID) e (IoT ID) son únicas para cada fila en la
+                consulta.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesitas analizar eventos de IoT por la hora y el día del año. La
+                solución debe mejorar el rendimiento del conjunto de datos.</p>
+            <p class="text-sm text-gray-400 mb-4">Solución: Creas una columna personalizada que concatena la columna (IoT
+                GUID) y la columna (IoT ID) y luego eliminas las columnas (IoT GUID) e (IoT ID).</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cumple esto con el objetivo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Sí</li>
+                <li>B. No</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">B</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(60%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">A</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(40%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 40%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor86: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un modelo de Power BI que contiene una tabla llamada Empleado. La
+                tabla contiene los siguientes datos.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p60.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cada empleado tiene un gerente como se muestra en la columna
+                IDEmpleadoPadre (ParentEmployeeID).</p>
+            <p class="text-sm text-gray-400 mb-4">Todas las rutas de reporte conducen al CEO en la parte superior de la
+                jerarquía organizacional.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una columna calculada que devuelva el conteo de niveles
+                desde cada empleado hasta el CEO.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué expresión DAX debe usar?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. PATHLENGTH(PATH(Employee[EmployeeID],Employee[ParentEmployeeID]))</li>
+                <li>B. PATHITEM(PATH(Employee[EmployeeID],Employee[ParentEmployeeID]),1,INTEGER)</li>
+                <li>C. PATHCONTAINS(PATH(Employee[EmployeeID],Employee[ParentEmployeeID]),1)</li>
+                <li>D. PATH(Employee[EmployeeID],Employee[ParentEmployeeID])</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+        </div>`
     },
     contenedor87: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe de Microsoft Power BI. El tamaño del archivo PBIX es de
+                550 MB. Se accede al informe usando un espacio de trabajo de aplicación en la capacidad compartida de
+                powerbi.com.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe utiliza un conjunto de datos importado que contiene una tabla
+                de hechos. La tabla de hechos contiene 12 millones de filas. El conjunto de datos está programado para
+                actualizarse dos veces al día a las 08:00 y 17:00.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe es una sola página que contiene 15 elementos visuales de
+                AppSource y 10 elementos visuales predeterminados.</p>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios dicen que el informe es lento para cargar los elementos
+                visuales cuando acceden e interactúan con el informe.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita recomendar una solución para mejorar el rendimiento del informe.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería recomendar?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Reemplazar los elementos visuales predeterminados con elementos visuales de AppSource.</li>
+                <li>B. Eliminar columnas no utilizadas de las tablas en el modelo de datos.</li>
+                <li>C. Cambiar el conjunto de datos importado a DirectQuery.</li>
+                <li>D. Aumentar el número de veces que se actualiza el conjunto de datos.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+        </div>`
     },
     contenedor88: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un archivo CSV que contiene quejas de usuarios. El archivo contiene
+                una columna llamada Registrado (Logged). Registrado contiene la fecha y hora en que ocurrió cada queja. Los datos en
+                Registrado están en el siguiente formato: 2018-12-31 a las 08:59 (2018-12-31 at 08:59).</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita poder analizar las quejas por la fecha de registro y usar una
+                jerarquía de fecha incorporada.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debe hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Cambiar el tipo de datos de la columna Registrado (Logged) a Fecha (Date).</li>
+                <li>B. Dividir la columna Registrado (Logged) usando "a las" (at) como delimitador.</li>
+                <li>C. Agregar una columna condicional que genere 2018 si la columna Registrado (Logged) comienza con 2018 y
+                    establecer el tipo de datos de la nueva columna como Número Entero.</li>
+                <li>D. Aplicar la función Analizar (Parse) desde las opciones de transformaciones de Fecha (Date) a la columna Registrado (Logged).
+                </li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B (revisar en libro)</p>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">B</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(86%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 86%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">otros</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(14%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 14%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor89: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene el modelo de datos de Power BI que se muestra en la siguiente
+                imagen.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p63.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una medida para contar el número de categorías de productos
+                que tuvieron productos vendidos durante un período seleccionado.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debe completar la expresión DAX? Para responder, seleccione las
+                opciones apropiadas en el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p63.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s63.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`
     },
     contenedor90: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe de Microsoft Power BI. El tamaño del archivo PBIX es de
+                550 MB. Se accede al informe usando un espacio de trabajo de aplicación en la capacidad compartida de
+                powerbi.com.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe utiliza un conjunto de datos importado que contiene una tabla
+                de hechos. La tabla de hechos contiene 12 millones de filas. El conjunto de datos está programado para
+                actualizarse dos veces al día a las 08:00 y 17:00.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe es una sola página que contiene 15 elementos visuales de
+                AppSource y 10 elementos visuales predeterminados.</p>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios dicen que el informe es lento para cargar los elementos
+                visuales cuando acceden e interactúan con el informe.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita recomendar una solución para mejorar el rendimiento del informe.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería recomendar?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Habilitar interacciones visuales.</li>
+                <li>B. Cambiar cualquier medida DAX para usar funciones iteradoras.</li>
+                <li>C. Implementar seguridad a nivel de fila (RLS).</li>
+                <li>D. Eliminar columnas no utilizadas de las tablas en el modelo de datos.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: D</p>
+        </div>`
     },
     contenedor91: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene el modelo de datos de Power BI que se muestra en la siguiente
+                imagen.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p65.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Ventas (Sales) tiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p65.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">El modelo de datos debe soportar los siguientes análisis:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Ventas totales por producto por mes en el que se realizó el pedido</li>
+                <li>Cantidades vendidas por producto por día en el que se realizó el pedido</li>
+                <li>Número de transacciones de venta por trimestre en el que se realizó el pedido</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Para cada una de las siguientes afirmaciones, seleccione Sí si la
+                afirmación es verdadera. De lo contrario, seleccione No.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Eliminar la columna LastUpdated de la tabla Sales reduce el tamaño del modelo y aún así permite realizar los análisis requeridos.</li>
+                <li>Eliminar la columna ProductID de la tabla Sales reduce el tamaño del modelo y aún así permite realizar los análisis requeridos.</li>
+                <li>Eliminar la columna ShipDate (FechaEnvio) de la tabla Sales reduce el tamaño del modelo y aún así permite realizar los análisis requeridos.</li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p65.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s65.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`
     },
     contenedor92: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un archivo CSV que contiene quejas de usuarios. El archivo contiene
+                una columna llamada Registrado (Logged). Registrado contiene la fecha y hora en que ocurrió cada queja. Los datos en
+                Registrado están en el siguiente formato: 2018-12-31 a las 08:59.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita poder analizar las quejas por la fecha de registro y usar una
+                jerarquía de fecha incorporada.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debe hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Crear una columna por ejemplo que comience con 2018-12-31 y establecer el tipo de datos de la nueva
+                    columna como Fecha (Date).</li>
+                <li>B. Crear una columna por ejemplo que comience con 2018-12-31.</li>
+                <li>C. Aplicar una transformación para extraer los últimos 11 caracteres de la columna Registrado (Logged).</li>
+                <li>D. Agregar una columna condicional que genere 2018 si la columna Registrado (Logged) comienza con 2018 y
+                    establecer el tipo de datos de la nueva columna como Número Entero.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: D</p>
+        </div>`
     },
     contenedor93: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un modelo de datos de Power BI que contiene una tabla llamada
+                Empleados. La tabla tiene las siguientes columnas:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Employee Name</li>
+                <li>Email Address</li>
+                <li>Start Date</li>
+                <li>Job Title</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Está implementando seguridad a nivel de fila dinámica (RLS).</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear un filtro de tabla para cumplir con los siguientes
+                requisitos:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Los usuarios deben ver solo sus propios datos de empleado.</li>
+                <li>La expresión DAX debe funcionar tanto en Power BI Desktop como en el servicio de Power BI.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">¿Qué expresión debe usar?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. [Email Address] - USERNAME()</li>
+                <li>B. [Employee Name] - USERPRINCIPALNAME()</li>
+                <li>C. [Employee Name] = USERNAME()</li>
+                <li>D. [Email Address] = USERPRINCIPALNAME()</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: D</p>
+        </div>`
     },
     contenedor94: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene el modelo de datos de Power BI que se muestra en la siguiente
+                imagen.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p68.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla País contiene los siguientes datos.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p68.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Crea dos roles de seguridad a nivel de fila (RLS) llamados Gerente y CFO.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Planea publicar el conjunto de datos en el servicio de Power BI.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear expresiones DAX para los filtros RLS. La solución debe
+                cumplir con los siguientes requisitos:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Cada gerente debe ver solo los datos en las tablas Ventas y Recursos Humanos de su propio país.</li>
+                <li>Se debe evitar que el CFO vea los datos en la tabla Recursos Humanos.</li>
+                <li>El CFO debe ver los datos de ventas de todos los países.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debe completar las expresiones DAX para cumplir con los requisitos?
+                Para responder, arrastre las expresiones apropiadas a los objetivos correctos.</p>
+            <p class="text-sm text-gray-400 mb-4">Cada expresión puede usarse una vez, más de una vez, o no usarse. Es
+                posible que deba arrastrar la barra divisoria entre los paneles o desplazarse para ver el contenido.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p68.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s68.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`
     },
     contenedor95: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un modelo de datos de Power BI que importa datos desde una hoja de cálculo de Microsoft Excel.</p>
+            <p class="text-sm text-gray-400 mb-4">Usa Power Query para cargar una consulta que contiene columnas renombradas y personalizadas.</p>
+            <p class="text-sm text-gray-400 mb-4">Más tarde, intenta volver a cargar la consulta y recibe el siguiente mensaje de error.</p>
+            <p class="text-sm text-gray-400 mb-4">ErrorDeExpresión: La columna 'Categoría' de la tabla no se encontró.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cuáles son dos posibles causas del error? Cada respuesta correcta presenta una solución completa.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. La columna fue eliminada del archivo fuente.</li>
+                <li>B. La columna fue renombrada en el archivo fuente.</li>
+                <li>C. El archivo ya no se encuentra en la ubicación especificada.</li>
+                <li>D. El tipo de datos de la columna fue cambiado.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: AB</p>
+        </div>`
     },
     contenedor96: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un modelo de Power BI que contiene una tabla llamada Ventas. La
+                tabla Ventas contiene las siguientes columnas:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>ID de Línea de Pedido</li>
+                <li>ID de Producto</li>
+                <li>Precio Unitario</li>
+                <li>ID de Pedido</li>
+                <li>Cantidad</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Los pedidos se identifican de manera única usando el ID de pedido y pueden
+                tener múltiples líneas de pedido. Cada línea de pedido dentro de un pedido contiene un ID de producto
+                diferente.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita escribir una medida DAX que cuente el número de pedidos.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué fórmula debe usar?</p>
+
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. CONTAR('Ventas'[ID de Pedido])</li>
+                <li>B. CONTARA('Ventas'[ID de Pedido])</li>
+                <li>C. CONTARFILAS('Ventas')</li>
+                <li>D. CONTAR.DISTINTO('Ventas'[ID de Pedido])</li>
+            </ul>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Count('Sales'[Order ID])</li>
+                <li>B. CountA('Sales' [Order ID])</li>
+                <li>C. CountRows('Sales')</li>
+                <li>D. DistinctCount('Sales' [Order ID])</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: D</p>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">D</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(61%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 61%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">A</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(39%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 39%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor97: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Está creando un modelo de Power BI en Power BI Desktop.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una tabla calculada llamada Números que contendrá todos los
+                enteros del -100 al 100.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debe completar el cálculo DAX? Para responder, seleccione las
+                opciones apropiadas en el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p71.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s71.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`
     },
     contenedor98: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">En el Editor de Power Query, tiene una consulta llamada Datos de Ventas
+                que contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p72.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear dos consultas llamadas Dimensión Producto y Hechos de
+                Ventas basadas en la consulta Datos de Ventas. La solución debe minimizar el esfuerzo de mantenimiento y el
+                tamaño del conjunto de datos.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué dos acciones debe realizar? Cada respuesta correcta presenta parte de
+                la solución.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Referenciar la consulta Datos de Ventas para crear las nuevas consultas.</li>
+                <li>B. Deshabilitar la carga para la consulta Hechos de Ventas.</li>
+                <li>C. Duplicar la consulta Datos de Ventas para crear las nuevas consultas.</li>
+                <li>D. Desmarcar Incluir en actualización de informe para la consulta Datos de Ventas.</li>
+                <li>E. Deshabilitar la carga para la consulta Datos de Ventas.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: AE</p>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">AE</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(85%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">otros</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(15%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 15%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor99: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un modelo de Power BI que contiene una tabla llamada Fecha. La
+                tabla Fecha contiene las siguientes columnas:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Fecha</li>
+                <li>Año Fiscal</li>
+                <li>Trimestre Fiscal</li>
+                <li>Nombre del Mes</li>
+                <li>Año Calendario</li>
+                <li>Número de Semana</li>
+                <li>Número de Mes</li>
+                <li>Trimestre Calendario</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una tabla calculada basada en la tabla Fecha. La tabla
+                calculada debe contener solo combinaciones únicas de valores para Año Calendario, Trimestre Calendario y Mes
+                Calendario.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué función DAX debe incluir en la definición de la tabla?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. AÑADIRCOLUMNAS</li>
+                <li>B. CALCULAR</li>
+                <li>C. RESUMIR</li>
+                <li>D. TABLADATOS</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">A</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(85%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">otros</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(15%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 15%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor100: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un modelo de Power BI que contiene los siguientes datos.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p74.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Fecha (Date) se relaciona con la tabla Ventas (Sales) usando las
+                columnas Fecha.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una tabla calculada que contendrá lo siguiente:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Una fila para cada año</li>
+                <li>Una columna que contenga las ventas totales por año</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debe completar el cálculo DAX? Para responder, seleccione las
+                opciones apropiadas en el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p74.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s74.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`
     },
     contenedor101: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Utiliza el Editor de Power Query para importar y previsualizar datos de
+                ventas de los años 2020 y 2021 en un archivo de Microsoft Excel como se muestra en la siguiente imagen.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p75.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Necesita dar forma a la consulta para mostrar las siguientes tres
+                columnas:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Mes</li>
+                <li>Ventas</li>
+                <li>Año</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debe seleccionar en el Editor de Power Query?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Fusionar columnas</li>
+                <li>B. Transponer</li>
+                <li>C. Anular dinamización de columnas</li>
+                <li>D. Dinamizar columna</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: C</p>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">C</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(92%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 92%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">otros</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">( 8%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 8%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor102: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Está creando un modelo de Power BI para analizar inventario.</p>
+            <p class="text-sm text-gray-400 mb-4">Carga datos en tres tablas llamadas Fecha, Producto e Inventario. La tabla Inventario se relaciona con las tablas Fecha y Producto usando relaciones uno a muchos.</p>
+            <p class="text-sm text-gray-400 mb-4">Los datos de inventario se registran diariamente sin excepciones. La cantidad de inventario correcta para un producto dado en un mes es el último valor registrado para ese mes.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita escribir una medida DAX que muestre el valor de inventario correcto cuando un usuario analiza el inventario por año, mes o fecha.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debe completar la medida? Para responder, seleccione las opciones apropiadas en el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p76.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/2/s76.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`
     },
     contenedor103: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Esta pregunta es parte de una serie de preguntas que presentan el
+                mismo escenario. Cada pregunta de la serie contiene una solución única que podría cumplir los objetivos
+                planteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta, mientras que otros
+                pueden no tener una solución correcta. Después de responder una pregunta en esta sección, NO podrá volver a
+                ella.
+                Como resultado, estas preguntas no aparecerán en la pantalla de revisión.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe de Power BI que importa una tabla de fechas y una tabla
+                de ventas de una fuente de datos de base de datos de Azure SQL. La tabla de ventas tiene las siguientes
+                claves externas de fecha:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Fecha de vencimiento</li>
+                <li>Fecha de pedido</li>
+                <li>Fecha de entrega</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Necesita apoyar el análisis de ventas a lo largo del tiempo basado en las
+                tres fechas al mismo tiempo.</p>
+            <p class="text-sm text-gray-400 mb-4">Solución: Desde el panel de Campos, renombra la tabla de fechas como Fecha
+                de vencimiento. Usas una expresión DAX para crear Fecha de pedido y Fecha de entrega como tablas calculadas.
+                Creas relaciones activas entre la tabla de ventas y cada tabla de fecha.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cumple esto con el objetivo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Sí</li>
+                <li>B. No</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">A</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(83%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 83%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">B</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(17%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 17%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
+    /*tema 3 -------------------------------------------------------------------------------------------------------------- */
     contenedor104: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene una hoja de cálculo de Microsoft Excel que contiene los datos que se
+                muestran en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p1.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Planea construir un modelo de datos para un informe de Power BI.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita preparar los datos para que estén disponibles para el modelo en
+                el formato que se muestra en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p1.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">¿Qué tres acciones debe realizar en secuencia en el Editor de Power Query?
+                Para responder, mueva las acciones apropiadas de la lista de acciones al área de respuesta y ordénelas en el
+                orden correcto.</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Seleccionar las columnas [Departamento] ([Departament]) y [Etapa] ([Stage]) y desagregar las demás
+                    columnas.</li>
+                <li>Seleccionar y desagregar las columnas [Departamento] ([Departament]) y [Etapa] ([Stage]).</li>
+                <li>Agrupar por [Departamento] ([Departament]) y [Escuela] ([School]) y crear una nueva columna llamada
+                    [Puntaje Promedio]
+                    ([Avg Score]) que utilice la función PROMEDIO (AVERAGE) en la columna [Puntaje] ([Score]).</li>
+                <li>Renombrar la columna [Atributo] ([Attribute]) como [Escuela] ([School]) y la columna [Valor] ([Value])
+                    como [Puntaje] ([Score]).</li>
+                <li>Agrupar por [Departamento] ([Departament]), [Escuela1] ([School1]), [Escuela2] ([School2]), [Escuela3]
+                    ([School3]), [Escuela4] ([School4]) y crear una nueva columna
+                    llamada [Puntaje Promedio] que utilice la función promedio en la columna [Etapa].</li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p1.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/3/s1.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4"></p>
+            <p class="text-sm text-gray-400 mb-4">Paso 1: Seleccionar las columnas [Departamento] ([Departament]) y [Etapa]
+                ([Stage]) y anular
+                dinamización (Unpivot) de las otras columnas.</p>
+            <p class="text-sm text-gray-400 mb-4">Anulamos la dinamización de las columnas (Unpivot) Escuela1, Escuela2,
+                Escuela3 y Escuela4.</p>
+            <p class="text-sm text-gray-400 mb-4">Es posible que desee anular la dinamización de los datos (Unpivot), a
+                veces llamado
+                aplanar los datos, para ponerlos en un formato de matriz de modo que todos los valores similares estén en
+                una columna.</p>
+            <p class="text-sm text-gray-400 mb-4">Ejemplo:</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s1.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cuando anula la dinamización, desempaqueta los pares atributo-valor que
+                representan un punto de intersección de las nuevas columnas y los reorienta en columnas aplanadas:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Los valores (en azul a la izquierda) se anulan de dinamización en una nueva columna (en azul a la
+                    derecha).</li>
+                <li>Los atributos (en verde a la izquierda) se anulan de dinamización en una nueva columna (en verde a la
+                    derecha) y los duplicados se mapean correspondientemente a la nueva columna de Valores.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Paso 2: Renombrar la columna [Atributo] ([Attribute]) como [Escuela] ([School]) y la columna
+                [Valor] ([Value]) como [Puntuación] ([Score]).</p>
+            <p class="text-sm text-gray-400 mb-4">Paso 3: Agrupar por [Departamento] ([Departament]) y [Escuela] ([School]) y...</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://support.microsoft.com/es-es/office/anular-dinamizaci%C3%B3n-de-columnas-power-query-0f7bad4b-9ea1-49c1-9d95-f588221c7098"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor105: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe que contiene un gráfico de barras y un gráfico de
+                columnas. El gráfico de barras muestra el recuento de clientes por segmento de cliente. El gráfico de
+                columnas muestra las ventas por mes.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita asegurarse de que cuando se selecciona un segmento en el gráfico
+                de barras, se vea qué porción de las ventas totales del mes pertenece al segmento de cliente.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo deben configurarse las interacciones visuales en el gráfico de
+                columnas cuando se selecciona el gráfico de barras?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. resaltar</li>
+                <li>B. filtrar</li>
+                <li>C. sin impacto</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">En la mayoría de los elementos visuales, resaltar no elimina los datos no
+                relacionados. En cambio, resalta los datos relacionados. El resto de los datos permanece visible pero
+                atenuado.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Por defecto, las visualizaciones en una página de informe pueden usarse
+                para filtrar y resaltar cruzadamente las otras visualizaciones en la página. Por ejemplo, seleccionar un
+                estado en una visualización de mapa resalta el gráfico de columnas y filtra el gráfico de líneas para
+                mostrar solo los datos que se aplican a ese estado.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Incorrecto:</p>
+            <p class="text-sm text-gray-400 mb-4">No B: Los filtros eliminan todo excepto los datos en los que desea
+                enfocarse.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/create-reports/power-bi-reports-filters-and-highlighting"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor106: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Un usuario crea un informe de Power BI llamado InformeA que usa un tema
+                personalizado.</p>
+            <p class="text-sm text-gray-400 mb-4">Usted crea un panel llamado PanelA.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita asegurar que el PanelA use el tema personalizado. La solución
+                debe minimizar el esfuerzo de desarrollo.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué dos acciones debe realizar? Cada respuesta correcta presenta parte de
+                la solución.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Publicar InformeA en Power BI.</li>
+                <li>B. Desde InformeA, guardar el tema actual.</li>
+                <li>C. Publicar InformeA en la galería de temas de la Comunidad de Microsoft Power BI.</li>
+                <li>D. Desde PanelA, crear un tema personalizado.</li>
+                <li>E. Desde PanelA, cargar un tema JSON.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: AE</p>
+            <p class="text-sm text-gray-400 mb-4">A: Con los temas de informe de Power BI Desktop, puede aplicar cambios de
+                diseño a todo su informe, como usar colores corporativos, cambiar conjuntos de iconos o aplicar nuevo
+                formato visual predeterminado.b</p>
+            <p class="text-sm text-gray-400 mb-4">Cuando publica un archivo de Power BI Desktop en el servicio de Power BI,
+                publica los datos del modelo en su espacio de trabajo de Power BI. Lo mismo ocurre con cualquier informe que
+                haya creado en la vista de Informe.</p>
+            <p class="text-sm text-gray-400 mb-4">Para publicar un conjunto de datos e informes de Power BI Desktop</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>1. En Power BI Desktop, elija Archivo > Publicar > Publicar en Power BI o seleccione Publicar en la
+                    cinta. Inicie sesión en Power BI, si aún no lo ha hecho.
+                </li>
+                <li>2. Seleccione el destino. Puede buscar su lista de espacios de trabajo disponibles para encontrar el
+                    espacio de trabajo en el que desea publicar. El cuadro de búsqueda le permite filtrar sus espacios de
+                    trabajo. Seleccione el espacio de trabajo y luego haga clic en el botón Seleccionar para publicar.</li>
+                <div class="mt-4 mb-4">
+                    <img src="img/3/p3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                </div>
+                <li>3. Etc.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">E: Una forma de crear un tema personalizado es cargar un archivo JSON que
+                tenga configuraciones para todos los colores que desea usar para su panel. En Power BI Desktop, los
+                creadores de informes usan archivos JSON para crear temas para informes. Puede cargar estos mismos archivos
+                JSON para paneles, o encontrar y cargar archivos JSON desde la página de la galería de Temas en la Comunidad
+                de Power BI.</p>
+            <p class="text-sm text-gray-400 mb-4">También puede guardar su tema personalizado como un archivo JSON y luego
+                compartirlo con otros creadores de paneles.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/create-reports/desktop-upload-desktop-files"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">AE</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(92%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 92%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">otros </div>
+                    <div class="ml-2 text-gray-600 text-[12px]">( 8%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 8%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor107: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una visualización que compare ingresos y costo a lo largo
+                del tiempo.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué tipo de visualización debe usar?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. gráfico de cascada</li>
+                <li>B. gráfico de áreas apiladas</li>
+                <li>C. gráfico de líneas</li>
+                <li>D. gráfico de anillos</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: C</p>
+            <p class="text-sm text-gray-400 mb-4">Los gráficos de líneas pueden tener muchas líneas diferentes, por ejemplo,
+                tanto los ingresos como el costo a lo largo del tiempo.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/visuals/power-bi-line-chart?tabs=powerbi-desktop"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">C</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(65%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 65%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">B</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(35%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 35%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor108: {
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe en Power BI Desktop.</p>
+            <p class="text-sm text-gray-400 mb-4">Agrega una visualización de influenciadores clave como se muestra en la
+                imagen.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p5.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Utilice los menús desplegables para seleccionar la opción de respuesta que
+                complete cada enunciado basándose en la información presentada en la gráfica.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Traducción: Identificar factores adicionales que aumentan la rotacion
+                puede lograrse mediante [elegir respuesta]</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Activar el informe cruzado</li>
+                <li>Agregar más campos a "Explicar por"</li>
+                <li>Agregar más campos a "Expandir por"</li>
+                <li>Mover campos  de "Explicar por" a "Expandir por"</li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p5.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/3/s5.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 1: mover campos de Explicar por a Expandir por -</p>
+            <p class="text-sm text-gray-400 mb-4">Puede usar Expandir Por para agregar campos que desea usar para establecer
+                el nivel del análisis sin buscar nuevos influenciadores. ¿Por qué ciertos factores se convierten en
+                influenciadores o dejan de
+                serlo cuando muevo más campos al campo Explicar por? La visualización evalúa todos los factores explicativos
+                juntos. Un factor
+                podría ser un influenciador por sí solo, pero cuando se considera con otros factores podría no serlo.</p>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 2: 3 -</p>
+            <p class="text-sm text-gray-400 mb-4">0.30 en lugar de 0.10. Un factor 3 veces mayor.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/visuals/power-bi-visualization-influencers?tabs=powerbi-desktop"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
+    },
+    contenedor109: {
         pregunta: ``,
         solucion: ``
     },
@@ -3706,6 +4859,290 @@ const contenido = {
         solucion: ``
     },
     contenedor110: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor111: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor112: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor113: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor114: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor115: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor116: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor117: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor118: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor119: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor120: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor121: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor122: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor123: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor124: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor125: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor126: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor127: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor128: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor129: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor130: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor131: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor132: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor133: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor134: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor135: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor136: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor137: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor138: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor139: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor140: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor141: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor142: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor143: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor144: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor145: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor146: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor147: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor148: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor149: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor150: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor151: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor152: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor153: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor154: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor155: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor156: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor157: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor158: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor159: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor160: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor161: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor162: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor163: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor164: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor165: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor166: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor167: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor168: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor169: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor170: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor171: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor172: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor173: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor174: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor175: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor176: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor177: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor178: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor179: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor180: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor181: {
         pregunta: ``,
         solucion: ``
     }
