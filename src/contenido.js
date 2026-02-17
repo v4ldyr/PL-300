@@ -1752,6 +1752,19 @@ const contenido = {
             <p class="text-sm text-gray-400 mb-4">
                 <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
             </p>
+            <p class="text-sm text-gray-400 mb-4">Cambiar la configuración de [respuesta elegida] de las relaciones mejorará
+                el rendimiento de las consultas de informes.</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Cardinalidad</li>
+                <li>Dirección del filtro cruzado</li>
+                <li>Asumir integridad referencial</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">El modelo de datos está organizado en una [respuesta elegida].</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>esquema de estrella</li>
+                <li>esquema de copo de nieve</li>
+                <li>tabla desnormalizada</li>
+            </ul>
             <div class="mt-4 mb-4">
                 <img src="img/2/p9.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
             </div>
@@ -2323,6 +2336,9 @@ const contenido = {
             <p class="text-sm text-gray-400 mb-4">
                 <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
             </p>
+            <div class="mt-4 mb-4">
+                <img src="img/2/p20.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
         </div>`,
         solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
             <div class="mt-4 mb-4">
@@ -4851,136 +4867,1576 @@ const contenido = {
         </div>`
     },
     contenedor109: {
-        pregunta: ``,
-        solucion: ``
-    },
-    contenedor109: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Construye un informe para ayudar al equipo de ventas a entender su
+                desempeño y los impulsores de las ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">El equipo necesita tener una sola visualización para identificar qué
+                factores afectan el éxito.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué tipo de visualización debe usar?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Influenciadores clave</li>
+                <li>B. Gráfico de líneas y columnas agrupadas</li>
+                <li>C. Preguntas y Respuestas (Q&A)</li>
+                <li>D. Gráfico de embudo</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">La visualización de influenciadores clave le ayuda a comprender los
+                factores que impulsan una métrica que le interesa. Analiza sus datos, clasifica los factores que importan y
+                los muestra como influenciadores clave. Por ejemplo, suponga que desea averiguar qué influye en la rotación
+                de empleados, también conocida como deserción. Un factor podría ser la duración del contrato de empleo, y
+                otro factor podría ser el tiempo de desplazamiento.</p>
+            <p class="text-sm text-gray-400 mb-4">Cuándo usar influenciadores clave.</p>
+            <p class="text-sm text-gray-400 mb-4">La visualización de influenciadores clave es una excelente opción si
+                desea:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Ver qué factores afectan la métrica que se está analizando.</li>
+                <li>Contrastar la importancia relativa de estos factores. Por ejemplo, ¿los contratos a corto plazo afectan
+                    la deserción más que los contratos a largo plazo?</li>
+            </ul>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium" href="linkHere" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor110: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene una tabla que contiene las siguientes tres columnas:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Ciudad </li>
+                <li>○Ventas Totales</li>
+                <li>○Ocupación</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una visualización de influenciadores clave (Key influencers) como se muestra
+                en la imagen.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p7.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debe configurar la visualización? Para responder, seleccione las
+                opciones apropiadas en el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Cuadro 1: Ventas Totales -</p>
+            <p class="text-sm text-gray-400 mb-4">La visualización de influenciadores clave le ayuda a comprender los
+                factores que impulsan una métrica que le interesa, aquí Ventas Totales. Analiza sus datos, clasifica los
+                factores que importan y los muestra como influenciadores clave.</p>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 2: Ocupación -</p>
+            <p class="text-sm text-gray-400 mb-4">Las medidas y las columnas resumidas se analizan automáticamente al nivel
+                de los campos de Explicar por utilizados.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/visuals/power-bi-visualization-influencers?tabs=powerbi-desktop"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor111: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Está usando la visualización de influenciadores clave (Key influencers)
+                para identificar qué
+                factores afectan la cantidad de artículos vendidos en un pedido.</p>
+            <p class="text-sm text-gray-400 mb-4">Agrega los siguientes campos al campo Explicar Por:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>País del Cliente</li>
+                <li>Categoría del Producto</li>
+                <li>País del Proveedor</li>
+                <li>Empleado de Ventas</li>
+                <li>Nombre del Proveedor</li>
+                <li>Nombre del Producto</li>
+                <li>Ciudad del Cliente</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">La visualización de influenciadores clave devuelve los resultados
+                mostrados en la siguiente exhibición.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p8.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">¿Qué puede identificar a partir del elemento visual?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Los clientes en Austria ordenan 18.8 unidades más que la cantidad promedio del pedido.</li>
+                <li>B. Los clientes en Boise ordenan un 20.37 por ciento más que la cantidad promedio del pedido.</li>
+                <li>C. La categoría del producto influye positivamente en la cantidad por pedido.</li>
+                <li>D. Los clientes en Cork ordenan cantidades más bajas que el promedio.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">Se muestra la cantidad promedio de unidades.</p>
+            <p class="text-sm text-gray-400 mb-4">Incorrecto:</p>
+            <p class="text-sm text-gray-400 mb-4">No B: Se muestra la cantidad promedio de unidades, no el porcentaje.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/visuals/power-bi-visualization-influencers?tabs=powerbi-desktop"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor112: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe que contiene cuatro páginas. Cada página contiene
+                segmentadores de datos para los mismos cuatro campos.</p>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios reportan que cuando seleccionan valores en un segmentador de
+                datos en una página, las selecciones no se conservan en las otras páginas.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita recomendar una solución para asegurar que los usuarios puedan
+                seleccionar un valor una vez para filtrar los resultados en todas las páginas.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cuáles son dos posibles recomendaciones para lograr este objetivo? Cada
+                respuesta correcta presenta una solución completa.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Crear un marcador para cada valor del segmentador.</li>
+                <li>B. Reemplazar los segmentadores con filtros a nivel de informe.</li>
+                <li>C. Sincronizar los segmentadores entre las páginas.</li>
+                <li>D. Reemplazar los segmentadores con filtros a nivel de página.</li>
+                <li>E. Reemplazar los segmentadores con filtros a nivel de elemento visual.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: BC</p>
+            <p class="text-sm text-gray-400 mb-4">C: Puede sincronizar un segmentador y usarlo en cualquier o todas las
+                páginas de un informe.</p>
+            <p class="text-sm text-gray-400 mb-4">B: Puede establecer filtros en tres niveles diferentes para el informe: a
+                nivel de elemento visual, a nivel de página y a nivel de informe.</p>
+            </a>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Supongamos que desea que los lectores de su informe puedan ver las
+                métricas de ventas generales, pero también resaltar el desempeño de gerentes de distrito individuales y
+                diferentes marcos de tiempo. Podría crear informes separados o gráficos comparativos. Podría agregar filtros
+                en el panel Filtros. O podría usar segmentadores. Los segmentadores son otra forma de filtrar. Reducen la
+                porción del conjunto de datos que se muestra en las otras visualizaciones del informe.
+            </p>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">BC</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(92%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 92%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">otros</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">( 8% )</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 8%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor113: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe que incluye una visualización de tarjeta.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita aplicar el siguiente formato condicional a la tarjeta minimizando el esfuerzo de diseño:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Para valores que sean mayores o iguales a 100, la fuente de la etiqueta de datos debe ser rojo oscuro.</li>
+                <li>Para valores que sean menores a 100, la fuente de la etiqueta de datos debe ser gris oscuro.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">¿Qué tipo de formato debe usar?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Escala de color</li>
+                <li>B. Reglas</li>
+                <li>C. Valor de campo</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">Encontrar el formato condicional en el elemento visual de tarjeta es un
+                poco complicado. No hay una opción separada para eso. Debe ir a la pestaña Formato del elemento visual, y
+                luego expandir la Etiqueta de Datos. Justo al lado del color de la Etiqueta de Datos, debe pasar el mouse, y
+                aparecerá un icono de tres puntos, al hacer clic en él, verá Formato Condicional.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s10.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Ahora, en la pestaña Formato Condicional, puede aplicarlo en diferentes
+                métodos. Por ejemplo, puede elegir Reglas, y luego...</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s10.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">El modo Reglas le dará la capacidad de poner roles personalizados como se
+                muestra a continuación:</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s10.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://radacad.com/enhance-the-card-visual-in-power-bi-with-conditional-formatting/" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor114: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un panel (dashboard) de Power BI llamado PanelA (TileA) que contiene un icono llamado
+                IconoA. IconoA contiene un mapa de árbol visual de un informe llamado InformeA (ReportA).</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita proporcionar a los usuarios del PanelA (DashboardA) iconos adicionales que se
+                relacionen con el contenido de IconoA (TileA).</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué tres acciones debe realizar en secuencia? Para responder, mueva las
+                acciones apropiadas de la lista de acciones al área de respuesta y ordénelas en el orden correcto.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p11.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/3/s11.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Paso 1: Desde InformeA (ReportA), seleccionar Obtener Información</p>
+            <p class="text-sm text-gray-400 mb-4">Luego seleccione "Obtener Información" (Get Insights) Desde la pestaña
+                Conjuntos de
+                datos + flujos de datos (Dataset + dataflows), seleccione Más opciones (...) junto al conjunto de datos, y luego elija Obtener
+                información.</p>
+            <p class="text-sm text-gray-400 mb-4">Power BI "Información Rápida" (Quick Insights) ahora escaneará los datos
+                relacionados con el
+                icono y mostrará una lista de información potencial que puede querer explorar más a fondo. Para profundizar
+                en un punto de datos específico, incluso puede seleccionar datos en el elemento visual y "Información
+                Rápida" (Quick Insights) se
+                centrará en ese punto de datos al buscar información.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s11.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Power BI utiliza varios algoritmos para buscar tendencias en su conjunto
+                de datos.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s11.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">En cuestión de segundos, su información está lista. Seleccione Ver
+                información para mostrar las visualizaciones.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s11.4.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Las visualizaciones se muestran en un lienzo especial de "Información
+                Rápida" (Quick Insights)
+                con hasta 32 tarjetas de información separadas. Cada tarjeta tiene un gráfico o diagrama más una breve
+                descripción.</p>
+            <p class="text-sm text-gray-400 mb-4">Paso 2: Desde PanelA (DashboardA), seleccionar las opciones de IconoA
+                (TileA), y luego
+                seleccionar Ver Información</p>
+            <p class="text-sm text-gray-400 mb-4">La pantalla de información se abre en Modo Enfoque (Focus mode).</p>
+            <p class="text-sm text-gray-400 mb-4">Paso 3: Desde el Modo Enfoque (Focus mode), fijar los elementos visuales
+                relevantes al
+                PanelA (DashboardA)</p>
+            <p class="text-sm text-gray-400 mb-4">Vaya al 'modo de enfoque' (Focus mode) en un icono del panel (dashboard)
+                para datos cargados en
+                Power BI.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/create-reports/service-insights" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor115: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Está creando un panel usando el servicio de Power BI.</p>
+            <p class="text-sm text-gray-400 mb-4">Tiene una página de informe existente que contiene tres gráficos.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita agregar los gráficos al panel manteniendo la interactividad entre
+                los gráficos.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debe hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Editar interacciones en el informe y establecer todas las interacciones en Filtrar.</li>
+                <li>B. Fijar cada gráfico como un icono.</li>
+                <li>C. Editar el tema del panel y fijar cada gráfico como un icono.</li>
+                <li>D. Fijar la página del informe como un icono en vivo.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: D</p>
+            <p class="text-sm text-gray-400 mb-4">Una forma de agregar un nuevo icono al panel es fijando una página
+                completa del informe. Esta es una manera fácil de fijar más de una visualización a la vez. Además, cuando
+                fija una página completa, los iconos están en vivo; puede interactuar con ellos directamente en el panel
+                (dashboard). Y
+                los cambios que realice a cualquiera de las visualizaciones en el editor de informes, como agregar un filtro
+                o cambiar los campos utilizados en el gráfico, también se reflejan en el icono del panel (dashboard). Fijar
+                iconos en
+                vivo de informes a paneles solo está disponible en el servicio de Power BI (app.powerbi.com).</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/create-reports/service-dashboard-pin-live-tile-from-report"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">D</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(76%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 76%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">B</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(24%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 24%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor116: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear un elemento visual como se muestra en la siguiente
+                imagen.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p13.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">El color del indicador para Ventas Totales (Total Sales) se basará en % de Crecimiento
+                respecto al Año Anterior (Growth to Last Year).</p>
+            <p class="text-sm text-gray-400 mb-4">La solución debe usar solo los cálculos existentes.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debe configurar el elemento visual? Para responder, seleccione las
+                opciones apropiadas en el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p13.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/3/s13.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 1: Color de fondo -</p>
+            <p class="text-sm text-gray-400 mb-4">Para aplicar formato condicional, seleccione una visualización de Tabla o
+                Matriz en Power BI Desktop. En el panel Visualizaciones, haga clic derecho o seleccione la flecha hacia
+                abajo junto al campo en el pozo de Valores que desea formatear. Seleccione Formato condicional y luego elija
+                el tipo de formato a aplicar.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s13.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" /> </div>
+            <p class="text-sm text-gray-400 mb-4">Cuadro 2: Reglas -</p>
+            <p class="text-sm text-gray-400 mb-4">Para formatear el color de fondo de celda o el color de fuente por reglas,
+                en el campo Formato por del cuadro de diálogo Color de fondo o Color de fuente, seleccione Reglas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s13.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/create-reports/desktop-conditional-table-formatting"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor117: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Está usando informes existentes para construir un panel que se verá
+                frecuentemente en modo vertical en teléfonos móviles.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita construir el panel.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué cuatro acciones debe realizar en secuencia? Para responder, mueva las
+                acciones apropiadas de la lista de acciones al área de respuesta y ordénelas en el orden correcto.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p14.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/3/s14.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Paso 1: Editar la vista móvil del panel</p>
+            <p class="text-sm text-gray-400 mb-4">Abra un informe en la vista de edición.</p>
+            <p class="text-sm text-gray-400 mb-4">Paso 2: Fijar elementos de los informes al panel</p>
+            <p class="text-sm text-gray-400 mb-4">Paso 3: Abrir el panel.</p>
+            <p class="text-sm text-gray-400 mb-4">Abra el panel para ver el icono en vivo fijado.</p>
+            <p class="text-sm text-gray-400 mb-4">Desde el panel de navegación, seleccione el panel con el nuevo icono en
+                vivo. Allí, puede hacer cosas como renombrar, cambiar el tamaño, vincular y mover la página del informe
+                fijada.</p>
+            <p class="text-sm text-gray-400 mb-4">Paso 4: Reorganizar, cambiar el tamaño o eliminar elementos del diseño
+                móvil</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/create-reports/service-dashboard-pin-live-tile-from-report"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor118: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Planea crear el gráfico mostrado en la siguiente imagen.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p15.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debe crear la línea horizontal punteada que denota el percentil 40
+                de las ventas diarias para el período mostrado?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Agregar una medida al elemento visual que use la siguiente expresión DAX. Medida1 = PERCENTILX.INC
+                    (Ventas, ventas[Ventas Totales], 0.40) | Measure1 = PERCENTILEX.INC (Sales,sales[Total Sales],0.40)</li>
+                <li>B. Agregar una medida al elemento visual que use la siguiente expresión DAX. Medida1 = PERCENTILX.EXC
+                    (Ventas, ventas[Ventas Totales], 0.40) | Measure1 = PERCENTILEX.EXC (Sales,sales[Total Sales],0.40)</li>
+                <li>C. Agregar una nueva línea de percentil que use Ventas Totales como la medida y 40% como el percentil.
+                </li>
+                <li>D. Crear una línea horizontal que tenga un valor fijo de 24,000.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: C</p>
+            <p class="text-sm text-gray-400 mb-4">La función de análisis le permite mostrar percentiles a través de grupos
+                especificados a lo largo de un eje específico.</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>1. Haga clic en la pestaña de análisis.</li>
+                <li>2. Seleccione Percentil.</li>
+                <li>3. Puede elegir un percentil específico junto con otras opciones de formato.</li>
+                <li>4. Arrastre una fecha o una dimensión no numérica al Eje de un gráfico de columnas.</li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s15.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s15.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://theorderguys.com/dash-intel/powerbi/statistical_functions_percentile.php" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor119: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Está construyendo un informe de Power BI.</p>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios verán el informe usando sus dispositivos móviles.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita configurar el informe para mostrar datos basados en la ubicación
+                de cada usuario.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué dos acciones debe realizar? Cada respuesta correcta presenta parte de
+                la solución.b</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Desde el Editor de Power Query, detectar los tipos de datos de las columnas relevantes.</li>
+                <li>B. En Categoría de Datos, establecer la categoría de datos geográficos para las columnas relevantes.</li>
+                <li>C. Crear una jerarquía para columnas del tipo de datos de geografía.</li>
+                <li>D. Usar las columnas del tipo de datos de geografía en todos los elementos visuales.</li>
+                <li>E. Para las columnas relevantes, establecer sinónimos para que coincidan con términos geográficos comunes.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: BD</p>
+            <p class="text-sm text-gray-400 mb-4">B: Identificar datos geográficos en su informe</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>1. En Power BI Desktop, cambie a la Vista de Datos (ícono de vista de datos).</li>
+                <li>2. Seleccione una columna con datos geográficos (por ejemplo, una columna Ciudad).</li>
+                <li>3. En la pestaña Modelado, seleccione Categoría de Datos, luego la categoría correcta (en este ejemplo,
+                    Ciudad).</li>
+                <div class="mt-4 mb-4">
+                    <img src="img/3/s16.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                </div>
+                <li>texto</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">4. Continúe estableciendo categorías de datos geográficos para cualquier
+                otro campo en el modelo.</p>
+            <p class="text-sm text-gray-400 mb-4">D: Crear elementos visuales con sus datos geográficos</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s16.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cambie a la Vista de Informe (ícono de vista de informe) y cree elementos
+                visuales que utilicen los campos geográficos en sus datos.b</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s16.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Publicar el informe en el servicio de Power BI.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/transform-model/desktop-mobile-geofiltering"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">BD</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(74%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 74%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">BC</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(18%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 18%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">otros</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">( 9% )</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-yellow-500/50 bg- h-full rounded-full" style="width: 9%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor120: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tienes un informe que contiene un gráfico de anillos y un gráfico de
+                columnas agrupadas. Las interacciones entre los elementos visuales utilizan la configuración predeterminada.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesitas modificar el informe para que, al seleccionar una columna en el
+                gráfico de columnas, el gráfico de anillos se redibuje utilizando los datos de la columna seleccionada.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debes hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Seleccionar el gráfico de anillos y configurar la interacción del gráfico de columnas como Filtrar.</li>
+                <li>B. Seleccionar el gráfico de columnas y configurar la interacción del gráfico de anillos como Filtrar.</li>
+                <li>C. Seleccionar el gráfico de anillos y configurar la interacción del gráfico de columnas como Ninguno.</li>
+                <li>D. Seleccionar el gráfico de columnas y configurar la interacción del gráfico de anillos como Ninguno.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">Los filtros eliminan todos los datos excepto aquellos en los que quieres
+                centrarte.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Habilita los controles de interacción visual.
+            </p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>1. Selecciona una visualización para activarla.</li>
+                <li>2. Muestra las opciones de Interacciones Visuales.</li>
+                <li>3. En Power BI Desktop, selecciona Formato > Editar interacciones.</li>
+                <div class="mt-4 mb-4">
+                    <img src="img/3/s17.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                </div>
+                <li>4. Para mostrar los controles de interacción de la visualización, selecciona Editar interacciones. Power
+                    BI agrega íconos de filtro y resaltado a todas las demás visualizaciones en la página del informe.
+                </li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Podemos ver que el mapa de árbol aplica filtros cruzados al gráfico de
+                líneas y al mapa, y aplica resaltado cruzado al gráfico de columnas. Ahora puedes cambiar cómo la
+                visualización seleccionada interactúa con las demás visualizaciones en la página del informe.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s17.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/create-reports/service-reports-visual-interactions?tabs=powerbi-desktop"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor121: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tienes una página de informe que contiene los elementos visuales que se
+                muestran en la siguiente imagen.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p18.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Utiliza los menús desplegables para seleccionar la opción de respuesta que
+                complete cada enunciado basándote en la información presentada en la gráfica.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Seleccionar un trimestre en el gráfico de líneas [respuesta elegida] el
+                gráfico de columnas agrupadas.</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>filtrar de forma cruzada</li>
+                <li>resaltar de forma cruzada</li>
+                <li>no afectará</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Seleccionar un punto de datos en la línea de Tailspin Toys en el gráfico
+                de líneas [respuesta elegida] el mapa.</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>filtrar de forma cruzada</li>
+                <li>resaltar de forma cruzada</li>
+                <li>no afectará</li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p18.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/3/s18.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 1: filtro cruzado -</p>
+            <p class="text-sm text-gray-400 mb-4">El gráfico de columnas agrupadas tiene el icono de filtro activo.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s18.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 2: resaltado cruzado -</p>
+            <p class="text-sm text-gray-400 mb-4">El mapa tiene el icono de resaltado cruzado activo.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s18.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/create-reports/service-reports-visual-interactions?tabs=powerbi-desktop"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor122: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Estás creando un informe de Power BI mediante Power BI Desktop.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesitas incluir un objeto visual que muestre tendencias y otra información útil automáticamente. El objeto visual debe actualizarse en función de las selecciones realizadas en otros objetos visuales.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué tipo de objeto visual deberías usar?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Preguntas y respuestas (Q&A)</li>
+                <li>B. narrativa inteligente</li>
+                <li>C. influyentes clave</li>
+                <li>D. árbol de descomposición</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">La visualización de narrativa inteligente te ayuda a resumir rápidamente
+                objetos visuales e informes. Proporciona información innovadora relevante que puedes personalizar.</p>
+            <p class="text-sm text-gray-400 mb-4">Utiliza resúmenes de narrativa inteligente en tus informes para abordar conclusiones clave, señalar tendencias y editar el lenguaje y el formato para una audiencia específica. En PowerPoint, en lugar de pegar una captura de pantalla de las conclusiones clave de tu informe, puedes añadir narrativas que se actualizan con cada actualización. Tu audiencia puede utilizar los resúmenes para comprender los datos, llegar más rápido a los puntos clave y explicar los datos a otros.b</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/visuals/power-bi-visualization-smart-narrative"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor123: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">En Power BI Desktop, tienes un conjunto de datos que contiene una tabla.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Creas un objeto visual de tabla en una página de informe de Power BI como
+                se muestra en la siguiente ilustración.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p20.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Necesitas configurar el objeto visual para que muestre la imagen
+                referenciada en lugar de la URL en la columna Imagen de la planta (Plant Image).</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué deberías hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Desde la pestaña Formato, seleccionar Valores y luego establecer Iconos de URL en Activado para la
+                    tabla.</li>
+                <li>B. Establecer la Categoría de datos del campo Imagen de la planta (Plant Image) en URL web.</li>
+                <li>C. Establecer el Tipo de datos del campo Imagen de la planta (Plant Image) en Binario.</li>
+                <li>D. Establecer la Categoría de datos del campo Imagen de la planta (Plant Image) en URL de imagen.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: D</p>
+            <p class="text-sm text-gray-400 mb-4">Agregar imágenes a tu informe:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>1. Crea una columna con las URL de las imágenes. Consulta las Consideraciones más adelante en este
+                    artículo para conocer los requisitos.</li>
+                <li>2. Selecciona esa columna. En la cinta Herramientas de columna, en Categoría de datos, selecciona URL de
+                    imagen.</li>
+                <li>3. Agrega la columna a una tabla, matriz, segmentación o tarjeta de varias filas.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Paso 3: Desde powerbi.com, agrega un mosaico para el conjunto de datos
+                Excel1 al PanelA.</p>
+            <p class="text-sm text-gray-400 mb-4">En el servicio de Power BI (app.powerbi.com), un panel contiene mosaicos
+                anclados desde uno o más conjuntos de datos, por lo que puedes hacer preguntas sobre cualquiera de los datos
+                contenidos en cualquiera de esos conjuntos de datos.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/create-reports/power-bi-images-tables" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor124: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tienes una hoja de cálculo de Microsoft Excel llamada Excel1 que contiene
+                resultados de una encuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">Tienes un panel de Power BI llamado PanelA que tiene habilitada la función
+                de Preguntas y respuestas.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesitas asegurarte de que los usuarios que pueden acceder al PanelA
+                puedan hacer preguntas basadas en el contenido de Excel1 y anclar objetos visuales basados en sus consultas
+                al PanelA. La solución debe minimizar el tiempo de desarrollo.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué tres acciones deberías realizar en secuencia? Para responder, mueve
+                las acciones apropiadas de la lista de acciones al área de respuesta y ordénalas en la secuencia correcta.
+            </p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Desde powerbi.com, anclar un rango de Excel1 al TableroA (DashboardA).</li>
+                <li>Desde Excel, formatear los datos en Excel1 como tabla.</li>
+                <li>Desde powerbi.com, importar Excel1 como conjunto de datos (dataset).</li>
+                <li>Desde powerbi.com, agregar un mosaico para el conjunto de datos Excel1 al TableroA (DashboardA).</li>
+                <li>Desde Excel, crear un rango con nombre utilizando los datos en Excel1.</li>
+                <li>Desde powerbi.com, cargar Excel1.</li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p21.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/3/s21.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Paso 1: Desde powerbi.com, cargar Excel1.</p>
+            <p class="text-sm text-gray-400 mb-4">Carga tu archivo de Excel en el servicio de Power BI.</p>
+            <p class="text-sm text-gray-400 mb-4">El servicio de Power BI se conecta a muchas fuentes de datos, incluidos
+                archivos de Excel que se encuentran en tu computadora.</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>1. Inicia sesión en el servicio de Power BI.</li>
+                <li>2. En Mi área de trabajo, selecciona Nuevo > Cargar un archivo.</li>
+                <li>3. Selecciona Archivo local, busca la ubicación donde guardaste el archivo de Excel Muestra financiera y
+                    selecciona Abrir.</li>
+                <li>4. En la página Archivo local, selecciona Importar.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Ahora tienes un conjunto de datos de Muestra financiera. Power BI también
+                creó automáticamente un panel en blanco. Si no ves el panel, actualiza tu navegador.</p>
+            <p class="text-sm text-gray-400 mb-4">Paso 2: Desde powerbi.com, importar Excel1 como un conjunto de datos.</p>
+            <p class="text-sm text-gray-400 mb-4">Paso 3: Desde powerbi.com, agregar un mosaico para el conjunto de datos
+                Excel1 al PanelA.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/create-reports/service-from-excel-to-stunning-report"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor125: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Esta pregunta es parte de una serie de preguntas que presentan el
+                mismo escenario. Cada pregunta de la serie contiene una solución única que podría cumplir los objetivos
+                planteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta, mientras que otros
+                pueden no tener una solución correcta. Después de responder una pregunta en esta sección, NO podrá volver a
+                ella.
+                Como resultado, estas preguntas no aparecerán en la pantalla de revisión.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Tienes un gráfico de barras agrupadas que contiene una medida llamada
+                Salario como valor y un campo llamado Empleado como eje. El salario está presente en los datos como una
+                cantidad numérica que representa dólares estadounidenses.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesitas crear una línea de referencia para mostrar qué empleados están
+                por encima del salario mediano.</p>
+            <p class="text-sm text-gray-400 mb-4">Solución: Creas una línea constante y estableces el valor en 0.5.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Esto cumple con el objetivo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Sí</li>
+                <li>B. No</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">En su lugar: Creas una línea de percentil utilizando la medida Salario y
+                estableces el percentil en 50%.</p>
+            <p class="text-sm text-gray-400 mb-4">La mediana es el valor medio o el percentil 50 de un conjunto de datos.
+            </p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://theorderguys.com/dash-intel/powerbi/statistical_functions_median.php" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor126: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Esta pregunta es parte de una serie de preguntas que presentan el
+                mismo escenario. Cada pregunta de la serie contiene una solución única que podría cumplir los objetivos
+                planteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta, mientras que otros
+                pueden no tener una solución correcta. Después de responder una pregunta en esta sección, NO podrá volver a
+                ella.
+                Como resultado, estas preguntas no aparecerán en la pantalla de revisión.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Tienes un gráfico de barras agrupadas que contiene una medida llamada
+                Salario como valor y un campo llamado Empleado como eje. El salario está presente en los datos como una
+                cantidad numérica que representa dólares estadounidenses.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesitas crear una línea de referencia para mostrar qué empleados están por encima del salario mediano.</p>
+            <p class="text-sm text-gray-400 mb-4">Solución: Creas una línea de promedio utilizando la medida Salario.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Esto cumple con el objetivo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Sí</li>
+                <li>B. No</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">El promedio no es la mediana.</p>
+            <p class="text-sm text-gray-400 mb-4">En su lugar: Creas una línea de percentil utilizando la medida Salario y estableces el percentil en 50%.</p>
+            <p class="text-sm text-gray-400 mb-4">La mediana es el valor medio o el percentil 50 de un conjunto de datos.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium" href="https://theorderguys.com/dash-intel/powerbi/statistical_functions_median.php" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor127: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                    <span class="font-bold">Nota: </span>Esta pregunta es parte de una serie de preguntas que presentan el
+                    mismo escenario. Cada pregunta de la serie contiene una solución única que podría cumplir los objetivos
+                    planteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta, mientras que otros
+                    pueden no tener una solución correcta. Después de responder una pregunta en esta sección, NO podrá volver a ella.
+                    Como resultado, estas preguntas no aparecerán en la pantalla de revisión.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Tienes un gráfico de barras agrupadas que contiene una medida llamada Salario como valor y un campo llamado Empleado como eje. El salario está presente en los datos como una cantidad numérica que representa dólares estadounidenses.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesitas crear una línea de referencia para mostrar qué empleados están por encima del salario mediano.</p>
+            <p class="text-sm text-gray-400 mb-4">Solución: Creas una línea de percentil utilizando la medida Salario y estableces el percentil en 50%.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Esto cumple con el objetivo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Sí</li>
+                <li>B. No</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">La mediana es el valor medio o el percentil 50 de un conjunto de datos.
+            </p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://theorderguys.com/dash-intel/powerbi/statistical_functions_median.php" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">A</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(89%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 89%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">otros</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(11%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 11%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor128: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Estás perfilando datos mediante el Editor de Power Query.</p>
+            <p class="text-sm text-gray-400 mb-4">Tienes una tabla que contiene una columna llamada columna1. Las
+                estadísticas de columna y la distribución de valores de la columna1 se muestran en la siguiente ilustración.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p25.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Utiliza los menús desplegables para seleccionar la opción de respuesta que
+                complete cada enunciado según la información presentada en el gráfico.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Hay [respuesta elegida]</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>20 valores que ocurren</li>
+                <li>365 valores que ocurren</li>
+                <li>277,329 valores que ocurren</li>
+                <li>hay un valor que ocurre</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">La Pera, especie con flores se encuentra con más frecuencia en la columna1
+                que la especie [respuesta elegida].</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Ceniza, Verde</li>
+                <li>Cangrejo, Floración</li>
+                <li>Olmo, Americano</li>
+                <li>Abeto, Azul</li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p25.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/3/s25.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 1: hay 20 valores que ocurren -</p>
+            <p class="text-sm text-gray-400 mb-4">Hay 20 valores únicos.</p>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 2: Olmo, Americano -</p>
+            <p class="text-sm text-gray-400 mb-4">Olmo, Americano está por debajo de la especie Haya, floración en el
+                gráfico.</p>
+        </div>`
     },
     contenedor129: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tienes un informe de Power BI alojado en powerbi.com que muestra los
+                gastos por departamento para los gerentes de departamento.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe contiene un gráfico de líneas que muestra los gastos por mes.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesitas permitir que los usuarios elijan entre ver el informe como un
+                gráfico de líneas o como un gráfico de columnas. La solución debe minimizar el esfuerzo de desarrollo y
+                mantenimiento.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué deberías hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Habilitar a los lectores del informe para personalizar objetos visuales.to</li>
+                <li>B. Crear una página de informe separada para que los usuarios vean el gráfico de columnas.</li>
+                <li>C. Agregar un gráfico de columnas, un marcador y un botón para que los usuarios elijan un objeto visual.</li>
+                <li>D. Crear un informe móvil que contenga un gráfico de columnas.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: C</p>
+            <p class="text-sm text-gray-400 mb-4">Permitir que los usuarios personalicen objetos visuales en un informe</p>
+            <p class="text-sm text-gray-400 mb-4">Habilitar la personalización en un informe</p>
+            <p class="text-sm text-gray-400 mb-4">Puedes habilitar la función ya sea en Power BI Desktop o en el servicio
+                Power BI. También puedes habilitarla en informes insertados.</p>
+            <p class="text-sm text-gray-400 mb-4">Para habilitar la función en el servicio Power BI (powerbi.com), ve a
+                Configuración de tu informe.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s26.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/create-reports/power-bi-personalize-visuals?tabs=powerbi-service#enable-personalization-in-a-report"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">A</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(59%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 59%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">C</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(41%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 41%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor130: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tienes dos informes de Power BI llamados InformeA e InformeB, cada uno utiliza una paleta de colores distinta.</p>
+            <p class="text-sm text-gray-400 mb-4">Estás creando un panel (dashboard) de Power BI que incluirá dos objetos visuales de cada informe.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesitas utilizar un tema oscuro coherente para el panel (dashboard). La solución debe preservar los colores originales de los informes.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué dos acciones deberías realizar? Cada respuesta correcta presenta una parte de la solución.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Cargar una instantánea.</li>
+                <li>B. Para el navegador, establecer la preferencia de color al modo oscuro.</li>
+                <li>C. Al anclar objetos visuales al panel (dashboard), seleccionar Usar tema de destino.</li>
+                <li>D. Seleccionar el tema oscuro del panel (dashboard).</li>
+                <li>E. Activar el flujo de mosaicos.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: CD</p>
+            <p class="text-sm text-gray-400 mb-4">D: Con los temas de panel puedes aplicar un tema de color a todo tu panel,
+                como colores corporativos, colores estacionales o cualquier otro tema de color que desees aplicar. Cuando
+                aplicas un tema de panel, todos los objetos visuales en tu panel utilizan los colores del tema seleccionado.
+                En el panel que aparece, selecciona uno de los temas predefinidos.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s27.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">C: Informes y paneles con temas diferentes</p>
+            <p class="text-sm text-gray-400 mb-4">Si tu informe utiliza un tema diferente al tema del panel, en la mayoría
+                de los casos puedes controlar si el objeto visual conserva el tema actual del informe o utiliza el tema del
+                panel.</p>
+            <p class="text-sm text-gray-400 mb-4">* Intenta volver a anclar el mosaico y selecciona Usar tema del panel.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s27.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/create-reports/service-dashboard-themes" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">CD</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(90%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">otros</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(10%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 32%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor131: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tienes un conjunto de datos que contiene datos de ingresos del año pasado.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesitas utilizar la detección de anomalías en Power BI para mostrar
+                anomalías en el conjunto de datos.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué deberías configurar? Para responder, selecciona las opciones
+                apropiadas en el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Tipo de gráfico:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Líneas</li>
+                <li>Circular</li>
+                <li>Treemap</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Configuración del gráfico:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Selecciona la opción "Mostrar valor como"</li>
+                <li>Habilitar obtención de detalles entre informes</li>
+                <li>Rellenar el eje con un campo de fecha</li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p28.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Recuadro 1: Línea -</p>
+            <p class="text-sm text-gray-400 mb-4">La detección de anomalías solo es compatible con objetos visuales de
+                gráfico de líneas que contengan datos de series temporales en el campo Eje.</p>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 2: Completar el eje con un campo de fecha</p>
+            <p class="text-sm text-gray-400 mb-4">Incorrecto:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Las Explicaciones de anomalías no funcionan con las opciones de 'Mostrar valor como'.</li>
+                <li>No se admite la exploración en profundidad para ir al siguiente nivel en la jerarquía.</li>
+            </ul>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/visuals/power-bi-visualization-anomaly-detection"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor132: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tienes un gráfico de líneas que muestra el número de empleados en un departamento a lo largo del tiempo.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesitas ver los costos salariales totales de los empleados cuando pasas el cursor sobre un punto de datos.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué deberías hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Agregar salario a los campos de obtención de detalles.</li>
+                <li>B. Agregar salario a los filtros visuales.</li>
+                <li>C. Agregar salario a la información sobre herramientas.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: C</p>
+            <p class="text-sm text-gray-400 mb-4">Personalizar la información sobre herramientas con agregación o medidas
+                rápidas</p>
+            <p class="text-sm text-gray-400 mb-4">Puedes personalizar la información sobre herramientas seleccionando una
+                función de agregación.</p>
+            <p class="text-sm text-gray-400 mb-4">Selecciona la flecha junto al campo en el contenedor Información sobre
+                herramientas. Luego, selecciona entre las opciones disponibles.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s29.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>La información sobre herramientas es una forma elegante de
+                proporcionar más información contextual y detalle a los puntos de datos en un objeto visual. Puedes
+                personalizar la información sobre herramientas en Power BI Desktop y en el servicio Power BI.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Cuando se crea una visualización, la información sobre herramientas predeterminada muestra el valor y la categoría del punto de datos.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/create-reports/desktop-custom-tooltips?tabs=powerbi-desktop"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor133: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tienes el objeto visual que se muestra en la ilustración Original. (Haz
+                clic en la pestaña Original.)</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p30.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Necesitas configurar el objeto visual como se muestra en la ilustración
+                Modificado. (Haz clic en la pestaña Modificado.)</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p30.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">¿Qué deberías agregar al objeto visual?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. una medida</li>
+                <li>B. una línea de promedio</li>
+                <li>C. una línea de tendencia</li>
+                <li>D. un pronóstico</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: D</p>
+            <p class="text-sm text-gray-400 mb-4">Por ejemplo, así es como se ve el pronóstico actual:</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s30.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://spreadsheeto.com/power-bi-forecasting/#intro" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor134: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Necesitas crear un objeto visual que permita la exploración ad hoc de los
+                datos como se muestra en la siguiente ilustración.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p31.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">¿Qué tipo de objeto visual deberías usar?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. narrativa inteligente</li>
+                <li>B. árbol de descomposición</li>
+                <li>C. Preguntas y respuestas</li>
+                <li>D. influyentes clave</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">El objeto visual de árbol de descomposición en Power BI te permite visualizar datos a través de múltiples dimensiones. Agrega datos automáticamente y permite profundizar en tus dimensiones en cualquier orden. También es una visualización de inteligencia artificial (IA), por lo que puedes pedirle que encuentre la siguiente dimensión para profundizar basándose en ciertos criterios.</p>
+            <p class="text-sm text-gray-400 mb-4">Esto lo convierte en una herramienta valiosa para la exploración ad hoc y la realización de análisis de causa raíz.</p>
+            <p class="text-sm text-gray-400 mb-4">Ejemplo:</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p31.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium" href="linkHere" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor135: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Su empresa tiene empleados en 10 estados.</p>
+            <p class="text-sm text-gray-400 mb-4">La empresa decidió recientemente asociar cada estado a una de las
+                siguientes tres regiones: Este, Oeste y Norte.</p>
+            <p class="text-sm text-gray-400 mb-4">Tiene un modelo de datos que contiene información de los empleados por
+                estado. El modelo NO incluye información de región.</p>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe que muestra los empleados por estado.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita ver a los empleados por región lo más rápido posible.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Crear una nueva agregación que resuma por estado.</li>
+                <li>B. Crear una nueva agregación que resuma por empleado.</li>
+                <li>C. Crear un nuevo grupo en la columna de estado y establecer el Tipo de grupo en Lista.</li>
+                <li>D. Crear un nuevo grupo en la columna de estado y establecer el Tipo de grupo en Bin.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: C</p>
+            <p class="text-sm text-gray-400 mb-4">En Power BI Desktop, puede agrupar puntos de datos para ayudarle a ver,
+                analizar y explorar datos y tendencias en sus objetos visuales con mayor claridad.</p>
+            <p class="text-sm text-gray-400 mb-4">Ejemplo:</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/s32.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Incorrecto:</p>
+            <p class="text-sm text-gray-400 mb-4">No es D: También puede definir el tamaño del bin para agrupar valores en
+                grupos de igual tamaño que le permitan visualizar mejor los datos de manera significativa. Esta acción a
+                menudo se denomina agrupamiento en bins.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/create-reports/desktop-grouping-and-binning"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor136: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene una colección de informes para el departamento de RR.HH. de su empresa.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una visualización para el departamento de RR.HH. que muestre el recuento histórico de empleados y prediga tendencias durante los próximos seis meses.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué tipo de visualización debería usar?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. gráfico de cintas</li>
+                <li>B. gráfico de dispersión</li>
+                <li>C. gráfico de líneas</li>
+                <li>D. influyentes clave</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: C</p>
+            <p class="text-sm text-gray-400 mb-4">Los mejores datos para la previsión son los datos de series temporales o
+                los números enteros que aumentan uniformemente. El gráfico de líneas debe tener solo una línea.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://powerbi.microsoft.com/fr-ca/blog/introducing-new-forecasting-capabilities-in-power-view-for-office-365/"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor137: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un panel de Microsoft Power BI. El informe utilizado para crear el
+                panel utiliza un conjunto de datos importado desde un origen de datos de Microsoft SQL Server.</p>
+            <p class="text-sm text-gray-400 mb-4">El panel se muestra en la ilustración. (Haga clic en la pestaña
+                Ilustración.)</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p34.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p34.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">¿Qué ocurrió a las 12:03:06 p.m.?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Se agregó una nueva transacción al origen de datos.</li>
+                <li>B. Se actualizó la memoria caché de los mosaicos del panel.</li>
+                <li>C. Un usuario agregó un comentario a un mosaico.</li>
+                <li>D. Un usuario presionó F5.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: D</p>
+            <p class="text-sm text-gray-400 mb-4">Si presiona F5 o el botón de actualizar, los gráficos del panel se
+                actualizan.</p>
+            <p class="text-sm text-gray-400 mb-4">Nota: Power BI le permite pasar rápidamente de los datos a la información
+                y a la acción, pero debe asegurarse de que los datos en sus informes y paneles de Power BI sean recientes.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Saber cómo actualizar los datos suele ser fundamental para ofrecer
+                resultados precisos.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/connect-data/refresh-data" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">B</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(83%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 83%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">otros</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(17%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 17%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor138: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear un informe de Power BI. La primera página del informe debe
+                contener las siguientes dos vistas:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Ventas por código postal</li>
+                <li>Ventas por mes</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Ambas vistas deben mostrar una segmentación para seleccionar un valor para
+                un campo llamado Cadena.</p>
+            <p class="text-sm text-gray-400 mb-4">La vista Ventas por código postal debe mostrar un objeto visual de mapa
+                como se muestra en la siguiente ilustración.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p35.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La vista Ventas por mes debe mostrar un objeto visual de gráfico de
+                columnas como se muestra en la siguiente ilustración.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p35.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios deben poder cambiar entre las vistas mediante botones en la página del informe. El campo Cadena seleccionado debe mantenerse al cambiar entre las vistas.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cuál es el número mínimo de marcadores requerido y qué propiedad debe aplicar a cada marcador? Para responder, seleccione las opciones apropiadas en el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+
+            <div class="mt-4 mb-4">
+                <img src="img/3/p35.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/3/s35.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 1: 2 -</p>
+            <p class="text-sm text-gray-400 mb-4">Uno para cada objeto visual.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cuando edita un informe en Power BI Desktop y en el servicio Power BI,
+                puede agregar marcadores de informe para capturar el estado actual de una página del informe.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Los marcadores guardan los filtros y segmentadores actuales, los objetos
+                visuales resaltados de forma cruzada, el orden de clasificación, etc. Cuando otros usuarios vean su informe,
+                pueden volver a ese estado exacto seleccionando el marcador que guardó.</p>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 2: Visualización -</p>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios deben poder cambiar entre las vistas mediante botones en la
+                página del informe. El campo Cadena seleccionado debe mantenerse al cambiar entre las vistas.</p>
+            <p class="text-sm text-gray-400 mb-4">Puede seleccionar si cada marcador aplicará propiedades de Datos, como
+                filtros y segmentadores; propiedades de Visualización, como el foco y su visibilidad; y cambios de Página
+                actual, que presentan la página que estaba visible cuando se agregó el marcador. Estas capacidades son
+                útiles cuando usa marcadores para cambiar entre vistas del informe o selecciones de objetos visuales, en
+                cuyo caso probablemente querrá desactivar las propiedades de datos, para que los filtros no se restablezcan
+                cuando los usuarios cambien de vista al seleccionar un marcador.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cuando crea un marcador, los siguientes elementos se guardan con el
+                marcador:
+            </p>
+            <p class="text-sm text-gray-400 mb-4">La página actual -</p>
+            <p class="text-sm text-gray-400 mb-4">Filtros -</p>
+            <p class="text-sm text-gray-400 mb-4">Segmentadores, incluido el tipo de segmentador (por ejemplo, desplegable o
+                lista) y el estado del segmentador</p>
+            <p class="text-sm text-gray-400 mb-4">Estado de selección visual (como los filtros de resaltado cruzado)</p>
+            <p class="text-sm text-gray-400 mb-4">Orden de clasificación -</p>
+            <p class="text-sm text-gray-400 mb-4">Ubicación de exploración en profundidad -</p>
+            <p class="text-sm text-gray-400 mb-4">Visibilidad de un objeto (mediante el panel Selección)</p>
+            <p class="text-sm text-gray-400 mb-4">El modo de foco o Spotlight de cualquier objeto visible</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/create-reports/desktop-bookmarks" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor139: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene el objeto visual que se muestra en la ilustración. (Haga clic en la
+                pestaña Ilustración.)</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p36.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Necesita mostrar la relación entre el Costo total (Total Cost) y las
+                Ventas totales (Total Sales) a
+                lo largo del tiempo.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Agregar un eje de reproducción (play axis).</li>
+                <li>B. Desde el panel Análisis, agregar una línea de promedio (Average line).</li>
+                <li>C. Agregar una segmentación (Slicer) para el año.</li>
+                <li>D. Crear una medida DAX que calcule el crecimiento interanual.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">Cuándo usar una segmentación:</p>
+            <p class="text-sm text-gray-400 mb-4">teLas segmentaciones son una excelente opción cuando desea:xto</p>
+            <p class="text-sm text-gray-400 mb-4">Mostrar filtros de uso común o importantes en el lienzo del informe para
+                un acceso más fácil.</p>
+            <p class="text-sm text-gray-400 mb-4">Facilitar la visualización del estado filtrado actual sin tener que abrir
+                una lista desplegable.</p>
+            <p class="text-sm text-gray-400 mb-4">Filtrar por columnas que no son necesarias y están ocultas en las tablas
+                de datos.</p>
+            <p class="text-sm text-gray-400 mb-4">Crear informes más enfocados colocando segmentaciones junto a objetos
+                visuales importantes.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Supongamos que desea que los lectores de su informe puedan ver
+                las métricas de ventas generales, pero también destacar el rendimiento de gerentes de distrito individuales
+                y en diferentes períodos de tiempo. Podría crear informes separados o gráficos comparativos. Podría agregar
+                filtros en el panel Filtros. O podría usar segmentaciones. Las segmentaciones son otra forma de filtrar.
+                Reducen la parte del conjunto de datos que se muestra en las otras visualizaciones del informe.
+            </p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium" href="linkHere" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">A</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(87%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 87%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">otros</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(13%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 13%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor140: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene el panel de Power BI que se muestra en la ilustración del Panel.
+                (Haga clic en la pestaña Panel.)</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p37.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Necesita asegurarse de que cuando los usuarios vean el panel en un
+                dispositivo móvil, el panel aparezca como se muestra en la ilustración Móvil. (Haga clic en la pestaña
+                Móvil.)</p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p37.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer? Para responder, seleccione las opciones apropiadas en
+                el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Actualizar el diseño en:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Diseño móvil del Dashboard</li>
+                <li>Diseño web del Dashboard</li>
+                <li>Diseño móvil del Reporte</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Cambiar tamaño y mover:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>El mosaico del mapa de SubTotal</li>
+                <li>Los mosaicos de Total de Ventas y Cantidad Total</li>
+                <li>El mosaico de Total de Ventas por Categoría Principal</li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p37.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/3/s37.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 1: Diseño móvil del informe -</p>
+            <p class="text-sm text-gray-400 mb-4">Power BI proporciona varias funciones para ayudarle a crear versiones
+                optimizadas para móviles de sus informes:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Una vista de diseño móvil donde crea su informe optimizado para móviles arrastrando y soltando objetos
+                    visuales en un lienzo con un emulador de teléfono.</li>
+                <li>Etc.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 2: El mosaico de Ventas totales por categoría principal</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/create-reports/power-bi-create-mobile-optimized-report-about"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor141: {
         pregunta: ``,
