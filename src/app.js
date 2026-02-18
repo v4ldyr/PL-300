@@ -186,7 +186,34 @@ const app = createApp({
             interruptor178: false,
             interruptor179: false,
             interruptor180: false,
-            interruptor181: false
+            interruptor181: false,
+            interruptor182: false,
+            interruptor183: false,
+            interruptor184: false,
+            interruptor185: false,
+            interruptor186: false,
+            interruptor187: false,
+            interruptor188: false,
+            interruptor189: false,
+            interruptor190: false,
+            interruptor191: false,
+            interruptor192: false,
+            interruptor193: false,
+            interruptor194: false,
+            interruptor195: false,
+            interruptor196: false,
+            interruptor197: false,
+            interruptor198: false,
+            interruptor199: false,
+            interruptor200: false,
+            interruptor201: false,
+            interruptor202: false,
+            interruptor203: false,
+            interruptor204: false,
+            interruptor205: false,
+            interruptor206: false,
+            interruptor207: false,
+            interruptor208: false
 
         };
     },
@@ -416,7 +443,7 @@ const app = createApp({
                 this.interruptor111 = !this.interruptor111;
             } else if (numero === 112) {
                 this.interruptor112 = !this.interruptor112;
-            }  else if (numero === 113) {
+            } else if (numero === 113) {
                 this.interruptor113 = !this.interruptor113;
             } else if (numero === 114) {
                 this.interruptor114 = !this.interruptor114;
@@ -544,6 +571,8 @@ const app = createApp({
                 this.interruptor175 = !this.interruptor175;
             } else if (numero === 176) {
                 this.interruptor176 = !this.interruptor176;
+            } else if (numero === 177) {
+                this.interruptor177 = !this.interruptor177;
             } else if (numero === 178) {
                 this.interruptor178 = !this.interruptor178;
             } else if (numero === 179) {
@@ -552,6 +581,60 @@ const app = createApp({
                 this.interruptor180 = !this.interruptor180;
             } else if (numero === 181) {
                 this.interruptor181 = !this.interruptor181;
+            } else if (numero === 182) {
+                this.interruptor181 = !this.interruptor181;
+            } else if (numero === 183) {
+                this.interruptor181 = !this.interruptor181;
+            } else if (numero === 184) {
+                this.interruptor184 = !this.interruptor184;
+            } else if (numero === 185) {
+                this.interruptor185 = !this.interruptor185;
+            } else if (numero === 186) {
+                this.interruptor186 = !this.interruptor186;
+            } else if (numero === 187) {
+                this.interruptor187 = !this.interruptor187;
+            } else if (numero === 188) {
+                this.interruptor188 = !this.interruptor188;
+            } else if (numero === 189) {
+                this.interruptor189 = !this.interruptor189;
+            } else if (numero === 190) {
+                this.interruptor190 = !this.interruptor190;
+            } else if (numero === 191) {
+                this.interruptor191 = !this.interruptor191;
+            } else if (numero === 192) {
+                this.interruptor192 = !this.interruptor192;
+            } else if (numero === 193) {
+                this.interruptor193 = !this.interruptor193;
+            } else if (numero === 194) {
+                this.interruptor194 = !this.interruptor194;
+            } else if (numero === 195) {
+                this.interruptor195 = !this.interruptor195;
+            } else if (numero === 196) {
+                this.interruptor196 = !this.interruptor196;
+            } else if (numero === 197) {
+                this.interruptor197 = !this.interruptor197;
+            } else if (numero === 198) {
+                this.interruptor198 = !this.interruptor198;
+            } else if (numero === 199) {
+                this.interruptor199 = !this.interruptor199;
+            } else if (numero === 200) {
+                this.interruptor200 = !this.interruptor200;
+            } else if (numero === 201) {
+                this.interruptor201 = !this.interruptor201;
+            } else if (numero === 202) {
+                this.interruptor202 = !this.interruptor202;
+            } else if (numero === 203) {
+                this.interruptor203 = !this.interruptor203;
+            } else if (numero === 204) {
+                this.interruptor204 = !this.interruptor204;
+            } else if (numero === 205) {
+                this.interruptor205 = !this.interruptor205;
+            } else if (numero === 206) {
+                this.interruptor206 = !this.interruptor206;
+            } else if (numero === 207) {
+                this.interruptor207 = !this.interruptor207;
+            } else if (numero === 208) {
+                this.interruptor208 = !this.interruptor208;
             }
         }
     }
