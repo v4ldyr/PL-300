@@ -7769,7 +7769,7 @@ const contenido = {
             <p class="text-sm text-gray-400 mb-4">Tiene un inquilino de Power BI que aloja los conjuntos de datos que se
                 muestran en la siguiente tabla.</p>
             <div class="mt-4 mb-4">
-                <img src="img/3/p74.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                <img src="img/4/p1.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
             </div>
             <p class="text-sm text-gray-400 mb-4">Tiene los siguientes requisitos:</p>
             <p class="text-sm text-gray-400 mb-4">Se debe evitar la exportación de informes que contengan Información de
@@ -7790,12 +7790,12 @@ const contenido = {
                 </li>
             </ul>
             <div class="mt-4 mb-4">
-                <img src="img/3/p74.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                <img src="img/4/p1.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
             </div>
         </div>`,
         solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
             <div class="mt-4 mb-4">
-                <img src="img/3/s74.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                <img src="img/4/s1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
             </div>
             <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
                 href="https://learn.microsoft.com/es-es/fabric/enterprise/powerbi/service-security-sensitivity-label-overview"
@@ -7900,114 +7900,1563 @@ const contenido = {
     </div>`
     },
     contenedor181: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un conjunto de datos que se usa con poca frecuencia y se actualiza
+                cada hora. Recibe una notificación de que la actualización se deshabilitó debido a la inactividad. ¿Qué dos
+                acciones harán que se reanude la programación de actualización? Cada respuesta correcta presenta una
+                solución completa.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Habilitar el almacenamiento en caché de consultas para el conjunto de datos.</li>
+                <li>B. Importar el conjunto de datos a Microsoft Excel.</li>
+                <li>C. Desde el servicio Power BI, abrir un panel que use el conjunto de datos.</li>
+                <li>D. Desde el servicio Power BI, abrir un informe que use el conjunto de datos.</li>
+                <li>E. Desde PowerShell, ejecutar el cmdlet get-powerbireport.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: CD</p>
+            <p class="text-sm text-gray-400 mb-4">Después de dos meses de inactividad, la actualización programada en su
+                conjunto de datos se pausa. Se considera que un conjunto de datos está inactivo cuando ningún usuario ha
+                visitado ningún panel o informe creado sobre el conjunto de datos. En ese momento, se envía un correo
+                electrónico al propietario del conjunto de datos indicando que la actualización programada está pausada. La
+                programación de actualización del conjunto de datos se muestra entonces como deshabilitada. Para reanudar la
+                actualización programada, simplemente vuelva a visitar cualquier panel o informe creado sobre el conjunto de
+                datos.</p>
+            <p class="text-sm text-gray-400 mb-4">Incorrecto:</p>
+            <p class="text-sm text-gray-400 mb-4">No es E: get-powerbireport recupera una lista de informes de Power BI que
+                coinciden con los criterios de búsqueda y el ámbito especificados.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/connect-data/refresh-scheduled-refresh" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor182: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un área de trabajo de Power BI que contiene un conjunto de datos, un
+                informe y un panel. Los siguientes grupos tienen acceso:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Los usuarios externos pueden acceder al panel.</li>
+                <li>Los gerentes pueden acceder al panel y a un informe específico para gerentes.</li>
+                <li>Los empleados pueden acceder al panel y a un informe restringido con seguridad a nivel de filas (RLS).</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Necesita que todos los usuarios, incluidos los usuarios externos, puedan etiquetar a los administradores del área de trabajo si identifican un problema con el panel. La solución debe garantizar que otros usuarios vean los problemas que se plantearon.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería usar?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. comentarios</li>
+                <li>B. chat en Microsoft Teams</li>
+                <li>C. alertas</li>
+                <li>D. suscripciones</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">Agregue un comentario personal o inicie una conversación sobre un panel o
+                informe con sus colegas. La función de comentarios es una de las formas en que un usuario empresarial puede
+                colaborar con otros.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Se pueden agregar comentarios a un panel completo, a objetos visuales
+                individuales en un panel, a una página de informe, a un informe paginado y a objetos visuales individuales
+                en una página de informe. Agregue un comentario general o agregue un comentario dirigido a colegas
+                específicos.
+            </p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/consumer/end-user-comment" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor183: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un archivo PBIX que importa varias tablas de una base de datos de
+                Azure SQL.</p>
+            <p class="text-sm text-gray-400 mb-4">Los datos se migrarán a otra base de datos de Azure SQL.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita cambiar las conexiones en el archivo PBIX. La solución debe
+                minimizar el esfuerzo administrativo.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Desde el Editor de Power Query, crear nuevas consultas.</li>
+                <li>B. Desde el Editor de Power Query, modificar el origen de cada consulta.</li>
+                <li>C. Crear un archivo PBIT, abrir el archivo y cambiar los orígenes de datos cuando se le solicite.</li>
+                <li>D. Modificar la configuración del origen de datos.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: D</p>
+            <p class="text-sm text-gray-400 mb-4">Abra el archivo PBIX con Microsoft Power BI Desktop.</p>
+            <p class="text-sm text-gray-400 mb-4">Luego elija Archivo -> Opciones y configuración -> Configuración del
+                origen de datos -> Haga clic derecho en los orígenes de datos y cambie el origen.</p>
+            <p class="text-sm text-gray-400 mb-4">Incorrecto:</p>
+            <p class="text-sm text-gray-400 mb-4">No es C: PBIT es un archivo de plantilla.</p>
+            <p class="text-sm text-gray-400 mb-4">El archivo PBIT conserva la estructura de su informe y contiene 'Archivo
+                DataModelSchema' en lugar de "Archivo DataModel". Sin embargo, si elige el modo de importación, el archivo
+                PBIX almacena todos los datos importados de los orígenes de datos y la estructura del informe.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://windowsreport.com/open-pbix-file/" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor184: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un área de trabajo de Power BI que contiene varios informes.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita proporcionar a un usuario la capacidad de crear un panel que
+                utilizará los objetos visuales de los informes.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Crear un rol de seguridad a nivel de filas (RLS) y agregar al usuario al rol.</li>
+                <li>B. Compartir los informes con el usuario.</li>
+                <li>C. Conceder al usuario el permiso de Lectura para los conjuntos de datos.</li>
+                <li>D. Agregar al usuario como miembro del área de trabajo.</li>
+                <li>E. Agregar al usuario como Visor del área de trabajo.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: D</p>
+            <p class="text-sm text-gray-400 mb-4">Para conceder acceso a un área de trabajo nueva, asigne esos grupos de
+                usuarios o individuos a uno de los roles del área de trabajo: Administrador, Miembro, Colaborador o Visor.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Roles del área de trabajo -</p>
+            <div class="mt-4 mb-4">
+                <img src="img/4/s7.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/collaborate-share/service-roles-new-workspaces"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor185: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un área de trabajo de Power BI que contiene un informe de una sola
+                página llamado Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita agregar todos los objetos visuales de Ventas a un panel. La
+                solución debe garantizar que los objetos visuales adicionales agregados a la página se agreguen
+                automáticamente al panel.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué tres acciones debería realizar en secuencia? Para responder, mueva
+                las acciones apropiadas de la lista de acciones al área de respuesta y ordénelas en el orden correcto.</p>
+            <div class="mt-4 mb-4">
+                <p class="text-sm text-gray-400 mb-4">Acciones</p>
+                <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                    <li>Abrir Power BI Desktop.</li>
+                    <li>Anclar la página.</li>
+                    <li>Anclar cada objeto visual.</li>
+                    <li>Abrir powerbi.com.</li>
+                    <li>Abrir el informe Ventas.</li>
+                    <li>Crear un nuevo informe.</li>
+                </ul>
+                <img src="img/4/p8.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/4/s8.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Se puede anclar una página de informe completa a un panel, lo que se
+                denomina anclar un mosaico en vivo. Se llama mosaico en vivo porque puede interactuar con el mosaico en el
+                panel.</p>
+            <p class="text-sm text-gray-400 mb-4">A diferencia de los mosaicos de visualización individuales, los cambios
+                realizados en el informe se sincronizan automáticamente con el panel.</p>
+            <p class="text-sm text-gray-400 mb-4">Paso 2: Abrir el informe de Ventas -</p>
+            <p class="text-sm text-gray-400 mb-4">Paso 3: Anclar la página.</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>1. Abra un informe en la vista de edición.</li>
+                <li>2. Sin tener visualizaciones seleccionadas, en la barra de menú, seleccione Anclar a un panel.</li>
+                <li>3. Ancle el mosaico a un panel existente o a un panel nuevo. Observe el texto resaltado: Anclar página
+                    en vivo permite que los cambios en los informes aparezcan en el mosaico del panel cuando se actualiza la
+                    página.</li>
+                <div class="mt-4 mb-4">
+                    <img src="img/4/s8.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                </div>
+                <li>Seleccione Anclar en vivo. Un mensaje de Éxito (cerca de la esquina superior derecha) le informa que la
+                    página se agregó, como un mosaico, a su panel.</li>
+            </ul>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/create-reports/service-dashboard-pin-live-tile-from-report"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor186: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe en Power BI llamado informe1 que se basa en un conjunto
+                de datos compartido.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita minimizar el riesgo de filtración de datos para el informe. La
+                solución debe evitar que otros informes se vean afectados.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Desactivar "Permitir a los destinatarios compartir su panel" y "Permitir a los usuarios crear nuevo
+                    contenido usando los conjuntos de datos subyacentes" para el conjunto de datos.</li>
+                <li>B. Aplicar seguridad a nivel de filas (RLS) al conjunto de datos compartido.</li>
+                <li>C. Seleccionar la opción "Permitir a los usuarios finales exportar datos resumidos y subyacentes desde
+                    el servicio o el servidor de informes" para el informe.</li>
+                <li>D. Seleccionar la opción "No permitir a los usuarios finales exportar ningún dato desde el servicio o el
+                    servidor de informes" para el informe.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: D</p>
+            <p class="text-sm text-gray-400 mb-4">Además de los diversos permisos que puede establecer, también hay dos
+                opciones diferentes para deshabilitar la funcionalidad de exportación. En primer lugar, está la opción
+                general de Exportar datos y, en segundo lugar, Exportar a Excel como una configuración específica. Ambas
+                tienen la misma configuración para los permisos.</p>
+            <p class="text-sm text-gray-400 mb-4">Exportar datos -</p>
+            <div class="mt-4 mb-4">
+                <img src="img/4/s9.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://data-marc.com/2020/04/13/power-bi-governance-why-you-should-consider-to-disable-export-to-excel/"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor187: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">En Power BI Desktop, está creando visualizaciones en un informe basado en un conjunto de datos importado.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita permitir que los usuarios de Power BI exporten los datos resumidos utilizados para crear las visualizaciones, pero impedir que exporten los datos subyacentes.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Desde el servicio Power BI, configurar los permisos del conjunto de datos.</li>
+                <li>B. Desde Power BI Desktop, configurar la configuración de Carga de datos para el archivo actual.</li>
+                <li>C. Desde Power BI Desktop, modificar los permisos del origen de datos.</li>
+                <li>D. Desde Power BI Desktop, configurar la Configuración del informe para el archivo actual.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">Permisos del conjunto de datos en el servicio Power BI</p>
+            <p class="text-sm text-gray-400 mb-4">La siguiente tabla describe los cuatro niveles de permiso que controlan el
+                acceso a los conjuntos de datos en el servicio Power BI.</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Volver a compartir</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Permite al usuario compartir el contenido del conjunto de datos con otros
+                usuarios, quienes obtendrán permisos de lectura, re-compartir o compilación sobre el mismo.</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Leer</li>
+                <li>Compilación</li>
+                <li>Escribir</li>
+            </ul>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/connect-data/service-datasets-permissions" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor188: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un informe de Power BI que utiliza seguridad a nivel de filas (RLS).
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesita transferir el mantenimiento de la membresía de RLS a un equipo de
+                seguridad de red de Azure. La solución NO debe proporcionar al equipo de seguridad de red de Azure la
+                capacidad de administrar informes, conjuntos de datos o paneles.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Conceder al equipo de seguridad de red de Azure los permisos de Lectura y Compilación para los
+                    conjuntos de datos de Power BI.</li>
+                <li>B. Configurar instrucciones personalizadas para la característica Solicitar acceso que indiquen a los
+                    usuarios que se comuniquen con el equipo de seguridad de red de Azure.</li>
+                <li>C. Instruir al equipo de seguridad de red de Azure para que cree grupos de seguridad. Configurar RLS
+                    para que utilice los grupos.</li>
+                <li>D. Agregar al equipo de seguridad de red de Azure como miembros del rol de RLS.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: C</p>
+            <p class="text-sm text-gray-400 mb-4">Configurar la pertenencia a grupos de seguridad a nivel de filas, Trabajar
+                con miembros</p>
+            <p class="text-sm text-gray-400 mb-4">Agregar miembros -</p>
+            <p class="text-sm text-gray-400 mb-4">En el servicio Power BI, puede agregar un miembro al rol escribiendo la
+                dirección de correo electrónico o el nombre del usuario o grupo de seguridad.</p>
+            <p class="text-sm text-gray-400 mb-4">Puede utilizar los siguientes grupos para configurar la seguridad a nivel
+                de filas.</p>
+            <p class="text-sm text-gray-400 mb-4">Grupo de distribución -</p>
+            <p class="text-sm text-gray-400 mb-4">Grupo habilitado para correo -</p>
+            <p class="text-sm text-gray-400 mb-4">Grupo de seguridad -</p>
+            <p class="text-sm text-gray-400 mb-4">Incorrecto:</p>
+            <p class="text-sm text-gray-400 mb-4">No es A: El permiso de Compilación se aplica a los conjuntos de datos.
+                Cuando concede a los usuarios permiso de Compilación, pueden crear nuevo contenido basado en su conjunto de
+                datos, como informes.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/fabric/security/service-admin-row-level-security" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor189: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene cuatro regiones de ventas. Cada región tiene múltiples gerentes de
+                ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Implementa seguridad a nivel de filas (RLS) en un modelo de datos. Asigna
+                el grupo de seguridad habilitado para correo relevante a cada rol.</p>
+            <p class="text-sm text-gray-400 mb-4">Tiene informes de ventas que permiten el análisis por región. Los gerentes
+                de ventas pueden ver los registros de ventas de su región. Se impide que los gerentes de ventas vean
+                registros de otras regiones.</p>
+            <p class="text-sm text-gray-400 mb-4">Un gerente de ventas cambia a una región diferente.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita asegurarse de que el gerente de ventas pueda ver los datos de
+                ventas correctos.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Cambiar el tipo de licencia de Microsoft Power BI del gerente de ventas.</li>
+                <li>B. Desde Microsoft Power BI Desktop, editar la configuración de Seguridad a nivel de filas para los
+                    informes.</li>
+                <li>C. Administrar los permisos del conjunto de datos subyacente.</li>
+                <li>D. Solicitar que el gerente de ventas sea agregado al grupo correcto de Azure Active Directory.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: D</p>
+            <p class="text-sm text-gray-400 mb-4">Puede utilizar los siguientes grupos para configurar la seguridad a nivel
+                de filas.</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Grupo de distribución</li>
+                <li>Grupo habilitado para correo - Este grupo también contiene una lista de direcciones de correo
+                    electrónico de los miembros y también se puede usar para controlar el acceso a OneDrive y SharePoint.
+                </li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">El Grupo de Seguridad habilitado para correo se puede crear en el Portal
+                de administración de Office 365.</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li> Grupo de seguridad - También se conoce como Grupo de seguridad de Active Directory. Este grupo reside
+                    dentro de Active Directory y Azure Active Directory.</li>
+            </ul>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/fabric/security/service-admin-row-level-security" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor190: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene más de 100 conjuntos de datos publicados.</p>
+            <p class="text-sm text-gray-400 mb-4">Diez de los conjuntos de datos fueron verificados para cumplir con sus estándares de calidad corporativos.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita asegurarse de que los 10 conjuntos de datos verificados aparezcan al principio de la lista de conjuntos de datos publicados siempre que los usuarios busquen conjuntos de datos existentes.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Promocionar los conjuntos de datos.</li>
+                <li>B. Certificar los conjuntos de datos.</li>
+                <li>C. Destacar el conjunto de datos en la página de inicio.</li>
+                <li>D. Publicar los conjuntos de datos en una aplicación.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">Una vez que haya iniciado sesión, se le presentará una lista de conjuntos
+                de datos a los que puede acceder desde sus diversas áreas de trabajo. Esta es una de las razones por las que
+                se recomienda tener conjuntos de datos oficiales promocionados y certificados, ya que estos aparecerán al
+                principio de la lista, apareciendo los conjuntos de datos certificados antes que los promocionados.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Power BI proporciona dos formas de respaldar su contenido valioso y de
+                alta calidad para aumentar su visibilidad: promoción y certificación.
+                <p class="text-sm text-gray-400 mb-4">Promoción: La promoción es una forma
+                    de destacar el contenido que cree que es valioso y que vale la pena que otros utilicen. Fomenta el uso
+                    colaborativo y la difusión del contenido dentro de una organización.</p>
+                <p class="text-sm text-gray-400 mb-4">Cualquier propietario de contenido, así como cualquier miembro con
+                    permisos de escritura en el área de trabajo donde se encuentra el contenido, puede promocionar el
+                    contenido cuando considere que es lo suficientemente bueno para compartirlo.</p>
+                <p class="text-sm text-gray-400 mb-4">Certificación: La certificación significa que el contenido cumple con
+                    los estándares de calidad de la organización y puede considerarse confiable, autorizado y listo para su
+                    uso en toda la organización.</p>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Actualmente es posible respaldar</p>
+            <p class="text-sm text-gray-400 mb-4">Conjuntos de datos -</p>
+            <p class="text-sm text-gray-400 mb-4">Flujos de datos -</p>
+            <p class="text-sm text-gray-400 mb-4">Informes -</p>
+            <p class="text-sm text-gray-400 mb-4">Aplicaciones -</p>
+            <p class="text-sm text-gray-400 mb-4">Si la detectabilidad de conjuntos de datos se ha habilitado en su
+                organización, los conjuntos de datos respaldados pueden ser detectables. Cuando un conjunto de datos es
+                detectable, los usuarios que no tienen acceso a él podrán encontrarlo y solicitar acceso.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://exceleratorbi.com.au/new-power-bi-reports-golden-dataset/" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor191: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un área de trabajo de Microsoft Power BI.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita otorgar al usuario las capacidades que se muestran en la
+                siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/4/p14.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La solución debe utilizar el principio de privilegio mínimo.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué rol de usuario debería asignar a cada usuario? Para responder,
+                arrastre los roles apropiados a los usuarios correctos. Cada rol puede usarse una vez, más de una vez o no
+                usarse. Es posible que deba arrastrar la barra divisoria.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/4/p14.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Recuadro 1: Miembro -</p>
+            <p class="text-sm text-gray-400 mb-4">Solo el Administrador y el Miembro pueden publicar, anular la publicación
+                y cambiar permisos para una aplicación.</p>
+            <p class="text-sm text-gray-400 mb-4">Incorrecto:</p>
+            <p class="text-sm text-gray-400 mb-4">Los Colaboradores pueden actualizar la aplicación asociada al área de
+                trabajo, si el Administrador del área de trabajo les delega este permiso. Sin embargo, no pueden publicar
+                una nueva aplicación ni cambiar quién tiene permiso para ella.</p>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 2: Colaborador -</p>
+            <p class="text-sm text-gray-400 mb-4">El Administrador, el Miembro y el Colaborador pueden crear, editar y
+                eliminar contenido, como informes, en el área de trabajo.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Colaborador - Este rol puede acceder e interactuar con informes y
+                paneles. Además, este rol puede crear, editar, copiar y eliminar elementos en un área de trabajo, publicar
+                informes, programar actualizaciones y modificar puertas de enlace.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Incorrecto:</p>
+            <p class="text-sm text-gray-400 mb-4">Visor - Este rol proporciona acceso de solo lectura a los elementos del
+                área de trabajo. El acceso de lectura permite a los consumidores de informes/paneles no solo ver, sino
+                también interactuar con los objetos visuales. La interacción no significa cambiar un objeto visual.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/collaborate-share/service-roles-new-workspaces"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://www.mssqltips.com/sqlservertip/6487/power-bi-workspace-permissions-and-roles/" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor192: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Crea un panel utilizando el Servicio Microsoft Power BI. El panel contiene un objeto visual de tarjeta que muestra las ventas totales del año actual.</p>
+            <p class="text-sm text-gray-400 mb-4">Concede a los usuarios acceso al panel mediante el rol de Visor en el área de trabajo.</p>
+            <p class="text-sm text-gray-400 mb-4">Un usuario desea recibir notificaciones diarias del número que se muestra en el objeto visual de la tarjeta.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita automatizar las notificaciones.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Crear una suscripción.</li>
+                <li>B. Crear una alerta de datos.</li>
+                <li>C. Compartir el panel con el usuario.</li>
+                <li>D. Etiquetar al usuario en un comentario.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">Configure alertas para que le notifiquen cuando los datos en sus paneles
+                cambien más allá de los límites que estableció.</p>
+            <p class="text-sm text-gray-400 mb-4">Las alertas solo se pueden establecer en mosaicos anclados desde objetos
+                visuales de informes, y solo en medidores, KPI y tarjetas.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/create-reports/service-set-data-alerts" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor193: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un área de trabajo de Power BI llamada EspacioTrabajo1 que contiene
+                un conjunto de datos llamado DS1 y un informe llamado INF1.</p>
+            <p class="text-sm text-gray-400 mb-4">Un usuario desea crear un informe utilizando los datos en DS1 y publicar
+                el informe en otra área de trabajo.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita proporcionar al usuario el acceso adecuado. La solución debe
+                minimizar la cantidad de permisos de acceso otorgados al usuario.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Agregar al usuario como Visor de EspacioTrabajo1.</li>
+                <li>B. Conceder al usuario el permiso de Compilación para DS1.</li>
+                <li>C. Compartir INF1 con el usuario.</li>
+                <li>D. Agregar al usuario como miembro de EspacioTrabajo1.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">Permisos más granulares -</p>
+            <p class="text-sm text-gray-400 mb-4">Power BI proporciona el permiso de Compilación como complemento de los
+                permisos existentes, Leer y Volver a compartir. Todos los usuarios que ya tenían permiso de Lectura para
+                conjuntos de datos a través de permisos de aplicación, uso compartido o acceso al área de trabajo en ese
+                momento también obtuvieron permiso de Compilación para esos mismos conjuntos de datos.</p>
+            <p class="text-sm text-gray-400 mb-4">Obtuvieron permiso de Compilación automáticamente porque el permiso de
+                Lectura ya les otorgaba el derecho a crear nuevo contenido sobre el conjunto de datos, utilizando Analizar
+                en Excel o Exportar.</p>
+            <p class="text-sm text-gray-400 mb-4">Con este permiso de Compilación más granular, puede elegir quién puede
+                solo ver el contenido en el informe o panel existente y quién puede crear contenido conectado a los
+                conjuntos de datos subyacentes.</p>
+            <p class="text-sm text-gray-400 mb-4">Si su conjunto de datos está siendo utilizado por un informe fuera del
+                área de trabajo del conjunto de datos, no puede eliminar ese conjunto de datos. En su lugar, verá un mensaje
+                de error.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/connect-data/service-datasets-build-permissions"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">B</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(89%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 89%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">otros</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(11%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 11%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor194: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Esta pregunta es parte de una serie de preguntas que presentan el
+                mismo escenario. Cada pregunta de la serie contiene una solución única que podría cumplir los objetivos
+                planteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta, mientras que otros
+                pueden no tener una solución correcta. Después de responder una pregunta en esta sección, NO podrá volver a
+                ella.
+                Como resultado, estas preguntas no aparecerán en la pantalla de revisión.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Tiene cinco informes y dos paneles en un área de trabajo.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita conceder a todos los usuarios de la organización acceso de
+                lectura a un panel y tres informes.</p>
+            <p class="text-sm text-gray-400 mb-4">Solución: Publica una aplicación para toda la organización.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Esto cumple con el objetivo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Sí</li>
+                <li>B. No</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">En su lugar: Crea un grupo de Azure Active Directory que contenga a todos
+                los usuarios. Comparte cada informe seleccionado y el panel único con el grupo.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/collaborate-share/service-share-dashboards" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">A</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(92%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 92%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">otros</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">( 8% )</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 8%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor195: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene cinco informes y dos paneles en un área de trabajo.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita conceder a todos los usuarios de la organización acceso de
+                lectura a un panel y tres informes.</p>
+            <p class="text-sm text-gray-400 mb-4">Solución: Habilita incluido en la aplicación para todos los activos.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Esto cumple con el objetivo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Sí</li>
+                <li>B. No</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita especificar el panel y los tres informes que se incluirán en la
+                aplicación.</p>
+            <p class="text-sm text-gray-400 mb-4">En su lugar: Crea un grupo de Azure Active Directory que contenga a todos
+                los usuarios. Comparte cada informe seleccionado y el panel único con el grupo.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Una aplicación publicada puede proporcionar el acceso requerido.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Cuando los paneles e informes en su área de trabajo estén listos, elige
+                qué paneles e informes desea publicar y luego publíquelos como una aplicación.</p>
+            <p class="text-sm text-gray-400 mb-4">En Power BI, puede crear contenido empaquetado oficial y luego
+                distribuirlo a una amplia audiencia como una aplicación. Crea aplicaciones en áreas de trabajo, donde puede
+                colaborar en contenido de Power BI con sus colegas. Luego puede publicar la aplicación terminada para
+                grandes grupos de personas en su organización.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/collaborate-share/service-create-distribute-apps"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor196: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Esta pregunta es parte de una serie de preguntas que presentan el
+                mismo escenario. Cada pregunta de la serie contiene una solución única que podría cumplir los objetivos
+                planteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta, mientras que otros
+                pueden no tener una solución correcta. Después de responder una pregunta en esta sección, NO podrá volver a
+                ella.
+                Como resultado, estas preguntas no aparecerán en la pantalla de revisión.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Tiene cinco informes y dos paneles en un área de trabajo. </p>
+            <p class="text-sm text-gray-400 mb-4">Necesita conceder a todos los usuarios de la organización acceso de lectura a un panel y tres informes.</p>
+            <p class="text-sm text-gray-400 mb-4">Solución: Asigna a todos los usuarios el rol de Visor en el área de trabajo.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Esto cumple con el objetivo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Sí</li>
+                <li>B. No</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">En su lugar: Crea un grupo de Azure Active Directory que contenga a todos
+                los usuarios. Comparte cada informe seleccionado y el panel único con el grupo.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/collaborate-share/service-share-dashboards" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor197: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Desde Power BI Desktop, publica un nuevo conjunto de datos e informe en un
+                área de trabajo de Power BI. El conjunto de datos tiene un rol de seguridad a nivel de filas (RLS) llamado
+                RR.HH.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita asegurarse de que los miembros del equipo de RR.HH. tengan RLS
+                aplicado cuando vean informes basados en el conjunto de datos.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Desde powerbi.com, agregar usuarios al rol RR.HH. para el conjunto de datos.</li>
+                <li>B. Desde powerbi.com, compartir el conjunto de datos con los miembros del equipo de RR.HH.</li>
+                <li>C. Desde Power BI Desktop, cambiar la configuración de Seguridad a nivel de filas.</li>
+                <li>D. Desde Power BI Desktop, importar una tabla que contenga los miembros del equipo de RR.HH.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">Trabajar con miembros -</p>
+            <p class="text-sm text-gray-400 mb-4">Agregar miembros -</p>
+            <p class="text-sm text-gray-400 mb-4">En el servicio Power BI, puede agregar un miembro al rol escribiendo la
+                dirección de correo electrónico o el nombre del usuario o grupo de seguridad.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/fabric/security/service-admin-row-level-security" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor198: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un panel de Power BI que supervisa la calidad de los procesos de
+                fabricación. El panel contiene los siguientes elementos:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Un gráfico de líneas que muestra el número de productos defectuosos fabricados por día</li>
+                <li>Un objeto visual de KPI que muestra el porcentaje diario actual de productos defectuosos fabricados</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Necesita que se le notifique cuando el porcentaje diario de productos
+                defectuosos fabricados supere el 3%.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería crear?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. una suscripción</li>
+                <li>B. una alerta</li>
+                <li>C. un objeto visual de narrativa inteligente</li>
+                <li>D. un objeto visual de Preguntas y respuestas</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">Configure alertas en el servicio Power BI para que le notifiquen cuando
+                los datos en un panel cambien por encima o por debajo de los límites que estableció. Las alertas se pueden
+                establecer en mosaicos anclados desde objetos visuales de informes o desde Power BI Preguntas y respuestas,
+                y solo en medidores, KPI y tarjetas.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/consumer/end-user-alerts" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor199: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Crea un informe utilizando Microsoft Power BI Desktop.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe utiliza datos de un cubo de Microsoft SQL Server Analysis
+                Services (SSAS) ubicado en la red interna de su empresa.</p>
+            <p class="text-sm text-gray-400 mb-4">Planea publicar el informe en el Servicio Power BI.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería implementar para garantizar que los usuarios que consumen el
+                informe desde el Servicio Power BI tengan los datos más actualizados del cubo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. una fuente ODATA</li>
+                <li>B. una puerta de enlace de datos local</li>
+                <li>C. una suscripción</li>
+                <li>D. una actualización programada del conjunto de datos</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">Después de instalar la puerta de enlace de datos local, debe agregar
+                orígenes de datos que puedan usarse con la puerta de enlace. Puede trabajar con puertas de enlace y orígenes
+                de datos de SQL Server Analysis Services (SSAS) que se utilizan para la actualización programada o para
+                conexiones activas.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>El servicio Power BI es un servicio de visualización de datos y
+                análisis empresarial basado en la nube que permite a cualquier persona visualizar y analizar datos con mayor
+                velocidad, eficiencia y comprensión.
+            </p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/connect-data/service-gateway-enterprise-manage-ssas"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor200: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene cinco regiones de ventas. A cada región se le asigna un único
+                vendedor.</p>
+            <p class="text-sm text-gray-400 mb-4">Tiene un conjunto de datos importado que tiene un rol de seguridad a nivel
+                de filas (RLS) dinámico llamado Ventas. El rol Ventas filtra los datos de transacciones de ventas por
+                vendedor.</p>
+            <p class="text-sm text-gray-400 mb-4">Los vendedores deben ver solo los datos de su región.</p>
+            <p class="text-sm text-gray-400 mb-4">Publica el conjunto de datos en powerbi.com, establece la membresía del
+                rol RLS y distribuye el conjunto de datos y los informes relacionados a los vendedores.</p>
+            <p class="text-sm text-gray-400 mb-4">Un vendedor informa que cree que debería ver más datos.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita verificar qué datos ve actualmente el vendedor.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Usar la opción Probar como rol para ver los datos como la cuenta de usuario del vendedor.</li>
+                <li>B. Usar la opción Probar como rol para ver los datos como el rol Ventas.</li>
+                <li>C. Indicar al vendedor que abra el informe en Microsoft Power BI Desktop.</li>
+                <li>D. Filtrar los datos en los informes para que coincidan con la lógica prevista en el filtro de la tabla
+                    de transacciones de ventas.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">Validación del rol dentro del servicio Power BI</p>
+            <p class="text-sm text-gray-400 mb-4">Puede validar que el rol que definió está funcionando correctamente en el
+                servicio Power BI probando el rol.</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Seleccione Más opciones (...) junto al rol.</li>
+                <li>Seleccione Probar datos como rol.</li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/4/s23.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Verá los informes que están disponibles para este rol. Los paneles no se
+                muestran en esta vista. En el encabezado de la página, se muestra el rol que se está aplicando.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/fabric/security/service-admin-row-level-security" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor201: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene múltiples paneles.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita asegurarse de que cuando los usuarios naveguen por los paneles
+                disponibles desde powerbi.com, puedan ver qué paneles contienen Información de Identificación Personal
+                (PII). La solución debe minimizar el esfuerzo de configuración y el impacto en el diseño del panel.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería usar?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Etiquetas de sensibilidad de Microsoft Information Protection</li>
+                <li>B. mosaicos</li>
+                <li>C. comentarios</li>
+                <li>D. grupos de Active Directory</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">En el servicio Power BI, las etiquetas de sensibilidad se pueden aplicar a
+                conjuntos de datos, informes, paneles y flujos de datos.</p>
+            <p class="text-sm text-gray-400 mb-4">Las etiquetas de sensibilidad en informes, paneles, conjuntos de datos y
+                flujos de datos son visibles desde muchos lugares en el servicio Power BI. Las etiquetas de sensibilidad en
+                informes y paneles también son visibles en las aplicaciones móviles de Power BI para iOS y Android y en
+                objetos visuales insertados. En Desktop, puede ver la etiqueta de sensibilidad en la barra de estado.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/fabric/enterprise/powerbi/service-security-sensitivity-label-overview"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor202: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un conjunto de datos que tiene los permisos que se muestran en la
+                siguiente ilustración.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/4/p25.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Utilice los menús desplegables para seleccionar la opción de respuesta que
+                complete cada enunciado según la información presentada en el gráfico.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios del grupo de finanzas pueden [opción de respuesta] el
+                conjunto de datos.</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>asignar etiquetas de confidencialidad a</li>
+                <li>utilizar Analizar en Excel con</li>
+                <li>eliminar</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios del grupo corporativo pueden [opción de respuesta] el
+                conjunto de datos.</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>otorgar permiso de compilación para</li>
+                <li>otorgar permiso de lectura para</li>
+                <li>eliminar una tabla de</li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/4/p25.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/4/s25.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 1: usar Analizar en Excel -</p>
+            <p class="text-sm text-gray-400 mb-4">El permiso de Compilación se aplica a los conjuntos de datos. Cuando
+                concede a los usuarios permiso de Compilación, pueden crear nuevo contenido basado en su conjunto de datos,
+                como informes, paneles, mosaicos anclados desde Preguntas y respuestas, informes paginados y Detección de
+                información.</p>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios también necesitan permisos de Compilación para trabajar con
+                los datos fuera de Power BI:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Para exportar los datos subyacentes.</li>
+                <li>Para crear nuevo contenido sobre el conjunto de datos, como con Analizar en Excel.</li>
+                <li>Para acceder a los datos a través del punto de conexión XMLA.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 2: conceder el permiso de Lectura para</p>
+            <p class="text-sm text-gray-400 mb-4">El grupo Corp tiene permisos de lectura, uso compartido y recompilación.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Como propiedad de la aplicación Power BI, puede permitir a los usuarios
+                compartir la aplicación y el conjunto de datos subyacente con permisos de uso compartido.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/connect-data/service-datasets-build-permissions"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor203: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Esta pregunta es parte de una serie de preguntas que presentan el
+                mismo escenario. Cada pregunta de la serie contiene una solución única que podría cumplir los objetivos
+                planteados. Algunos conjuntos de preguntas pueden tener más de una solución correcta, mientras que otros
+                pueden no tener una solución correcta. Después de responder una pregunta en esta sección, NO podrá volver a
+                ella.
+                Como resultado, estas preguntas no aparecerán en la pantalla de revisión.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Tiene cinco informes y dos paneles en un área de trabajo.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita conceder a todos los usuarios de la organización acceso de lectura a un panel y tres informes.</p>
+            <p class="text-sm text-gray-400 mb-4">Solución: Crea un grupo de Azure Active Directory que contenga a todos los usuarios. Comparte cada informe seleccionado y el panel único con el grupo.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Esto cumple con el objetivo?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Sí</li>
+                <li>B. No</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">Compartir con más de 100 usuarios separados</p>
+            <p class="text-sm text-gray-400 mb-4">Como máximo, puede compartir con 100 usuarios o grupos en una sola acción
+                de compartir. Sin embargo, puede dar acceso a más de 500 usuarios a un elemento. Aquí hay algunas
+                sugerencias:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Comparta varias veces especificando los usuarios individualmente.</li>
+                <li>Comparta con un grupo de usuarios que contenga a todos los usuarios.</li>
+                <li>Cree el informe o panel en un área de trabajo y luego cree una aplicación desde el área de trabajo.
+                    Puede compartir la aplicación con muchas más personas.</li>
+            </ul>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/collaborate-share/service-share-dashboards" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">A</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(86%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 86%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">B</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(14%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 14%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor204: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene una tabla de Power BI llamada Cliente que contiene un campo llamado
+                Dirección de correo electrónico.</p>
+            <p class="text-sm text-gray-400 mb-4">Descubre que varios registros contienen la misma dirección de correo
+                electrónico.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una columna calculada para identificar qué registros tienen
+                direcciones de correo electrónico duplicadas.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debería completar la expresión DAX para la columna calculada? Para
+                responder, arrastre los valores apropiados a los objetivos correctos. Cada valor puede usarse una vez, más
+                de una vez o no usarse. Es posible que deba arrastrar la barra divisoria entre los paneles o desplazarse
+                para ver el contenido.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/4/p27.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/4/s27.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`
     },
     contenedor205: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene un conjunto de datos de Power BI y un informe conectado.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita asegurarse de que los usuarios puedan analizar datos en Microsoft Excel solo conectándose directamente al conjunto de datos.</p>
+            <p class="text-sm text-gray-400 mb-4">Concede a los usuarios el permiso de Compilación para el conjunto de datos.   </p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer a continuación?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Certificar el conjunto de datos utilizado por el informe.</li>
+                <li>B. Cambiar la interacción visual predeterminada para el informe.</li>
+                <li>C. Para el informe, cambiar la configuración de Exportar datos a Ninguno.</li>
+                <li>D. Para el informe, cambiar la configuración de Exportar datos a Datos resumidos, datos con diseño actual y datos subyacentes.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: C</p>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">C</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(74%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 74%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">D</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(26%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 26%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor206: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Tiene dos áreas de trabajo de Power BI llamadas EspacioA y EspacioB.
+                EspacioA contiene dos conjuntos de datos llamados Ventas y RR.HH.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita proporcionar a un usuario llamado Usuario1 acceso a EspacioB. La
+                solución debe cumplir con los siguientes requisitos:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Crear informes que utilicen el conjunto de datos RR.HH.</li>
+                <li>Publicar los informes en EspacioB.</li>
+                <li>Evitar la capacidad de modificar el conjunto de datos RR.HH.</li>
+                <li>Evitar la capacidad de agregar usuarios a las Áreas de trabajo.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer? Para responder, seleccione las opciones apropiadas en
+                el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Para acceder al conjunto de datos de RRHH:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Asignar a Usuario1 el rol de Colaborador en EspacioTrabajoA.</li>
+                <li>Conceder a Usuario1 permiso de Compilación para el conjunto de datos de RRHH.</li>
+                <li>Conceder a Usuario1 permisos de lectura para el conjunto de datos de RRHH.to</li>
+                <li>Conceder a Usuario1 permisos de uso compartido para el conjunto de datos de RRHH.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Para publicar informes en EspacioTrabajoB:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Asignar a Usuario1 el rol de Administrador para Espacios de Trabajo.</li>
+                <li>Asignar a Usuario1 el rol de Colaborador en EspacioTrabajoA.</li>
+                <li>Asignar a Usuario1 el rol de Colaborador en EspacioTrabajoB.</li>
+                <li>Asignar a Usuario1 el rol de Miembro en EspacioTrabajoB.</li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/4/p29.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/4/s29.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`
     },
     contenedor207: {
+        pregunta: `<div>
+        <p class="text-sm text-gray-400 mb-4">Tiene un área de trabajo de Power BI llamada Datos de BI que contiene un conjunto de datos llamado Finanzas de BI.</p>
+        <p class="text-sm text-gray-400 mb-4">Tiene el permiso de Compilación para el conjunto de datos Finanzas de BI, pero NO tiene permisos para el área de trabajo.</p>
+        <p class="text-sm text-gray-400 mb-4">Necesita conectarse a Finanzas de BI y crear un informe.</p>
+        <p class="text-sm text-gray-400 mb-4">¿Qué dos acciones debería realizar? Cada respuesta correcta presenta una solución completa.</p>
+        <p class="text-sm text-gray-400 mb-4">
+            <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+        </p>
+        <ul class="list-inside text-sm text-gray-400 mb-4">
+            <li>A. Desde el servicio Power BI, crear un flujo de datos hacia el conjunto de datos usando DirectQuery.</li>
+            <li>B. Desde Power BI Desktop, conectarse a un origen de datos de Dataverse.</li>
+            <li>C. Desde el servicio Power BI, crear un nuevo informe y seleccionar un conjunto de datos publicado.</li>
+            <li>D. Desde Power BI Desktop, conectarse a un conjunto de datos compartido.</li>
+        </ul>
+    </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: CD</p>
+        </div>`
+    },
+    contenedor208: {
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Información Introductoria</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4"></p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción General -</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders es una empresa importadora de alimentos especializados.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">La empresa implementó recientemente Power BI para comprender mejor a sus
+                principales clientes, productos y proveedores.</p>
+            <p class="text-sm text-gray-400 mb-4">Problemas Empresariales -</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de ventas depende del departamento de TI para generar
+                informes en Microsoft SQL Server Reporting Services (SSRS). El departamento de TI tarda demasiado en generar
+                los informes y, a menudo, malinterpreta los requisitos de los informes.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Fuentes de Datos</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders utiliza las fuentes de datos que se muestran en la
+                siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/5/p1.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Source2 se exporta diariamente desde un sistema de terceros y se almacena
+                en Microsoft SharePoint Online.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Hoja de trabajo del Cliente</p>
+            <p class="text-sm text-gray-400 mb-4">Source2 contiene una única hoja de trabajo llamada Detalles del Cliente.
+                Las primeras 11 filas de la hoja de trabajo se muestran en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/5/p1.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Todos los campos en Source2 son obligatorios.</p>
+            <p class="text-sm text-gray-400 mb-4">La columna Dirección en Detalles del Cliente es la dirección de
+                facturación, que puede diferir de la dirección de envío.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Base de datos de Azure SQL</p>
+            <p class="text-sm text-gray-400 mb-4">Source1 contiene las siguientes tablas:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Pedidos</li>
+                <li>Productos</li>
+                <li>Proveedores</li>
+                <li>Categorías</li>
+                <li>Detalles del Pedido</li>
+                <li>Empleados de Ventas</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">La tabla Pedidos contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/5/p1.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Detalles del Pedido contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/5/p1.4.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La dirección en la tabla Pedidos es la dirección de envío, que puede
+                diferir de la dirección de facturación.</p>
+            <p class="text-sm text-gray-400 mb-4">La tabla Productos contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/5/p1.5.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Categorías contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/5/p1.6.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Proveedores contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/5/p1.7.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Empleados de Ventas contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/5/p1.8.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cada empleado en la tabla Empleados de Ventas está asignado a una región
+                de ventas. Se pueden asignar múltiples empleados a cada región.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos de los informes</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders requiere los siguientes informes:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Principales Productos</li>
+                <li>Principales Clientes</li>
+                <li>Envíos a Tiempo</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">El informe Principales Clientes mostrará los 20 principales clientes
+                basados en los montos de ventas más altos en un mes o trimestre de pedido seleccionado, categoría de
+                producto y región de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe Principales Productos mostrará los 20 principales productos
+                basados en los montos de ventas más altos vendidos en un mes o trimestre de pedido seleccionado, región de
+                ventas y categoría de producto. El informe también debe mostrar qué proveedores proporcionan los principales
+                productos.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe Envíos a Tiempo mostrará las siguientes métricas para un mes o
+                trimestre de envío seleccionado:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>El porcentaje de pedidos que se enviaron con retraso por país y región de envío</li>
+                <li>Clientes que tuvieron múltiples envíos con retraso durante el último trimestre</li>
+                <li>Northwind Traders define los pedidos con retraso como aquellos enviados después de la fecha de envío
+                    requerida.</li>
+                <li>El departamento de envíos del almacén debe ser notificado si el porcentaje de pedidos con retraso dentro
+                    del mes actual supera el 5%.</li>
+                <li>Los informes deben mostrar datos históricos para el año calendario actual y los últimos tres años
+                    calendario.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos técnicos</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders identifica los siguientes requisitos técnicos:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Un único conjunto de datos debe soportar los tres informes.</li>
+                <li>Los informes deben almacenarse en una única área de trabajo de Power BI.</li>
+                <li>Los datos del informe deben estar actualizados a las 7 a.m., hora del Pacífico, cada día.</li>
+                <li>Los informes deben proporcionar tiempos de respuesta rápidos cuando los usuarios interactúan con una
+                    visualización.</li>
+                <li>El modelo de datos debe minimizar el tamaño del conjunto de datos tanto como sea posible, cumpliendo al
+                    mismo tiempo con los requisitos del informe y los requisitos técnicos.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos de seguridad</p>
+            <p class="text-sm text-gray-400 mb-4">El acceso a los informes debe concederse únicamente a grupos de seguridad
+                de Azure Active Directory (Azure AD). Existe un grupo de seguridad de Azure AD para cada departamento.</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de ventas debe poder realizar las siguientes tareas en
+                Power BI:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Crear, editar y eliminar contenido en los informes.</li>
+                <li>Administrar permisos para áreas de trabajo, conjuntos de datos e informes.</li>
+                <li>Publicar, anular la publicación, actualizar y cambiar los permisos de una aplicación.</li>
+                <li>Asignar a los grupos de Azure AD acceso basado en roles al área de trabajo de los informes.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios del departamento de ventas deben poder acceder únicamente a
+                los datos de la región de ventas a la que están asignados en la tabla Empleados de Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Power BI tiene la siguiente expresión DAX de filtro de tabla de seguridad
+                a nivel de filas (RLS) para la tabla Empleados de Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">[EmailAddress] = USERNAME()</p>
+            <p class="text-sm text-gray-400 mb-4">RLS se aplicará solo a los usuarios del departamento de ventas. Los
+                usuarios de todos los demás departamentos deben poder ver todos los datos.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear el conjunto de datos.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué modo de conjunto de datos debería usar?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Importar</li>
+                <li>B. DirectQuery</li>
+                <li>C. Compuesto</li>
+                <li>D. conexión activa</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: C</p>
+            <p class="text-sm text-gray-400 mb-4">Los tres modos de conjunto de datos son:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Importar -</li>
+                <li>DirectQuery -</li>
+                <li>Compuesto -</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Modo compuesto -</p>
+            <p class="text-sm text-gray-400 mb-4">El modo compuesto puede mezclar modos Importar y DirectQuery, o integrar
+                múltiples fuentes de datos de DirectQuery. Los modelos desarrollados en modo compuesto admiten la
+                configuración del modo de almacenamiento para cada tabla del modelo. Este modo también admite tablas
+                calculadas (definidas con DAX).</p>
+            <p class="text-sm text-gray-400 mb-4">El modo de almacenamiento de la tabla se puede configurar como Importar,
+                DirectQuery o Dual. Una tabla configurada en modo de almacenamiento Dual es tanto Importar como DirectQuery,
+                y esta configuración permite que el servicio Power BI determine el modo más eficiente a utilizar en cada
+                consulta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Un único conjunto de datos debe soportar los tres informes.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">El modelo de datos debe minimizar el tamaño del conjunto de datos tanto
+                como sea posible, cumpliendo al mismo tiempo con los requisitos del informe y los requisitos técnicos.</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders requiere los siguientes informes:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Principales Productos -</li>
+                <li>Principales Clientes -</li>
+                <li>Envíos a Tiempo -</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Incorrecto:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>DirectQuery: El modo DirectQuery es una alternativa al modo Importar. Los modelos desarrollados en modo
+                    DirectQuery
+                    no importan datos. En cambio, consisten solo en metadatos que definen la estructura del modelo. Cuando
+                    se consulta el modelo, se utilizan consultas nativas para recuperar datos de la fuente de datos
+                    subyacente.b</li>
+                <li>Importar</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Sin embargo, aunque hay ventajas convincentes asociadas con los modelos de
+                Importación, también hay desventajas:</p>
+            <p class="text-sm text-gray-400 mb-4">Todo el modelo debe cargarse en la memoria antes de que Power BI pueda
+                consultar el modelo, lo que puede ejercer presión sobre los recursos de capacidad disponibles, especialmente
+                a medida que crecen el número y el tamaño de los modelos de Importación.</p>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">C</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(53%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 53%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">A</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(47%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 47%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
+    },
+    contenedor209: {
         pregunta: ``,
         solucion: ``
     },
-    contenedor208: {
+    contenedor210: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor211: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor212: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor213: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor214: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor215: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor216: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor217: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor218: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor219: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor220: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor221: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor222: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor223: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor224: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor225: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor226: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor227: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor228: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor229: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor230: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor231: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor232: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor233: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor234: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor235: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor236: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor237: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor238: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor239: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor240: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor241: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor242: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor243: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor244: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor245: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor246: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor247: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor248: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor249: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor250: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor251: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor252: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor253: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor254: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor255: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor256: {
+        pregunta: ``,
+        solucion: ``
+    },
+    contenedor257: {
         pregunta: ``,
         solucion: ``
     }

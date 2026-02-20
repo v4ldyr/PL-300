@@ -213,7 +213,56 @@ const app = createApp({
             interruptor205: false,
             interruptor206: false,
             interruptor207: false,
-            interruptor208: false
+            interruptor208: false,
+            interruptor209: false,
+            interruptor210: false,
+            interruptor211: false,
+            interruptor212: false,
+            interruptor213: false,
+            interruptor214: false,
+            interruptor215: false,
+            interruptor216: false,
+            interruptor217: false,
+            interruptor218: false,
+            interruptor219: false,
+            interruptor220: false,
+            interruptor221: false,
+            interruptor222: false,
+            interruptor223: false,
+            interruptor224: false,
+            interruptor225: false,
+            interruptor226: false,
+            interruptor227: false,
+            interruptor228: false,
+            interruptor229: false,
+            interruptor230: false,
+            interruptor231: false,
+            interruptor232: false,
+            interruptor233: false,
+            interruptor234: false,
+            interruptor235: false,
+            interruptor236: false,
+            interruptor237: false,
+            interruptor238: false,
+            interruptor239: false,
+            interruptor240: false,
+            interruptor241: false,
+            interruptor242: false,
+            interruptor243: false,
+            interruptor244: false,
+            interruptor245: false,
+            interruptor246: false,
+            interruptor247: false,
+            interruptor248: false,
+            interruptor249: false,
+            interruptor250: false,
+            interruptor251: false,
+            interruptor252: false,
+            interruptor253: false,
+            interruptor254: false,
+            interruptor255: false,
+            interruptor256: false,
+            interruptor257: false
 
         };
     },
@@ -633,8 +682,8 @@ const app = createApp({
                 this.interruptor206 = !this.interruptor206;
             } else if (numero === 207) {
                 this.interruptor207 = !this.interruptor207;
-            } else if (numero === 208) {
-                this.interruptor208 = !this.interruptor208;
+            } else if (numero <= 257) {
+                this['interruptor' + numero] = !this['interruptor' + numero];
             }
         }
     }
@@ -642,7 +691,13 @@ const app = createApp({
 
 app.mount("#app");
 
-/*buttonClasses() {
+/*
+
+else if (numero <= 257) {
+                this['interruptor' + numero] = !this['interruptor' + numero];
+        }
+
+buttonClasses() {
             return this.interruptor 
                 ? 'bg-red-500 hover:bg-red-600 text-white' 
                 : 'bg-green-500 hover:bg-green-600 text-white';
