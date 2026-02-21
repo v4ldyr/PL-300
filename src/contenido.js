@@ -9028,25 +9028,250 @@ const contenido = {
     },
     contenedor207: {
         pregunta: `<div>
-        <p class="text-sm text-gray-400 mb-4">Tiene un área de trabajo de Power BI llamada Datos de BI que contiene un conjunto de datos llamado Finanzas de BI.</p>
-        <p class="text-sm text-gray-400 mb-4">Tiene el permiso de Compilación para el conjunto de datos Finanzas de BI, pero NO tiene permisos para el área de trabajo.</p>
-        <p class="text-sm text-gray-400 mb-4">Necesita conectarse a Finanzas de BI y crear un informe.</p>
-        <p class="text-sm text-gray-400 mb-4">¿Qué dos acciones debería realizar? Cada respuesta correcta presenta una solución completa.</p>
-        <p class="text-sm text-gray-400 mb-4">
-            <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
-        </p>
-        <ul class="list-inside text-sm text-gray-400 mb-4">
-            <li>A. Desde el servicio Power BI, crear un flujo de datos hacia el conjunto de datos usando DirectQuery.</li>
-            <li>B. Desde Power BI Desktop, conectarse a un origen de datos de Dataverse.</li>
-            <li>C. Desde el servicio Power BI, crear un nuevo informe y seleccionar un conjunto de datos publicado.</li>
-            <li>D. Desde Power BI Desktop, conectarse a un conjunto de datos compartido.</li>
-        </ul>
-    </div>`,
+            <p class="text-sm text-gray-400 mb-4">Tiene un área de trabajo de Power BI llamada Datos de BI que contiene un conjunto de datos llamado Finanzas de BI.</p>
+            <p class="text-sm text-gray-400 mb-4">Tiene el permiso de Compilación para el conjunto de datos Finanzas de BI, pero NO tiene permisos para el área de trabajo.</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita conectarse a Finanzas de BI y crear un informe.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué dos acciones debería realizar? Cada respuesta correcta presenta una solución completa.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Desde el servicio Power BI, crear un flujo de datos hacia el conjunto de datos usando DirectQuery.</li>
+                <li>B. Desde Power BI Desktop, conectarse a un origen de datos de Dataverse.</li>
+                <li>C. Desde el servicio Power BI, crear un nuevo informe y seleccionar un conjunto de datos publicado.</li>
+                <li>D. Desde Power BI Desktop, conectarse a un conjunto de datos compartido.</li>
+            </ul>
+        </div>`,
         solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
-            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: CD</p>
-        </div>`
+                <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: CD</p>
+            </div>`
     },
     contenedor208: {
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Información Introductoria</p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción general -</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Litware, Inc. es un minorista en línea que utiliza Power BI.</li>
+                <li>Litware planea aprovechar los datos de una base de datos de Azure SQL que almacena datos para el sitio
+                    web de comercio electrónico en vivo de la empresa.</li>
+                <li>Litware utiliza Azure Active Directory (Azure AD) para autenticar usuarios.</li>
+                <li>Entorno Existente. Datos de Ventas</li>
+                <li>Litware tiene datos de ventas en línea que tienen el esquema SQL que se muestra en la siguiente tabla.
+                </li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/5/p1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">En la tabla Fecha (Date), la columna id_fecha tiene un formato de aaaammdd
+                y la
+                columna mes tiene un formato de aaaaamm.</p>
+            <p class="text-sm text-gray-400 mb-4">La columna semana en la tabla Fecha (Date) y la columna id_semana
+                (week_id) en la tabla
+                Rendimiento_Semanal (Weekly_Returns) tienen un formato de aaaass.</p>
+            <p class="text-sm text-gray-400 mb-4">En la tabla Ventas (Sales), la columna id_venta (sales_id) representa una
+                transacción única.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">La columna id_región (region_id) puede ser gestionada por un solo gerente
+                de ventas.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Preocupaciones sobre los datos</p>
+            <p class="text-sm text-gray-400 mb-4">Le preocupa la calidad e integridad de los datos de ventas. Debe
+                asegurarse de que los valores de importe_venta negativos y faltantes NO contribuyan al cálculo del importe
+                total de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Requisitos de informes</p>
+            <p class="text-sm text-gray-400 mb-4">Litware identifica los siguientes requisitos de informes:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Los ejecutivos requieren un objeto visual que muestre las ventas por región.</li>
+                <li>Los ejecutivos requieren un objeto visual que muestre las devoluciones por gerente de región y los
+                    gerentes de ventas que dependen de ellos.</li>
+                <li>Los gerentes de ventas deben poder ver solo los datos de ventas de su respectiva región.</li>
+                <li>Los gerentes de ventas requieren un objeto visual para analizar el rendimiento de las ventas frente a
+                    los objetivos de ventas.</li>
+                <li>El departamento de ventas requiere informes que contengan el número de transacciones de ventas.</li>
+                <li>Los usuarios deben poder ver el mes en cada informe como se muestra en el siguiente ejemplo: Feb 2020.
+                </li>
+                <li>El departamento de servicio al cliente requiere un objeto visual que pueda filtrarse tanto por mes de
+                    venta como por mes de envío de forma independiente.</li>
+                <li>La latencia máxima permitida para incluir transacciones en los informes es de cinco minutos.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta:</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear la relación requerida para el objeto visual de los
+                ejecutivos.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer antes de poder crear la relación?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Cambiar el tipo de datos de Ventas[id_región] (Sales[region_id]) a Número Entero.</li>
+                <li>B. Cambiar el tipo de datos de Ventas[id_región] (Sales[region_id]) a Número Decimal.</li>
+                <li>C. En la tabla Ventas, agregar una medida para Suma(importe_venta) (Sum[sales_amount]).</li>
+                <li>D. Cambiar el tipo de datos de Ventas[id_venta] (Sales[sales_id]) a Texto.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">Los ejecutivos requieren un objeto visual que muestre las ventas por
+                región.</p>
+            <p class="text-sm text-gray-400 mb-4">El tipo de datos de Ventas[id_región] (Sales[region_id]) debe cambiarse de
+                varchar a Número
+                Entero, ya que Ventas[id_región] es Entero.</p>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">A</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(94%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 94%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">otros</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">( 6% )</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 6%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
+    },
+    contenedor209: {
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Información Introductoria</p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción general -</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Litware, Inc. es un minorista en línea que utiliza Power BI.</li>
+                <li>Litware planea aprovechar los datos de una base de datos de Azure SQL que almacena datos para el sitio
+                    web de comercio electrónico en vivo de la empresa.</li>
+                <li>Litware utiliza Azure Active Directory (Azure AD) para autenticar usuarios.</li>
+                <li>Entorno Existente. Datos de Ventas</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Litware tiene datos de ventas en línea que tienen el esquema SQL que se
+                muestra en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/5/p2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">En la tabla Fecha, la columna id_fecha (date_id) tiene un formato de aaaammdd y la
+                columna mes tiene un formato de aaaaamm.</p>
+            <p class="text-sm text-gray-400 mb-4">La columna semana en la tabla Fecha y la columna id_semana (week_id) en la tabla
+                Rendimiento_Semanal (Weekly_Returns) tienen un formato de aaaass.</p>
+            <p class="text-sm text-gray-400 mb-4">En la tabla Ventas (Sales), la columna id_venta (sales_id) representa una transacción única.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">La columna id_región puede ser gestionada por un solo gerente de ventas.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Preocupaciones sobre los datos</p>
+            <p class="text-sm text-gray-400 mb-4">Le preocupa la calidad e integridad de los datos de ventas. Debe
+                asegurarse de que los valores de importe_venta negativos y faltantes NO contribuyan al cálculo del importe
+                total de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Requisitos de informes</p>
+            <p class="text-sm text-gray-400 mb-4">Litware identifica los siguientes requisitos de informes:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Los ejecutivos requieren un objeto visual que muestre las ventas por región.</li>
+                <li>Los ejecutivos requieren un objeto visual que muestre las devoluciones por gerente de región y los
+                    gerentes de ventas que dependen de ellos.</li>
+                <li>Los gerentes de ventas deben poder ver solo los datos de ventas de su respectiva región.</li>
+                <li>Los gerentes de ventas requieren un objeto visual para analizar el rendimiento de las ventas frente a
+                    los objetivos de ventas.</li>
+                <li>El departamento de ventas requiere informes que contengan el número de transacciones de ventas.</li>
+                <li>Los usuarios deben poder ver el mes en cada informe como se muestra en el siguiente ejemplo: Feb 2020.
+                </li>
+                <li>El departamento de servicio al cliente requiere un objeto visual que pueda filtrarse tanto por mes de
+                    venta como por mes de envío de forma independiente.</li>
+                <li>La latencia máxima permitida para incluir transacciones en los informes es de cinco minutos.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesita obtener datos de las tablas de Microsoft SQL Server.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería usar para configurar la conexión?</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>A. Importar que utiliza una cuenta Microsoft</li>
+                <li>B. Importar que utiliza una credencial de base de datos</li>
+                <li>C. DirectQuery que utiliza una credencial de base de datos</li>
+                <li>D. DirectQuery que utiliza las credenciales del usuario final</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: D</p>
+            <p class="text-sm text-gray-400 mb-4">Litware planea aprovechar los datos de una base de datos de Azure SQL que
+                almacena datos para el sitio web de comercio electrónico en vivo de la empresa.</p>
+            <p class="text-sm text-gray-400 mb-4">Con DirectQuery, las consultas se envían de vuelta a su Azure SQL Database
+                a medida que explora los datos en la vista de informe.</p>
+            <p class="text-sm text-gray-400 mb-4">Después de publicar un conjunto de datos de DirectQuery de Azure SQL en el
+                servicio, puede habilitar el inicio de sesión único (SSO) utilizando Azure Active Directory (Azure AD)
+                OAuth2 para sus usuarios finales.</p>
+            <p class="text-sm text-gray-400 mb-4">Cuando la opción de SSO está habilitada y sus usuarios acceden a informes
+                creados sobre la fuente de datos, Power BI envía sus credenciales autenticadas de Azure AD en las consultas
+                a la base de datos o almacén de datos de Azure SQL. Esta opción permite a Power BI respetar la configuración
+                de seguridad configurada a nivel de la fuente de datos.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/connect-data/service-azure-sql-database-with-direct-connect"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">C</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(55%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 55%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">D</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(45%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 45%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
+    },
+    contenedor210: {
         pregunta: `<div>
             <p class="text-sm text-gray-400 mb-4">
                 <span class="font-bold">Información Introductoria</span>
@@ -9085,7 +9310,7 @@ const contenido = {
             <p class="text-sm text-gray-400 mb-4">Northwind Traders utiliza las fuentes de datos que se muestran en la
                 siguiente tabla.</p>
             <div class="mt-4 mb-4">
-                <img src="img/5/p1.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                <img src="img/6/p1.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
             </div>
             <p class="text-sm text-gray-400 mb-4">Source2 se exporta diariamente desde un sistema de terceros y se almacena
                 en Microsoft SharePoint Online.</p>
@@ -9093,7 +9318,7 @@ const contenido = {
             <p class="text-sm text-gray-400 mb-4">Source2 contiene una única hoja de trabajo llamada Detalles del Cliente.
                 Las primeras 11 filas de la hoja de trabajo se muestran en la siguiente tabla.</p>
             <div class="mt-4 mb-4">
-                <img src="img/5/p1.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                <img src="img/6/p1.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
             </div>
             <p class="text-sm text-gray-400 mb-4">Todos los campos en Source2 son obligatorios.</p>
             <p class="text-sm text-gray-400 mb-4">La columna Dirección en Detalles del Cliente es la dirección de
@@ -9110,29 +9335,29 @@ const contenido = {
             </ul>
             <p class="text-sm text-gray-400 mb-4">La tabla Pedidos contiene las siguientes columnas.</p>
             <div class="mt-4 mb-4">
-                <img src="img/5/p1.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                <img src="img/6/p1.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
             </div>
             <p class="text-sm text-gray-400 mb-4">La tabla Detalles del Pedido contiene las siguientes columnas.</p>
             <div class="mt-4 mb-4">
-                <img src="img/5/p1.4.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                <img src="img/6/p1.4.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
             </div>
             <p class="text-sm text-gray-400 mb-4">La dirección en la tabla Pedidos es la dirección de envío, que puede
                 diferir de la dirección de facturación.</p>
             <p class="text-sm text-gray-400 mb-4">La tabla Productos contiene las siguientes columnas.</p>
             <div class="mt-4 mb-4">
-                <img src="img/5/p1.5.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                <img src="img/6/p1.5.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
             </div>
             <p class="text-sm text-gray-400 mb-4">La tabla Categorías contiene las siguientes columnas.</p>
             <div class="mt-4 mb-4">
-                <img src="img/5/p1.6.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                <img src="img/6/p1.6.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
             </div>
             <p class="text-sm text-gray-400 mb-4">La tabla Proveedores contiene las siguientes columnas.</p>
             <div class="mt-4 mb-4">
-                <img src="img/5/p1.7.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                <img src="img/6/p1.7.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
             </div>
             <p class="text-sm text-gray-400 mb-4">La tabla Empleados de Ventas contiene las siguientes columnas.</p>
             <div class="mt-4 mb-4">
-                <img src="img/5/p1.8.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                <img src="img/6/p1.8.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
             </div>
             <p class="text-sm text-gray-400 mb-4">Cada empleado en la tabla Empleados de Ventas está asignado a una región
                 de ventas. Se pueden asignar múltiples empleados a cada región.</p>
@@ -9264,93 +9489,3256 @@ const contenido = {
             </div>
         </div>`
     },
-    contenedor209: {
-        pregunta: ``,
-        solucion: ``
-    },
-    contenedor210: {
-        pregunta: ``,
-        solucion: ``
-    },
     contenedor211: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Información Introductoria</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4"></p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción General -</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders es una empresa importadora de alimentos especializados.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">La empresa implementó recientemente Power BI para comprender mejor a sus
+                principales clientes, productos y proveedores.</p>
+            <p class="text-sm text-gray-400 mb-4">Problemas Empresariales -</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de ventas depende del departamento de TI para generar
+                informes en Microsoft SQL Server Reporting Services (SSRS). El departamento de TI tarda demasiado en generar
+                los informes y, a menudo, malinterpreta los requisitos de los informes.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Fuentes de Datos</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders utiliza las fuentes de datos que se muestran en la
+                siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Source2 se exporta diariamente desde un sistema de terceros y se almacena
+                en Microsoft SharePoint Online.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Hoja de trabajo del Cliente</p>
+            <p class="text-sm text-gray-400 mb-4">Source2 contiene una única hoja de trabajo llamada Detalles del Cliente.
+                Las primeras 11 filas de la hoja de trabajo se muestran en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Todos los campos en Source2 son obligatorios.</p>
+            <p class="text-sm text-gray-400 mb-4">La columna Dirección en Detalles del Cliente es la dirección de
+                facturación, que puede diferir de la dirección de envío.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Base de datos de Azure SQL</p>
+            <p class="text-sm text-gray-400 mb-4">Source1 contiene las siguientes tablas:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Pedidos</li>
+                <li>Productos</li>
+                <li>Proveedores</li>
+                <li>Categorías</li>
+                <li>Detalles del Pedido</li>
+                <li>Empleados de Ventas</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">La tabla Pedidos contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Detalles del Pedido contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.4.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La dirección en la tabla Pedidos es la dirección de envío, que puede
+                diferir de la dirección de facturación.</p>
+            <p class="text-sm text-gray-400 mb-4">La tabla Productos contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.5.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Categorías contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.6.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Proveedores contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.7.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Empleados de Ventas contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.8.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cada empleado en la tabla Empleados de Ventas está asignado a una región
+                de ventas. Se pueden asignar múltiples empleados a cada región.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos de los informes</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders requiere los siguientes informes:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Principales Productos</li>
+                <li>Principales Clientes</li>
+                <li>Envíos a Tiempo</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">El informe Principales Clientes mostrará los 20 principales clientes
+                basados en los montos de ventas más altos en un mes o trimestre de pedido seleccionado, categoría de
+                producto y región de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe Principales Productos mostrará los 20 principales productos
+                basados en los montos de ventas más altos vendidos en un mes o trimestre de pedido seleccionado, región de
+                ventas y categoría de producto. El informe también debe mostrar qué proveedores proporcionan los principales
+                productos.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe Envíos a Tiempo mostrará las siguientes métricas para un mes o
+                trimestre de envío seleccionado:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>El porcentaje de pedidos que se enviaron con retraso por país y región de envío</li>
+                <li>Clientes que tuvieron múltiples envíos con retraso durante el último trimestre</li>
+                <li>Northwind Traders define los pedidos con retraso como aquellos enviados después de la fecha de envío
+                    requerida.</li>
+                <li>El departamento de envíos del almacén debe ser notificado si el porcentaje de pedidos con retraso dentro
+                    del mes actual supera el 5%.</li>
+                <li>Los informes deben mostrar datos históricos para el año calendario actual y los últimos tres años
+                    calendario.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos técnicos</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders identifica los siguientes requisitos técnicos:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Un único conjunto de datos debe soportar los tres informes.</li>
+                <li>Los informes deben almacenarse en una única área de trabajo de Power BI.</li>
+                <li>Los datos del informe deben estar actualizados a las 7 a.m., hora del Pacífico, cada día.</li>
+                <li>Los informes deben proporcionar tiempos de respuesta rápidos cuando los usuarios interactúan con una
+                    visualización.</li>
+                <li>El modelo de datos debe minimizar el tamaño del conjunto de datos tanto como sea posible, cumpliendo al
+                    mismo tiempo con los requisitos del informe y los requisitos técnicos.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos de seguridad</p>
+            <p class="text-sm text-gray-400 mb-4">El acceso a los informes debe concederse únicamente a grupos de seguridad
+                de Azure Active Directory (Azure AD). Existe un grupo de seguridad de Azure AD para cada departamento.</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de ventas debe poder realizar las siguientes tareas en
+                Power BI:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Crear, editar y eliminar contenido en los informes.</li>
+                <li>Administrar permisos para áreas de trabajo, conjuntos de datos e informes.</li>
+                <li>Publicar, anular la publicación, actualizar y cambiar los permisos de una aplicación.</li>
+                <li>Asignar a los grupos de Azure AD acceso basado en roles al área de trabajo de los informes.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios del departamento de ventas deben poder acceder únicamente a
+                los datos de la región de ventas a la que están asignados en la tabla Empleados de Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Power BI tiene la siguiente expresión DAX de filtro de tabla de seguridad
+                a nivel de filas (RLS) para la tabla Empleados de Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">[EmailAddress] = USERNAME()</p>
+            <p class="text-sm text-gray-400 mb-4">RLS se aplicará solo a los usuarios del departamento de ventas. Los
+                usuarios de todos los demás departamentos deben poder ver todos los datos.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesita configurar el acceso para los usuarios del departamento de
+                ventas. La solución debe cumplir con los requisitos de seguridad.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Compartir cada informe con el grupo de Azure Active Directory del departamento de ventas.</li>
+                <li>B. Agregar el grupo de Azure Active Directory del departamento de ventas como Administrador del área de
+                    trabajo de los informes.</li>
+                <li>C. Distribuir una aplicación a los usuarios del grupo de Azure Active Directory del departamento de
+                    ventas.</li>
+                <li>D. Agregar el departamento de ventas como miembro del área de trabajo de los informes.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">El acceso a los informes debe concederse únicamente a grupos de seguridad
+                de Azure Active Directory (Azure AD). Existe un grupo de seguridad de Azure AD para cada departamento.</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de ventas debe poder realizar las siguientes tareas en
+                Power BI:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Crear, editar y eliminar contenido en los informes.</li>
+                <li>Administrar permisos para áreas de trabajo, conjuntos de datos e informes.</li>
+                <li>Publicar, anular la publicación, actualizar y cambiar los permisos de una aplicación.</li>
+                <li>Asignar a los grupos de Azure AD acceso basado en roles al área de trabajo de los informes.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">C</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(55%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 55%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">D</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(34%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 34%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">otros</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">( 5% )</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-yellow-500/50 bg- h-full rounded-full" style="width: 5%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor212: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Información Introductoria</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4"></p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción General -</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders es una empresa importadora de alimentos especializados.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">La empresa implementó recientemente Power BI para comprender mejor a sus
+                principales clientes, productos y proveedores.</p>
+            <p class="text-sm text-gray-400 mb-4">Problemas Empresariales -</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de ventas depende del departamento de TI para generar
+                informes en Microsoft SQL Server Reporting Services (SSRS). El departamento de TI tarda demasiado en generar
+                los informes y, a menudo, malinterpreta los requisitos de los informes.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Fuentes de Datos</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders utiliza las fuentes de datos que se muestran en la
+                siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Source2 se exporta diariamente desde un sistema de terceros y se almacena
+                en Microsoft SharePoint Online.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Hoja de trabajo del Cliente</p>
+            <p class="text-sm text-gray-400 mb-4">Source2 contiene una única hoja de trabajo llamada Detalles del Cliente.
+                Las primeras 11 filas de la hoja de trabajo se muestran en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Todos los campos en Source2 son obligatorios.</p>
+            <p class="text-sm text-gray-400 mb-4">La columna Dirección en Detalles del Cliente es la dirección de
+                facturación, que puede diferir de la dirección de envío.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Base de datos de Azure SQL</p>
+            <p class="text-sm text-gray-400 mb-4">Source1 contiene las siguientes tablas:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Pedidos</li>
+                <li>Productos</li>
+                <li>Proveedores</li>
+                <li>Categorías</li>
+                <li>Detalles del Pedido</li>
+                <li>Empleados de Ventas</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">La tabla Pedidos contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Detalles del Pedido contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.4.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La dirección en la tabla Pedidos es la dirección de envío, que puede
+                diferir de la dirección de facturación.</p>
+            <p class="text-sm text-gray-400 mb-4">La tabla Productos contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.5.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Categorías contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.6.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Proveedores contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.7.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Empleados de Ventas contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.8.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cada empleado en la tabla Empleados de Ventas está asignado a una región
+                de ventas. Se pueden asignar múltiples empleados a cada región.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos de los informes</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders requiere los siguientes informes:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Principales Productos</li>
+                <li>Principales Clientes</li>
+                <li>Envíos a Tiempo</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">El informe Principales Clientes mostrará los 20 principales clientes
+                basados en los montos de ventas más altos en un mes o trimestre de pedido seleccionado, categoría de
+                producto y región de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe Principales Productos mostrará los 20 principales productos
+                basados en los montos de ventas más altos vendidos en un mes o trimestre de pedido seleccionado, región de
+                ventas y categoría de producto. El informe también debe mostrar qué proveedores proporcionan los principales
+                productos.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe Envíos a Tiempo mostrará las siguientes métricas para un mes o
+                trimestre de envío seleccionado:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>El porcentaje de pedidos que se enviaron con retraso por país y región de envío</li>
+                <li>Clientes que tuvieron múltiples envíos con retraso durante el último trimestre</li>
+                <li>Northwind Traders define los pedidos con retraso como aquellos enviados después de la fecha de envío
+                    requerida.</li>
+                <li>El departamento de envíos del almacén debe ser notificado si el porcentaje de pedidos con retraso dentro
+                    del mes actual supera el 5%.</li>
+                <li>Los informes deben mostrar datos históricos para el año calendario actual y los últimos tres años
+                    calendario.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos técnicos</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders identifica los siguientes requisitos técnicos:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Un único conjunto de datos debe soportar los tres informes.</li>
+                <li>Los informes deben almacenarse en una única área de trabajo de Power BI.</li>
+                <li>Los datos del informe deben estar actualizados a las 7 a.m., hora del Pacífico, cada día.</li>
+                <li>Los informes deben proporcionar tiempos de respuesta rápidos cuando los usuarios interactúan con una
+                    visualización.</li>
+                <li>El modelo de datos debe minimizar el tamaño del conjunto de datos tanto como sea posible, cumpliendo al
+                    mismo tiempo con los requisitos del informe y los requisitos técnicos.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos de seguridad</p>
+            <p class="text-sm text-gray-400 mb-4">El acceso a los informes debe concederse únicamente a grupos de seguridad
+                de Azure Active Directory (Azure AD). Existe un grupo de seguridad de Azure AD para cada departamento.</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de ventas debe poder realizar las siguientes tareas en
+                Power BI:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Crear, editar y eliminar contenido en los informes.</li>
+                <li>Administrar permisos para áreas de trabajo, conjuntos de datos e informes.</li>
+                <li>Publicar, anular la publicación, actualizar y cambiar los permisos de una aplicación.</li>
+                <li>Asignar a los grupos de Azure AD acceso basado en roles al área de trabajo de los informes.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios del departamento de ventas deben poder acceder únicamente a
+                los datos de la región de ventas a la que están asignados en la tabla Empleados de Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Power BI tiene la siguiente expresión DAX de filtro de tabla de seguridad
+                a nivel de filas (RLS) para la tabla Empleados de Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">[EmailAddress] = USERNAME()</p>
+            <p class="text-sm text-gray-400 mb-4">RLS se aplicará solo a los usuarios del departamento de ventas. Los
+                usuarios de todos los demás departamentos deben poder ver todos los datos.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una solución para cumplir con los requisitos de
+                notificación del departamento de envíos del almacén.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer? Para responder, seleccione las opciones apropiadas en
+                el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Completar un [Area de respuesta] utilizando una visualización de tarjeta que
+                muestre el porcentaje de pedidos</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>informe</li>
+                <li>marcador</li>
+                <li>tablero</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">retrasados en el mes actual y, a continuación, configurar una [Area de respuesta]</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>alerta de datos.</li>
+                <li>vista para teléfono.</li>
+                <li>suscripción</li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/6/s3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 1: panel -</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de envíos del almacén debe ser notificado si el porcentaje
+                de pedidos con retraso dentro del mes actual supera el 5%.</p>
+            <p class="text-sm text-gray-400 mb-4">Puede configurar alertas para que le notifiquen cuando los datos en sus
+                paneles cambien más allá de los límites que estableció.</p>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 2: alerta de datos -</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/create-reports/service-set-data-alerts" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor213: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Información Introductoria</p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción general -</p>
+            <p class="text-sm text-gray-400 mb-4">Contoso, Ltd. es una empresa manufacturera que produce equipos deportivos.
+                Contoso celebra reuniones trimestrales de la junta directiva para las cuales los analistas financieros
+                preparan manualmente informes de Microsoft Excel, incluidos balances generales y estados de pérdidas y
+                ganancias para cada una de las cuatro unidades de negocio de la empresa.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente -</p>
+            <p class="text-sm text-gray-400 mb-4">Datos y Fuentes -</p>
+            <p class="text-sm text-gray-400 mb-4">Los datos para los informes provienen de las fuentes que se muestran en la
+                siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p1.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Los datos del balance general no están relacionados con los resultados de
+                pérdidas y ganancias, salvo que ambos se relacionan con fechas.</p>
+            <p class="text-sm text-gray-400 mb-4">Datos del Balance General -</p>
+            <p class="text-sm text-gray-400 mb-4">Los datos del balance general se importan e incluyen los saldos mensuales
+                finales de cada cuenta en el formato que se muestra en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p1.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Los datos del balance general siempre incluyen una fila para cada cuenta
+                por cada mes.</p>
+            <p class="text-sm text-gray-400 mb-4">Datos del Catálogo de Productos -</p>
+            <p class="text-sm text-gray-400 mb-4">El catálogo de productos muestra cómo los productos se agrupan en
+                categorías de productos, que a su vez se agrupan en las unidades de negocio. La lista de productos se
+                proporciona en el formato que se muestra en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p1.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Los datos de Ingresos (Revenue) se proporcionan a nivel de fecha y producto. Los
+                datos de gastos se proporcionan a nivel de fecha y departamento.</p>
+            <p class="text-sm text-gray-400 mb-4">Problemas Empresariales -</p>
+            <p class="text-sm text-gray-400 mb-4">Históricamente, dos analistas han tardado una semana en preparar los
+                informes para las reuniones trimestrales de la junta. Además, suele haber al menos un problema cada
+                trimestre en el que un valor en un informe es incorrecto debido a una mala referencia de celda en una
+                fórmula de Excel. En ocasiones, hay resultados contradictorios en los informes porque los productos y
+                departamentos que se agrupan en cada unidad de negocio no están definidos de manera consistente.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos -</p>
+            <p class="text-sm text-gray-400 mb-4">Cambios Planificados -</p>
+            <p class="text-sm text-gray-400 mb-4">Contoso planea automatizar y estandarizar el proceso de informes
+                trimestrales mediante Power BI. La empresa quiere reducir el tiempo que lleva generar los informes a menos
+                de dos días. La empresa quiere crear una lógica común para las unidades de negocio, los productos y los
+                departamentos. La lógica se utilizará en todos los informes, incluidos, entre otros, los informes
+                trimestrales para la junta.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos Técnicos -</p>
+            <p class="text-sm text-gray-400 mb-4">Contoso quiere que los informes y conjuntos de datos se actualicen con el
+                mínimo esfuerzo manual.</p>
+            <p class="text-sm text-gray-400 mb-4">La empresa quiere proporcionar a la junta un único paquete de informes que
+                contenga navegación personalizada y enlaces a información complementaria.</p>
+            <p class="text-sm text-gray-400 mb-4">El mantenimiento, incluida la actualización manual de datos y acceso, debe
+                minimizarse tanto como sea posible.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos de Seguridad -</p>
+            <p class="text-sm text-gray-400 mb-4">Los informes deben estar disponibles para la junta desde powerbi.com. Se
+                utilizará un grupo de Azure Active Directory (Azure AD) para compartir información con la junta.</p>
+            <p class="text-sm text-gray-400 mb-4">Contoso identifica los siguientes requisitos de seguridad para el acceso
+                de los analistas:</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas deben poder acceder a todos los datos del balance general y
+                del catálogo de productos.</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas deben poder acceder únicamente a los datos de pérdidas y
+                ganancias de su respectiva unidad de negocio.</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas deben poder crear nuevos informes a partir del conjunto de
+                datos que contiene los datos de pérdidas y ganancias, pero los informes creados por los analistas NO deben
+                incluirse en los informes trimestrales para la junta.</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas NO deben poder compartir los informes trimestrales con
+                nadie.</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas NO deben poder crear nuevos informes utilizando los datos
+                del balance general.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos de los Informes -</p>
+            <p class="text-sm text-gray-400 mb-4">Planea relacionar la tabla del balance general con una tabla de fechas en
+                Power BI en una relación de varios a uno basada en el último día del mes. Al menos uno de los informes de
+                balance general en el paquete de informes trimestrales debe mostrar los saldos finales del trimestre, así
+                como los del trimestre anterior.</p>
+            <p class="text-sm text-gray-400 mb-4">La tabla de fechas contendrá las columnas que se muestran en la siguiente
+                tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p1.4.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Las definiciones y atributos de los productos, departamentos y unidades de
+                negocio deben ser consistentes en todos los informes.</p>
+            <p class="text-sm text-gray-400 mb-4">La junta debe poder obtener la siguiente información de los informes
+                trimestrales:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Tendencias de ingresos (Revenue) a lo largo del tiempo</li>
+                <li>Los saldos finales de cada cuenta</li>
+                <li>Cambios en los pasivos a largo plazo respecto al trimestre anterior</li>
+                <li>El porcentaje de los ingresos (Revenue) totales aportado por cada categoría de producto</li>
+                <li>Una comparación de los ingresos (Revenue) trimestrales frente al mismo trimestre del año anterior</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Los informes deben actualizarse con los datos más recientes a las 5 a.m.
+                de cada día.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear la relación entre la lista de productos y los resultados de
+                ingresos (Revenue). La solución debe minimizar el tiempo que se tarda en renderizar los objetos visuales.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería establecer como cardinalidad de la relación?</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>A. Uno a uno</li>
+                <li>B. Muchos a muchos</li>
+                <li>C. Muchos a uno</li>
+                <li>D. Uno a muchos</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: D</p>
+            <p class="text-sm text-gray-400 mb-4">Un producto en la lista de productos puede aparecer muchas veces en los
+                resultados de ingresos (Revenue).</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota 1: </span>Uno a muchos (1:*): En una relación uno a muchos, la columna en una
+                tabla tiene solo una instancia de un valor particular, y la otra tabla relacionada puede tener más de una
+                instancia de un valor.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota 2: </span>Los datos de Ingresos (Revenue) se proporcionan a nivel de fecha y producto.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">La junta debe poder obtener la siguiente información de los informes
+                trimestrales:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Tendencias de ingresos (Revenue) a lo largo del tiempo -</li>
+                <li>El porcentaje de los ingresos (Revenue) totales aportado por cada categoría de producto</li>
+                <li>Una comparación de los ingresos (Revenue) trimestrales frente al mismo trimestre del año anterior</li>
+            </ul>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/transform-model/desktop-create-and-manage-relationships"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">D</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(92%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 92%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">otros</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">( 8% )</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 8%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor214: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Información Introductoria</p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción general -</p>
+            <p class="text-sm text-gray-400 mb-4">Contoso, Ltd. es una empresa manufacturera que produce equipos deportivos.
+                Contoso celebra reuniones trimestrales de la junta directiva para las cuales los analistas financieros
+                preparan manualmente informes de Microsoft Excel, incluidos balances generales y estados de pérdidas y
+                ganancias para cada una de las cuatro unidades de negocio de la empresa.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente -</p>
+            <p class="text-sm text-gray-400 mb-4">Datos y Fuentes -</p>
+            <p class="text-sm text-gray-400 mb-4">Los datos para los informes provienen de las fuentes que se muestran en la
+                siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p1.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Los datos del balance general no están relacionados con los resultados de
+                pérdidas y ganancias, salvo que ambos se relacionan con fechas.</p>
+            <p class="text-sm text-gray-400 mb-4">Datos del Balance General -</p>
+            <p class="text-sm text-gray-400 mb-4">Los datos del balance general se importan e incluyen los saldos mensuales
+                finales de cada cuenta en el formato que se muestra en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p1.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Los datos del balance general siempre incluyen una fila para cada cuenta
+                por cada mes.</p>
+            <p class="text-sm text-gray-400 mb-4">Datos del Catálogo de Productos -</p>
+            <p class="text-sm text-gray-400 mb-4">El catálogo de productos muestra cómo los productos se agrupan en
+                categorías de productos, que a su vez se agrupan en las unidades de negocio. La lista de productos se
+                proporciona en el formato que se muestra en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p1.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Los datos de Ingresos (Revenue) se proporcionan a nivel de fecha y producto. Los
+                datos de gastos se proporcionan a nivel de fecha y departamento.</p>
+            <p class="text-sm text-gray-400 mb-4">Problemas Empresariales -</p>
+            <p class="text-sm text-gray-400 mb-4">Históricamente, dos analistas han tardado una semana en preparar los
+                informes para las reuniones trimestrales de la junta. Además, suele haber al menos un problema cada
+                trimestre en el que un valor en un informe es incorrecto debido a una mala referencia de celda en una
+                fórmula de Excel. En ocasiones, hay resultados contradictorios en los informes porque los productos y
+                departamentos que se agrupan en cada unidad de negocio no están definidos de manera consistente.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos -</p>
+            <p class="text-sm text-gray-400 mb-4">Cambios Planificados -</p>
+            <p class="text-sm text-gray-400 mb-4">Contoso planea automatizar y estandarizar el proceso de informes
+                trimestrales mediante Power BI. La empresa quiere reducir el tiempo que lleva generar los informes a menos
+                de dos días. La empresa quiere crear una lógica común para las unidades de negocio, los productos y los
+                departamentos. La lógica se utilizará en todos los informes, incluidos, entre otros, los informes
+                trimestrales para la junta.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos Técnicos -</p>
+            <p class="text-sm text-gray-400 mb-4">Contoso quiere que los informes y conjuntos de datos se actualicen con el
+                mínimo esfuerzo manual.</p>
+            <p class="text-sm text-gray-400 mb-4">La empresa quiere proporcionar a la junta un único paquete de informes que
+                contenga navegación personalizada y enlaces a información complementaria.</p>
+            <p class="text-sm text-gray-400 mb-4">El mantenimiento, incluida la actualización manual de datos y acceso, debe
+                minimizarse tanto como sea posible.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos de Seguridad -</p>
+            <p class="text-sm text-gray-400 mb-4">Los informes deben estar disponibles para la junta desde powerbi.com. Se
+                utilizará un grupo de Azure Active Directory (Azure AD) para compartir información con la junta.</p>
+            <p class="text-sm text-gray-400 mb-4">Contoso identifica los siguientes requisitos de seguridad para el acceso
+                de los analistas:</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas deben poder acceder a todos los datos del balance general y
+                del catálogo de productos.</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas deben poder acceder únicamente a los datos de pérdidas y
+                ganancias de su respectiva unidad de negocio.</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas deben poder crear nuevos informes a partir del conjunto de
+                datos que contiene los datos de pérdidas y ganancias, pero los informes creados por los analistas NO deben
+                incluirse en los informes trimestrales para la junta.</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas NO deben poder compartir los informes trimestrales con
+                nadie.</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas NO deben poder crear nuevos informes utilizando los datos
+                del balance general.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos de los Informes -</p>
+            <p class="text-sm text-gray-400 mb-4">Planea relacionar la tabla del balance general con una tabla de fechas en
+                Power BI en una relación de varios a uno basada en el último día del mes. Al menos uno de los informes de
+                balance general en el paquete de informes trimestrales debe mostrar los saldos finales del trimestre, así
+                como los del trimestre anterior.</p>
+            <p class="text-sm text-gray-400 mb-4">La tabla de fechas contendrá las columnas que se muestran en la siguiente
+                tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p1.4.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Las definiciones y atributos de los productos, departamentos y unidades de
+                negocio deben ser consistentes en todos los informes.</p>
+            <p class="text-sm text-gray-400 mb-4">La junta debe poder obtener la siguiente información de los informes
+                trimestrales:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Tendencias de ingresos (Revenue) a lo largo del tiempo</li>
+                <li>Los saldos finales de cada cuenta</li>
+                <li>Cambios en los pasivos a largo plazo respecto al trimestre anterior</li>
+                <li>El porcentaje de los ingresos (Revenue) totales aportado por cada categoría de producto</li>
+                <li>Una comparación de los ingresos  (Revenue) trimestrales frente al mismo trimestre del año anterior</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Los informes deben actualizarse con los datos más recientes a las 5 a.m.
+                de cada día.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una medida que devuelva el porcentaje de ingresos (Revenue) por
+                categoría de producto.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debería completar la medida? Para responder, seleccione las opciones
+                apropiadas en el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p2.5.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/7/s2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 1: CALCULAR (CALCULATE) -</p>
+            <p class="text-sm text-gray-400 mb-4">CALCULAR evalúa una expresión en un contexto de filtro modificado.</p>
+            <p class="text-sm text-gray-400 mb-4">Sintaxis: CALCULAR(<expresión>[, <filtro1> [, <filtro2> [, ...]]])</p>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 2: QUITARFILTROS (REMOVEFILTERS) -</p>
+            <p class="text-sm text-gray-400 mb-4">QUITARFILTROS elimina los filtros de las tablas o columnas especificadas.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 3: DIVIDIR (DIVIDE) -</p>
+            <p class="text-sm text-gray-400 mb-4">DIVIDIR realiza una división.</p>
+            <p class="text-sm text-gray-400 mb-4">Ejemplo: MEDIDA VentasInternet[%Ventas] = DIVIDIR([VentasTotales],
+                CALCULAR([VentasTotales], QUITARFILTROS()))</p>
+                <p class="text-sm text-gray-400 mb-4">Example: MEASURE FactInternetSales[%Sales] = DIVIDE([TotalSales], CALCULATE([TotalSales],REMOVEFILTERS()))</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>La palabra clave RETURN consume las variables definidas en sentencias
+                VAR anteriores.
+            </p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es/dax/calculate-function-dax" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/dax/removefilters-function-dax" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor215: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Información Introductoria</p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción general -</p>
+            <p class="text-sm text-gray-400 mb-4">Contoso, Ltd. es una empresa manufacturera que produce equipos deportivos.
+                Contoso celebra reuniones trimestrales de la junta directiva para las cuales los analistas financieros
+                preparan manualmente informes de Microsoft Excel, incluidos balances generales y estados de pérdidas y
+                ganancias para cada una de las cuatro unidades de negocio de la empresa.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente -</p>
+            <p class="text-sm text-gray-400 mb-4">Datos y Fuentes -</p>
+            <p class="text-sm text-gray-400 mb-4">Los datos para los informes provienen de las fuentes que se muestran en la
+                siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p1.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Los datos del balance general no están relacionados con los resultados de
+                pérdidas y ganancias, salvo que ambos se relacionan con fechas.</p>
+            <p class="text-sm text-gray-400 mb-4">Datos del Balance General -</p>
+            <p class="text-sm text-gray-400 mb-4">Los datos del balance general se importan e incluyen los saldos mensuales
+                finales de cada cuenta en el formato que se muestra en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p1.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Los datos del balance general siempre incluyen una fila para cada cuenta
+                por cada mes.</p>
+            <p class="text-sm text-gray-400 mb-4">Datos del Catálogo de Productos -</p>
+            <p class="text-sm text-gray-400 mb-4">El catálogo de productos muestra cómo los productos se agrupan en
+                categorías de productos, que a su vez se agrupan en las unidades de negocio. La lista de productos se
+                proporciona en el formato que se muestra en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p1.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Los datos de Ingresos se proporcionan a nivel de fecha y
+                producto. Los
+                datos de gastos se proporcionan a nivel de fecha y departamento.</p>
+            <p class="text-sm text-gray-400 mb-4">Problemas Empresariales -</p>
+            <p class="text-sm text-gray-400 mb-4">Históricamente, dos analistas han tardado una semana en preparar los
+                informes para las reuniones trimestrales de la junta. Además, suele haber al menos un problema cada
+                trimestre en el que un valor en un informe es incorrecto debido a una mala referencia de celda en una
+                fórmula de Excel. En ocasiones, hay resultados contradictorios en los informes porque los productos y
+                departamentos que se agrupan en cada unidad de negocio no están definidos de manera consistente.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos -</p>
+            <p class="text-sm text-gray-400 mb-4">Cambios Planificados -</p>
+            <p class="text-sm text-gray-400 mb-4">Contoso planea automatizar y estandarizar el proceso de informes
+                trimestrales mediante Power BI. La empresa quiere reducir el tiempo que lleva generar los informes a menos
+                de dos días. La empresa quiere crear una lógica común para las unidades de negocio, los productos y los
+                departamentos. La lógica se utilizará en todos los informes, incluidos, entre otros, los informes
+                trimestrales para la junta.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos Técnicos -</p>
+            <p class="text-sm text-gray-400 mb-4">Contoso quiere que los informes y conjuntos de datos se actualicen con el
+                mínimo esfuerzo manual.</p>
+            <p class="text-sm text-gray-400 mb-4">La empresa quiere proporcionar a la junta un único paquete de informes que
+                contenga navegación personalizada y enlaces a información complementaria.</p>
+            <p class="text-sm text-gray-400 mb-4">El mantenimiento, incluida la actualización manual de datos y acceso, debe
+                minimizarse tanto como sea posible.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos de Seguridad -</p>
+            <p class="text-sm text-gray-400 mb-4">Los informes deben estar disponibles para la junta desde powerbi.com. Se
+                utilizará un grupo de Azure Active Directory (Azure AD) para compartir información con la junta.</p>
+            <p class="text-sm text-gray-400 mb-4">Contoso identifica los siguientes requisitos de seguridad para el acceso
+                de los analistas:</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas deben poder acceder a todos los datos del balance general y
+                del catálogo de productos.</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas deben poder acceder únicamente a los datos de pérdidas y
+                ganancias de su respectiva unidad de negocio.</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas deben poder crear nuevos informes a partir del conjunto de
+                datos que contiene los datos de pérdidas y ganancias, pero los informes creados por los analistas NO deben
+                incluirse en los informes trimestrales para la junta.</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas NO deben poder compartir los informes trimestrales con
+                nadie.</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas NO deben poder crear nuevos informes utilizando los datos
+                del balance general.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos de los Informes -</p>
+            <p class="text-sm text-gray-400 mb-4">Planea relacionar la tabla del balance general con una tabla de fechas en
+                Power BI en una relación de varios a uno basada en el último día del mes. Al menos uno de los informes de
+                balance general en el paquete de informes trimestrales debe mostrar los saldos finales del trimestre, así
+                como los del trimestre anterior.</p>
+            <p class="text-sm text-gray-400 mb-4">La tabla de fechas contendrá las columnas que se muestran en la siguiente
+                tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p1.4.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Las definiciones y atributos de los productos, departamentos y unidades de
+                negocio deben ser consistentes en todos los informes.</p>
+            <p class="text-sm text-gray-400 mb-4">La junta debe poder obtener la siguiente información de los informes
+                trimestrales:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Tendencias de ingresos a lo largo del tiempo</li>
+                <li>Los saldos finales de cada cuenta</li>
+                <li>Cambios en los pasivos a largo plazo respecto al trimestre anterior</li>
+                <li>El porcentaje de los ingresos totales aportado por cada categoría de producto</li>
+                <li>Una comparación de los ingresos trimestrales frente al mismo trimestre del año anterior</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Los informes deben actualizarse con los datos más recientes a las 5 a.m.
+                de cada día.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Una vez que se crea el conjunto de datos de pérdidas y ganancias, ¿qué
+                cuatro acciones debería realizar en secuencia para garantizar que los analistas de la unidad de negocio vean
+                los datos de pérdidas y ganancias apropiados? Para responder, mueva las acciones apropiadas de la lista de
+                acciones al área de respuesta y ordénelas en el orden correcto.</p>
+                <p class="text-sm text-gray-400 mb-4">Acciones</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Desde powerbi.com, asigne a los analistas el rol de Colaborador en el espacio de trabajo.</li>
+                <li>Desde Power BI Desktop, agregue una expresión DAX de filtro de tabla a los roles.</li>
+                <li>Desde powerbi.com, agregue miembros a los roles.</li>
+                <li>Desde Power BI Desktop, cree cuatro roles.</li>
+                <li>Desde Power BI Desktop, publique el conjunto de datos en powerbi.com.</li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/7/s3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Paso 1: Desde Power BI Desktop, crear cuatro roles</p>
+            <p class="text-sm text-gray-400 mb-4">Puede definir roles y reglas dentro de Power BI Desktop.</p>
+            <p class="text-sm text-gray-400 mb-4">Paso 2: Desde Power BI Desktop, agregar una Expresión DAX de filtro de
+                tabla a los roles.</p>
+            <p class="text-sm text-gray-400 mb-4">Para definir roles de seguridad, siga estos pasos.</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>1. Desde la pestaña Modelado, seleccione Administrar roles.</li>
+                <li>2. Seleccione Administrar roles</li>
+                <li>3. Desde la ventana Administrar roles, seleccione Crear.</li>
+                <li>4. Seleccione Crear</li>
+                <li>5. En Roles, proporcione un nombre para el rol.</li>
+                <li>6. En Tablas, seleccione la tabla a la que desea aplicar una regla DAX.</li>
+                <li>7. En el cuadro Expresión DAX de filtro de tabla, ingrese las expresiones DAX. Esta expresión devuelve
+                    un valor verdadero o falso. Por ejemplo: [ID de entidad] = "Valor".</li>
+                <p class="text-sm text-gray-400 mb-4">Después de haber creado la expresión DAX, seleccione la marca de
+                    verificación sobre el cuadro de expresión para validar la expresión.</p>
+                <li>Seleccione Guardar.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Paso 3: Desde powerbi.com, agregar miembros de rol a los roles.</p>
+            <p class="text-sm text-gray-400 mb-4">No puede asignar usuarios a un rol dentro de Power BI Desktop. Los asigna
+                en el servicio Power BI.</p>
+            <p class="text-sm text-gray-400 mb-4">Paso 4: Desde Power BI Desktop, publicar el conjunto de datos en
+                powerbi.com</p>
+            <p class="text-sm text-gray-400 mb-4">Ahora que ha terminado de validar los roles en Power BI Desktop, continúe
+                y publique su informe en el servicio Power BI.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/fabric/security/service-admin-row-level-security" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor216: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Información Introductoria</p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción general -</p>
+            <p class="text-sm text-gray-400 mb-4">Contoso, Ltd. es una empresa manufacturera que produce equipos deportivos.
+                Contoso celebra reuniones trimestrales de la junta directiva para las cuales los analistas financieros
+                preparan manualmente informes de Microsoft Excel, incluidos balances generales y estados de pérdidas y
+                ganancias para cada una de las cuatro unidades de negocio de la empresa.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente -</p>
+            <p class="text-sm text-gray-400 mb-4">Datos y Fuentes -</p>
+            <p class="text-sm text-gray-400 mb-4">Los datos para los informes provienen de las fuentes que se muestran en la
+                siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p1.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Los datos del balance general no están relacionados con los resultados de
+                pérdidas y ganancias, salvo que ambos se relacionan con fechas.</p>
+            <p class="text-sm text-gray-400 mb-4">Datos del Balance General -</p>
+            <p class="text-sm text-gray-400 mb-4">Los datos del balance general se importan e incluyen los saldos mensuales
+                finales de cada cuenta en el formato que se muestra en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p1.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Los datos del balance general siempre incluyen una fila para cada cuenta
+                por cada mes.</p>
+            <p class="text-sm text-gray-400 mb-4">Datos del Catálogo de Productos -</p>
+            <p class="text-sm text-gray-400 mb-4">El catálogo de productos muestra cómo los productos se agrupan en
+                categorías de productos, que a su vez se agrupan en las unidades de negocio. La lista de productos se
+                proporciona en el formato que se muestra en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p1.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Los datos de Ingresos se proporcionan a nivel de fecha y
+                producto. Los
+                datos de gastos se proporcionan a nivel de fecha y departamento.</p>
+            <p class="text-sm text-gray-400 mb-4">Problemas Empresariales -</p>
+            <p class="text-sm text-gray-400 mb-4">Históricamente, dos analistas han tardado una semana en preparar los
+                informes para las reuniones trimestrales de la junta. Además, suele haber al menos un problema cada
+                trimestre en el que un valor en un informe es incorrecto debido a una mala referencia de celda en una
+                fórmula de Excel. En ocasiones, hay resultados contradictorios en los informes porque los productos y
+                departamentos que se agrupan en cada unidad de negocio no están definidos de manera consistente.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos -</p>
+            <p class="text-sm text-gray-400 mb-4">Cambios Planificados -</p>
+            <p class="text-sm text-gray-400 mb-4">Contoso planea automatizar y estandarizar el proceso de informes
+                trimestrales mediante Power BI. La empresa quiere reducir el tiempo que lleva generar los informes a menos
+                de dos días. La empresa quiere crear una lógica común para las unidades de negocio, los productos y los
+                departamentos. La lógica se utilizará en todos los informes, incluidos, entre otros, los informes
+                trimestrales para la junta.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos Técnicos -</p>
+            <p class="text-sm text-gray-400 mb-4">Contoso quiere que los informes y conjuntos de datos se actualicen con el
+                mínimo esfuerzo manual.</p>
+            <p class="text-sm text-gray-400 mb-4">La empresa quiere proporcionar a la junta un único paquete de informes que
+                contenga navegación personalizada y enlaces a información complementaria.</p>
+            <p class="text-sm text-gray-400 mb-4">El mantenimiento, incluida la actualización manual de datos y acceso, debe
+                minimizarse tanto como sea posible.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos de Seguridad -</p>
+            <p class="text-sm text-gray-400 mb-4">Los informes deben estar disponibles para la junta desde powerbi.com. Se
+                utilizará un grupo de Azure Active Directory (Azure AD) para compartir información con la junta.</p>
+            <p class="text-sm text-gray-400 mb-4">Contoso identifica los siguientes requisitos de seguridad para el acceso
+                de los analistas:</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas deben poder acceder a todos los datos del balance general y
+                del catálogo de productos.</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas deben poder acceder únicamente a los datos de pérdidas y
+                ganancias de su respectiva unidad de negocio.</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas deben poder crear nuevos informes a partir del conjunto de
+                datos que contiene los datos de pérdidas y ganancias, pero los informes creados por los analistas NO deben
+                incluirse en los informes trimestrales para la junta.</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas NO deben poder compartir los informes trimestrales con
+                nadie.</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas NO deben poder crear nuevos informes utilizando los datos
+                del balance general.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos de los Informes -</p>
+            <p class="text-sm text-gray-400 mb-4">Planea relacionar la tabla del balance general con una tabla de fechas en
+                Power BI en una relación de varios a uno basada en el último día del mes. Al menos uno de los informes de
+                balance general en el paquete de informes trimestrales debe mostrar los saldos finales del trimestre, así
+                como los del trimestre anterior.</p>
+            <p class="text-sm text-gray-400 mb-4">La tabla de fechas contendrá las columnas que se muestran en la siguiente
+                tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p1.4.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Las definiciones y atributos de los productos, departamentos y unidades de
+                negocio deben ser consistentes en todos los informes.</p>
+            <p class="text-sm text-gray-400 mb-4">La junta debe poder obtener la siguiente información de los informes
+                trimestrales:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Tendencias de ingresos a lo largo del tiempo</li>
+                <li>Los saldos finales de cada cuenta</li>
+                <li>Cambios en los pasivos a largo plazo respecto al trimestre anterior</li>
+                <li>El porcentaje de los ingresos totales aportado por cada categoría de producto</li>
+                <li>Una comparación de los ingresos trimestrales frente al mismo trimestre del año anterior</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Los informes deben actualizarse con los datos más recientes a las 5 a.m.
+                de cada día.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué expresión DAX debería usar para obtener los saldos finales en los
+                informes del balance general?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. CALCULAR ( SUMA( BalanceGeneral[ImporteSaldo] ), ULTIMAFECHA('Fecha[Fecha]') )</li>
+                <li>B. CALCULAR ( SUMA( BalanceGeneral[ImporteSaldo] ), FECHASCT('Fecha[Fecha]') )</li>
+                <li>C. PRIMERNOENBLANCO ('Fecha[Fecha] SUMA( BalanceGeneral[ImporteSaldo]') )</li>
+                <li>D. CALCULAR ( MAX( BalanceGeneral[ImporteSaldo] ), ULTIMAFECHA('Fecha[Fecha]') )</li>
+            </ul>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. CALCULATE ( SUM( BalanceSheet[BalanceAmount] ), LASTDATE ( 'Date'[Date] ) )</li>
+                <li>B. CALCULATE ( SUM( BalanceSheet[BalanceAmount] ), DATESQTD('Date'[Date]) )</li>
+                <li>C. FIRSTNONBLANK ('Date'[Date] SUM( BalanceSheet[BalanceAmount] ) )</li>
+                <li>D. CALCULATE ( MAX( BalanceSheet[BalanceAmount] ), LASTDATE ('Date'[Date] ))</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">Use las funciones CALCULAR (CALCULATE), SUMA (SUM) y FECHASCT (DATESQTD).</p>
+            <p class="text-sm text-gray-400 mb-4">FECHASCT devuelve una tabla que contiene una columna de las fechas para el
+                trimestre hasta la fecha, en el contexto actual.</p>
+            <p class="text-sm text-gray-400 mb-4">Sintaxis: FECHASCT(<fechas>)</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Al menos uno de los informes de balance general en el paquete de
+                informes trimestrales debe mostrar los saldos finales del trimestre, así como los del trimestre anterior.
+            </p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/dax/datesqtd-function-dax" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">A</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(62%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 62%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">B</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(38%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 38%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor217: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Información Introductoria</p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción general -</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Litware, Inc. es un minorista en línea que utiliza Power BI.</li>
+                <li>Litware planea aprovechar los datos de una base de datos de Azure SQL que almacena datos para el sitio
+                    web de comercio electrónico en vivo de la empresa.</li>
+                <li>Litware utiliza Azure Active Directory (Azure AD) para autenticar usuarios.</li>
+                <li>Entorno Existente. Datos de Ventas</li>
+                <li>Litware tiene datos de ventas en línea que tienen el esquema SQL que se muestra en la siguiente tabla.
+                </li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/5/p1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">En la tabla Fecha (Date), la columna id_fecha tiene un formato de aaaammdd
+                y la
+                columna mes tiene un formato de aaaaamm.</p>
+            <p class="text-sm text-gray-400 mb-4">La columna semana en la tabla Fecha (Date) y la columna id_semana
+                (week_id) en la tabla
+                Rendimiento_Semanal (Weekly_Returns) tienen un formato de aaaass.</p>
+            <p class="text-sm text-gray-400 mb-4">En la tabla Ventas (Sales), la columna id_venta (sales_id) representa una
+                transacción única.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">La columna id_región (region_id) puede ser gestionada por un solo gerente
+                de ventas.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Preocupaciones sobre los datos</p>
+            <p class="text-sm text-gray-400 mb-4">Le preocupa la calidad e integridad de los datos de ventas. Debe
+                asegurarse de que los valores de importe_venta negativos y faltantes NO contribuyan al cálculo del importe
+                total de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Requisitos de informes</p>
+            <p class="text-sm text-gray-400 mb-4">Litware identifica los siguientes requisitos de informes:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Los ejecutivos requieren un objeto visual que muestre las ventas por región.</li>
+                <li>Los ejecutivos requieren un objeto visual que muestre las devoluciones por gerente de región y los
+                    gerentes de ventas que dependen de ellos.</li>
+                <li>Los gerentes de ventas deben poder ver solo los datos de ventas de su respectiva región.</li>
+                <li>Los gerentes de ventas requieren un objeto visual para analizar el rendimiento de las ventas frente a
+                    los objetivos de ventas.</li>
+                <li>El departamento de ventas requiere informes que contengan el número de transacciones de ventas.</li>
+                <li>Los usuarios deben poder ver el mes en cada informe como se muestra en el siguiente ejemplo: Feb 2020.
+                </li>
+                <li>El departamento de servicio al cliente requiere un objeto visual que pueda filtrarse tanto por mes de
+                    venta como por mes de envío de forma independiente.</li>
+                <li>La latencia máxima permitida para incluir transacciones en los informes es de cinco minutos.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta:</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear relaciones para cumplir con los requisitos de informes del
+                departamento de servicio al cliente.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería crear?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. una relación uno a muchos desde Fecha[id_fecha] a Ventas[id_fecha_venta] y otra relación uno a muchos
+                    desde Fecha[id_fecha] a Rendimiento_Semanal[id_semana]</li>
+                <li>B. una relación uno a muchos desde Ventas[id_fecha_venta] a Fecha[id_fecha] y una relación uno a muchos
+                    desde Ventas[id_fecha_envío_venta] a Fecha[id_fecha]</li>
+                <li>C. una tabla de fechas adicional llamada FechaEnvío, una relación muchos a muchos desde
+                    Ventas[id_fecha_venta] a Fecha[id_fecha], y una relación muchos a muchos desde
+                    Ventas[id_fecha_envío_venta] a FechaEnvío[id_fecha]</li>
+                <li>D. una tabla de fechas adicional llamada FechaEnvío, una relación uno a muchos desde Fecha[id_fecha] a
+                    Ventas[id_fecha_venta], y una relación uno a muchos desde FechaEnvío[id_fecha] a
+                    Ventas[id_fecha_envío_venta]</li>
+            </ul>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. a one-to-many relationship from Date[date_id] to Sales[sales_date_id] and another one-to-many
+                    relationship from Date[date_id] to Weekly_Returns[week_id]</li>
+                <li>B. a one-to-many relationship from Sales[sales_date_id] to Date[date_id] and a one-to-many relationship
+                    from Sales[sales_ship_date_id] to Date[date_id] </li>
+                <li>C. an additional date table named ShipDate, a many-to-many relationship from Sales[sales_date_id] to
+                    Date[date_id], and a many-to-many relationship from Sales[sales_ship_date_id] to ShipDate[date_id]</li>
+                <li>D. an additional date table named ShipDate, a one-to-many relationship from Date[date_id] to
+                    Sales[sales_date_id], and a one-to-many relationship from ShipDate[date_id] to Sales[sales_skip_date_id]</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: D</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de servicio al cliente requiere un objeto visual que pueda
+                filtrarse tanto por mes de venta como por mes de envío de forma independiente.</p>
+            <p class="text-sm text-gray-400 mb-4">Se necesitan dos tablas de fechas. Agregue una relación uno a muchos desde
+                ambas tablas de fechas a la tabla Ventas.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/guidance/relationships-active-inactive" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">D</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(90%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 63%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">otros</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">( 6% )</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 6%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor218: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Información Introductoria</p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción general -</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Litware, Inc. es un minorista en línea que utiliza Power BI.</li>
+                <li>Litware planea aprovechar los datos de una base de datos de Azure SQL que almacena datos para el sitio
+                    web de comercio electrónico en vivo de la empresa.</li>
+                <li>Litware utiliza Azure Active Directory (Azure AD) para autenticar usuarios.</li>
+                <li>Entorno Existente. Datos de Ventas</li>
+                <li>Litware tiene datos de ventas en línea que tienen el esquema SQL que se muestra en la siguiente tabla.
+                </li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/5/p1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">En la tabla Fecha (Date), la columna id_fecha tiene un formato de aaaammdd
+                y la
+                columna mes tiene un formato de aaaaamm.</p>
+            <p class="text-sm text-gray-400 mb-4">La columna semana en la tabla Fecha (Date) y la columna id_semana
+                (week_id) en la tabla
+                Rendimiento_Semanal (Weekly_Returns) tienen un formato de aaaass.</p>
+            <p class="text-sm text-gray-400 mb-4">En la tabla Ventas (Sales), la columna id_venta (sales_id) representa una
+                transacción única.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">La columna id_región (region_id) puede ser gestionada por un solo gerente
+                de ventas.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Preocupaciones sobre los datos</p>
+            <p class="text-sm text-gray-400 mb-4">Le preocupa la calidad e integridad de los datos de ventas. Debe
+                asegurarse de que los valores de importe_venta negativos y faltantes NO contribuyan al cálculo del importe
+                total de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Requisitos de informes</p>
+            <p class="text-sm text-gray-400 mb-4">Litware identifica los siguientes requisitos de informes:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Los ejecutivos requieren un objeto visual que muestre las ventas por región.</li>
+                <li>Los ejecutivos requieren un objeto visual que muestre las devoluciones por gerente de región y los
+                    gerentes de ventas que dependen de ellos.</li>
+                <li>Los gerentes de ventas deben poder ver solo los datos de ventas de su respectiva región.</li>
+                <li>Los gerentes de ventas requieren un objeto visual para analizar el rendimiento de las ventas frente a
+                    los objetivos de ventas.</li>
+                <li>El departamento de ventas requiere informes que contengan el número de transacciones de ventas.</li>
+                <li>Los usuarios deben poder ver el mes en cada informe como se muestra en el siguiente ejemplo: Feb 2020.
+                </li>
+                <li>El departamento de servicio al cliente requiere un objeto visual que pueda filtrarse tanto por mes de
+                    venta como por mes de envío de forma independiente.</li>
+                <li>La latencia máxima permitida para incluir transacciones en los informes es de cinco minutos.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta:</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesita proporcionar una solución para otorgar a los gerentes de ventas
+                el acceso requerido.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería incluir en la solución?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Crear un rol de seguridad que tenga un filtro de tabla en la tabla Gerente de Ventas donde
+                    nombredeusuario = NombreDeUsuario() (username = UserName()).</li>
+                <li>B. Crear un rol de seguridad que tenga un filtro de tabla en la tabla Gerente de Ventas donde
+                    nombredeusuario = id_gerente_ventas (username = sales_manager_id).</li>
+                <li>C. Crear un rol de seguridad que tenga un filtro de tabla en la tabla Gerente de Región donde
+                    id_gerente_ventas = NombrePrincipalDeUsuario() (sales_manager_id = UserPrincipalName()).</li>
+                <li>D. Crear un rol de seguridad que tenga un filtro de tabla en la tabla Gerente_Ventas donde nombre =
+                    NombreDeUsuario() (name = UserName()).</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">Los gerentes de ventas deben poder ver solo los datos de ventas de su
+                respectiva región.</p>
+            <p class="text-sm text-gray-400 mb-4">Utilice el campo nombredeusuario (username) de la tabla Gerente_ventas (Sales_manager).</p>
+            <p class="text-sm text-gray-400 mb-4">Utilice también la función DAX NombreDeUsuario() (Username()) para validar el nombre de
+                usuario.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="powerbi.microsoft.com/es-my/blog/using-username-in-dax-with-row-level-security/" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">A</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(88%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 88%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">otros</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(12%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 12%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor219: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Información Introductoria</p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción general -</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Litware, Inc. es un minorista en línea que utiliza Power BI.</li>
+                <li>Litware planea aprovechar los datos de una base de datos de Azure SQL que almacena datos para el sitio
+                    web de comercio electrónico en vivo de la empresa.</li>
+                <li>Litware utiliza Azure Active Directory (Azure AD) para autenticar usuarios.</li>
+                <li>Entorno Existente. Datos de Ventas</li>
+                <li>Litware tiene datos de ventas en línea que tienen el esquema SQL que se muestra en la siguiente tabla.
+                </li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/5/p1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">En la tabla Fecha (Date), la columna id_fecha tiene un formato de aaaammdd
+                y la
+                columna mes tiene un formato de aaaaamm.</p>
+            <p class="text-sm text-gray-400 mb-4">La columna semana en la tabla Fecha (Date) y la columna id_semana
+                (week_id) en la tabla
+                Rendimiento_Semanal (Weekly_Returns) tienen un formato de aaaass.</p>
+            <p class="text-sm text-gray-400 mb-4">En la tabla Ventas (Sales), la columna id_venta (sales_id) representa una
+                transacción única.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">La columna id_región (region_id) puede ser gestionada por un solo gerente
+                de ventas.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Preocupaciones sobre los datos</p>
+            <p class="text-sm text-gray-400 mb-4">Le preocupa la calidad e integridad de los datos de ventas. Debe
+                asegurarse de que los valores de importe_venta negativos y faltantes NO contribuyan al cálculo del importe
+                total de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Requisitos de informes</p>
+            <p class="text-sm text-gray-400 mb-4">Litware identifica los siguientes requisitos de informes:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Los ejecutivos requieren un objeto visual que muestre las ventas por región.</li>
+                <li>Los ejecutivos requieren un objeto visual que muestre las devoluciones por gerente de región y los
+                    gerentes de ventas que dependen de ellos.</li>
+                <li>Los gerentes de ventas deben poder ver solo los datos de ventas de su respectiva región.</li>
+                <li>Los gerentes de ventas requieren un objeto visual para analizar el rendimiento de las ventas frente a
+                    los objetivos de ventas.</li>
+                <li>El departamento de ventas requiere informes que contengan el número de transacciones de ventas.</li>
+                <li>Los usuarios deben poder ver el mes en cada informe como se muestra en el siguiente ejemplo: Feb 2020.
+                </li>
+                <li>El departamento de servicio al cliente requiere un objeto visual que pueda filtrarse tanto por mes de
+                    venta como por mes de envío de forma independiente.</li>
+                <li>La latencia máxima permitida para incluir transacciones en los informes es de cinco minutos.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta:</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Combina datos de Región_Ventas (Sales_Region), Gerente_Región (Region_Manager), Gerente_Ventas (Sales_Manager) y Gerente (Manager)
+                en una sola tabla llamada Región.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer a continuación para cumplir con los requisitos de
+                informes de los ejecutivos?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Crear una columna calculada DAX que recupere el gerente de región de la tabla Rendimiento_Semanal (Weekly_Returns)
+                    basándose en la columna id_región_ventas. (sales_region_id)</li>
+                <li>B. Aplicar seguridad a nivel de filas (RLS) a la tabla Región (Region) basada en el nombre de usuario del gerente
+                    de ventas.</li>
+                <li>C. Configurar una relación bidireccional entre Región (Region) y Región_Ventas (Sales_Region).</li>
+                <li>D. En la tabla Región (Region), crear una jerarquía que tenga el nombre del gerente y, a continuación, el nombre
+                    del gerente de ventas.</li>
+            </ul>
+
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">Los ejecutivos requieren un objeto visual que muestre las devoluciones por
+                gerente de región y los gerentes de ventas que dependen de ellos.</p>
+            <p class="text-sm text-gray-400 mb-4">Una jerarquía es un conjunto de campos categorizados de manera jerárquica
+                donde un nivel es el padre de otro nivel. Los valores del nivel padre se pueden explorar en profundidad
+                hasta el nivel inferior.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://radacad.com/what-a-power-bi-hierarchy-is-and-how-to-use-it/" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor220: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Información Introductoria</p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción general -</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Litware, Inc. es un minorista en línea que utiliza Power BI.</li>
+                <li>Litware planea aprovechar los datos de una base de datos de Azure SQL que almacena datos para el sitio
+                    web de comercio electrónico en vivo de la empresa.</li>
+                <li>Litware utiliza Azure Active Directory (Azure AD) para autenticar usuarios.</li>
+                <li>Entorno Existente. Datos de Ventas</li>
+                <li>Litware tiene datos de ventas en línea que tienen el esquema SQL que se muestra en la siguiente tabla.
+                </li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/5/p1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">En la tabla Fecha (Date), la columna id_fecha tiene un formato de aaaammdd
+                y la
+                columna mes tiene un formato de aaaaamm.</p>
+            <p class="text-sm text-gray-400 mb-4">La columna semana en la tabla Fecha (Date) y la columna id_semana
+                (week_id) en la tabla
+                Rendimiento_Semanal (Weekly_Returns) tienen un formato de aaaass.</p>
+            <p class="text-sm text-gray-400 mb-4">En la tabla Ventas (Sales), la columna id_venta (sales_id) representa una
+                transacción única.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">La columna id_región (region_id) puede ser gestionada por un solo gerente
+                de ventas.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Preocupaciones sobre los datos</p>
+            <p class="text-sm text-gray-400 mb-4">Le preocupa la calidad e integridad de los datos de ventas. Debe
+                asegurarse de que los valores de importe_venta negativos y faltantes NO contribuyan al cálculo del importe
+                total de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Requisitos de informes</p>
+            <p class="text-sm text-gray-400 mb-4">Litware identifica los siguientes requisitos de informes:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Los ejecutivos requieren un objeto visual que muestre las ventas por región.</li>
+                <li>Los ejecutivos requieren un objeto visual que muestre las devoluciones por gerente de región y los
+                    gerentes de ventas que dependen de ellos.</li>
+                <li>Los gerentes de ventas deben poder ver solo los datos de ventas de su respectiva región.</li>
+                <li>Los gerentes de ventas requieren un objeto visual para analizar el rendimiento de las ventas frente a
+                    los objetivos de ventas.</li>
+                <li>El departamento de ventas requiere informes que contengan el número de transacciones de ventas.</li>
+                <li>Los usuarios deben poder ver el mes en cada informe como se muestra en el siguiente ejemplo: Feb 2020.
+                </li>
+                <li>El departamento de servicio al cliente requiere un objeto visual que pueda filtrarse tanto por mes de
+                    venta como por mes de envío de forma independiente.</li>
+                <li>La latencia máxima permitida para incluir transacciones en los informes es de cinco minutos.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta:</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería crear para cumplir con los requisitos de informes del
+                departamento de ventas?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. una medida que utilice una fórmula de CONTARFILAS(Ventas) (COUNTROWS(Sales))</li>
+                <li>B. una columna calculada que utilice una fórmula de CONTARA(Ventas[id_venta]) (COUNTA(Sales[sales_id]))</li>
+                <li>C. una columna calculada que utilice una fórmula de SUMA(Ventas[id_venta]) (SUM(Sales[sales_id]))</li>
+                <li>D. una medida que utilice una fórmula de SUMA(Ventas[id_venta]) (SUM(Sales[sales_id]))</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de ventas requiere informes que contengan el número de
+                transacciones de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">La función CONTARFILAS (COUNTROWS) cuenta el número de filas en la tabla especificada,
+                o en una tabla definida por una expresión.</p>
+            <p class="text-sm text-gray-400 mb-4">Incorrecto:</p>
+            <p class="text-sm text-gray-400 mb-4">La función CONTARA (COUNTA) cuenta el número de celdas en una columna que no están
+                vacías.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/dax/countrows-function-dax" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor221: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Información Introductoria</p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción general -</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Litware, Inc. es un minorista en línea que utiliza Power BI.</li>
+                <li>Litware planea aprovechar los datos de una base de datos de Azure SQL que almacena datos para el sitio
+                    web de comercio electrónico en vivo de la empresa.</li>
+                <li>Litware utiliza Azure Active Directory (Azure AD) para autenticar usuarios.</li>
+                <li>Entorno Existente. Datos de Ventas</li>
+                <li>Litware tiene datos de ventas en línea que tienen el esquema SQL que se muestra en la siguiente tabla.
+                </li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/5/p1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">En la tabla Fecha (Date), la columna id_fecha tiene un formato de aaaammdd
+                y la
+                columna mes tiene un formato de aaaaamm.</p>
+            <p class="text-sm text-gray-400 mb-4">La columna semana en la tabla Fecha (Date) y la columna id_semana
+                (week_id) en la tabla
+                Rendimiento_Semanal (Weekly_Returns) tienen un formato de aaaass.</p>
+            <p class="text-sm text-gray-400 mb-4">En la tabla Ventas (Sales), la columna id_venta (sales_id) representa una
+                transacción única.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">La columna id_región (region_id) puede ser gestionada por un solo gerente
+                de ventas.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Preocupaciones sobre los datos</p>
+            <p class="text-sm text-gray-400 mb-4">Le preocupa la calidad e integridad de los datos de ventas. Debe
+                asegurarse de que los valores de importe_venta negativos y faltantes NO contribuyan al cálculo del importe
+                total de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Requisitos de informes</p>
+            <p class="text-sm text-gray-400 mb-4">Litware identifica los siguientes requisitos de informes:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Los ejecutivos requieren un objeto visual que muestre las ventas por región.</li>
+                <li>Los ejecutivos requieren un objeto visual que muestre las devoluciones por gerente de región y los
+                    gerentes de ventas que dependen de ellos.</li>
+                <li>Los gerentes de ventas deben poder ver solo los datos de ventas de su respectiva región.</li>
+                <li>Los gerentes de ventas requieren un objeto visual para analizar el rendimiento de las ventas frente a
+                    los objetivos de ventas.</li>
+                <li>El departamento de ventas requiere informes que contengan el número de transacciones de ventas.</li>
+                <li>Los usuarios deben poder ver el mes en cada informe como se muestra en el siguiente ejemplo: Feb 2020.
+                </li>
+                <li>El departamento de servicio al cliente requiere un objeto visual que pueda filtrarse tanto por mes de
+                    venta como por mes de envío de forma independiente.</li>
+                <li>La latencia máxima permitida para incluir transacciones en los informes es de cinco minutos.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta:</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer para abordar las preocupaciones sobre los datos del entorno existente?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. una columna calculada que utilice la siguiente fórmula: ABS(Ventas[importe_venta]) (ABS(Sales[sales_amount]))</li>
+                <li>B. una medida que utilice la siguiente fórmula: SUMX(FILTRO('Ventas', 'Ventas'[importe_venta] > 0), [importe_venta]) (SUMX(FILTER(Sales, Sales[sales_amount] > 0), Sales[sales_amount]))</li>
+                <li>C. una medida que utilice la siguiente fórmula: SUMA(Ventas[importe_venta]) (SUM(Sales[sales_amount]))</li>
+                <li>D. una columna calculada que utilice la siguiente fórmula: SI(ESBLANCO(Ventas[importe_venta]), 0, (Ventas[importe_venta])) (IF(ISBLANK(Sales[sales_amount]), 0, Sales[sales_amount]))</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+            <p class="text-sm text-gray-400 mb-4">Le preocupa la calidad e integridad de los datos de ventas. Debe
+                asegurarse de que los valores de importe_venta negativos y faltantes NO contribuyan al cálculo del importe
+                total de ventas.</p>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">B</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(81%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 81%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">D</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(19%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 19%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor222: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Información Introductoria</p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción general -</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Litware, Inc. es un minorista en línea que utiliza Power BI.</li>
+                <li>Litware planea aprovechar los datos de una base de datos de Azure SQL que almacena datos para el sitio
+                    web de comercio electrónico en vivo de la empresa.</li>
+                <li>Litware utiliza Azure Active Directory (Azure AD) para autenticar usuarios.</li>
+                <li>Entorno Existente. Datos de Ventas</li>
+                <li>Litware tiene datos de ventas en línea que tienen el esquema SQL que se muestra en la siguiente tabla.
+                </li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/5/p1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">En la tabla Fecha (Date), la columna id_fecha tiene un formato de aaaammdd
+                y la
+                columna mes tiene un formato de aaaaamm.</p>
+            <p class="text-sm text-gray-400 mb-4">La columna semana en la tabla Fecha (Date) y la columna id_semana
+                (week_id) en la tabla
+                Rendimiento_Semanal (Weekly_Returns) tienen un formato de aaaass.</p>
+            <p class="text-sm text-gray-400 mb-4">En la tabla Ventas (Sales), la columna id_venta (sales_id) representa una
+                transacción única.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">La columna id_región (region_id) puede ser gestionada por un solo gerente
+                de ventas.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Preocupaciones sobre los datos</p>
+            <p class="text-sm text-gray-400 mb-4">Le preocupa la calidad e integridad de los datos de ventas. Debe
+                asegurarse de que los valores de importe_venta negativos y faltantes NO contribuyan al cálculo del importe
+                total de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Requisitos de informes</p>
+            <p class="text-sm text-gray-400 mb-4">Litware identifica los siguientes requisitos de informes:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Los ejecutivos requieren un objeto visual que muestre las ventas por región.</li>
+                <li>Los ejecutivos requieren un objeto visual que muestre las devoluciones por gerente de región y los
+                    gerentes de ventas que dependen de ellos.</li>
+                <li>Los gerentes de ventas deben poder ver solo los datos de ventas de su respectiva región.</li>
+                <li>Los gerentes de ventas requieren un objeto visual para analizar el rendimiento de las ventas frente a
+                    los objetivos de ventas.</li>
+                <li>El departamento de ventas requiere informes que contengan el número de transacciones de ventas.</li>
+                <li>Los usuarios deben poder ver el mes en cada informe como se muestra en el siguiente ejemplo: Feb 2020.
+                </li>
+                <li>El departamento de servicio al cliente requiere un objeto visual que pueda filtrarse tanto por mes de
+                    venta como por mes de envío de forma independiente.</li>
+                <li>La latencia máxima permitida para incluir transacciones en los informes es de cinco minutos.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta:</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una columna calculada para mostrar el mes según los
+                requisitos de los informes.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué expresión DAX debería usar?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. FORMATO('Fecha[date], "mmm aaaa")</li>
+                <li>B. FORMATO('Fecha[id_fecha], "mmm") & " " & FORMATO('Fecha[año], "aaaa")</li>
+                <li>C. FORMATO('Fecha[id_fecha], "mmm aaaa")</li>
+                <li>D. FORMATO('Fecha[date], "mm aa")</li>
+            </ul>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. FORMAT('Date'[date],"MMM YYYY")</li>
+                <li>B. FORMAT('Date'[date_id],"MMM) & " " & FORMAT('Date'[year], "AAAA")</li>
+                <li>C. FORMAT('Date'[date_id],"MMM YYYY")</li>
+                <li>D. FORMAT('Date'[date],"M AA")</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios deben poder ver el mes en cada informe como se muestra en el
+                siguiente ejemplo: Feb 2020.</p>
+            <p class="text-sm text-gray-400 mb-4">Formatos de fecha/hora personalizados -</p>
+            <p class="text-sm text-gray-400 mb-4">Los siguientes caracteres de formato se pueden especificar en la
+                cadena_formato para crear formatos de fecha/hora personalizados:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>mmm</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Muestra el mes como una abreviatura (Ene-Dic). Localizado.</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>aaaa</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Muestra el año como un número de 4 dígitos (100-9999).</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Etc.</li>
+            </ul>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/dax/format-function-dax#predefined-datetime-formats" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor223: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Información Introductoria</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4"></p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción General -</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders es una empresa importadora de alimentos especializados.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">La empresa implementó recientemente Power BI para comprender mejor a sus
+                principales clientes, productos y proveedores.</p>
+            <p class="text-sm text-gray-400 mb-4">Problemas Empresariales -</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de ventas depende del departamento de TI para generar
+                informes en Microsoft SQL Server Reporting Services (SSRS). El departamento de TI tarda demasiado en generar
+                los informes y, a menudo, malinterpreta los requisitos de los informes.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Fuentes de Datos</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders utiliza las fuentes de datos que se muestran en la
+                siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Source2 se exporta diariamente desde un sistema de terceros y se almacena
+                en Microsoft SharePoint Online.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Hoja de trabajo del Cliente</p>
+            <p class="text-sm text-gray-400 mb-4">Source2 contiene una única hoja de trabajo llamada Detalles del Cliente.
+                Las primeras 11 filas de la hoja de trabajo se muestran en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Todos los campos en Source2 son obligatorios.</p>
+            <p class="text-sm text-gray-400 mb-4">La columna Dirección en Detalles del Cliente es la dirección de
+                facturación, que puede diferir de la dirección de envío.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Base de datos de Azure SQL</p>
+            <p class="text-sm text-gray-400 mb-4">Source1 contiene las siguientes tablas:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Pedidos</li>
+                <li>Productos</li>
+                <li>Proveedores</li>
+                <li>Categorías</li>
+                <li>Detalles del Pedido</li>
+                <li>Empleados de Ventas</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">La tabla Pedidos contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Detalles del Pedido contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.4.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La dirección en la tabla Pedidos es la dirección de envío, que puede
+                diferir de la dirección de facturación.</p>
+            <p class="text-sm text-gray-400 mb-4">La tabla Productos contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.5.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Categorías contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.6.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Proveedores contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.7.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Empleados de Ventas contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.8.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cada empleado en la tabla Empleados de Ventas está asignado a una región
+                de ventas. Se pueden asignar múltiples empleados a cada región.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos de los informes</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders requiere los siguientes informes:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Principales Productos</li>
+                <li>Principales Clientes</li>
+                <li>Envíos a Tiempo</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">El informe Principales Clientes mostrará los 20 principales clientes
+                basados en los montos de ventas más altos en un mes o trimestre de pedido seleccionado, categoría de
+                producto y región de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe Principales Productos mostrará los 20 principales productos
+                basados en los montos de ventas más altos vendidos en un mes o trimestre de pedido seleccionado, región de
+                ventas y categoría de producto. El informe también debe mostrar qué proveedores proporcionan los principales
+                productos.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe Envíos a Tiempo mostrará las siguientes métricas para un mes o
+                trimestre de envío seleccionado:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>El porcentaje de pedidos que se enviaron con retraso por país y región de envío</li>
+                <li>Clientes que tuvieron múltiples envíos con retraso durante el último trimestre</li>
+                <li>Northwind Traders define los pedidos con retraso como aquellos enviados después de la fecha de envío
+                    requerida.</li>
+                <li>El departamento de envíos del almacén debe ser notificado si el porcentaje de pedidos con retraso dentro
+                    del mes actual supera el 5%.</li>
+                <li>Los informes deben mostrar datos históricos para el año calendario actual y los últimos tres años
+                    calendario.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos técnicos</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders identifica los siguientes requisitos técnicos:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Un único conjunto de datos debe soportar los tres informes.</li>
+                <li>Los informes deben almacenarse en una única área de trabajo de Power BI.</li>
+                <li>Los datos del informe deben estar actualizados a las 7 a.m., hora del Pacífico, cada día.</li>
+                <li>Los informes deben proporcionar tiempos de respuesta rápidos cuando los usuarios interactúan con una
+                    visualización.</li>
+                <li>El modelo de datos debe minimizar el tamaño del conjunto de datos tanto como sea posible, cumpliendo al
+                    mismo tiempo con los requisitos del informe y los requisitos técnicos.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos de seguridad</p>
+            <p class="text-sm text-gray-400 mb-4">El acceso a los informes debe concederse únicamente a grupos de seguridad
+                de Azure Active Directory (Azure AD). Existe un grupo de seguridad de Azure AD para cada departamento.</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de ventas debe poder realizar las siguientes tareas en
+                Power BI:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Crear, editar y eliminar contenido en los informes.</li>
+                <li>Administrar permisos para áreas de trabajo, conjuntos de datos e informes.</li>
+                <li>Publicar, anular la publicación, actualizar y cambiar los permisos de una aplicación.</li>
+                <li>Asignar a los grupos de Azure AD acceso basado en roles al área de trabajo de los informes.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios del departamento de ventas deben poder acceder únicamente a
+                los datos de la región de ventas a la que están asignados en la tabla Empleados de Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Power BI tiene la siguiente expresión DAX de filtro de tabla de seguridad
+                a nivel de filas (RLS) para la tabla Empleados de Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">[EmailAddress] = USERNAME()</p>
+            <p class="text-sm text-gray-400 mb-4">RLS se aplicará solo a los usuarios del departamento de ventas. Los
+                usuarios de todos los demás departamentos deben poder ver todos los datos.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesita diseñar el modelo de datos y las relaciones para la hoja de
+                trabajo Detalles del Cliente y la tabla Pedidos utilizando Power BI. La solución debe cumplir con los
+                requisitos del informe.</p>
+            <p class="text-sm text-gray-400 mb-4">Para cada una de las siguientes declaraciones, seleccione Sí si la
+                declaración es verdadera. De lo contrario, seleccione No.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Declaraciones</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Se debe crear una relación entre la columna CustomerID de la hoja Detalles del Cliente (Customer Details) y la columna
+                    CustomerID de la tabla Pedidos (Orders).</li>
+                <li>El tipo de datos de las columnas en la relación entre la hoja Detalles del Cliente (Customer Details) y la tabla Pedidos (Orders)
+                    debe establecerse como Texto.</li>
+                <li>El campo Región (Region) utilizado para filtrar el informe de Principales Clientes (Customers) debe provenir de la tabla
+                    Pedidos (Orders).</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">texto</p>
+            <div class="mt-4 mb-4">
+                <img src="img/9/p1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Recuadro 1: Sí -</p>
+            <p class="text-sm text-gray-400 mb-4">Es necesario vincular las tablas para: El informe Principales Clientes
+                (Customers)
+                mostrará los 20 principales clientes basados en los montos de ventas más altos en un mes o trimestre de
+                pedido seleccionado, categoría de producto y región de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 2: No -</p>
+            <p class="text-sm text-gray-400 mb-4">Debería estar configurado como Número Entero.</p>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 3: No -</p>
+            <p class="text-sm text-gray-400 mb-4">Se puede utilizar el campo Región (Region) de la tabla Detalles del
+                Cliente (Customer Details).</p>
+            <p class="text-sm text-gray-400 mb-4">La tabla Pedidos (Orders) solo tiene el campo RegiónEnvío (ShipRegion).
+            </p>
+        </div>`
     },
     contenedor224: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Información Introductoria</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4"></p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción General -</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders es una empresa importadora de alimentos especializados.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">La empresa implementó recientemente Power BI para comprender mejor a sus
+                principales clientes, productos y proveedores.</p>
+            <p class="text-sm text-gray-400 mb-4">Problemas Empresariales -</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de ventas depende del departamento de TI para generar
+                informes en Microsoft SQL Server Reporting Services (SSRS). El departamento de TI tarda demasiado en generar
+                los informes y, a menudo, malinterpreta los requisitos de los informes.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Fuentes de Datos</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders utiliza las fuentes de datos que se muestran en la
+                siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Source2 se exporta diariamente desde un sistema de terceros y se almacena
+                en Microsoft SharePoint Online.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Hoja de trabajo del Cliente</p>
+            <p class="text-sm text-gray-400 mb-4">Source2 contiene una única hoja de trabajo llamada Detalles del Cliente.
+                Las primeras 11 filas de la hoja de trabajo se muestran en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Todos los campos en Source2 son obligatorios.</p>
+            <p class="text-sm text-gray-400 mb-4">La columna Dirección en Detalles del Cliente es la dirección de
+                facturación, que puede diferir de la dirección de envío.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Base de datos de Azure SQL</p>
+            <p class="text-sm text-gray-400 mb-4">Source1 contiene las siguientes tablas:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Pedidos</li>
+                <li>Productos</li>
+                <li>Proveedores</li>
+                <li>Categorías</li>
+                <li>Detalles del Pedido</li>
+                <li>Empleados de Ventas</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">La tabla Pedidos contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Detalles del Pedido contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.4.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La dirección en la tabla Pedidos es la dirección de envío, que puede
+                diferir de la dirección de facturación.</p>
+            <p class="text-sm text-gray-400 mb-4">La tabla Productos contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.5.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Categorías contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.6.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Proveedores contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.7.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Empleados de Ventas contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.8.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cada empleado en la tabla Empleados de Ventas está asignado a una región
+                de ventas. Se pueden asignar múltiples empleados a cada región.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos de los informes</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders requiere los siguientes informes:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Principales Productos</li>
+                <li>Principales Clientes</li>
+                <li>Envíos a Tiempo</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">El informe Principales Clientes mostrará los 20 principales clientes
+                basados en los montos de ventas más altos en un mes o trimestre de pedido seleccionado, categoría de
+                producto y región de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe Principales Productos mostrará los 20 principales productos
+                basados en los montos de ventas más altos vendidos en un mes o trimestre de pedido seleccionado, región de
+                ventas y categoría de producto. El informe también debe mostrar qué proveedores proporcionan los principales
+                productos.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe Envíos a Tiempo mostrará las siguientes métricas para un mes o
+                trimestre de envío seleccionado:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>El porcentaje de pedidos que se enviaron con retraso por país y región de envío</li>
+                <li>Clientes que tuvieron múltiples envíos con retraso durante el último trimestre</li>
+                <li>Northwind Traders define los pedidos con retraso como aquellos enviados después de la fecha de envío
+                    requerida.</li>
+                <li>El departamento de envíos del almacén debe ser notificado si el porcentaje de pedidos con retraso dentro
+                    del mes actual supera el 5%.</li>
+                <li>Los informes deben mostrar datos históricos para el año calendario actual y los últimos tres años
+                    calendario.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos técnicos</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders identifica los siguientes requisitos técnicos:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Un único conjunto de datos debe soportar los tres informes.</li>
+                <li>Los informes deben almacenarse en una única área de trabajo de Power BI.</li>
+                <li>Los datos del informe deben estar actualizados a las 7 a.m., hora del Pacífico, cada día.</li>
+                <li>Los informes deben proporcionar tiempos de respuesta rápidos cuando los usuarios interactúan con una
+                    visualización.</li>
+                <li>El modelo de datos debe minimizar el tamaño del conjunto de datos tanto como sea posible, cumpliendo al
+                    mismo tiempo con los requisitos del informe y los requisitos técnicos.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos de seguridad</p>
+            <p class="text-sm text-gray-400 mb-4">El acceso a los informes debe concederse únicamente a grupos de seguridad
+                de Azure Active Directory (Azure AD). Existe un grupo de seguridad de Azure AD para cada departamento.</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de ventas debe poder realizar las siguientes tareas en
+                Power BI:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Crear, editar y eliminar contenido en los informes.</li>
+                <li>Administrar permisos para áreas de trabajo, conjuntos de datos e informes.</li>
+                <li>Publicar, anular la publicación, actualizar y cambiar los permisos de una aplicación.</li>
+                <li>Asignar a los grupos de Azure AD acceso basado en roles al área de trabajo de los informes.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios del departamento de ventas deben poder acceder únicamente a
+                los datos de la región de ventas a la que están asignados en la tabla Empleados de Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Power BI tiene la siguiente expresión DAX de filtro de tabla de seguridad
+                a nivel de filas (RLS) para la tabla Empleados de Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">[EmailAddress] = USERNAME()</p>
+            <p class="text-sm text-gray-400 mb-4">RLS se aplicará solo a los usuarios del departamento de ventas. Los
+                usuarios de todos los demás departamentos deben poder ver todos los datos.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear una medida que devuelva el porcentaje de pedidos con
+                retraso.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Cómo debería completar la expresión DAX? Para responder, seleccione las
+                opciones apropiadas en el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/9/p2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/9/s2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 1: CALCULAR (CALCULATE) -</p>
+            <p class="text-sm text-gray-400 mb-4">CALCULAR evalúa una expresión en un contexto de filtro modificado.</p>
+            <p class="text-sm text-gray-400 mb-4">Sintaxis: CALCULAR(<expresión>[, <filtro1> [, <filtro2> [, ...]]])</p>
+            <p class="text-sm text-gray-400 mb-4">expresión - La expresión a evaluar.</p>
+            <p class="text-sm text-gray-400 mb-4">filtro1, filtro2,... (Opcional) Expresiones booleanas o expresiones de
+                tabla que definen filtros, o funciones modificadoras de filtro.</p>
+            <p class="text-sm text-gray-400 mb-4">Incorrecto:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>CONTARX (COUNTX) - Cuenta el número de filas que contienen un valor no en blanco o una expresión que se evalúa
+                    como un valor no en blanco, al evaluar una expresión sobre una tabla.</li>
+                <li>CALCULARTABLA (CALCULATETABLE) - evalúa una expresión de tabla en un contexto de filtro modificado.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 2: FILTRO (FILTER) -</p>
+            <p class="text-sm text-gray-400 mb-4">FILTRO devuelve una tabla que representa un subconjunto de otra tabla o
+                expresión.</p>
+            <p class="text-sm text-gray-400 mb-4">Sintaxis: FILTRO(<tabla>, <filtro>)</p>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 3: Pedidos[FechaEnvio] > Pedidos[FechaRequerida] (Orders[ShippedDate] > Orders[RequiredDate])</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders define los pedidos con retraso como aquellos enviados
+                después de la fecha de envío requerida.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/dax/calculate-function-dax" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/dax/filter-function-dax" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor225: {
-        pregunta: ``,
-        solucion: ``
-    },
-    contenedor226: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Información Introductoria</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4"></p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción General -</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders es una empresa importadora de alimentos especializados.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">La empresa implementó recientemente Power BI para comprender mejor a sus
+                principales clientes, productos y proveedores.</p>
+            <p class="text-sm text-gray-400 mb-4">Problemas Empresariales -</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de ventas depende del departamento de TI para generar
+                informes en Microsoft SQL Server Reporting Services (SSRS). El departamento de TI tarda demasiado en generar
+                los informes y, a menudo, malinterpreta los requisitos de los informes.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Fuentes de Datos</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders utiliza las fuentes de datos que se muestran en la
+                siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Source2 se exporta diariamente desde un sistema de terceros y se almacena
+                en Microsoft SharePoint Online.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Hoja de trabajo del Cliente</p>
+            <p class="text-sm text-gray-400 mb-4">Source2 contiene una única hoja de trabajo llamada Detalles del Cliente.
+                Las primeras 11 filas de la hoja de trabajo se muestran en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Todos los campos en Source2 son obligatorios.</p>
+            <p class="text-sm text-gray-400 mb-4">La columna Dirección en Detalles del Cliente es la dirección de
+                facturación, que puede diferir de la dirección de envío.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Base de datos de Azure SQL</p>
+            <p class="text-sm text-gray-400 mb-4">Source1 contiene las siguientes tablas:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Pedidos</li>
+                <li>Productos</li>
+                <li>Proveedores</li>
+                <li>Categorías</li>
+                <li>Detalles del Pedido</li>
+                <li>Empleados de Ventas</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">La tabla Pedidos contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Detalles del Pedido contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.4.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La dirección en la tabla Pedidos es la dirección de envío, que puede
+                diferir de la dirección de facturación.</p>
+            <p class="text-sm text-gray-400 mb-4">La tabla Productos contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.5.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Categorías contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.6.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Proveedores contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.7.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Empleados de Ventas contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.8.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cada empleado en la tabla Empleados de Ventas está asignado a una región
+                de ventas. Se pueden asignar múltiples empleados a cada región.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos de los informes</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders requiere los siguientes informes:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Principales Productos</li>
+                <li>Principales Clientes</li>
+                <li>Envíos a Tiempo</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">El informe Principales Clientes mostrará los 20 principales clientes
+                basados en los montos de ventas más altos en un mes o trimestre de pedido seleccionado, categoría de
+                producto y región de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe Principales Productos mostrará los 20 principales productos
+                basados en los montos de ventas más altos vendidos en un mes o trimestre de pedido seleccionado, región de
+                ventas y categoría de producto. El informe también debe mostrar qué proveedores proporcionan los principales
+                productos.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe Envíos a Tiempo mostrará las siguientes métricas para un mes o
+                trimestre de envío seleccionado:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>El porcentaje de pedidos que se enviaron con retraso por país y región de envío</li>
+                <li>Clientes que tuvieron múltiples envíos con retraso durante el último trimestre</li>
+                <li>Northwind Traders define los pedidos con retraso como aquellos enviados después de la fecha de envío
+                    requerida.</li>
+                <li>El departamento de envíos del almacén debe ser notificado si el porcentaje de pedidos con retraso dentro
+                    del mes actual supera el 5%.</li>
+                <li>Los informes deben mostrar datos históricos para el año calendario actual y los últimos tres años
+                    calendario.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos técnicos</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders identifica los siguientes requisitos técnicos:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Un único conjunto de datos debe soportar los tres informes.</li>
+                <li>Los informes deben almacenarse en una única área de trabajo de Power BI.</li>
+                <li>Los datos del informe deben estar actualizados a las 7 a.m., hora del Pacífico, cada día.</li>
+                <li>Los informes deben proporcionar tiempos de respuesta rápidos cuando los usuarios interactúan con una
+                    visualización.</li>
+                <li>El modelo de datos debe minimizar el tamaño del conjunto de datos tanto como sea posible, cumpliendo al
+                    mismo tiempo con los requisitos del informe y los requisitos técnicos.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos de seguridad</p>
+            <p class="text-sm text-gray-400 mb-4">El acceso a los informes debe concederse únicamente a grupos de seguridad
+                de Azure Active Directory (Azure AD). Existe un grupo de seguridad de Azure AD para cada departamento.</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de ventas debe poder realizar las siguientes tareas en
+                Power BI:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Crear, editar y eliminar contenido en los informes.</li>
+                <li>Administrar permisos para áreas de trabajo, conjuntos de datos e informes.</li>
+                <li>Publicar, anular la publicación, actualizar y cambiar los permisos de una aplicación.</li>
+                <li>Asignar a los grupos de Azure AD acceso basado en roles al área de trabajo de los informes.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios del departamento de ventas deben poder acceder únicamente a
+                los datos de la región de ventas a la que están asignados en la tabla Empleados de Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Power BI tiene la siguiente expresión DAX de filtro de tabla de seguridad
+                a nivel de filas (RLS) para la tabla Empleados de Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">[EmailAddress] = USERNAME()</p>
+            <p class="text-sm text-gray-400 mb-4">RLS se aplicará solo a los usuarios del departamento de ventas. Los
+                usuarios de todos los demás departamentos deben poder ver todos los datos.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesita minimizar el tamaño del conjunto de datos. La solución debe
+                cumplir con los requisitos del informe.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Agrupar la tabla Categorías (Categories) por la columna IDCategoría (CategoryID).</li>
+                <li>B. Eliminar la columna CantidadPorUnidad (QuantityPerUnit) de la tabla Productos (Products).</li>
+                <li>C. Filtrar los productos descontinuados al importar la tabla Productos (Products).</li>
+                <li>D. Cambiar la columna IDPedido (OrderID) en la tabla Pedidos (Orders) al tipo de datos Texto.</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+                <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
+                <p class="text-sm text-gray-400 mb-4">Eliminar una columna que no se utiliza en los informes reduce el tamaño
+                    del conjunto de datos.</p>
+                <p class="text-sm text-gray-400 mb-4">Incorrecto:</p>
+                <p class="text-sm text-gray-400 mb-4">No es A: Agrupar no afecta el tamaño.</p>
+                <p class="text-sm text-gray-400 mb-4">No es C: No se pueden filtrar los productos descontinuados porque: Los
+                    informes deben mostrar datos históricos para el año calendario actual y los últimos tres años calendario.
+                </p>
+                <p class="text-sm text-gray-400 mb-4">No es D: IDPedido (OrderID) debe ser Número Entero.</p>
+            </div>`
+        },
+        contenedor226: {
+            pregunta: `<div>
+                <p class="text-sm text-gray-400 mb-4">
+                    <span class="font-bold">Información Introductoria</span>
+                </p>
+                <p class="text-sm text-gray-400 mb-4"></p>
+                <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+                <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                    separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                    casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                    completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+                <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                    consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                    otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                    pregunta es independiente de las otras preguntas de este caso práctico.</p>
+                <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                    pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                    examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+                <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+                <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                    botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                    de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                    empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                    Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                    pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                    volver a la pregunta.</p>
+                <p class="text-sm text-gray-400 mb-4">Descripción General -</p>
+                <p class="text-sm text-gray-400 mb-4">Northwind Traders es una empresa importadora de alimentos especializados.
+                </p>
+                <p class="text-sm text-gray-400 mb-4">La empresa implementó recientemente Power BI para comprender mejor a sus
+                    principales clientes, productos y proveedores.</p>
+                <p class="text-sm text-gray-400 mb-4">Problemas Empresariales -</p>
+                <p class="text-sm text-gray-400 mb-4">El departamento de ventas depende del departamento de TI para generar
+                    informes en Microsoft SQL Server Reporting Services (SSRS). El departamento de TI tarda demasiado en generar
+                    los informes y, a menudo, malinterpreta los requisitos de los informes.</p>
+                <p class="text-sm text-gray-400 mb-4">Entorno Existente. Fuentes de Datos</p>
+                <p class="text-sm text-gray-400 mb-4">Northwind Traders utiliza las fuentes de datos que se muestran en la
+                    siguiente tabla.</p>
+                <div class="mt-4 mb-4">
+                    <img src="img/6/p1.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                </div>
+                <p class="text-sm text-gray-400 mb-4">Source2 se exporta diariamente desde un sistema de terceros y se almacena
+                    en Microsoft SharePoint Online.</p>
+                <p class="text-sm text-gray-400 mb-4">Entorno Existente. Hoja de trabajo del Cliente</p>
+                <p class="text-sm text-gray-400 mb-4">Source2 contiene una única hoja de trabajo llamada Detalles del Cliente.
+                    Las primeras 11 filas de la hoja de trabajo se muestran en la siguiente tabla.</p>
+                <div class="mt-4 mb-4">
+                    <img src="img/6/p1.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                </div>
+                <p class="text-sm text-gray-400 mb-4">Todos los campos en Source2 son obligatorios.</p>
+                <p class="text-sm text-gray-400 mb-4">La columna Dirección en Detalles del Cliente es la dirección de
+                    facturación, que puede diferir de la dirección de envío.</p>
+                <p class="text-sm text-gray-400 mb-4">Entorno Existente. Base de datos de Azure SQL</p>
+                <p class="text-sm text-gray-400 mb-4">Source1 contiene las siguientes tablas:</p>
+                <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                    <li>Pedidos</li>
+                    <li>Productos</li>
+                    <li>Proveedores</li>
+                    <li>Categorías</li>
+                    <li>Detalles del Pedido</li>
+                    <li>Empleados de Ventas</li>
+                </ul>
+                <p class="text-sm text-gray-400 mb-4">La tabla Pedidos contiene las siguientes columnas.</p>
+                <div class="mt-4 mb-4">
+                    <img src="img/6/p1.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                </div>
+                <p class="text-sm text-gray-400 mb-4">La tabla Detalles del Pedido contiene las siguientes columnas.</p>
+                <div class="mt-4 mb-4">
+                    <img src="img/6/p1.4.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                </div>
+                <p class="text-sm text-gray-400 mb-4">La dirección en la tabla Pedidos es la dirección de envío, que puede
+                    diferir de la dirección de facturación.</p>
+                <p class="text-sm text-gray-400 mb-4">La tabla Productos contiene las siguientes columnas.</p>
+                <div class="mt-4 mb-4">
+                    <img src="img/6/p1.5.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                </div>
+                <p class="text-sm text-gray-400 mb-4">La tabla Categorías contiene las siguientes columnas.</p>
+                <div class="mt-4 mb-4">
+                    <img src="img/6/p1.6.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                </div>
+                <p class="text-sm text-gray-400 mb-4">La tabla Proveedores contiene las siguientes columnas.</p>
+                <div class="mt-4 mb-4">
+                    <img src="img/6/p1.7.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                </div>
+                <p class="text-sm text-gray-400 mb-4">La tabla Empleados de Ventas contiene las siguientes columnas.</p>
+                <div class="mt-4 mb-4">
+                    <img src="img/6/p1.8.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+                </div>
+                <p class="text-sm text-gray-400 mb-4">Cada empleado en la tabla Empleados de Ventas está asignado a una región
+                    de ventas. Se pueden asignar múltiples empleados a cada región.</p>
+                <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos de los informes</p>
+                <p class="text-sm text-gray-400 mb-4">Northwind Traders requiere los siguientes informes:</p>
+                <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                    <li>Principales Productos</li>
+                    <li>Principales Clientes</li>
+                    <li>Envíos a Tiempo</li>
+                </ul>
+                <p class="text-sm text-gray-400 mb-4">El informe Principales Clientes mostrará los 20 principales clientes
+                    basados en los montos de ventas más altos en un mes o trimestre de pedido seleccionado, categoría de
+                    producto y región de ventas.</p>
+                <p class="text-sm text-gray-400 mb-4">El informe Principales Productos mostrará los 20 principales productos
+                    basados en los montos de ventas más altos vendidos en un mes o trimestre de pedido seleccionado, región de
+                    ventas y categoría de producto. El informe también debe mostrar qué proveedores proporcionan los principales
+                    productos.</p>
+                <p class="text-sm text-gray-400 mb-4">El informe Envíos a Tiempo mostrará las siguientes métricas para un mes o
+                    trimestre de envío seleccionado:</p>
+                <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                    <li>El porcentaje de pedidos que se enviaron con retraso por país y región de envío</li>
+                    <li>Clientes que tuvieron múltiples envíos con retraso durante el último trimestre</li>
+                    <li>Northwind Traders define los pedidos con retraso como aquellos enviados después de la fecha de envío
+                        requerida.</li>
+                    <li>El departamento de envíos del almacén debe ser notificado si el porcentaje de pedidos con retraso dentro
+                        del mes actual supera el 5%.</li>
+                    <li>Los informes deben mostrar datos históricos para el año calendario actual y los últimos tres años
+                        calendario.</li>
+                </ul>
+                <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos técnicos</p>
+                <p class="text-sm text-gray-400 mb-4">Northwind Traders identifica los siguientes requisitos técnicos:</p>
+                <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                    <li>Un único conjunto de datos debe soportar los tres informes.</li>
+                    <li>Los informes deben almacenarse en una única área de trabajo de Power BI.</li>
+                    <li>Los datos del informe deben estar actualizados a las 7 a.m., hora del Pacífico, cada día.</li>
+                    <li>Los informes deben proporcionar tiempos de respuesta rápidos cuando los usuarios interactúan con una
+                        visualización.</li>
+                    <li>El modelo de datos debe minimizar el tamaño del conjunto de datos tanto como sea posible, cumpliendo al
+                        mismo tiempo con los requisitos del informe y los requisitos técnicos.</li>
+                </ul>
+                <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos de seguridad</p>
+                <p class="text-sm text-gray-400 mb-4">El acceso a los informes debe concederse únicamente a grupos de seguridad
+                    de Azure Active Directory (Azure AD). Existe un grupo de seguridad de Azure AD para cada departamento.</p>
+                <p class="text-sm text-gray-400 mb-4">El departamento de ventas debe poder realizar las siguientes tareas en
+                    Power BI:</p>
+                <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                    <li>Crear, editar y eliminar contenido en los informes.</li>
+                    <li>Administrar permisos para áreas de trabajo, conjuntos de datos e informes.</li>
+                    <li>Publicar, anular la publicación, actualizar y cambiar los permisos de una aplicación.</li>
+                    <li>Asignar a los grupos de Azure AD acceso basado en roles al área de trabajo de los informes.</li>
+                </ul>
+                <p class="text-sm text-gray-400 mb-4">Los usuarios del departamento de ventas deben poder acceder únicamente a
+                    los datos de la región de ventas a la que están asignados en la tabla Empleados de Ventas.</p>
+                <p class="text-sm text-gray-400 mb-4">Power BI tiene la siguiente expresión DAX de filtro de tabla de seguridad
+                    a nivel de filas (RLS) para la tabla Empleados de Ventas.</p>
+                <p class="text-sm text-gray-400 mb-4">[EmailAddress] = USERNAME()</p>
+                <p class="text-sm text-gray-400 mb-4">RLS se aplicará solo a los usuarios del departamento de ventas. Los
+                    usuarios de todos los demás departamentos deben poder ver todos los datos.</p>
+                <p class="text-sm text-gray-400 mb-4">
+                    <span class="font-bold">Pregunta</span>
+                </p>
+                <p class="text-sm text-gray-400 mb-4">Necesita diseñar el modelo de datos para cumplir con los requisitos del
+                    informe.</p>
+                <p class="text-sm text-gray-400 mb-4">¿Qué debería hacer en Power BI Desktop?</p>
+                <ul class="list-inside text-sm text-gray-400 mb-4">
+                    <li>A. Desde Power Query, agregar una tabla de fechas. Crear una relación activa con la columna FechaPedido (OrderDate)
+                        en la tabla Pedidos (Orders) y una relación inactiva con la columna FechaEnvío (ShippedDate)en la tabla Pedidos (Orders).</li>
+                    <li>B. Desde Power Query, agregar columnas a la tabla Pedidos (Orders) para calcular el trimestre calendario y el mes
+                        calendario de la columna FechaPedido (OrderDate).</li>
+                    <li>C. Desde Power BI Desktop, utilizar la opción Fecha/hora automática (Auto date/time) al crear los informes.</li>
+                    <li>D. Desde Power Query, usar una expresión DAX para agregar columnas a la tabla Pedidos (Orders) para calcular el
+                        trimestre calendario de la columna FechaPedido (OrderDate), el mes calendario de la columna FechaPedido (OrderDate), el
+                        trimestre calendario de la columna FechaEnvío (ShippedDate) y el mes calendario de la columna FechaEnvío (ShippedDate).</li>
+                </ul>
+            </div>`,
+            solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: C</p>
+            <p class="text-sm text-gray-400 mb-4">Informe Envíos a Tiempo -</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>El porcentaje de pedidos que se enviaron con retraso por país y región de envío</li>
+                <li>Clientes que tuvieron múltiples envíos con retraso durante el último trimestre</li>
+                <li>La opción Fecha/hora automática es una opción de carga de datos en Power BI Desktop. El propósito de
+                    esta opción es admitir informes de inteligencia de tiempo convenientes basados en columnas de fecha
+                    cargadas en un modelo. Específicamente, permite a los autores de informes que utilizan su modelo de
+                    datos filtrar, agrupar y explorar en profundidad utilizando períodos de tiempo calendario (años,
+                    trimestres, meses y días). Lo importante es que no necesita desarrollar explícitamente estas capacidades
+                    de inteligencia de tiempo.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Cuando la opción está habilitada, Power BI Desktop crea una tabla de
+                fecha/hora automática (Auto date/time) oculta para cada columna de fecha, siempre que se cumplan todas las
+                condiciones
+                siguientes:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>El modo de almacenamiento de la tabla es Importar</li>
+                <li>El tipo de datos de la columna es fecha o fecha/hora (date/time)</li>
+                <li>La columna no es el lado "muchos" de una relación de modelo</li>
+            </ul>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/transform-model/desktop-auto-date-time" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">A</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(76%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 76%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">C</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(24%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 24%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor227: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Información Introductoria</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4"></p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción General -</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders es una empresa importadora de alimentos especializados.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">La empresa implementó recientemente Power BI para comprender mejor a sus
+                principales clientes, productos y proveedores.</p>
+            <p class="text-sm text-gray-400 mb-4">Problemas Empresariales -</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de ventas depende del departamento de TI para generar
+                informes en Microsoft SQL Server Reporting Services (SSRS). El departamento de TI tarda demasiado en generar
+                los informes y, a menudo, malinterpreta los requisitos de los informes.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Fuentes de Datos</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders utiliza las fuentes de datos que se muestran en la
+                siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Source2 se exporta diariamente desde un sistema de terceros y se almacena
+                en Microsoft SharePoint Online.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Hoja de trabajo del Cliente</p>
+            <p class="text-sm text-gray-400 mb-4">Source2 contiene una única hoja de trabajo llamada Detalles del Cliente.
+                Las primeras 11 filas de la hoja de trabajo se muestran en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Todos los campos en Source2 son obligatorios.</p>
+            <p class="text-sm text-gray-400 mb-4">La columna Dirección en Detalles del Cliente es la dirección de
+                facturación, que puede diferir de la dirección de envío.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Base de datos de Azure SQL</p>
+            <p class="text-sm text-gray-400 mb-4">Source1 contiene las siguientes tablas:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Pedidos</li>
+                <li>Productos</li>
+                <li>Proveedores</li>
+                <li>Categorías</li>
+                <li>Detalles del Pedido</li>
+                <li>Empleados de Ventas</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">La tabla Pedidos contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Detalles del Pedido contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.4.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La dirección en la tabla Pedidos es la dirección de envío, que puede
+                diferir de la dirección de facturación.</p>
+            <p class="text-sm text-gray-400 mb-4">La tabla Productos contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.5.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Categorías contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.6.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Proveedores contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.7.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Empleados de Ventas contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.8.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cada empleado en la tabla Empleados de Ventas está asignado a una región
+                de ventas. Se pueden asignar múltiples empleados a cada región.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos de los informes</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders requiere los siguientes informes:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Principales Productos</li>
+                <li>Principales Clientes</li>
+                <li>Envíos a Tiempo</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">El informe Principales Clientes mostrará los 20 principales clientes
+                basados en los montos de ventas más altos en un mes o trimestre de pedido seleccionado, categoría de
+                producto y región de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe Principales Productos mostrará los 20 principales productos
+                basados en los montos de ventas más altos vendidos en un mes o trimestre de pedido seleccionado, región de
+                ventas y categoría de producto. El informe también debe mostrar qué proveedores proporcionan los principales
+                productos.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe Envíos a Tiempo mostrará las siguientes métricas para un mes o
+                trimestre de envío seleccionado:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>El porcentaje de pedidos que se enviaron con retraso por país y región de envío</li>
+                <li>Clientes que tuvieron múltiples envíos con retraso durante el último trimestre</li>
+                <li>Northwind Traders define los pedidos con retraso como aquellos enviados después de la fecha de envío
+                    requerida.</li>
+                <li>El departamento de envíos del almacén debe ser notificado si el porcentaje de pedidos con retraso dentro
+                    del mes actual supera el 5%.</li>
+                <li>Los informes deben mostrar datos históricos para el año calendario actual y los últimos tres años
+                    calendario.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos técnicos</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders identifica los siguientes requisitos técnicos:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Un único conjunto de datos debe soportar los tres informes.</li>
+                <li>Los informes deben almacenarse en una única área de trabajo de Power BI.</li>
+                <li>Los datos del informe deben estar actualizados a las 7 a.m., hora del Pacífico, cada día.</li>
+                <li>Los informes deben proporcionar tiempos de respuesta rápidos cuando los usuarios interactúan con una
+                    visualización.</li>
+                <li>El modelo de datos debe minimizar el tamaño del conjunto de datos tanto como sea posible, cumpliendo al
+                    mismo tiempo con los requisitos del informe y los requisitos técnicos.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos de seguridad</p>
+            <p class="text-sm text-gray-400 mb-4">El acceso a los informes debe concederse únicamente a grupos de seguridad
+                de Azure Active Directory (Azure AD). Existe un grupo de seguridad de Azure AD para cada departamento.</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de ventas debe poder realizar las siguientes tareas en
+                Power BI:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Crear, editar y eliminar contenido en los informes.</li>
+                <li>Administrar permisos para áreas de trabajo, conjuntos de datos e informes.</li>
+                <li>Publicar, anular la publicación, actualizar y cambiar los permisos de una aplicación.</li>
+                <li>Asignar a los grupos de Azure AD acceso basado en roles al área de trabajo de los informes.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios del departamento de ventas deben poder acceder únicamente a
+                los datos de la región de ventas a la que están asignados en la tabla Empleados de Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Power BI tiene la siguiente expresión DAX de filtro de tabla de seguridad
+                a nivel de filas (RLS) para la tabla Empleados de Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">[EmailAddress] = USERNAME()</p>
+            <p class="text-sm text-gray-400 mb-4">RLS se aplicará solo a los usuarios del departamento de ventas. Los
+                usuarios de todos los demás departamentos deben poder ver todos los datos.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">texto</p>
+            <p class="text-sm text-gray-400 mb-4">texto</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Crear una [Area de respuesta]</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>uno a uno</li>
+                <li>uno a varios</li>
+                <li>varios a uno</li>
+                <li>varios a varios</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">relación entre la tabla Empleados de Ventas y la tabla de [Area de
+                respuesta]</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Pedidos</li>
+                <li>Proveedores</li>
+                <li>Detalles del Pedido</li>
+                <li>Hoja Detalles del Cliente</li>
+            </ul>
+            <div class="mt-4 mb-4">
+                <img src="img/9/p5.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/9/s5.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 1: muchos a muchos -</p>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios del departamento de ventas deben poder acceder únicamente a
+                los datos de la región de ventas a la que están asignados en la tabla Empleados de Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Con los modelos compuestos, puede establecer una relación de muchos a
+                muchos entre tablas, lo que elimina los requisitos de valores únicos en las tablas. También elimina
+                soluciones alternativas anteriores, como la introducción de nuevas tablas solo para establecer relaciones.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 2: tabla Pedidos -</p>
+            <p class="text-sm text-gray-400 mb-4">La tabla Pedidos tiene una columna RegiónEnvío.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/transform-model/desktop-create-and-manage-relationships"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor228: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">Información Introductoria</p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción general -</p>
+            <p class="text-sm text-gray-400 mb-4">Contoso, Ltd. es una empresa manufacturera que produce equipos deportivos.
+                Contoso celebra reuniones trimestrales de la junta directiva para las cuales los analistas financieros
+                preparan manualmente informes de Microsoft Excel, incluidos balances generales y estados de pérdidas y
+                ganancias para cada una de las cuatro unidades de negocio de la empresa.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente -</p>
+            <p class="text-sm text-gray-400 mb-4">Datos y Fuentes -</p>
+            <p class="text-sm text-gray-400 mb-4">Los datos para los informes provienen de las fuentes que se muestran en la
+                siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p1.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Los datos del balance general no están relacionados con los resultados de
+                pérdidas y ganancias, salvo que ambos se relacionan con fechas.</p>
+            <p class="text-sm text-gray-400 mb-4">Datos del Balance General -</p>
+            <p class="text-sm text-gray-400 mb-4">Los datos del balance general se importan e incluyen los saldos mensuales
+                finales de cada cuenta en el formato que se muestra en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p1.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Los datos del balance general siempre incluyen una fila para cada cuenta
+                por cada mes.</p>
+            <p class="text-sm text-gray-400 mb-4">Datos del Catálogo de Productos -</p>
+            <p class="text-sm text-gray-400 mb-4">El catálogo de productos muestra cómo los productos se agrupan en
+                categorías de productos, que a su vez se agrupan en las unidades de negocio. La lista de productos se
+                proporciona en el formato que se muestra en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p1.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Los datos de Ingresos se proporcionan a nivel de fecha y
+                producto. Los
+                datos de gastos se proporcionan a nivel de fecha y departamento.</p>
+            <p class="text-sm text-gray-400 mb-4">Problemas Empresariales -</p>
+            <p class="text-sm text-gray-400 mb-4">Históricamente, dos analistas han tardado una semana en preparar los
+                informes para las reuniones trimestrales de la junta. Además, suele haber al menos un problema cada
+                trimestre en el que un valor en un informe es incorrecto debido a una mala referencia de celda en una
+                fórmula de Excel. En ocasiones, hay resultados contradictorios en los informes porque los productos y
+                departamentos que se agrupan en cada unidad de negocio no están definidos de manera consistente.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos -</p>
+            <p class="text-sm text-gray-400 mb-4">Cambios Planificados -</p>
+            <p class="text-sm text-gray-400 mb-4">Contoso planea automatizar y estandarizar el proceso de informes
+                trimestrales mediante Power BI. La empresa quiere reducir el tiempo que lleva generar los informes a menos
+                de dos días. La empresa quiere crear una lógica común para las unidades de negocio, los productos y los
+                departamentos. La lógica se utilizará en todos los informes, incluidos, entre otros, los informes
+                trimestrales para la junta.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos Técnicos -</p>
+            <p class="text-sm text-gray-400 mb-4">Contoso quiere que los informes y conjuntos de datos se actualicen con el
+                mínimo esfuerzo manual.</p>
+            <p class="text-sm text-gray-400 mb-4">La empresa quiere proporcionar a la junta un único paquete de informes que
+                contenga navegación personalizada y enlaces a información complementaria.</p>
+            <p class="text-sm text-gray-400 mb-4">El mantenimiento, incluida la actualización manual de datos y acceso, debe
+                minimizarse tanto como sea posible.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos de Seguridad -</p>
+            <p class="text-sm text-gray-400 mb-4">Los informes deben estar disponibles para la junta desde powerbi.com. Se
+                utilizará un grupo de Azure Active Directory (Azure AD) para compartir información con la junta.</p>
+            <p class="text-sm text-gray-400 mb-4">Contoso identifica los siguientes requisitos de seguridad para el acceso
+                de los analistas:</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas deben poder acceder a todos los datos del balance general y
+                del catálogo de productos.</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas deben poder acceder únicamente a los datos de pérdidas y
+                ganancias de su respectiva unidad de negocio.</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas deben poder crear nuevos informes a partir del conjunto de
+                datos que contiene los datos de pérdidas y ganancias, pero los informes creados por los analistas NO deben
+                incluirse en los informes trimestrales para la junta.</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas NO deben poder compartir los informes trimestrales con
+                nadie.</p>
+            <p class="text-sm text-gray-400 mb-4">Los analistas NO deben poder crear nuevos informes utilizando los datos
+                del balance general.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos de los Informes -</p>
+            <p class="text-sm text-gray-400 mb-4">Planea relacionar la tabla del balance general con una tabla de fechas en
+                Power BI en una relación de varios a uno basada en el último día del mes. Al menos uno de los informes de
+                balance general en el paquete de informes trimestrales debe mostrar los saldos finales del trimestre, así
+                como los del trimestre anterior.</p>
+            <p class="text-sm text-gray-400 mb-4">La tabla de fechas contendrá las columnas que se muestran en la siguiente
+                tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/7/p1.4.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Las definiciones y atributos de los productos, departamentos y unidades de
+                negocio deben ser consistentes en todos los informes.</p>
+            <p class="text-sm text-gray-400 mb-4">La junta debe poder obtener la siguiente información de los informes
+                trimestrales:</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>Tendencias de ingresos a lo largo del tiempo</li>
+                <li>Los saldos finales de cada cuenta</li>
+                <li>Cambios en los pasivos a largo plazo respecto al trimestre anterior</li>
+                <li>El porcentaje de los ingresos totales aportado por cada categoría de producto</li>
+                <li>Una comparación de los ingresos trimestrales frente al mismo trimestre del año anterior</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Los informes deben actualizarse con los datos más recientes a las 5 a.m.
+                de cada día.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesita actualizar el modelo de Power BI para asegurarse de que los
+                analistas puedan crear rápidamente desgloses desde la unidad de negocio hasta el producto en un objeto
+                visual.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué debería crear?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. un grupo</li>
+                <li>B. una tabla calculada</li>
+                <li>C. una jerarquía</li>
+                <li>D. una columna calculada</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: C</p>
+            <p class="text-sm text-gray-400 mb-4">La exploración en profundidad requiere una jerarquía.</p>
+            <p class="text-sm text-gray-400 mb-4">Cuando un objeto visual tiene una jerarquía, puede explorar en profundidad
+                para revelar detalles adicionales.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/create-reports/desktop-drillthrough" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor229: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Información Introductoria</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4"></p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción General -</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders es una empresa importadora de alimentos especializados.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">La empresa implementó recientemente Power BI para comprender mejor a sus
+                principales clientes, productos y proveedores.</p>
+            <p class="text-sm text-gray-400 mb-4">Problemas Empresariales -</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de ventas depende del departamento de TI para generar
+                informes en Microsoft SQL Server Reporting Services (SSRS). El departamento de TI tarda demasiado en generar
+                los informes y, a menudo, malinterpreta los requisitos de los informes.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Fuentes de Datos</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders utiliza las fuentes de datos que se muestran en la
+                siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Source2 se exporta diariamente desde un sistema de terceros y se almacena
+                en Microsoft SharePoint Online.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Hoja de trabajo del Cliente</p>
+            <p class="text-sm text-gray-400 mb-4">Source2 contiene una única hoja de trabajo llamada Detalles del Cliente.
+                Las primeras 11 filas de la hoja de trabajo se muestran en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Todos los campos en Source2 son obligatorios.</p>
+            <p class="text-sm text-gray-400 mb-4">La columna Dirección en Detalles del Cliente es la dirección de
+                facturación, que puede diferir de la dirección de envío.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Base de datos de Azure SQL</p>
+            <p class="text-sm text-gray-400 mb-4">Source1 contiene las siguientes tablas:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Pedidos</li>
+                <li>Productos</li>
+                <li>Proveedores</li>
+                <li>Categorías</li>
+                <li>Detalles del Pedido</li>
+                <li>Empleados de Ventas</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">La tabla Pedidos contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Detalles del Pedido contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.4.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La dirección en la tabla Pedidos es la dirección de envío, que puede
+                diferir de la dirección de facturación.</p>
+            <p class="text-sm text-gray-400 mb-4">La tabla Productos contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.5.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Categorías contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.6.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Proveedores contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.7.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Empleados de Ventas contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.8.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cada empleado en la tabla Empleados de Ventas está asignado a una región
+                de ventas. Se pueden asignar múltiples empleados a cada región.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos de los informes</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders requiere los siguientes informes:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Principales Productos</li>
+                <li>Principales Clientes</li>
+                <li>Envíos a Tiempo</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">El informe Principales Clientes mostrará los 20 principales clientes
+                basados en los montos de ventas más altos en un mes o trimestre de pedido seleccionado, categoría de
+                producto y región de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe Principales Productos mostrará los 20 principales productos
+                basados en los montos de ventas más altos vendidos en un mes o trimestre de pedido seleccionado, región de
+                ventas y categoría de producto. El informe también debe mostrar qué proveedores proporcionan los principales
+                productos.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe Envíos a Tiempo mostrará las siguientes métricas para un mes o
+                trimestre de envío seleccionado:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>El porcentaje de pedidos que se enviaron con retraso por país y región de envío</li>
+                <li>Clientes que tuvieron múltiples envíos con retraso durante el último trimestre</li>
+                <li>Northwind Traders define los pedidos con retraso como aquellos enviados después de la fecha de envío
+                    requerida.</li>
+                <li>El departamento de envíos del almacén debe ser notificado si el porcentaje de pedidos con retraso dentro
+                    del mes actual supera el 5%.</li>
+                <li>Los informes deben mostrar datos históricos para el año calendario actual y los últimos tres años
+                    calendario.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos técnicos</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders identifica los siguientes requisitos técnicos:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Un único conjunto de datos debe soportar los tres informes.</li>
+                <li>Los informes deben almacenarse en una única área de trabajo de Power BI.</li>
+                <li>Los datos del informe deben estar actualizados a las 7 a.m., hora del Pacífico, cada día.</li>
+                <li>Los informes deben proporcionar tiempos de respuesta rápidos cuando los usuarios interactúan con una
+                    visualización.</li>
+                <li>El modelo de datos debe minimizar el tamaño del conjunto de datos tanto como sea posible, cumpliendo al
+                    mismo tiempo con los requisitos del informe y los requisitos técnicos.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos de seguridad</p>
+            <p class="text-sm text-gray-400 mb-4">El acceso a los informes debe concederse únicamente a grupos de seguridad
+                de Azure Active Directory (Azure AD). Existe un grupo de seguridad de Azure AD para cada departamento.</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de ventas debe poder realizar las siguientes tareas en
+                Power BI:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Crear, editar y eliminar contenido en los informes.</li>
+                <li>Administrar permisos para áreas de trabajo, conjuntos de datos e informes.</li>
+                <li>Publicar, anular la publicación, actualizar y cambiar los permisos de una aplicación.</li>
+                <li>Asignar a los grupos de Azure AD acceso basado en roles al área de trabajo de los informes.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios del departamento de ventas deben poder acceder únicamente a
+                los datos de la región de ventas a la que están asignados en la tabla Empleados de Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Power BI tiene la siguiente expresión DAX de filtro de tabla de seguridad
+                a nivel de filas (RLS) para la tabla Empleados de Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">[EmailAddress] = USERNAME()</p>
+            <p class="text-sm text-gray-400 mb-4">RLS se aplicará solo a los usuarios del departamento de ventas. Los
+                usuarios de todos los demás departamentos deben poder ver todos los datos.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear el informe Principales Clientes.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué tipo de filtro debería usar y a qué nivel debería aplicar el filtro?
+                Para responder, seleccione las opciones apropiadas en el área de respuesta.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
+            </p>
+            <div class="mt-4 mb-4">
+                <img src="img/11/p1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/11/s1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 1: N superior -</p>
+            <p class="text-sm text-gray-400 mb-4">El informe Principales Clientes mostrará los 20 principales clientes
+                basados en los montos de ventas más altos en un mes o trimestre de pedido seleccionado, categoría de
+                producto y región de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Recuadro 2: Visual -</p>
+            <p class="text-sm text-gray-400 mb-4">Los informes deben mostrar datos históricos para el año calendario actual
+                y los últimos tres años calendario.</p>
+            <p class="text-sm text-gray-400 mb-4">Aplicar medidas específicas al filtro de nivel visual de una visualización
+                es una técnica muy poderosa para personalizar completamente los elementos que se muestran en un informe. La
+                presencia de este filtro requiere medidas especiales para poder mostrar valores relacionados con elementos
+                no incluidos en el filtro de nivel visual.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://www.sqlbi.com/articles/filtering-the-top-3-products-for-each-category-in-power-bi/"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+        </div>`
     },
     contenedor230: {
-        pregunta: ``,
-        solucion: ``
+        pregunta: `<div>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Información Introductoria</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4"></p>
+            <p class="text-sm text-gray-400 mb-4">Caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Este es un caso práctico. Los casos prácticos no tienen un tiempo
+                separado. Puede usar todo el tiempo del examen que desee para completar cada caso. Sin embargo, puede haber
+                casos prácticos y secciones adicionales en este examen. Debe administrar su tiempo para asegurarse de poder
+                completar todas las preguntas incluidas en este examen en el tiempo proporcionado.</p>
+            <p class="text-sm text-gray-400 mb-4">Para responder a las preguntas incluidas en un caso práctico, deberá
+                consultar la información proporcionada en el caso práctico. Los casos prácticos pueden contener anexos y
+                otros recursos que proporcionan más información sobre el escenario descrito en el caso práctico. Cada
+                pregunta es independiente de las otras preguntas de este caso práctico.</p>
+            <p class="text-sm text-gray-400 mb-4">Al final de este caso práctico, aparecerá una pantalla de revisión. Esta
+                pantalla le permite revisar sus respuestas y realizar cambios antes de pasar a la siguiente sección del
+                examen. Después de comenzar una nueva sección, no podrá volver a esta sección.</p>
+            <p class="text-sm text-gray-400 mb-4">Para comenzar el caso práctico -</p>
+            <p class="text-sm text-gray-400 mb-4">Para mostrar la primera pregunta de este caso práctico, haga clic en el
+                botón Siguiente. Utilice los botones del panel izquierdo para explorar el contenido del caso práctico antes
+                de responder las preguntas. Al hacer clic en estos botones, se muestra información como los requisitos
+                empresariales, el entorno existente y los enunciados de los problemas. Si el caso práctico tiene una pestaña
+                Información de IA, tenga en cuenta que la información mostrada es idéntica a la información mostrada en las
+                pestañas subsiguientes. Cuando esté listo para responder una pregunta, haga clic en el botón Pregunta para
+                volver a la pregunta.</p>
+            <p class="text-sm text-gray-400 mb-4">Descripción General -</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders es una empresa importadora de alimentos especializados.
+            </p>
+            <p class="text-sm text-gray-400 mb-4">La empresa implementó recientemente Power BI para comprender mejor a sus
+                principales clientes, productos y proveedores.</p>
+            <p class="text-sm text-gray-400 mb-4">Problemas Empresariales -</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de ventas depende del departamento de TI para generar
+                informes en Microsoft SQL Server Reporting Services (SSRS). El departamento de TI tarda demasiado en generar
+                los informes y, a menudo, malinterpreta los requisitos de los informes.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Fuentes de Datos</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders utiliza las fuentes de datos que se muestran en la
+                siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Source2 se exporta diariamente desde un sistema de terceros y se almacena
+                en Microsoft SharePoint Online.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Hoja de trabajo del Cliente</p>
+            <p class="text-sm text-gray-400 mb-4">Source2 contiene una única hoja de trabajo llamada Detalles del Cliente.
+                Las primeras 11 filas de la hoja de trabajo se muestran en la siguiente tabla.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Todos los campos en Source2 son obligatorios.</p>
+            <p class="text-sm text-gray-400 mb-4">La columna Dirección en Detalles del Cliente es la dirección de
+                facturación, que puede diferir de la dirección de envío.</p>
+            <p class="text-sm text-gray-400 mb-4">Entorno Existente. Base de datos de Azure SQL</p>
+            <p class="text-sm text-gray-400 mb-4">Source1 contiene las siguientes tablas:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Pedidos</li>
+                <li>Productos</li>
+                <li>Proveedores</li>
+                <li>Categorías</li>
+                <li>Detalles del Pedido</li>
+                <li>Empleados de Ventas</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">La tabla Pedidos contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.3.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Detalles del Pedido contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.4.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La dirección en la tabla Pedidos es la dirección de envío, que puede
+                diferir de la dirección de facturación.</p>
+            <p class="text-sm text-gray-400 mb-4">La tabla Productos contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.5.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Categorías contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.6.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Proveedores contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.7.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">La tabla Empleados de Ventas contiene las siguientes columnas.</p>
+            <div class="mt-4 mb-4">
+                <img src="img/6/p1.8.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">Cada empleado en la tabla Empleados de Ventas está asignado a una región
+                de ventas. Se pueden asignar múltiples empleados a cada región.</p>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos de los informes</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders requiere los siguientes informes:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Principales Productos</li>
+                <li>Principales Clientes</li>
+                <li>Envíos a Tiempo</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">El informe Principales Clientes mostrará los 20 principales clientes
+                basados en los montos de ventas más altos en un mes o trimestre de pedido seleccionado, categoría de
+                producto y región de ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe Principales Productos mostrará los 20 principales productos
+                basados en los montos de ventas más altos vendidos en un mes o trimestre de pedido seleccionado, región de
+                ventas y categoría de producto. El informe también debe mostrar qué proveedores proporcionan los principales
+                productos.</p>
+            <p class="text-sm text-gray-400 mb-4">El informe Envíos a Tiempo mostrará las siguientes métricas para un mes o
+                trimestre de envío seleccionado:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>El porcentaje de pedidos que se enviaron con retraso por país y región de envío</li>
+                <li>Clientes que tuvieron múltiples envíos con retraso durante el último trimestre</li>
+                <li>Northwind Traders define los pedidos con retraso como aquellos enviados después de la fecha de envío
+                    requerida.</li>
+                <li>El departamento de envíos del almacén debe ser notificado si el porcentaje de pedidos con retraso dentro
+                    del mes actual supera el 5%.</li>
+                <li>Los informes deben mostrar datos históricos para el año calendario actual y los últimos tres años
+                    calendario.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos técnicos</p>
+            <p class="text-sm text-gray-400 mb-4">Northwind Traders identifica los siguientes requisitos técnicos:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Un único conjunto de datos debe soportar los tres informes.</li>
+                <li>Los informes deben almacenarse en una única área de trabajo de Power BI.</li>
+                <li>Los datos del informe deben estar actualizados a las 7 a.m., hora del Pacífico, cada día.</li>
+                <li>Los informes deben proporcionar tiempos de respuesta rápidos cuando los usuarios interactúan con una
+                    visualización.</li>
+                <li>El modelo de datos debe minimizar el tamaño del conjunto de datos tanto como sea posible, cumpliendo al
+                    mismo tiempo con los requisitos del informe y los requisitos técnicos.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Requisitos. Requisitos de seguridad</p>
+            <p class="text-sm text-gray-400 mb-4">El acceso a los informes debe concederse únicamente a grupos de seguridad
+                de Azure Active Directory (Azure AD). Existe un grupo de seguridad de Azure AD para cada departamento.</p>
+            <p class="text-sm text-gray-400 mb-4">El departamento de ventas debe poder realizar las siguientes tareas en
+                Power BI:</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Crear, editar y eliminar contenido en los informes.</li>
+                <li>Administrar permisos para áreas de trabajo, conjuntos de datos e informes.</li>
+                <li>Publicar, anular la publicación, actualizar y cambiar los permisos de una aplicación.</li>
+                <li>Asignar a los grupos de Azure AD acceso basado en roles al área de trabajo de los informes.</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">Los usuarios del departamento de ventas deben poder acceder únicamente a
+                los datos de la región de ventas a la que están asignados en la tabla Empleados de Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">Power BI tiene la siguiente expresión DAX de filtro de tabla de seguridad
+                a nivel de filas (RLS) para la tabla Empleados de Ventas.</p>
+            <p class="text-sm text-gray-400 mb-4">[EmailAddress] = USERNAME()</p>
+            <p class="text-sm text-gray-400 mb-4">RLS se aplicará solo a los usuarios del departamento de ventas. Los
+                usuarios de todos los demás departamentos deben poder ver todos los datos.</p>
+            <p class="text-sm text-gray-400 mb-4">
+                <span class="font-bold">Pregunta</span>
+            </p>
+            <p class="text-sm text-gray-400 mb-4">Necesita crear el informe Envíos a Tiempo. El informe debe incluir una visualización que muestre el porcentaje de pedidos con retraso.</p>
+            <p class="text-sm text-gray-400 mb-4">¿Qué tipo de visualización debería crear?</p>
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. gráfico circular</li>
+                <li>B. gráfico de dispersión</li>
+                <li>C. gráfico de barras</li>
+            </ul>
+        </div>`,
+        solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: C</p>
+            <p class="text-sm text-gray-400 mb-4">El informe Envíos a Tiempo mostrará las siguientes métricas para un mes o
+                trimestre de envío seleccionado:</p>
+            <p class="text-sm text-gray-400 mb-4">El porcentaje de pedidos que se enviaron con retraso por país y región de
+                envío</p>
+            <p class="text-sm text-gray-400 mb-4">Los gráficos de barras y columnas son algunos de los gráficos de
+                visualización más utilizados en Power BI. Se pueden usar para una o múltiples categorías. Ambos tipos de
+                gráficos representan datos con barras rectangulares, donde el tamaño de la barra es proporcional a la
+                magnitud de los valores de datos.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://www.pluralsight.com/resources/blog/guides/bar-and-column-charts-in-power-bi" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">C</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(64%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 64%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">A</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(36%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 36%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>`
     },
     contenedor231: {
         pregunta: ``,
