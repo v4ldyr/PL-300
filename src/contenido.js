@@ -2145,9 +2145,9 @@ const contenido = {
                 ella. Como resultado, estas preguntas no aparecerán en la pantalla de revisión.
             </p>
             <p class="text-sm text-gray-400 mb-4">Está modelando datos usando Microsoft Power BI. Parte del modelo de datos
-                es una gran tabla de Microsoft SQL Server llamada Orden que tiene más de 100 millones de registros.</p>
+                es una gran tabla de Microsoft SQL Server llamada Pedido que tiene más de 100 millones de registros.</p>
             <p class="text-sm text-gray-400 mb-4">Durante el proceso de desarrollo, necesita importar una muestra de los
-                datos de la tabla Orden.</p>
+                datos de la tabla Pedido.</p>
             <p class="text-sm text-gray-400 mb-4">Solución: Desde el Editor de Power Query, importa la tabla y luego agrega un paso de filtro a la consulta. <p
                 class="text-sm text-gray-400 mb-4">¿Cumple esto con el objetivo?</p>
             <ul class="list-inside text-sm text-gray-400 mb-4">
@@ -2198,10 +2198,10 @@ const contenido = {
             </p>
             <p class="text-sm text-gray-400 mb-4">Después de responder una pregunta en esta sección, NO podrá volver a ella.
                 Como resultado, estas preguntas no aparecerán en la pantalla de revisión. Está modelando datos usando
-                Microsoft Power BI. Parte del modelo de datos es una gran tabla de Microsoft SQL Server llamada Orden que
+                Microsoft Power BI. Parte del modelo de datos es una gran tabla de Microsoft SQL Server llamada Pedido que
                 tiene más de 100 millones de registros.</p>
             <p class="text-sm text-gray-400 mb-4">Durante el proceso de desarrollo, necesita importar una muestra de los
-                datos de la tabla Orden.</p>
+                datos de la tabla Pedido.</p>
             <p class="text-sm text-gray-400 mb-4">Solución: Escribe una expresión DAX que use la función FILTRO.</p>
             <p class="text-sm text-gray-400 mb-4">¿Cumple esto con el objetivo?</p>
             <ul class="list-inside text-sm text-gray-400 mb-4">
@@ -2244,10 +2244,10 @@ const contenido = {
             </p>
             <p class="text-sm text-gray-400 mb-4">Después de responder una pregunta en esta sección, NO podrá volver a ella.
                 Como resultado, estas preguntas no aparecerán en la pantalla de revisión. Está modelando datos usando
-                Microsoft Power BI. Parte del modelo de datos es una gran tabla de Microsoft SQL Server llamada Orden que
+                Microsoft Power BI. Parte del modelo de datos es una gran tabla de Microsoft SQL Server llamada Pedido que
                 tiene más de 100 millones de registros.</p>
             <p class="text-sm text-gray-400 mb-4">Durante el proceso de desarrollo, necesita importar una muestra de los
-                datos de la tabla Orden.</p>
+                datos de la tabla Pedido.</p>
             <p class="text-sm text-gray-400 mb-4">Solución: Agrega una cláusula WHERE a la declaración SQL.</p>
             <p class="text-sm text-gray-400 mb-4">¿Cumple esto con el objetivo?</p>
             <ul class="list-inside text-sm text-gray-400 mb-4">
@@ -2686,11 +2686,29 @@ const contenido = {
             </ul>
         </div>`,
         solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
-            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
-            <p class="text-sm text-gray-400 mb-4">Las columnas ClaveFecha (DateKey) y FechaMovimiento (MovementDate) tienen la misma información.
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: D</p>
+            <p class="text-sm text-gray-400 mb-4">Las columnas ClaveFecha (DateKey) y FechaMovimiento (MovementDate) tienen
+                la misma información.
                 FechaMovimiento se puede eliminar.</p>
             <p class="text-sm text-gray-400 mb-4">Incorrecto:</p>
             <p class="text-sm text-gray-400 mb-4">No C: El tipo de datos Entero perdería datos.</p>
+            <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-10 text-right text-[12px]">D</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(88%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-green-500/50 h-full rounded-full" style="width: 63%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-10 text-right font-medium text-[12px]">otros</div>
+                    <div class="ml-2 text-gray-600 text-[12px]">(12%)</div>
+                    <div class="ml-8 w-48 bg-gray-200 h-2 rounded-full">
+                        <div class="bg-red-500/50 bg- h-full rounded-full" style="width: 12%"></div>
+                    </div>
+                </div>
+            </div>
         </div>`
     },
     contenedor55: {
@@ -2699,7 +2717,7 @@ const contenido = {
             <p class="text-sm text-gray-400 mb-4">Necesita crear una medida que devuelva las ventas totales acumuladas del
                 año hasta la fecha, desde la misma fecha del año calendario anterior.</p>
             <p class="text-sm text-gray-400 mb-4">¿Qué funciones DAX debe usar? Para responder, seleccione las opciones
-                apropiadas en el área de respuesta.b</p>
+                apropiadas en el área de respuesta.</p>
             <p class="text-sm text-gray-400 mb-4">
                 <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
             </p>
@@ -2761,9 +2779,9 @@ const contenido = {
                 Como resultado, estas preguntas no aparecerán en la pantalla de revisión.
             </p>
             <p class="text-sm text-gray-400 mb-4">Está modelando datos usando Microsoft Power BI. Parte del modelo de datos
-                es una gran tabla de Microsoft SQL Server llamada Orden que tiene más de 100 millones de registros.</p>
+                es una gran tabla de Microsoft SQL Server llamada Pedido que tiene más de 100 millones de registros.</p>
             <p class="text-sm text-gray-400 mb-4">Durante el proceso de desarrollo, necesita importar una muestra de los
-                datos de la tabla Orden.</p>
+                datos de la tabla Pedido.</p>
             <p class="text-sm text-gray-400 mb-4">Solución: Agrega un filtro a nivel de informe que filtra según la fecha
                 del pedido.</p>
             <p class="text-sm text-gray-400 mb-4">¿Cumple esto con el objetivo?</p>
@@ -2874,7 +2892,11 @@ const contenido = {
                 como Fecha de vencimiento. Referencia la consulta Fecha de vencimiento dos veces para crear las consultas
                 para Fecha de pedido y Fecha de entrega.</p>
             <p class="text-sm text-gray-400 mb-4">¿Cumple esto con el objetivo?</p>
-        </div>`,
+            <ul class="list-inside text-sm text-gray-400 mb-4">
+                <li>A. Si</li>
+                <li>B. No</li>
+            </ul>
+            </div>`,
         solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
             <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
             <p class="text-sm text-gray-400 mb-4">En su lugar: Solución: Desde el panel de Campos, renombra la tabla de
@@ -2972,7 +2994,7 @@ const contenido = {
                 elemento visual que muestre los ingresos desglosados por año y producto.</p>
             <p class="text-sm text-gray-400 mb-4">Necesita transformar los datos para asegurarse de que pueda construir los
                 elementos visuales. La solución debe garantizar que las columnas se nombren apropiadamente para los datos
-                que contienen.b</p>
+                que contienen.</p>
             <p class="text-sm text-gray-400 mb-4">¿Qué tres acciones debe realizar en secuencia? Para responder, mueva las
                 acciones apropiadas de la lista de acciones al área de respuesta y ordénelas en el orden correcto.</p>
             <div class="mt-4 mb-4">
