@@ -2065,7 +2065,7 @@ const contenido = {
         <p class="text-sm text-gray-400 mb-4">Cuadro 1: Sí -</p>
         <p class="text-sm text-gray-400 mb-4">Esas dos columnas no son necesarias en el análisis.</p>
         <p class="text-sm text-gray-400 mb-4">Cuadro 2: No -</p>
-        <p class="text-sm text-gray-400 mb-4">Se puede eliminar la clave sustituta ClaveFechaOrden (OrderDateKey) del
+        <p class="text-sm text-gray-400 mb-4">Se puede eliminar la clave sustituta ClaveFechaPedido (OrderDateKey) del
             análisis.</p>
         <p class="text-sm text-gray-400 mb-4">Cuadro 3: No -</p>
         <p class="text-sm text-gray-400 mb-4">El impuesto (Tax) cargado no es relevante para el análisis.</p>
@@ -3058,22 +3058,22 @@ const contenido = {
             <div class="mt-4 mb-4">
                 <img src="img/2/p35.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
             </div>
-            <p class="text-sm text-gray-400 mb-4">La vista de datos para la tabla Órdenes (Orders) se muestra en la
+            <p class="text-sm text-gray-400 mb-4">La vista de datos para la tabla Pedidos (Orders) se muestra en la
                 siguiente imagen.
             </p>
             <div class="mt-4 mb-4">
                 <img src="img/2/p35.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" /> </div>
-            <p class="text-sm text-gray-400 mb-4">La tabla Órdenes (Orders) se relaciona con la tabla Clientes (Customer)
+            <p class="text-sm text-gray-400 mb-4">La tabla Pedidos (Orders) se relaciona con la tabla Clientes (Customer)
                 usando la columna IDCliente (CustomerID).</p>
-            <p class="text-sm text-gray-400 mb-4">La tabla Órdenes (Orders) se relaciona con la tabla Fecha (Date) usando la
-                columna FechaOrden (OrderDate).</p>
+            <p class="text-sm text-gray-400 mb-4">La tabla Pedidos (Orders) se relaciona con la tabla Fecha (Date) usando la
+                columna FechaPedido (OrderDate).</p>
             <p class="text-sm text-gray-400 mb-4">Para cada una de las siguientes afirmaciones, seleccione Sí si la
                 afirmación es verdadera. De lo contrario, seleccione No.</p>
             <p class="text-sm text-gray-400 mb-4">
                 <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
             </p>
             <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
-                 <li>Resumir los pedidos por las columnas ClienteID (CustomerID), Pedido (OrderID) y FechaPedidoOrderDate reducirá el tamaño del modelo, mientras
+                 <li>Resumir los pedidos por las columnas ClienteID (CustomerID), Pedido (OrderID) y FechaPedido (OrderDate) reducirá el tamaño del modelo, mientras
                     que aún se admitirá el análisis actual.</li>
                  <li>Eliminar la columna ClienteID (CustomerID) de Pedidos reducirá el tamaño del modelo, mientras que aún se admitirá el
                     análisis actual.</li>
@@ -3177,9 +3177,9 @@ const contenido = {
             </div>
             <p class="text-sm text-gray-400 mb-4">El informe facilitará los siguientes análisis:</p>
             <ul class="list-inside text-sm text-gray-400 mb-4">
-                <li>El conteo de órdenes y la suma de ventas totales por Fecha de Orden</li>
+                <li>El conteo de pedidos y la suma de ventas totales por Fecha de pedido</li>
                 <li>El conteo de clientes que realizaron un pedido</li>
-                <li>La cantidad promedio por orden</li>
+                <li>La cantidad promedio por pedido</li>
             </ul>
             <p class="text-sm text-gray-400 mb-4">Necesita reducir los tiempos de actualización de datos y los tiempos de
                 consulta del informe.</p>
@@ -3189,7 +3189,7 @@ const contenido = {
                 <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
             </p>
             <ul class="list-inside text-sm text-gray-400 mb-4">
-                <li>A. Establecer el tipo de datos para NúmeroOrdenVentas (SalesOrderNumber) como Número Decimal.</li>
+                <li>A. Establecer el tipo de datos para NúmeroPedidoVentas (SalesOrderNumber) como Número Decimal.</li>
                 <li>B. Eliminar las columnas ClaveCliente (CustomerKey) y ClaveProducto (ProductKey).</li>
                 <li>C. Eliminar las columnas MontoImpuesto (TaxAmt) y Flete (Freight).</li>
                 <li>D. Filtrar los datos solo al territorio de ventas de la región Noroeste (NorthWest).</li>
@@ -3219,7 +3219,7 @@ const contenido = {
             <ul class="list-inside text-sm text-gray-400 mb-4">
                 <li>A. Cambiar el tipo de datos de Ciudad (City), Estado/Provincia (State/Province) y País (Country).</li>
                 <li>B. Establecer la Agregación para Ciudad (City), Estado/Provincia (State/Province) y País (Country) en No resumir.</li>
-                <li>C. Establecer la categoría de datos de Ciudad (City), Estado/Provincia (State/Province) y País (Country).</li>
+                <li>C. Establecer la Jerarquia de datos de Ciudad (City), Estado/Provincia (State/Province) y País (Country).</li>
                 <li>D. Crear una columna calculada que concatene los valores en Ciudad (City), Estado/Provincia (State/Province) y País (Country).</li>
             </ul>
         </div>`,
@@ -3282,7 +3282,7 @@ const contenido = {
             <p class="text-sm text-gray-400 mb-4">Dividir (Split) una columna de texto (Power Query)</p>
             <p class="text-sm text-gray-400 mb-4">Puede dividir una columna con un tipo de datos de texto en dos o más
                 columnas utilizando un carácter delimitador común. Por ejemplo, una columna Nombre que contiene valores
-                escritos como <Apellido>, <Nombre> se puede dividir en dos columnas usando el carácter coma (,).</p>
+                escritos como Apellido (LastName), Nombres (FirstName) se puede dividir en dos columnas usando el carácter coma (,).</p>
             <p class="text-sm text-gray-400 mb-4">
                 <span class="font-bold">Nota: </span>Power Query es una herramienta de Extracción, Transformación y Carga (ETL). Nos permite:
             </p>
@@ -3516,7 +3516,7 @@ const contenido = {
             <div class="mt-4 mb-4">
                 <img src="img/2/p45.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
             </div>
-            <p class="text-sm text-gray-400 mb-4">Hay una relación uno a muchos desde Proveedores a LíneasElementos
+            <p class="text-sm text-gray-400 mb-4">Hay una relación uno a muchos desde Proveedores (Suppliers) a LíneasElementos
                 (LineItems) que
                 utiliza las columnas ID e ID Proveedor (Supplier ID).</p>
             <p class="text-sm text-gray-400 mb-4">El informe contiene los elementos visuales que se muestran en la siguiente
@@ -3579,7 +3579,7 @@ const contenido = {
                 <li>C. Eliminar Tráfico[Dirección IP] (Traffic[IP Address]), Tráfico[Agente Navegador] (traffic[Browser
                     Agent]) y Tráfico[URLReferente] (Traffic[Referring URL]).</li>
                 <li>D. Eliminar Publicaciones[TextoCompleto] (Posts[Full Text]) y Publicaciones[Resumen] (Posts[Sumary]).</li>
-                <li>E. Eliminar las filas en Tráfico donde Tráfico[URLReferente] no comience con "/".</li>
+                <li>E. Eliminar las filas en Tráfico donde Tráfico[URL Referente] (Traffic[Reffering URL]) no comience con "/".</li>
             </ul>
         </div>`,
         solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
@@ -4080,7 +4080,7 @@ const contenido = {
             </ul>
         </div>`,
         solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
-            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B (revisar en libro)</p>
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: D</p>
             <p class="text-sm text-gray-400 mt-4 italic text-[12px]">Distribución de votos de la comunidad</p>
             <div class="space-y-4">
                 <div class="flex items-center">
@@ -4503,10 +4503,10 @@ const contenido = {
             </ul>
             <p class="text-sm text-gray-400 mb-4">¿Qué debe seleccionar en el Editor de Power Query?</p>
             <ul class="list-inside text-sm text-gray-400 mb-4">
-                <li>A. Fusionar columnas</li>
-                <li>B. Transponer</li>
-                <li>C. Anular dinamización de columnas</li>
-                <li>D. Dinamizar columna</li>
+                <li>A. Fusionar (merge) columnas</li>
+                <li>B. Transponer (transpose)</li>
+                <li>C. Anular dinamización (unpivot) de columnas</li>
+                <li>D. Dinamizar (pivot) columna</li>
             </ul>
         </div>`,
         solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
@@ -4740,7 +4740,7 @@ const contenido = {
             <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: AE</p>
             <p class="text-sm text-gray-400 mb-4">A: Con los temas de informe de Power BI Desktop, puede aplicar cambios de
                 diseño a todo su informe, como usar colores corporativos, cambiar conjuntos de iconos o aplicar nuevo
-                formato visual predeterminado.b</p>
+                formato visual predeterminado.</p>
             <p class="text-sm text-gray-400 mb-4">Cuando publica un archivo de Power BI Desktop en el servicio de Power BI,
                 publica los datos del modelo en su espacio de trabajo de Power BI. Lo mismo ocurre con cualquier informe que
                 haya creado en la vista de Informe.</p>
@@ -4851,13 +4851,20 @@ const contenido = {
             <p class="text-sm text-gray-400 mb-4">
                 <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
             </p>
-            <p class="text-sm text-gray-400 mb-4">Traducción: Identificar factores adicionales que aumentan la rotacion
+            <p class="text-sm text-gray-400 mb-4">Identificar factores adicionales que aumentan la rotacion
                 puede lograrse mediante [elegir respuesta]</p>
             <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
                 <li>Activar el informe cruzado</li>
                 <li>Agregar más campos a "Explicar por"</li>
                 <li>Agregar más campos a "Expandir por"</li>
                 <li>Mover campos  de "Explicar por" a "Expandir por"</li>
+            </ul>
+            <p class="text-sm text-gray-400 mb-4">La rotación de personal es [opción de respuesta] veces mayor cuando los empleados trabajan horas extra.</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>0.11</li>
+                <li>.2</li>
+                <li>1</li>
+                <li>3</li>
             </ul>
             <div class="mt-4 mb-4">
                 <img src="img/3/p5.2.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
@@ -4946,6 +4953,9 @@ const contenido = {
             <p class="text-sm text-gray-400 mb-4">
                 <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
             </p>
+            <div class="mt-4 mb-4">
+                <img src="img/3/p7.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>  
         </div>`,
         solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
             <p class="text-sm text-gray-400 mb-4">Cuadro 1: Ventas Totales -</p>
@@ -4983,7 +4993,7 @@ const contenido = {
                 <li>Ciudad del Cliente</li>
             </ul>
             <p class="text-sm text-gray-400 mb-4">La visualización de influenciadores clave devuelve los resultados
-                mostrados en la siguiente exhibición.</p>
+                mostrados en la siguiente ilustración.</p>
             <div class="mt-4 mb-4">
                 <img src="img/3/p8.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
             </div>
