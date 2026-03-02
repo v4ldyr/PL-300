@@ -4958,6 +4958,9 @@ const contenido = {
             </div>  
         </div>`,
         solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
+            <div class="mt-4 mb-4">
+                <img src="img/3/s7.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
+            </div>
             <p class="text-sm text-gray-400 mb-4">Cuadro 1: Ventas Totales -</p>
             <p class="text-sm text-gray-400 mb-4">La visualización de influenciadores clave le ayuda a comprender los
                 factores que impulsan una métrica que le interesa, aquí Ventas Totales. Analiza sus datos, clasifica los
@@ -5124,12 +5127,22 @@ const contenido = {
     },
     contenedor114: {
         pregunta: `<div>
-            <p class="text-sm text-gray-400 mb-4">Tiene un panel (dashboard) de Power BI llamado PanelA (TileA) que contiene un icono llamado
-                IconoA. IconoA contiene un mapa de árbol visual de un informe llamado InformeA (ReportA).</p>
-            <p class="text-sm text-gray-400 mb-4">Necesita proporcionar a los usuarios del PanelA (DashboardA) iconos adicionales que se
-                relacionen con el contenido de IconoA (TileA).</p>
+            <p class="text-sm text-gray-400 mb-4">Tiene un panel (dashboard) de Power BI llamado PanelA (DashboardA) que contiene
+                una visualización (tile) llamada
+                VisualizacionA (TileA). VisualizacionA (TileA) contiene un mapa de árbol visual de un informe llamado InformeA (ReportA).</p>
+            <p class="text-sm text-gray-400 mb-4">Necesita proporcionar a los usuarios del PanelA (DashboardA) iconos
+                adicionales que se
+                relacionen con el contenido de VisualizacionA (TileA).</p>
             <p class="text-sm text-gray-400 mb-4">¿Qué tres acciones debe realizar en secuencia? Para responder, mueva las
                 acciones apropiadas de la lista de acciones al área de respuesta y ordénelas en el orden correcto.</p>
+            <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                <li>Desde el modo Enfoque, anclar los objetos visuales relevantes a DashboardA.</li>
+                <li>Desde el modo Enfoque, revisar los objetos visuales generados.</li>
+                <li>Desde DashboardA, seleccionar las opciones de TileA y luego seleccionar Ver información.</li>
+                <li>Desde ReportA, seleccionar las opciones del objeto visual de mapa de árbol y luego seleccionar Destacar.</li>
+                <li>Desde ReportA, seleccionar Obtener información.</li>
+                <li>Desde DashboardA, seleccionar VisualizacionA (TileA) para abrir ReportA.</li>
+            </ul>
             <div class="mt-4 mb-4">
                 <img src="img/3/p11.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
             </div>
@@ -5166,7 +5179,7 @@ const contenido = {
                 Rápida" (Quick Insights)
                 con hasta 32 tarjetas de información separadas. Cada tarjeta tiene un gráfico o diagrama más una breve
                 descripción.</p>
-            <p class="text-sm text-gray-400 mb-4">Paso 2: Desde PanelA (DashboardA), seleccionar las opciones de IconoA
+            <p class="text-sm text-gray-400 mb-4">Paso 2: Desde PanelA (DashboardA), seleccionar las opciones de VisualizacionA
                 (TileA), y luego
                 seleccionar Ver Información</p>
             <p class="text-sm text-gray-400 mb-4">La pantalla de información se abre en Modo Enfoque (Focus mode).</p>
@@ -5296,6 +5309,13 @@ const contenido = {
             <p class="text-sm text-gray-400 mb-4">Necesita construir el panel.</p>
             <p class="text-sm text-gray-400 mb-4">¿Qué cuatro acciones debe realizar en secuencia? Para responder, mueva las
                 acciones apropiadas de la lista de acciones al área de respuesta y ordénelas en el orden correcto.</p>
+                <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
+                    <li>Anclar elementos de los informes al tablero.</li>
+                    <li>Abrir el tablero.</li>
+                    <li>Crear un diseño para teléfono de los informes existentes.</li>
+                    <li>Editar la vista móvil del tablero.</li>
+                    <li>Reorganizar, cambiar el tamaño o eliminar elementos del diseño móvil.</li>
+                </ul>
             <div class="mt-4 mb-4">
                 <img src="img/3/p14.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
             </div>
@@ -5379,7 +5399,7 @@ const contenido = {
             <p class="text-sm text-gray-400 mb-4">Necesita configurar el informe para mostrar datos basados en la ubicación
                 de cada usuario.</p>
             <p class="text-sm text-gray-400 mb-4">¿Qué dos acciones debe realizar? Cada respuesta correcta presenta parte de
-                la solución.b</p>
+                la solución.</p>
             <p class="text-sm text-gray-400 mb-4">
                 <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
             </p>
@@ -5402,7 +5422,6 @@ const contenido = {
                 <div class="mt-4 mb-4">
                     <img src="img/3/s16.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
                 </div>
-                <li>texto</li>
             </ul>
             <p class="text-sm text-gray-400 mb-4">4. Continúe estableciendo categorías de datos geográficos para cualquier
                 otro campo en el modelo.</p>
@@ -5575,7 +5594,7 @@ const contenido = {
             <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
             <p class="text-sm text-gray-400 mb-4">La visualización de narrativa inteligente te ayuda a resumir rápidamente
                 objetos visuales e informes. Proporciona información innovadora relevante que puedes personalizar.</p>
-            <p class="text-sm text-gray-400 mb-4">Utiliza resúmenes de narrativa inteligente en tus informes para abordar conclusiones clave, señalar tendencias y editar el lenguaje y el formato para una audiencia específica. En PowerPoint, en lugar de pegar una captura de pantalla de las conclusiones clave de tu informe, puedes añadir narrativas que se actualizan con cada actualización. Tu audiencia puede utilizar los resúmenes para comprender los datos, llegar más rápido a los puntos clave y explicar los datos a otros.b</p>
+            <p class="text-sm text-gray-400 mb-4">Utiliza resúmenes de narrativa inteligente en tus informes para abordar conclusiones clave, señalar tendencias y editar el lenguaje y el formato para una audiencia específica. En PowerPoint, en lugar de pegar una captura de pantalla de las conclusiones clave de tu informe, puedes añadir narrativas que se actualizan con cada actualización. Tu audiencia puede utilizar los resúmenes para comprender los datos, llegar más rápido a los puntos clave y explicar los datos a otros.</p>
             <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
                 href="https://learn.microsoft.com/es-es/power-bi/visuals/power-bi-visualization-smart-narrative"
                 target="_blank" rel="noopener noreferrer">
@@ -5833,7 +5852,7 @@ const contenido = {
             <p class="text-sm text-gray-400 mb-4">
                 <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
             </p>
-            <p class="text-sm text-gray-400 mb-4">Hay [respuesta elegida]</p>
+            <p class="text-sm text-gray-400 mb-4">Hay [respuesta elegida] sólo una vez</p>
             <ul class="list-disc list-inside md:list-disc text-sm text-gray-400 mb-4">
                 <li>20 valores que ocurren</li>
                 <li>365 valores que ocurren</li>
@@ -5873,14 +5892,14 @@ const contenido = {
                 mantenimiento.</p>
             <p class="text-sm text-gray-400 mb-4">¿Qué deberías hacer?</p>
             <ul class="list-inside text-sm text-gray-400 mb-4">
-                <li>A. Habilitar a los lectores del informe para personalizar objetos visuales.to</li>
+                <li>A. Habilitar a los lectores del informe para personalizar objetos visuales.</li>
                 <li>B. Crear una página de informe separada para que los usuarios vean el gráfico de columnas.</li>
                 <li>C. Agregar un gráfico de columnas, un marcador y un botón para que los usuarios elijan un objeto visual.</li>
                 <li>D. Crear un informe móvil que contenga un gráfico de columnas.</li>
             </ul>
         </div>`,
         solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
-            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: C</p>
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
             <p class="text-sm text-gray-400 mb-4">Permitir que los usuarios personalicen objetos visuales en un informe</p>
             <p class="text-sm text-gray-400 mb-4">Habilitar la personalización en un informe</p>
             <p class="text-sm text-gray-400 mb-4">Puedes habilitar la función ya sea en Power BI Desktop o en el servicio
@@ -6367,7 +6386,7 @@ const contenido = {
         solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
             <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
             <p class="text-sm text-gray-400 mb-4">Cuándo usar una segmentación:</p>
-            <p class="text-sm text-gray-400 mb-4">teLas segmentaciones son una excelente opción cuando desea:xto</p>
+            <p class="text-sm text-gray-400 mb-4">Las segmentaciones son una excelente opción cuando desea:</p>
             <p class="text-sm text-gray-400 mb-4">Mostrar filtros de uso común o importantes en el lienzo del informe para
                 un acceso más fácil.</p>
             <p class="text-sm text-gray-400 mb-4">Facilitar la visualización del estado filtrado actual sin tener que abrir
@@ -6486,7 +6505,7 @@ const contenido = {
             </ul>
         </div>`,
         solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
-            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: AA</p>
             <p class="text-sm text-gray-400 mb-4">El objeto visual de árbol de descomposición en Power BI le permite
                 visualizar datos a través de múltiples dimensiones. Agrega datos automáticamente y permite profundizar en
                 sus dimensiones en cualquier orden. También es una visualización de inteligencia artificial (IA), por lo que
@@ -6536,11 +6555,32 @@ const contenido = {
         </div>`,
         solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
             <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: B</p>
-            <p class="text-sm text-gray-400 mb-4">Detección de valores atípicos en Power BI mediante un gráfico de embudo,
-                que es un gráfico de dispersión.</p>
-            <p class="text-sm text-gray-400 mb-4">Los valores atípicos son aquellos puntos de datos que se encuentran fuera
+            <p class="text-sm text-gray-400 mb-4">Detección de valores atípicos (outliers) en Power BI usando un gráfico de
+                embudo (Funnel Plot), que es un tipo de gráfico de dispersión (scatter plot).</p>
+            <p class="text-sm text-gray-400 mb-4">Los valores atípicos (outliers) son aquellos puntos de datos que se
+                encuentran fuera
                 del patrón general de distribución y la forma más fácil de detectarlos es mediante gráficos. Los diagramas
-                de caja y bigotes, los gráficos de dispersión pueden ayudar a detectarlos fácilmente.</p>
+                de caja (box plots) y los gráficos de dispersión (scatter plots) pueden ayudar a detectarlos fácilmente.</p>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://learn.microsoft.com/es-es/power-bi/visuals/power-bi-visualization-funnel-charts?tabs=powerbi-desktop"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
+            <a class=" inline-flex items-center text-sky-600 hover:text-sky-800 font-medium"
+                href="https://www.mssqltips.com/sqlservertip/5973/power-bi-funnel-plot-for-outliers-detection/"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                        clip-rule="evenodd" />
+                </svg>
+                Referencia
+            </a>
         </div>`
     },
     contenedor143: {
@@ -6722,11 +6762,11 @@ const contenido = {
     },
     contenedor146: {
         pregunta: `<div>
-            <p class="text-sm text-gray-400 mb-4">texto</p>
+            <p class="text-sm text-gray-400 mb-4">Está creando un gráfico de líneas en un informe de Power BI como se muestra en la siguiente ilustración.</p>
             <div class="mt-4 mb-4">
                 <img src="img/3/p43.1.jpg" class="object-cover mx-auto  shadow-lg md:mx-0" />
             </div>
-            <p class="text-sm text-gray-400 mb-4">texto</p>
+            <p class="text-sm text-gray-400 mb-4">Utilice los menús desplegables para seleccionar la opción de respuesta que complete cada enunciado según la información presentada en el gráfico.</p>
             <p class="text-sm text-gray-400 mb-4">
                 <span class="font-bold">Nota: </span>Cada selección correcta vale un punto.
             </p>
@@ -6837,7 +6877,7 @@ const contenido = {
             </ul>
         </div>`,
         solucion: `<div class="bg-emerald-800/30 text-gray-100 px-4 py-4 rounded-lg border border-gray-700 ring-2 ring-emerald-500/50">
-            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: A</p>
+            <p class="text-sm text-gray-400 mb-4">Respuesta Correcta: C</p>
             <p class="text-sm text-gray-400 mb-4">Agregar la detección de anomalías enriquece automáticamente el gráfico con
                 anomalías y el rango esperado de valores. Cuando un valor sale de este límite esperado, se marca como una
                 anomalía.</p>
